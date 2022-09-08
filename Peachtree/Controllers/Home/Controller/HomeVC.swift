@@ -70,7 +70,10 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
         } else if model.type == .cityHall {
             
         }  else if model.type == .publicSafety {
-            
+            if let controller = StoryboardUtils.getPublicSafety() as? PublicSafetyVC {
+                controller.hidesBottomBarWhenPushed = true
+                self.navigationController?.pushViewController(controller, animated: true)
+            }
         } else if model.type == .reportAnIssue {
             self.openWebViewVC("https://peachtree-city.org/128/Report-a-Problem")
         } else if model.type == .library {

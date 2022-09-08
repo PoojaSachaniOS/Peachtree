@@ -36,12 +36,17 @@ extension UIViewController{
 }
 
 extension StoryboardUtils{
+    
     static func getGetStartedVC()-> UIViewController{
         return UserAuthentication.instance.instantiateViewController(withIdentifier: "GetStartedVC")
     }
     
     static func getTermsOfUseVC()-> UIViewController{
         return UserAuthentication.instance.instantiateViewController(withIdentifier: "TermsOfUseVC")
+    }
+    
+    static func getPublicSafety()-> UIViewController{
+        return Home.instance.instantiateViewController(withIdentifier: "PublicSafetyVC")
     }
     
     static func getHomeTabBar()-> UITabBarController {
