@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Upf-Aq-ydC">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Tab Bar Controller-->
+        <scene sceneID="P8m-fB-GR4">
+            <objects>
+                <tabBarController storyboardIdentifier="HomeTabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Upf-Aq-ydC" customClass="HomeTabBarController" customModule="Peachtree" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YSB-9Z-cv8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Ofg-4N-1B9" kind="relationship" relationship="viewControllers" id="QPc-Uw-Zar"/>
+                        <segue destination="hsW-0s-fL7" kind="relationship" relationship="viewControllers" id="o6P-H7-DoE"/>
+                        <segue destination="7dl-uH-JI4" kind="relationship" relationship="viewControllers" id="OuY-PT-EkY"/>
+                        <segue destination="PjB-z1-FUb" kind="relationship" relationship="viewControllers" id="sTr-2V-5Lz"/>
+                        <segue destination="UZJ-SG-D1T" kind="relationship" relationship="viewControllers" id="KQK-np-Ttq"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NF5-qP-0rV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-757" y="-429"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="YIj-Lt-Zhb">
+            <objects>
+                <navigationController id="Ofg-4N-1B9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="imgHomeTabBarUnSelected" selectedImage="imgHomeTabBarSelected" id="Jgt-Jc-Igb"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SWX-gA-z0k">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3rE-Jy-jMt" kind="relationship" relationship="rootViewController" id="L7h-Tq-tre"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nLg-ZM-CdS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="183" y="-1647"/>
+        </scene>
+        <!--HomeVC-->
+        <scene sceneID="Oul-Mp-V2c">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="HomeVC" id="3rE-Jy-jMt" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Cd8-wy-lFZ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nss-sq-4Bn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="732" y="-1647"/>
+        </scene>
+        <!--Location-->
+        <scene sceneID="gGM-nS-v62">
+            <objects>
+                <navigationController id="hsW-0s-fL7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Location" image="imgLocationTabBarUnSelected" selectedImage="imgLocationTabBarSelected" id="ZtT-B1-IBO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4me-ZO-mA5">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="umu-Mc-glT" kind="relationship" relationship="rootViewController" id="AV2-b6-NeO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kCl-bA-293" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="183" y="-983"/>
+        </scene>
+        <!--LocationVC-->
+        <scene sceneID="JYO-V1-Mi2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Location" referencedIdentifier="LocationVC" id="umu-Mc-glT" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="leN-l3-efx"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ae-BR-elT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="776" y="-983"/>
+        </scene>
+        <!--WeatherVC-->
+        <scene sceneID="5qM-iU-zON">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Weather" referencedIdentifier="WeatherVC" id="NLS-ek-PWi" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ijQ-ny-gwA"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EuC-ca-r2v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="858" y="-326"/>
+        </scene>
+        <!--Weather-->
+        <scene sceneID="2as-YN-H4D">
+            <objects>
+                <navigationController id="7dl-uH-JI4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Weather" image="imgWeatherTabBarUnSelected" selectedImage="imgWeatherTabBarSelected" id="dSv-JT-qo7"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="72z-Et-1Vz">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="NLS-ek-PWi" kind="relationship" relationship="rootViewController" id="VDd-d0-djM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D2E-QK-jZE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="183" y="-326"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="8cP-6L-utS">
+            <objects>
+                <navigationController id="UZJ-SG-D1T" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" image="imgSearchTabBarUnSelected" selectedImage="imgSearchTabBarSelected" id="kDn-KL-vhq"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cNN-a5-lYk">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="S0H-gP-EwQ" kind="relationship" relationship="rootViewController" id="KVg-US-NBw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KlE-vF-CXc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-909" y="333"/>
+        </scene>
+        <!--SearchVC-->
+        <scene sceneID="8pf-rz-4r8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Search" referencedIdentifier="SearchVC" id="S0H-gP-EwQ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="PxP-W4-brO"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aht-PZ-o9p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-830" y="727"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="Phu-ZF-obI">
+            <objects>
+                <navigationController id="PjB-z1-FUb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favorites" image="imgFavouriteTabBarUnSelected" selectedImage="imgFavouriteTabBarSelected" id="Oy3-1n-S4c"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="os6-hw-DfY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="lAX-ng-Lwm" kind="relationship" relationship="rootViewController" id="s5l-qE-fKB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tiA-WC-SEb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="219" y="333"/>
+        </scene>
+        <!--FavoritesVC-->
+        <scene sceneID="LfR-Fb-LFx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Favorites" referencedIdentifier="FavoritesVC" id="lAX-ng-Lwm" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="KEh-L9-kHw"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HNG-yb-k4u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="822" y="154"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="imgFavouriteTabBarSelected" width="24" height="21"/>
+        <image name="imgFavouriteTabBarUnSelected" width="24" height="21"/>
+        <image name="imgHomeTabBarSelected" width="24" height="24"/>
+        <image name="imgHomeTabBarUnSelected" width="24" height="24"/>
+        <image name="imgLocationTabBarSelected" width="24" height="24"/>
+        <image name="imgLocationTabBarUnSelected" width="23" height="23"/>
+        <image name="imgSearchTabBarSelected" width="24" height="24"/>
+        <image name="imgSearchTabBarUnSelected" width="24" height="24"/>
+        <image name="imgWeatherTabBarSelected" width="24" height="24"/>
+        <image name="imgWeatherTabBarUnSelected" width="24" height="24"/>
+    </resources>
+</document>
