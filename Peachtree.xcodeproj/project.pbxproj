@@ -41,6 +41,15 @@
 		17704EEF28C6DDA30032C96C /* WebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17704EEE28C6DDA30032C96C /* WebViewVC.swift */; };
 		C89A792B28CA5EB0006A06CC /* Californian FB Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C89A792A28CA5EB0006A06CC /* Californian FB Bold.ttf */; };
 		C89A792D28CA5F85006A06CC /* LBCalifornianBoldBlack24.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89A792C28CA5F85006A06CC /* LBCalifornianBoldBlack24.swift */; };
+		C8A2DEE428CBAB6D005578DE /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8A2DEE328CBAB6D005578DE /* More.storyboard */; };
+		C8A2DEEA28CBABE0005578DE /* MoreListTableVWCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A2DEE728CBABE0005578DE /* MoreListTableVWCell.swift */; };
+		C8A2DEEB28CBABE0005578DE /* MoreListTableVWCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8A2DEE828CBABE0005578DE /* MoreListTableVWCell.xib */; };
+		C8A2DEEC28CBABE0005578DE /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A2DEE928CBABE0005578DE /* MoreVC.swift */; };
+		C8A2DEEE28CBB7C4005578DE /* LBSatoshiMediumBlack22.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A2DEED28CBB7C4005578DE /* LBSatoshiMediumBlack22.swift */; };
+		C8A2DEF128CBBBEE005578DE /* LBSatoshiRegular14.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A2DEF028CBBBEE005578DE /* LBSatoshiRegular14.swift */; };
+		C8A2DEF328CBBCB4005578DE /* LBSatoshiBoldBlack20.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A2DEF228CBBCB4005578DE /* LBSatoshiBoldBlack20.swift */; };
+		C8A2DEF628CBBF4D005578DE /* ShareVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A2DEF528CBBF4D005578DE /* ShareVC.swift */; };
+		C8A2DEF928CBC165005578DE /* AppVersionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A2DEF828CBC165005578DE /* AppVersionVC.swift */; };
 		C8AC29C628CA511100E6CE0D /* PublicSafetyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AC29C528CA511100E6CE0D /* PublicSafetyVC.swift */; };
 		C8AC29D128CA575200E6CE0D /* Satoshi-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8AC29D028CA575200E6CE0D /* Satoshi-Bold.ttf */; };
 		C8AC29D328CA57AB00E6CE0D /* Satoshi-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8AC29D228CA57AB00E6CE0D /* Satoshi-Regular.ttf */; };
@@ -110,6 +119,15 @@
 		17704EEE28C6DDA30032C96C /* WebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewVC.swift; sourceTree = "<group>"; };
 		C89A792A28CA5EB0006A06CC /* Californian FB Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Californian FB Bold.ttf"; sourceTree = "<group>"; };
 		C89A792C28CA5F85006A06CC /* LBCalifornianBoldBlack24.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBCalifornianBoldBlack24.swift; sourceTree = "<group>"; };
+		C8A2DEE328CBAB6D005578DE /* More.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = More.storyboard; sourceTree = "<group>"; };
+		C8A2DEE728CBABE0005578DE /* MoreListTableVWCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreListTableVWCell.swift; sourceTree = "<group>"; };
+		C8A2DEE828CBABE0005578DE /* MoreListTableVWCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreListTableVWCell.xib; sourceTree = "<group>"; };
+		C8A2DEE928CBABE0005578DE /* MoreVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
+		C8A2DEED28CBB7C4005578DE /* LBSatoshiMediumBlack22.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBSatoshiMediumBlack22.swift; sourceTree = "<group>"; };
+		C8A2DEF028CBBBEE005578DE /* LBSatoshiRegular14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBSatoshiRegular14.swift; sourceTree = "<group>"; };
+		C8A2DEF228CBBCB4005578DE /* LBSatoshiBoldBlack20.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBSatoshiBoldBlack20.swift; sourceTree = "<group>"; };
+		C8A2DEF528CBBF4D005578DE /* ShareVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareVC.swift; sourceTree = "<group>"; };
+		C8A2DEF828CBC165005578DE /* AppVersionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVersionVC.swift; sourceTree = "<group>"; };
 		C8AC29C528CA511100E6CE0D /* PublicSafetyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicSafetyVC.swift; sourceTree = "<group>"; };
 		C8AC29D028CA575200E6CE0D /* Satoshi-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Bold.ttf"; sourceTree = "<group>"; };
 		C8AC29D228CA57AB00E6CE0D /* Satoshi-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Regular.ttf"; sourceTree = "<group>"; };
@@ -216,6 +234,7 @@
 		172F209E28BFBDF8007096DB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C8A2DEE228CBAB5B005578DE /* More */,
 				172F209F28BFBE08007096DB /* AuthView */,
 				172F20B328BFC56B007096DB /* HomeTabBar */,
 				172F20AE28BFC4EA007096DB /* Home */,
@@ -371,6 +390,59 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		C8A2DEE228CBAB5B005578DE /* More */ = {
+			isa = PBXGroup;
+			children = (
+				C8A2DEEF28CBB85D005578DE /* Controllers */,
+				C8A2DEE328CBAB6D005578DE /* More.storyboard */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		C8A2DEE528CBABE0005578DE /* MoreVC */ = {
+			isa = PBXGroup;
+			children = (
+				C8A2DEE628CBABE0005578DE /* Cells */,
+				C8A2DEE928CBABE0005578DE /* MoreVC.swift */,
+			);
+			path = MoreVC;
+			sourceTree = "<group>";
+		};
+		C8A2DEE628CBABE0005578DE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C8A2DEE728CBABE0005578DE /* MoreListTableVWCell.swift */,
+				C8A2DEE828CBABE0005578DE /* MoreListTableVWCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C8A2DEEF28CBB85D005578DE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C8A2DEF728CBC14F005578DE /* App Version */,
+				C8A2DEF428CBBF3A005578DE /* Share */,
+				C8A2DEE528CBABE0005578DE /* MoreVC */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C8A2DEF428CBBF3A005578DE /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				C8A2DEF528CBBF4D005578DE /* ShareVC.swift */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		C8A2DEF728CBC14F005578DE /* App Version */ = {
+			isa = PBXGroup;
+			children = (
+				C8A2DEF828CBC165005578DE /* AppVersionVC.swift */,
+			);
+			path = "App Version";
+			sourceTree = "<group>";
+		};
 		C8AC29C728CA511C00E6CE0D /* Public Safety */ = {
 			isa = PBXGroup;
 			children = (
@@ -402,6 +474,9 @@
 				C8C2B9E428CA635C0080281B /* LBSatoshiMediumWhite22.swift */,
 				C8EDCB9228CA66C2003C52BF /* LBCalifornianBoldWhite20.swift */,
 				C8EDCB9428CA6AE5003C52BF /* LBSatoshiBoldBlack18.swift */,
+				C8A2DEED28CBB7C4005578DE /* LBSatoshiMediumBlack22.swift */,
+				C8A2DEF028CBBBEE005578DE /* LBSatoshiRegular14.swift */,
+				C8A2DEF228CBBCB4005578DE /* LBSatoshiBoldBlack20.swift */,
 			);
 			path = "Custom Labels";
 			sourceTree = "<group>";
@@ -523,6 +598,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8A2DEE428CBAB6D005578DE /* More.storyboard in Resources */,
 				172F207A28BFBD91007096DB /* LaunchScreen.storyboard in Resources */,
 				172F20C128BFCABA007096DB /* Weather.storyboard in Resources */,
 				172F20D128C0CB67007096DB /* Colors.xcassets in Resources */,
@@ -530,6 +606,7 @@
 				172F20C828C0AF5F007096DB /* Favorites.storyboard in Resources */,
 				172F20B728BFC5C3007096DB /* HomeTabBar.storyboard in Resources */,
 				C89A792B28CA5EB0006A06CC /* Californian FB Bold.ttf in Resources */,
+				C8A2DEEB28CBABE0005578DE /* MoreListTableVWCell.xib in Resources */,
 				C8AC29DB28CA59BE00E6CE0D /* Californian FB Regular.ttf in Resources */,
 				172F20CD28C0C009007096DB /* Search.storyboard in Resources */,
 				C8AC29D728CA580000E6CE0D /* Satoshi-Medium.ttf in Resources */,
@@ -565,7 +642,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8A2DEF928CBC165005578DE /* AppVersionVC.swift in Sources */,
 				172F207228BFBD91007096DB /* ViewController.swift in Sources */,
+				C8A2DEEC28CBABE0005578DE /* MoreVC.swift in Sources */,
 				172F20D528C0CC1C007096DB /* Colors.swift in Sources */,
 				172F20B228BFC529007096DB /* HomeVC.swift in Sources */,
 				C8EDCB9328CA66C2003C52BF /* LBCalifornianBoldWhite20.swift in Sources */,
@@ -578,7 +657,11 @@
 				C8AC29D928CA588B00E6CE0D /* FontHelper.swift in Sources */,
 				17704EEF28C6DDA30032C96C /* WebViewVC.swift in Sources */,
 				172F20BC28BFC79A007096DB /* LocationVC.swift in Sources */,
+				C8A2DEF628CBBF4D005578DE /* ShareVC.swift in Sources */,
 				172F20B528BFC58F007096DB /* HomeTabBarController.swift in Sources */,
+				C8A2DEF128CBBBEE005578DE /* LBSatoshiRegular14.swift in Sources */,
+				C8A2DEEE28CBB7C4005578DE /* LBSatoshiMediumBlack22.swift in Sources */,
+				C8A2DEEA28CBABE0005578DE /* MoreListTableVWCell.swift in Sources */,
 				172F207028BFBD91007096DB /* SceneDelegate.swift in Sources */,
 				172F20C628C0AF2F007096DB /* FavoritesVC.swift in Sources */,
 				C8AC29C628CA511100E6CE0D /* PublicSafetyVC.swift in Sources */,
@@ -589,6 +672,7 @@
 				C8C2B9E528CA635C0080281B /* LBSatoshiMediumWhite22.swift in Sources */,
 				172F20AA28BFC1A5007096DB /* TermsOfUseVC.swift in Sources */,
 				172F20AD28BFC451007096DB /* OnboardingVC.swift in Sources */,
+				C8A2DEF328CBBCB4005578DE /* LBSatoshiBoldBlack20.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

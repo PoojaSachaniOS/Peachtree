@@ -9,8 +9,8 @@
 	</dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Satoshi-Regular</string>
-		<string>Satoshi-Italic</string>
+		<string></string>
+		<string></string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

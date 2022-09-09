@@ -4,7 +4,7 @@ import UIKit
 
 enum StoryboardUtils : String {
     
-    case UserAuthentication, HomeTabBar, Home, Location
+    case UserAuthentication, HomeTabBar, Home, Location , More
     
     var instance: UIStoryboard {
         return UIStoryboard(name: self.rawValue, bundle: Bundle.main)
@@ -60,4 +60,18 @@ extension StoryboardUtils{
     static func getWebViewVC()-> UIViewController{
         return Home.instance.instantiateViewController(withIdentifier: "WebViewVC")
     }
+    
+    static func getMoreVC()-> UIViewController{
+        return More.instance.instantiateViewController(withIdentifier: "MoreVC")
+    }
+    
+    static func getShareVC()-> UIViewController{
+        return More.instance.instantiateViewController(withIdentifier: "ShareVC")
+    }
+    
+    static func getAppVersionVC()-> UIViewController{
+        return More.instance.instantiateViewController(withIdentifier: "AppVersionVC")
+    }
+    
+    
 }

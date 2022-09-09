@@ -13,7 +13,7 @@ struct FontHelper {
     }
     
     static func satoshiBoldFontWithSize(size: CGFloat) -> UIFont {
-        return UIFont(name: FontHelper.AppFont.fontBold, size: size)!
+        return UIFont(name: FontHelper.AppFont.californian_fontBold, size: size)!
     }
     
     static func californianBoldFontWithSize(size: CGFloat) -> UIFont {

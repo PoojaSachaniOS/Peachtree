@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,8 +26,8 @@
                                     <constraint firstAttribute="width" constant="44" id="GAM-Lo-tga"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ClN-rl-OIY">
-                                <rect key="frame" x="2" y="65" width="99" height="14.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ClN-rl-OIY">
+                                <rect key="frame" x="2" y="65" width="99" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -40,7 +40,7 @@
                             <constraint firstItem="ClN-rl-OIY" firstAttribute="leading" secondItem="tH0-Nf-GUA" secondAttribute="leading" constant="2" id="IfV-Ru-T1w"/>
                             <constraint firstAttribute="trailing" secondItem="ClN-rl-OIY" secondAttribute="trailing" constant="2" id="R2v-DW-aZK"/>
                             <constraint firstItem="jsp-FS-8tn" firstAttribute="centerX" secondItem="tH0-Nf-GUA" secondAttribute="centerX" id="uL4-d0-Y8b"/>
-                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ClN-rl-OIY" secondAttribute="bottom" constant="9" id="w73-Ws-Fao"/>
+                            <constraint firstAttribute="bottom" secondItem="ClN-rl-OIY" secondAttribute="bottom" constant="9" id="w73-Ws-Fao"/>
                         </constraints>
                     </view>
                 </subviews>

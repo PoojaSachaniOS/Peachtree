@@ -1,0 +1,25 @@
+//
+//  LBSatoshiMediumBlack22.swift
+//  Peachtree
+//
+//  Created by Pooja Softradix on 09/09/22.
+//
+
+import UIKit
+
+class LBSatoshiMediumBlack22: UILabel {
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        updateView()
+    }
+    
+    func updateView() {
+        font = FontHelper.satoshiRegularFontWithSize(size: 22)
+        textColor = UIColor.black
+    }
+}
+
+
+
+

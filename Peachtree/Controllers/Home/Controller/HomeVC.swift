@@ -64,7 +64,8 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let model = arr[indexPath.row]
         if model.type == .shareMyLocation {
-            self.openShareMyLocationVC()
+            //  self.openShareMyLocationVC()
+            openMoreVC()
         } else if model.type == .renewGolfCart {
             self.openWebViewVC("https://peachtree-city.org/216/Paths-Golf-Carts")
         } else if model.type == .cityHall {
@@ -107,6 +108,13 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
         }
     }
     
+    func openMoreVC() {
+        if let controller = StoryboardUtils.getMoreVC() as? MoreVC {
+            controller.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
+    }
+    
     func openWebViewVC(_ webUrl:String) {
         if let controller = StoryboardUtils.getWebViewVC() as? WebViewVC {
             controller.strWebUrl = webUrl
@@ -144,5 +152,17 @@ class HomeVCTableItem<T> {
         self.title = title
         self.type = type
         self.showArrow = showArrow
+    }
+}
+
+class MoreItem<T> {
+    var title: String?
+    var type: T?
+    var iconName: String?
+    
+    init(iconName: String?,title: String?, type: T?) {
+        self.iconName = iconName
+        self.title = title
+        self.type = type
     }
 }

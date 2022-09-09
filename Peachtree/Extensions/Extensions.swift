@@ -11,6 +11,16 @@ import AVKit
 import SwiftUI
 
 extension UIView {
+    
+    func dropShadowOnTableViewCell(color:UIColor) {
+        self.clipsToBounds = true
+        self.layer.masksToBounds = false
+        self.layer.shadowColor = color.cgColor
+        self.layer.shadowOffset = CGSize(width: 1, height: 1)
+        self.layer.shadowRadius = 4.0
+        self.layer.shadowOpacity = 0.5
+    }
+    
     func addRoundedViewCorners(width:CGFloat,colorBorder: UIColor, BackgroundColor: UIColor) {
         layer.cornerRadius = width
         layer.borderWidth = 1.0

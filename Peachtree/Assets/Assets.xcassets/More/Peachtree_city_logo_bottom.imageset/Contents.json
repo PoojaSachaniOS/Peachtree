@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "Peachtree_city_logo_bottom.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Peachtree_city_logo_bottom@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Peachtree_city_logo_bottom@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
