@@ -13,6 +13,7 @@ class RestaurantsTableCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        vwBg.addRoundedViewCorners(width: 6, colorBorder: (Colors.color_borderLightBlack!).withAlphaComponent(0.1), BackgroundColor: UIColor.white)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

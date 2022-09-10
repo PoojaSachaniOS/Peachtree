@@ -36,6 +36,10 @@ struct FontHelper {
         return UIFont(name: FontHelper.AppFont.fontSatoshiLight, size: size)!
     }
     
+    static func defaultSatoshiMediumFontWithSize(size: CGFloat) -> UIFont {
+        return UIFont(name: FontHelper.AppFont.fontMedium, size: size)!
+    }
+    
     struct AppFont {
         static let fontSatoshiRegular = "Satoshi-Regular"
         static let fontMedium = "Satoshi-Medium"

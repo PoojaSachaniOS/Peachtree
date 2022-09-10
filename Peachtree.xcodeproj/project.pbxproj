@@ -79,6 +79,11 @@
 		C8AC29D528CA57CF00E6CE0D /* Satoshi-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8AC29D428CA57CF00E6CE0D /* Satoshi-Italic.ttf */; };
 		C8AC29D928CA588B00E6CE0D /* FontHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AC29D828CA588B00E6CE0D /* FontHelper.swift */; };
 		C8AC29DB28CA59BE00E6CE0D /* Californian FB Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8AC29DA28CA59BE00E6CE0D /* Californian FB Regular.ttf */; };
+		C8BB1C4528CCE0EE00A66FDF /* WeeklyForecastCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BB1C4328CCE0EE00A66FDF /* WeeklyForecastCollectionCell.swift */; };
+		C8BB1C4628CCE0EE00A66FDF /* DailyForecastCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BB1C4428CCE0EE00A66FDF /* DailyForecastCollectionCell.swift */; };
+		C8BB1C4828CCF75600A66FDF /* LBSatoshiWhite60.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BB1C4728CCF75600A66FDF /* LBSatoshiWhite60.swift */; };
+		C8BB1C4A28CCF79F00A66FDF /* LBSatoshiMediumWhite14.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BB1C4928CCF79F00A66FDF /* LBSatoshiMediumWhite14.swift */; };
+		C8BB1C4F28CD034600A66FDF /* LBSatoshiMediumBlack14.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BB1C4E28CD034600A66FDF /* LBSatoshiMediumBlack14.swift */; };
 		C8C2B9E528CA635C0080281B /* LBSatoshiMediumWhite22.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C2B9E428CA635C0080281B /* LBSatoshiMediumWhite22.swift */; };
 		C8EDCB9328CA66C2003C52BF /* LBCalifornianBoldWhite20.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EDCB9228CA66C2003C52BF /* LBCalifornianBoldWhite20.swift */; };
 		C8EDCB9528CA6AE5003C52BF /* LBSatoshiBoldBlack18.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EDCB9428CA6AE5003C52BF /* LBSatoshiBoldBlack18.swift */; };
@@ -185,6 +190,11 @@
 		C8AC29D428CA57CF00E6CE0D /* Satoshi-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Italic.ttf"; sourceTree = "<group>"; };
 		C8AC29D828CA588B00E6CE0D /* FontHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontHelper.swift; sourceTree = "<group>"; };
 		C8AC29DA28CA59BE00E6CE0D /* Californian FB Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Californian FB Regular.ttf"; sourceTree = "<group>"; };
+		C8BB1C4328CCE0EE00A66FDF /* WeeklyForecastCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeeklyForecastCollectionCell.swift; sourceTree = "<group>"; };
+		C8BB1C4428CCE0EE00A66FDF /* DailyForecastCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyForecastCollectionCell.swift; sourceTree = "<group>"; };
+		C8BB1C4728CCF75600A66FDF /* LBSatoshiWhite60.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBSatoshiWhite60.swift; sourceTree = "<group>"; };
+		C8BB1C4928CCF79F00A66FDF /* LBSatoshiMediumWhite14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBSatoshiMediumWhite14.swift; sourceTree = "<group>"; };
+		C8BB1C4E28CD034600A66FDF /* LBSatoshiMediumBlack14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBSatoshiMediumBlack14.swift; sourceTree = "<group>"; };
 		C8C2B9E428CA635C0080281B /* LBSatoshiMediumWhite22.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBSatoshiMediumWhite22.swift; sourceTree = "<group>"; };
 		C8EDCB9228CA66C2003C52BF /* LBCalifornianBoldWhite20.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBCalifornianBoldWhite20.swift; sourceTree = "<group>"; };
 		C8EDCB9428CA6AE5003C52BF /* LBSatoshiBoldBlack18.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBSatoshiBoldBlack18.swift; sourceTree = "<group>"; };
@@ -381,6 +391,7 @@
 		172F20BD28BFCA72007096DB /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				C8BB1C4228CCE0DE00A66FDF /* Cells */,
 				172F20BE28BFCA95007096DB /* WeatherVC.swift */,
 				172F20C028BFCABA007096DB /* Weather.storyboard */,
 			);
@@ -550,6 +561,7 @@
 		C8AC29C828CA515A00E6CE0D /* Sub View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C8BB1C4B28CCF9B000A66FDF /* Restaurants */,
 				C8AC29C728CA511C00E6CE0D /* Public Safety */,
 			);
 			path = "Sub View Controllers";
@@ -579,6 +591,9 @@
 				17D6D56B28CCBB77007D677B /* LBLSatoshiBoldBlack24.swift */,
 				17D6D56D28CCC26D007D677B /* LBSeparator.swift */,
 				17D6D57528CCCCB6007D677B /* LBSatoshiLight16.swift */,
+				C8BB1C4728CCF75600A66FDF /* LBSatoshiWhite60.swift */,
+				C8BB1C4928CCF79F00A66FDF /* LBSatoshiMediumWhite14.swift */,
+				C8BB1C4E28CD034600A66FDF /* LBSatoshiMediumBlack14.swift */,
 			);
 			path = "Custom Labels";
 			sourceTree = "<group>";
@@ -595,6 +610,22 @@
 				17D6D56528CCB688007D677B /* Satoshi-Bold.otf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		C8BB1C4228CCE0DE00A66FDF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C8BB1C4428CCE0EE00A66FDF /* DailyForecastCollectionCell.swift */,
+				C8BB1C4328CCE0EE00A66FDF /* WeeklyForecastCollectionCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C8BB1C4B28CCF9B000A66FDF /* Restaurants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Restaurants;
 			sourceTree = "<group>";
 		};
 		DCAB07F38AD72CF8A0D366AC /* Pods */ = {
@@ -875,6 +906,7 @@
 				C8A1734728CC7397002C52BE /* LBSatoshiBoldLightGrey14.swift in Sources */,
 				C8A2DEEC28CBABE0005578DE /* MoreVC.swift in Sources */,
 				172F20D528C0CC1C007096DB /* Colors.swift in Sources */,
+				C8BB1C4F28CD034600A66FDF /* LBSatoshiMediumBlack14.swift in Sources */,
 				172F20B228BFC529007096DB /* HomeVC.swift in Sources */,
 				C8EDCB9328CA66C2003C52BF /* LBCalifornianBoldWhite20.swift in Sources */,
 				172F20BF28BFCA95007096DB /* WeatherVC.swift in Sources */,
@@ -895,11 +927,14 @@
 				C8A2DEF628CBBF4D005578DE /* ShareVC.swift in Sources */,
 				172F20B528BFC58F007096DB /* HomeTabBarController.swift in Sources */,
 				17D6D57628CCCCB6007D677B /* LBSatoshiLight16.swift in Sources */,
+				C8BB1C4528CCE0EE00A66FDF /* WeeklyForecastCollectionCell.swift in Sources */,
 				C8A2DEF128CBBBEE005578DE /* LBSatoshiRegularLightGrey14.swift in Sources */,
 				C8A2DEEE28CBB7C4005578DE /* LBSatoshiMediumBlack22.swift in Sources */,
 				C8A2DEEA28CBABE0005578DE /* MoreListTableVWCell.swift in Sources */,
 				172F207028BFBD91007096DB /* SceneDelegate.swift in Sources */,
+				C8BB1C4A28CCF79F00A66FDF /* LBSatoshiMediumWhite14.swift in Sources */,
 				172F20C628C0AF2F007096DB /* FavoritesVC.swift in Sources */,
+				C8BB1C4828CCF75600A66FDF /* LBSatoshiWhite60.swift in Sources */,
 				C8A1734928CC78F1002C52BE /* LBSatoshiRegularLightGrey12.swift in Sources */,
 				17D6D56228CC9F33007D677B /* RestaurantsDetailsVC.swift in Sources */,
 				C8AC29C628CA511100E6CE0D /* PublicSafetyVC.swift in Sources */,
@@ -916,6 +951,7 @@
 				172F20AA28BFC1A5007096DB /* TermsOfUseVC.swift in Sources */,
 				172F20AD28BFC451007096DB /* OnboardingVC.swift in Sources */,
 				C8A1734528CC6634002C52BE /* RateUsVC.swift in Sources */,
+				C8BB1C4628CCE0EE00A66FDF /* DailyForecastCollectionCell.swift in Sources */,
 				C8A2DEF328CBBCB4005578DE /* LBSatoshiBoldBlack20.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

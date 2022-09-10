@@ -93,10 +93,9 @@
         <!--Weather-->
         <scene sceneID="2as-YN-H4D">
             <objects>
-                <navigationController id="7dl-uH-JI4" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="7dl-uH-JI4" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Weather" image="imgWeatherTabBarUnSelected" selectedImage="imgWeatherTabBarSelected" id="dSv-JT-qo7"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="72z-Et-1Vz">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
