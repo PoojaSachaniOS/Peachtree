@@ -49,6 +49,10 @@
 		17D6D55E28CC9B46007D677B /* RestaurantsTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17D6D55C28CC9B46007D677B /* RestaurantsTableCell.xib */; };
 		17D6D56028CC9DF8007D677B /* ShoppingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6D55F28CC9DF8007D677B /* ShoppingVC.swift */; };
 		17D6D56228CC9F33007D677B /* RestaurantsDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6D56128CC9F33007D677B /* RestaurantsDetailsVC.swift */; };
+		17D6D56628CCB695007D677B /* Satoshi-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 17D6D56528CCB688007D677B /* Satoshi-Bold.otf */; };
+		17D6D56828CCB777007D677B /* LBLSatoshiBoldBlack20.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6D56728CCB777007D677B /* LBLSatoshiBoldBlack20.swift */; };
+		17D6D56A28CCB807007D677B /* Satoshi-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 17D6D56928CCB807007D677B /* Satoshi-Regular.otf */; };
+		17D6D56C28CCBB77007D677B /* LBLSatoshiBoldBlack24.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6D56B28CCBB77007D677B /* LBLSatoshiBoldBlack24.swift */; };
 		440826D5408EAABB00C349E9 /* Pods_Peachtree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30EACD0BD546F38AD117D1F4 /* Pods_Peachtree.framework */; };
 		6E168BF232B156B7B567D7BD /* Pods_PeachtreeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D049E48422CA0FE2E143879 /* Pods_PeachtreeTests.framework */; };
 		C89A792B28CA5EB0006A06CC /* Californian FB Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C89A792A28CA5EB0006A06CC /* Californian FB Bold.ttf */; };
@@ -67,8 +71,6 @@
 		C8A2DEF628CBBF4D005578DE /* ShareVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A2DEF528CBBF4D005578DE /* ShareVC.swift */; };
 		C8A2DEF928CBC165005578DE /* AppVersionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A2DEF828CBC165005578DE /* AppVersionVC.swift */; };
 		C8AC29C628CA511100E6CE0D /* PublicSafetyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AC29C528CA511100E6CE0D /* PublicSafetyVC.swift */; };
-		C8AC29D128CA575200E6CE0D /* Satoshi-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8AC29D028CA575200E6CE0D /* Satoshi-Bold.ttf */; };
-		C8AC29D328CA57AB00E6CE0D /* Satoshi-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8AC29D228CA57AB00E6CE0D /* Satoshi-Regular.ttf */; };
 		C8AC29D528CA57CF00E6CE0D /* Satoshi-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8AC29D428CA57CF00E6CE0D /* Satoshi-Italic.ttf */; };
 		C8AC29D728CA580000E6CE0D /* Satoshi-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8AC29D628CA580000E6CE0D /* Satoshi-Medium.ttf */; };
 		C8AC29D928CA588B00E6CE0D /* FontHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AC29D828CA588B00E6CE0D /* FontHelper.swift */; };
@@ -145,6 +147,10 @@
 		17D6D55C28CC9B46007D677B /* RestaurantsTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantsTableCell.xib; sourceTree = "<group>"; };
 		17D6D55F28CC9DF8007D677B /* ShoppingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingVC.swift; sourceTree = "<group>"; };
 		17D6D56128CC9F33007D677B /* RestaurantsDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsDetailsVC.swift; sourceTree = "<group>"; };
+		17D6D56528CCB688007D677B /* Satoshi-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Bold.otf"; sourceTree = "<group>"; };
+		17D6D56728CCB777007D677B /* LBLSatoshiBoldBlack20.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBLSatoshiBoldBlack20.swift; sourceTree = "<group>"; };
+		17D6D56928CCB807007D677B /* Satoshi-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Regular.otf"; sourceTree = "<group>"; };
+		17D6D56B28CCBB77007D677B /* LBLSatoshiBoldBlack24.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBLSatoshiBoldBlack24.swift; sourceTree = "<group>"; };
 		30EACD0BD546F38AD117D1F4 /* Pods_Peachtree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Peachtree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DBEC4A8F2B89E57FD1AFADE /* Pods-Peachtree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peachtree.debug.xcconfig"; path = "Target Support Files/Pods-Peachtree/Pods-Peachtree.debug.xcconfig"; sourceTree = "<group>"; };
 		4E7589A0586418D9F2A1D815 /* Pods-PeachtreeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeachtreeTests.release.xcconfig"; path = "Target Support Files/Pods-PeachtreeTests/Pods-PeachtreeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -167,8 +173,6 @@
 		C8A2DEF528CBBF4D005578DE /* ShareVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareVC.swift; sourceTree = "<group>"; };
 		C8A2DEF828CBC165005578DE /* AppVersionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVersionVC.swift; sourceTree = "<group>"; };
 		C8AC29C528CA511100E6CE0D /* PublicSafetyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicSafetyVC.swift; sourceTree = "<group>"; };
-		C8AC29D028CA575200E6CE0D /* Satoshi-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Bold.ttf"; sourceTree = "<group>"; };
-		C8AC29D228CA57AB00E6CE0D /* Satoshi-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Regular.ttf"; sourceTree = "<group>"; };
 		C8AC29D428CA57CF00E6CE0D /* Satoshi-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Italic.ttf"; sourceTree = "<group>"; };
 		C8AC29D628CA580000E6CE0D /* Satoshi-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Medium.ttf"; sourceTree = "<group>"; };
 		C8AC29D828CA588B00E6CE0D /* FontHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontHelper.swift; sourceTree = "<group>"; };
@@ -562,6 +566,8 @@
 				C8A2DEF228CBBCB4005578DE /* LBSatoshiBoldBlack20.swift */,
 				C8A1734628CC7396002C52BE /* LBSatoshiBoldBlack14.swift */,
 				C8A1734828CC78F1002C52BE /* LBSatoshiRegular12.swift */,
+				17D6D56728CCB777007D677B /* LBLSatoshiBoldBlack20.swift */,
+				17D6D56B28CCBB77007D677B /* LBLSatoshiBoldBlack24.swift */,
 			);
 			path = "Custom Labels";
 			sourceTree = "<group>";
@@ -570,11 +576,11 @@
 			isa = PBXGroup;
 			children = (
 				C89A792A28CA5EB0006A06CC /* Californian FB Bold.ttf */,
-				C8AC29D228CA57AB00E6CE0D /* Satoshi-Regular.ttf */,
+				17D6D56928CCB807007D677B /* Satoshi-Regular.otf */,
 				C8AC29DA28CA59BE00E6CE0D /* Californian FB Regular.ttf */,
 				C8AC29D428CA57CF00E6CE0D /* Satoshi-Italic.ttf */,
 				C8AC29D628CA580000E6CE0D /* Satoshi-Medium.ttf */,
-				C8AC29D028CA575200E6CE0D /* Satoshi-Bold.ttf */,
+				17D6D56528CCB688007D677B /* Satoshi-Bold.otf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -709,6 +715,7 @@
 				172F20C828C0AF5F007096DB /* Favorites.storyboard in Resources */,
 				172F20B728BFC5C3007096DB /* HomeTabBar.storyboard in Resources */,
 				17D6D55E28CC9B46007D677B /* RestaurantsTableCell.xib in Resources */,
+				17D6D56628CCB695007D677B /* Satoshi-Bold.otf in Resources */,
 				C89A792B28CA5EB0006A06CC /* Californian FB Bold.ttf in Resources */,
 				C8A2DEEB28CBABE0005578DE /* MoreListTableVWCell.xib in Resources */,
 				C8AC29DB28CA59BE00E6CE0D /* Californian FB Regular.ttf in Resources */,
@@ -716,13 +723,12 @@
 				C8AC29D728CA580000E6CE0D /* Satoshi-Medium.ttf in Resources */,
 				172F20B028BFC50B007096DB /* Home.storyboard in Resources */,
 				17D6D55428CC53D9007D677B /* CallTableCell.xib in Resources */,
-				C8AC29D328CA57AB00E6CE0D /* Satoshi-Regular.ttf in Resources */,
 				172F207728BFBD91007096DB /* Assets.xcassets in Resources */,
 				172F20BA28BFC75E007096DB /* Location.storyboard in Resources */,
 				172F207528BFBD91007096DB /* Main.storyboard in Resources */,
 				172F20A128BFBE42007096DB /* UserAuthentication.storyboard in Resources */,
-				C8AC29D128CA575200E6CE0D /* Satoshi-Bold.ttf in Resources */,
 				176A4DFB28C45D5400B3D465 /* HomeCollectionVWCell.xib in Resources */,
+				17D6D56A28CCB807007D677B /* Satoshi-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -860,6 +866,7 @@
 				C8EDCB9328CA66C2003C52BF /* LBCalifornianBoldWhite20.swift in Sources */,
 				172F20BF28BFCA95007096DB /* WeatherVC.swift in Sources */,
 				C8EDCB9528CA6AE5003C52BF /* LBSatoshiBoldBlack18.swift in Sources */,
+				17D6D56828CCB777007D677B /* LBLSatoshiBoldBlack20.swift in Sources */,
 				17D6D55D28CC9B46007D677B /* RestaurantsTableCell.swift in Sources */,
 				172F20A728BFC052007096DB /* StoryboardUtils.swift in Sources */,
 				172F20A428BFBE71007096DB /* GetStartedVC.swift in Sources */,
@@ -885,6 +892,7 @@
 				172F20CF28C0C0DA007096DB /* Constants.swift in Sources */,
 				17D6D55628CC5487007D677B /* NSObject+Name.swift in Sources */,
 				C8EDCB9728CA6CA7003C52BF /* Extensions.swift in Sources */,
+				17D6D56C28CCBB77007D677B /* LBLSatoshiBoldBlack24.swift in Sources */,
 				17D6D55028CC51E7007D677B /* Call911VC.swift in Sources */,
 				C89A792D28CA5F85006A06CC /* LBCalifornianBoldBlack24.swift in Sources */,
 				C8C2B9E528CA635C0080281B /* LBSatoshiMediumWhite22.swift in Sources */,
