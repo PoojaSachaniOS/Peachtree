@@ -63,15 +63,15 @@
 		C89A792B28CA5EB0006A06CC /* Californian FB Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C89A792A28CA5EB0006A06CC /* Californian FB Bold.ttf */; };
 		C89A792D28CA5F85006A06CC /* LBCalifornianBoldBlack24.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89A792C28CA5F85006A06CC /* LBCalifornianBoldBlack24.swift */; };
 		C8A1734528CC6634002C52BE /* RateUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A1734428CC6634002C52BE /* RateUsVC.swift */; };
-		C8A1734728CC7397002C52BE /* LBSatoshiBoldBlack14.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A1734628CC7396002C52BE /* LBSatoshiBoldBlack14.swift */; };
-		C8A1734928CC78F1002C52BE /* LBSatoshiRegular12.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A1734828CC78F1002C52BE /* LBSatoshiRegular12.swift */; };
+		C8A1734728CC7397002C52BE /* LBSatoshiBoldLightGrey14.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A1734628CC7396002C52BE /* LBSatoshiBoldLightGrey14.swift */; };
+		C8A1734928CC78F1002C52BE /* LBSatoshiRegularLightGrey12.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A1734828CC78F1002C52BE /* LBSatoshiRegularLightGrey12.swift */; };
 		C8A1734C28CC7977002C52BE /* ContactUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A1734B28CC7977002C52BE /* ContactUsVC.swift */; };
 		C8A2DEE428CBAB6D005578DE /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8A2DEE328CBAB6D005578DE /* More.storyboard */; };
 		C8A2DEEA28CBABE0005578DE /* MoreListTableVWCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A2DEE728CBABE0005578DE /* MoreListTableVWCell.swift */; };
 		C8A2DEEB28CBABE0005578DE /* MoreListTableVWCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8A2DEE828CBABE0005578DE /* MoreListTableVWCell.xib */; };
 		C8A2DEEC28CBABE0005578DE /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A2DEE928CBABE0005578DE /* MoreVC.swift */; };
 		C8A2DEEE28CBB7C4005578DE /* LBSatoshiMediumBlack22.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A2DEED28CBB7C4005578DE /* LBSatoshiMediumBlack22.swift */; };
-		C8A2DEF128CBBBEE005578DE /* LBSatoshiRegular14.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A2DEF028CBBBEE005578DE /* LBSatoshiRegular14.swift */; };
+		C8A2DEF128CBBBEE005578DE /* LBSatoshiRegularLightGrey14.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A2DEF028CBBBEE005578DE /* LBSatoshiRegularLightGrey14.swift */; };
 		C8A2DEF328CBBCB4005578DE /* LBSatoshiBoldBlack20.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A2DEF228CBBCB4005578DE /* LBSatoshiBoldBlack20.swift */; };
 		C8A2DEF628CBBF4D005578DE /* ShareVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A2DEF528CBBF4D005578DE /* ShareVC.swift */; };
 		C8A2DEF928CBC165005578DE /* AppVersionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A2DEF828CBC165005578DE /* AppVersionVC.swift */; };
@@ -169,15 +169,15 @@
 		C89A792A28CA5EB0006A06CC /* Californian FB Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Californian FB Bold.ttf"; sourceTree = "<group>"; };
 		C89A792C28CA5F85006A06CC /* LBCalifornianBoldBlack24.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBCalifornianBoldBlack24.swift; sourceTree = "<group>"; };
 		C8A1734428CC6634002C52BE /* RateUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateUsVC.swift; sourceTree = "<group>"; };
-		C8A1734628CC7396002C52BE /* LBSatoshiBoldBlack14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBSatoshiBoldBlack14.swift; sourceTree = "<group>"; };
-		C8A1734828CC78F1002C52BE /* LBSatoshiRegular12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBSatoshiRegular12.swift; sourceTree = "<group>"; };
+		C8A1734628CC7396002C52BE /* LBSatoshiBoldLightGrey14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBSatoshiBoldLightGrey14.swift; sourceTree = "<group>"; };
+		C8A1734828CC78F1002C52BE /* LBSatoshiRegularLightGrey12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBSatoshiRegularLightGrey12.swift; sourceTree = "<group>"; };
 		C8A1734B28CC7977002C52BE /* ContactUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsVC.swift; sourceTree = "<group>"; };
 		C8A2DEE328CBAB6D005578DE /* More.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = More.storyboard; sourceTree = "<group>"; };
 		C8A2DEE728CBABE0005578DE /* MoreListTableVWCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreListTableVWCell.swift; sourceTree = "<group>"; };
 		C8A2DEE828CBABE0005578DE /* MoreListTableVWCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreListTableVWCell.xib; sourceTree = "<group>"; };
 		C8A2DEE928CBABE0005578DE /* MoreVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
 		C8A2DEED28CBB7C4005578DE /* LBSatoshiMediumBlack22.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBSatoshiMediumBlack22.swift; sourceTree = "<group>"; };
-		C8A2DEF028CBBBEE005578DE /* LBSatoshiRegular14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBSatoshiRegular14.swift; sourceTree = "<group>"; };
+		C8A2DEF028CBBBEE005578DE /* LBSatoshiRegularLightGrey14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBSatoshiRegularLightGrey14.swift; sourceTree = "<group>"; };
 		C8A2DEF228CBBCB4005578DE /* LBSatoshiBoldBlack20.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBSatoshiBoldBlack20.swift; sourceTree = "<group>"; };
 		C8A2DEF528CBBF4D005578DE /* ShareVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareVC.swift; sourceTree = "<group>"; };
 		C8A2DEF828CBC165005578DE /* AppVersionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVersionVC.swift; sourceTree = "<group>"; };
@@ -571,10 +571,10 @@
 				C8EDCB9228CA66C2003C52BF /* LBCalifornianBoldWhite20.swift */,
 				C8EDCB9428CA6AE5003C52BF /* LBSatoshiBoldBlack18.swift */,
 				C8A2DEED28CBB7C4005578DE /* LBSatoshiMediumBlack22.swift */,
-				C8A2DEF028CBBBEE005578DE /* LBSatoshiRegular14.swift */,
+				C8A2DEF028CBBBEE005578DE /* LBSatoshiRegularLightGrey14.swift */,
 				C8A2DEF228CBBCB4005578DE /* LBSatoshiBoldBlack20.swift */,
-				C8A1734628CC7396002C52BE /* LBSatoshiBoldBlack14.swift */,
-				C8A1734828CC78F1002C52BE /* LBSatoshiRegular12.swift */,
+				C8A1734628CC7396002C52BE /* LBSatoshiBoldLightGrey14.swift */,
+				C8A1734828CC78F1002C52BE /* LBSatoshiRegularLightGrey12.swift */,
 				17D6D56728CCB777007D677B /* LBLSatoshiBoldBlack20.swift */,
 				17D6D56B28CCBB77007D677B /* LBLSatoshiBoldBlack24.swift */,
 				17D6D56D28CCC26D007D677B /* LBSeparator.swift */,
@@ -872,7 +872,7 @@
 				C8A2DEF928CBC165005578DE /* AppVersionVC.swift in Sources */,
 				17D6D55828CC57F1007D677B /* GolfCartHelpVC.swift in Sources */,
 				172F207228BFBD91007096DB /* ViewController.swift in Sources */,
-				C8A1734728CC7397002C52BE /* LBSatoshiBoldBlack14.swift in Sources */,
+				C8A1734728CC7397002C52BE /* LBSatoshiBoldLightGrey14.swift in Sources */,
 				C8A2DEEC28CBABE0005578DE /* MoreVC.swift in Sources */,
 				172F20D528C0CC1C007096DB /* Colors.swift in Sources */,
 				172F20B228BFC529007096DB /* HomeVC.swift in Sources */,
@@ -895,12 +895,12 @@
 				C8A2DEF628CBBF4D005578DE /* ShareVC.swift in Sources */,
 				172F20B528BFC58F007096DB /* HomeTabBarController.swift in Sources */,
 				17D6D57628CCCCB6007D677B /* LBSatoshiLight16.swift in Sources */,
-				C8A2DEF128CBBBEE005578DE /* LBSatoshiRegular14.swift in Sources */,
+				C8A2DEF128CBBBEE005578DE /* LBSatoshiRegularLightGrey14.swift in Sources */,
 				C8A2DEEE28CBB7C4005578DE /* LBSatoshiMediumBlack22.swift in Sources */,
 				C8A2DEEA28CBABE0005578DE /* MoreListTableVWCell.swift in Sources */,
 				172F207028BFBD91007096DB /* SceneDelegate.swift in Sources */,
 				172F20C628C0AF2F007096DB /* FavoritesVC.swift in Sources */,
-				C8A1734928CC78F1002C52BE /* LBSatoshiRegular12.swift in Sources */,
+				C8A1734928CC78F1002C52BE /* LBSatoshiRegularLightGrey12.swift in Sources */,
 				17D6D56228CC9F33007D677B /* RestaurantsDetailsVC.swift in Sources */,
 				C8AC29C628CA511100E6CE0D /* PublicSafetyVC.swift in Sources */,
 				172F20CB28C0BFF9007096DB /* SearchVC.swift in Sources */,

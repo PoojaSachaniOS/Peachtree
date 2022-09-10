@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -145,7 +146,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sitbamet, consectetur adipiscing elit. Laoreet gravida auctor arcu rutrum cursus eu." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYQ-T3-MDj" customClass="LBSatoshiRegular14" customModule="Peachtree" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sitbamet, consectetur adipiscing elit. Laoreet gravida auctor arcu rutrum cursus eu." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYQ-T3-MDj" customClass="LBSatoshiRegular14" customModule="Peachtree" customModuleProvider="target">
                                         <rect key="frame" x="25" y="301.5" width="364" height="33.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -310,7 +311,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sitbamet, consectetur adipiscing elit. Laoreet gravida auctor arcu rutrum cursus eu." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sP3-59-43G" customClass="LBSatoshiRegular14" customModule="Peachtree" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sitbamet, consectetur adipiscing elit. Laoreet gravida auctor arcu rutrum cursus eu." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sP3-59-43G" customClass="LBSatoshiRegularLightGrey4">
                                         <rect key="frame" x="25" y="389" width="364" height="33.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -424,7 +425,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sitbamet, consectetur adipiscing elit. Laoreet gravida auctor arcu rutrum cursus eu." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vML-9P-g0U" customClass="LBSatoshiRegular14" customModule="Peachtree" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sitbamet, consectetur adipiscing elit. Laoreet gravida auctor arcu rutrum cursus eu." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vML-9P-g0U" customClass="LBSatoshiRegularLightGrey14" customModule="Peachtree" customModuleProvider="target">
                                         <rect key="frame" x="25" y="292.5" width="364" height="33.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -766,7 +767,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Laoreet gravida auctor arcu rutrum cursus eu." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHk-7N-gRM" customClass="LBSatoshiRegular14" customModule="Peachtree" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Laoreet gravida auctor arcu rutrum cursus eu." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHk-7N-gRM" customClass="LBSatoshiRegularLightGrey14" customModule="Peachtree" customModuleProvider="target">
                                                 <rect key="frame" x="25" y="301.5" width="364" height="33.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -783,20 +784,20 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone No." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRe-UL-vuv" customClass="LBSatoshiMediumBlack22" customModule="Peachtree" customModuleProvider="target">
-                                                        <rect key="frame" x="71" y="7" width="303" height="21"/>
+                                                        <rect key="frame" x="81" y="9" width="293" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G5r-LJ-Bzb">
                                                         <rect key="frame" x="15" y="63" width="354" height="1"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.1244308775" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" name="AppThemeSeparator"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="EVj-Jy-aNF"/>
                                                         </constraints>
                                                     </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+91 234 3456 234" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOP-sg-JTN" customClass="LBSatoshiRegular12" customModule="Peachtree" customModuleProvider="target">
-                                                        <rect key="frame" x="71" y="30" width="303" height="21"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+91 234 3456 234" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOP-sg-JTN" customClass="LBSatoshiRegularLightGrey12" customModule="Peachtree" customModuleProvider="target">
+                                                        <rect key="frame" x="81" y="33" width="293" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -804,10 +805,10 @@
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstItem="GOP-sg-JTN" firstAttribute="top" secondItem="CRe-UL-vuv" secondAttribute="bottom" constant="2" id="0WJ-Wg-vQX"/>
+                                                    <constraint firstItem="GOP-sg-JTN" firstAttribute="top" secondItem="CRe-UL-vuv" secondAttribute="bottom" constant="3" id="0WJ-Wg-vQX"/>
                                                     <constraint firstAttribute="height" constant="64" id="8Dd-VG-xp5"/>
-                                                    <constraint firstItem="CRe-UL-vuv" firstAttribute="leading" secondItem="As7-14-p2U" secondAttribute="trailing" constant="10" id="H7h-2K-JtM"/>
-                                                    <constraint firstItem="CRe-UL-vuv" firstAttribute="top" secondItem="As7-14-p2U" secondAttribute="top" id="HHi-yH-3Ra"/>
+                                                    <constraint firstItem="CRe-UL-vuv" firstAttribute="leading" secondItem="As7-14-p2U" secondAttribute="trailing" constant="20" id="H7h-2K-JtM"/>
+                                                    <constraint firstItem="CRe-UL-vuv" firstAttribute="top" secondItem="As7-14-p2U" secondAttribute="top" constant="2" id="HHi-yH-3Ra"/>
                                                     <constraint firstAttribute="trailing" secondItem="CRe-UL-vuv" secondAttribute="trailing" constant="10" id="KMN-2G-ott"/>
                                                     <constraint firstAttribute="trailing" secondItem="G5r-LJ-Bzb" secondAttribute="trailing" constant="15" id="a7m-Ik-ukn"/>
                                                     <constraint firstItem="As7-14-p2U" firstAttribute="leading" secondItem="CGn-gh-GHF" secondAttribute="leading" constant="15" id="dJQ-yQ-jyg"/>
@@ -829,30 +830,30 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Website" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOB-VX-sJL" customClass="LBSatoshiMediumBlack22" customModule="Peachtree" customModuleProvider="target">
-                                                        <rect key="frame" x="71" y="7" width="303" height="21"/>
+                                                        <rect key="frame" x="81" y="9" width="293" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DbD-WB-ayC">
                                                         <rect key="frame" x="15" y="63" width="354" height="1"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.1244308775" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" name="AppThemeSeparator"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="z7f-PL-nUu"/>
                                                         </constraints>
                                                     </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.app.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZdF-XM-tQm" customClass="LBSatoshiRegular12" customModule="Peachtree" customModuleProvider="target">
-                                                        <rect key="frame" x="71" y="30" width="303" height="21"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.app.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZdF-XM-tQm" customClass="LBSatoshiRegularLightGrey12" customModule="Peachtree" customModuleProvider="target">
+                                                        <rect key="frame" x="81" y="33" width="293" height="14.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstItem="qOB-VX-sJL" firstAttribute="leading" secondItem="8X1-30-YHF" secondAttribute="trailing" constant="10" id="0IZ-AQ-6Ax"/>
+                                                    <constraint firstItem="qOB-VX-sJL" firstAttribute="leading" secondItem="8X1-30-YHF" secondAttribute="trailing" constant="20" id="0IZ-AQ-6Ax"/>
                                                     <constraint firstItem="ZdF-XM-tQm" firstAttribute="trailing" secondItem="qOB-VX-sJL" secondAttribute="trailing" id="15J-dI-mI0"/>
-                                                    <constraint firstItem="ZdF-XM-tQm" firstAttribute="top" secondItem="qOB-VX-sJL" secondAttribute="bottom" constant="2" id="6pI-EA-JtM"/>
+                                                    <constraint firstItem="ZdF-XM-tQm" firstAttribute="top" secondItem="qOB-VX-sJL" secondAttribute="bottom" constant="3" id="6pI-EA-JtM"/>
                                                     <constraint firstItem="ZdF-XM-tQm" firstAttribute="leading" secondItem="qOB-VX-sJL" secondAttribute="leading" id="BFQ-ob-6XP"/>
                                                     <constraint firstItem="DbD-WB-ayC" firstAttribute="top" secondItem="8X1-30-YHF" secondAttribute="bottom" constant="10" id="UFt-5N-Z3b"/>
                                                     <constraint firstItem="DbD-WB-ayC" firstAttribute="leading" secondItem="lU2-h0-MKH" secondAttribute="leading" constant="15" id="VGp-Z3-BXp"/>
@@ -861,7 +862,7 @@
                                                     <constraint firstAttribute="bottom" secondItem="DbD-WB-ayC" secondAttribute="bottom" id="gOZ-cd-AAq"/>
                                                     <constraint firstAttribute="trailing" secondItem="qOB-VX-sJL" secondAttribute="trailing" constant="10" id="pLx-RX-HJh"/>
                                                     <constraint firstAttribute="trailing" secondItem="DbD-WB-ayC" secondAttribute="trailing" constant="15" id="uKU-Ni-cB4"/>
-                                                    <constraint firstItem="qOB-VX-sJL" firstAttribute="top" secondItem="8X1-30-YHF" secondAttribute="top" id="y7I-jI-NgC"/>
+                                                    <constraint firstItem="qOB-VX-sJL" firstAttribute="top" secondItem="8X1-30-YHF" secondAttribute="top" constant="2" id="y7I-jI-NgC"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PJv-9y-Ufc">
@@ -875,20 +876,20 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="og1-VI-ZAi" customClass="LBSatoshiMediumBlack22" customModule="Peachtree" customModuleProvider="target">
-                                                        <rect key="frame" x="71" y="7" width="303" height="21"/>
+                                                        <rect key="frame" x="81" y="9" width="293" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wNo-eQ-REf">
                                                         <rect key="frame" x="15" y="63" width="354" height="1"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.1244308775" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" name="AppThemeSeparator"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="Fyu-zo-UUK"/>
                                                         </constraints>
                                                     </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ingo@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEe-c8-dOP" customClass="LBSatoshiRegular12" customModule="Peachtree" customModuleProvider="target">
-                                                        <rect key="frame" x="71" y="30" width="303" height="21"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ingo@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEe-c8-dOP" customClass="LBSatoshiRegularLightGrey12" customModule="Peachtree" customModuleProvider="target">
+                                                        <rect key="frame" x="81" y="33" width="293" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -896,15 +897,15 @@
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstItem="mEe-c8-dOP" firstAttribute="top" secondItem="og1-VI-ZAi" secondAttribute="bottom" constant="2" id="Dcw-qf-EUG"/>
+                                                    <constraint firstItem="mEe-c8-dOP" firstAttribute="top" secondItem="og1-VI-ZAi" secondAttribute="bottom" constant="3" id="Dcw-qf-EUG"/>
                                                     <constraint firstItem="mEe-c8-dOP" firstAttribute="leading" secondItem="og1-VI-ZAi" secondAttribute="leading" id="DmE-xG-3gz"/>
-                                                    <constraint firstItem="og1-VI-ZAi" firstAttribute="top" secondItem="YsB-e8-jif" secondAttribute="top" id="FOV-1z-a7C"/>
+                                                    <constraint firstItem="og1-VI-ZAi" firstAttribute="top" secondItem="YsB-e8-jif" secondAttribute="top" constant="2" id="FOV-1z-a7C"/>
                                                     <constraint firstAttribute="bottom" secondItem="wNo-eQ-REf" secondAttribute="bottom" id="Kcd-nl-QdU"/>
                                                     <constraint firstAttribute="trailing" secondItem="og1-VI-ZAi" secondAttribute="trailing" constant="10" id="TSc-g5-MnY"/>
                                                     <constraint firstItem="YsB-e8-jif" firstAttribute="leading" secondItem="PJv-9y-Ufc" secondAttribute="leading" constant="15" id="UPh-DV-LE1"/>
                                                     <constraint firstItem="wNo-eQ-REf" firstAttribute="leading" secondItem="PJv-9y-Ufc" secondAttribute="leading" constant="15" id="YP3-9L-fDi"/>
                                                     <constraint firstItem="mEe-c8-dOP" firstAttribute="trailing" secondItem="og1-VI-ZAi" secondAttribute="trailing" id="YmM-hm-1jo"/>
-                                                    <constraint firstItem="og1-VI-ZAi" firstAttribute="leading" secondItem="YsB-e8-jif" secondAttribute="trailing" constant="10" id="aM7-aq-FD0"/>
+                                                    <constraint firstItem="og1-VI-ZAi" firstAttribute="leading" secondItem="YsB-e8-jif" secondAttribute="trailing" constant="20" id="aM7-aq-FD0"/>
                                                     <constraint firstItem="wNo-eQ-REf" firstAttribute="top" secondItem="YsB-e8-jif" secondAttribute="bottom" constant="10" id="jg1-Oe-pV8"/>
                                                     <constraint firstAttribute="height" constant="64" id="pbR-Z3-cf8"/>
                                                     <constraint firstAttribute="trailing" secondItem="wNo-eQ-REf" secondAttribute="trailing" constant="15" id="rnc-5l-bcE"/>
@@ -925,11 +926,11 @@
                                             <constraint firstAttribute="trailing" secondItem="CGn-gh-GHF" secondAttribute="trailing" constant="15" id="X6S-1g-yVS"/>
                                             <constraint firstAttribute="trailing" secondItem="JHk-7N-gRM" secondAttribute="trailing" constant="25" id="YNJ-dG-tmS"/>
                                             <constraint firstItem="PJv-9y-Ufc" firstAttribute="leading" secondItem="CGn-gh-GHF" secondAttribute="leading" id="ahB-kF-9aa"/>
-                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="lU2-h0-MKH" secondAttribute="bottom" constant="192" id="eOZ-8p-l5n"/>
                                             <constraint firstItem="CGn-gh-GHF" firstAttribute="top" secondItem="JHk-7N-gRM" secondAttribute="bottom" constant="30" id="jCo-15-o6X"/>
                                             <constraint firstItem="6tB-VG-xhk" firstAttribute="centerX" secondItem="BAH-tI-TZm" secondAttribute="centerX" id="jvD-aJ-1Vi"/>
                                             <constraint firstItem="PJv-9y-Ufc" firstAttribute="trailing" secondItem="CGn-gh-GHF" secondAttribute="trailing" id="waF-52-Kci"/>
                                             <constraint firstItem="PJv-9y-Ufc" firstAttribute="top" secondItem="CGn-gh-GHF" secondAttribute="bottom" constant="10" id="xEo-UX-Oz4"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="lU2-h0-MKH" secondAttribute="bottom" constant="10" id="yLN-Z1-kA0"/>
                                             <constraint firstItem="6tB-VG-xhk" firstAttribute="top" secondItem="p88-LQ-f04" secondAttribute="bottom" constant="20" id="zMe-Qh-aMy"/>
                                         </constraints>
                                     </view>
@@ -979,6 +980,9 @@
         <image name="imgBgNavigation" width="375" height="112"/>
         <image name="star" width="31" height="29"/>
         <image name="website_icon" width="46" height="46"/>
+        <namedColor name="AppThemeSeparator">
+            <color red="0.94901960784313721" green="0.93333333333333335" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

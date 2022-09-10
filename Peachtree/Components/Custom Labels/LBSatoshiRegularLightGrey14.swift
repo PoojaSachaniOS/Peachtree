@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LBSatoshiRegular14: UILabel {
+class LBSatoshiRegularLightGrey14: UILabel {
     override func layoutSubviews() {
         super.layoutSubviews()
         updateView()
@@ -16,7 +16,7 @@ class LBSatoshiRegular14: UILabel {
     
     func updateView() {
         font = FontHelper.defaultSatoshiRegularFontWithSize(size: 14)
-        textColor = Colors.color_AppThemeBlack?.withAlphaComponent(0.7)
+        textColor = Colors.color_LightGrey
     }
 }
 

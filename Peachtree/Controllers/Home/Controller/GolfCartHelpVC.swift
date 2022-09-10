@@ -9,7 +9,7 @@ import UIKit
 
 class GolfCartHelpVC: UIViewController {
     @IBOutlet weak var stackVw: UIStackView!
-    @IBOutlet weak var lblDescrptn: LBSatoshiRegular14!
+    @IBOutlet weak var lblDescrptn: LBSatoshiRegularLightGrey14!
 
     override func viewDidLoad() {
         super.viewDidLoad()
