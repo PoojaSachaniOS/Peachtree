@@ -792,6 +792,7 @@
                     </view>
                     <size key="freeformSize" width="414" height="1000"/>
                     <connections>
+                        <outlet property="lblDescrptn" destination="tvR-4X-zNa" id="JbB-LV-tZV"/>
                         <outlet property="stackVw" destination="VJd-s2-vwd" id="Coz-6Z-SIK"/>
                     </connections>
                 </viewController>

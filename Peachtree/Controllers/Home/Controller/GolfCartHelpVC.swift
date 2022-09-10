@@ -9,6 +9,7 @@ import UIKit
 
 class GolfCartHelpVC: UIViewController {
     @IBOutlet weak var stackVw: UIStackView!
+    @IBOutlet weak var lblDescrptn: LBSatoshiRegular14!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,5 +28,8 @@ class GolfCartHelpVC: UIViewController {
                 view.addRoundedViewCorners(width: 8, colorBorder: .clear, BackgroundColor: Colors.color_AppOrange!)
             }
         }
+        
+        self.lblDescrptn.setLineSpacing(lineSpacing: 2.5, lineHeightMultiple: 0)
+
     }
 }
