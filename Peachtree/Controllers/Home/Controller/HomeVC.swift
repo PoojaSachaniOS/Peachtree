@@ -92,7 +92,7 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
         } else if model.type == .recreationAndSpecialEvent {
             
         } else if model.type == .golfCartHelp {
-            
+            self.openGolfCartHelpVC()
         } else if model.type == .call911 {
             self.openCall911VC()
         } else if model.type == .onlinePayment {
@@ -126,6 +126,14 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
     func openWebViewVC(_ webUrl:String) {
         if let controller = StoryboardUtils.getWebViewVC() as? WebViewVC {
             controller.strWebUrl = webUrl
+            controller.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
+    }
+    
+    
+    func openGolfCartHelpVC() {
+        if let controller = StoryboardUtils.getGolfCartHelpVC() as? GolfCartHelpVC {
             controller.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(controller, animated: true)
         }

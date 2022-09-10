@@ -43,6 +43,7 @@
 		17D6D55328CC53D9007D677B /* CallTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6D55128CC53D9007D677B /* CallTableCell.swift */; };
 		17D6D55428CC53D9007D677B /* CallTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17D6D55228CC53D9007D677B /* CallTableCell.xib */; };
 		17D6D55628CC5487007D677B /* NSObject+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6D55528CC5487007D677B /* NSObject+Name.swift */; };
+		17D6D55828CC57F1007D677B /* GolfCartHelpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6D55728CC57F1007D677B /* GolfCartHelpVC.swift */; };
 		C89A792B28CA5EB0006A06CC /* Californian FB Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C89A792A28CA5EB0006A06CC /* Californian FB Bold.ttf */; };
 		C89A792D28CA5F85006A06CC /* LBCalifornianBoldBlack24.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89A792C28CA5F85006A06CC /* LBCalifornianBoldBlack24.swift */; };
 		C8A2DEE428CBAB6D005578DE /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8A2DEE328CBAB6D005578DE /* More.storyboard */; };
@@ -125,6 +126,7 @@
 		17D6D55128CC53D9007D677B /* CallTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallTableCell.swift; sourceTree = "<group>"; };
 		17D6D55228CC53D9007D677B /* CallTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CallTableCell.xib; sourceTree = "<group>"; };
 		17D6D55528CC5487007D677B /* NSObject+Name.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Name.swift"; sourceTree = "<group>"; };
+		17D6D55728CC57F1007D677B /* GolfCartHelpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfCartHelpVC.swift; sourceTree = "<group>"; };
 		C89A792A28CA5EB0006A06CC /* Californian FB Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Californian FB Bold.ttf"; sourceTree = "<group>"; };
 		C89A792C28CA5F85006A06CC /* LBCalifornianBoldBlack24.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBCalifornianBoldBlack24.swift; sourceTree = "<group>"; };
 		C8A2DEE328CBAB6D005578DE /* More.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = More.storyboard; sourceTree = "<group>"; };
@@ -379,6 +381,7 @@
 				172F20B128BFC529007096DB /* HomeVC.swift */,
 				17704EEE28C6DDA30032C96C /* WebViewVC.swift */,
 				17D6D54F28CC51E7007D677B /* Call911VC.swift */,
+				17D6D55728CC57F1007D677B /* GolfCartHelpVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -656,6 +659,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8A2DEF928CBC165005578DE /* AppVersionVC.swift in Sources */,
+				17D6D55828CC57F1007D677B /* GolfCartHelpVC.swift in Sources */,
 				172F207228BFBD91007096DB /* ViewController.swift in Sources */,
 				C8A2DEEC28CBABE0005578DE /* MoreVC.swift in Sources */,
 				172F20D528C0CC1C007096DB /* Colors.swift in Sources */,
