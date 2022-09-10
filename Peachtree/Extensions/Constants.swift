@@ -11,9 +11,6 @@ class Constants {
     }
     
     struct Array {
-       
-        static  var moreArr = ["Share","FAQ","About Us","Contact Us","Disclaimer","App Version","Notification List","Rate Us"]
-    
         static var moreArray = [MoreItem(iconName: "share_icon", title: "Share", type: MoreType.share),
                                 MoreItem(iconName: "faq_icon", title: "FAQ", type: MoreType.faq),
                                 MoreItem(iconName: "info_icon", title: "About Us", type: MoreType.aboutUs),
