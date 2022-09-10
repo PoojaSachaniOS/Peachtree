@@ -494,7 +494,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KOB-AG-N98">
                                 <rect key="frame" x="0.0" y="127" width="414" height="769"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="UrP-Iv-ix1">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="UrP-Iv-ix1">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="652"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <connections>
@@ -653,7 +653,7 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Website" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmO-gD-OBr" customClass="LBSatoshiMediumWhite22" customModule="Peachtree" customModuleProvider="target">
-                                                                <rect key="frame" x="63" y="69" width="52.5" height="17.5"/>
+                                                                <rect key="frame" x="63" y="69" width="52.5" height="31"/>
                                                                 <fontDescription key="fontDescription" name="CalifornianFB-Reg" family="Californian FB" pointSize="15"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -661,7 +661,7 @@
                                                         </subviews>
                                                         <color key="backgroundColor" red="0.88235294119999996" green="0.4039215686" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="mmO-gD-OBr" secondAttribute="bottom" constant="10" id="0VA-I4-MnB"/>
+                                                            <constraint firstAttribute="bottom" secondItem="mmO-gD-OBr" secondAttribute="bottom" constant="20" id="0VA-I4-MnB"/>
                                                             <constraint firstItem="ZD5-lb-0sa" firstAttribute="centerX" secondItem="Ac2-XX-wmt" secondAttribute="centerX" id="1hq-Wq-Ubu"/>
                                                             <constraint firstItem="ZD5-lb-0sa" firstAttribute="top" secondItem="Ac2-XX-wmt" secondAttribute="top" constant="17" id="dwq-h5-ebF"/>
                                                             <constraint firstItem="mmO-gD-OBr" firstAttribute="top" secondItem="ZD5-lb-0sa" secondAttribute="bottom" constant="12" id="hx9-ui-mfv"/>
@@ -680,7 +680,7 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Call" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFL-xz-ljZ" customClass="LBSatoshiMediumWhite22" customModule="Peachtree" customModuleProvider="target">
-                                                                <rect key="frame" x="71.5" y="69" width="35.5" height="21.5"/>
+                                                                <rect key="frame" x="71.5" y="69" width="35.5" height="31"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -688,6 +688,7 @@
                                                         </subviews>
                                                         <color key="backgroundColor" red="0.88235294119999996" green="0.4039215686" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="uFL-xz-ljZ" secondAttribute="bottom" constant="20" id="IF0-ba-E9s"/>
                                                             <constraint firstItem="0Wl-e5-EfR" firstAttribute="top" secondItem="yw8-Hw-tme" secondAttribute="top" constant="17" id="JAh-Zz-wga"/>
                                                             <constraint firstItem="uFL-xz-ljZ" firstAttribute="centerX" secondItem="0Wl-e5-EfR" secondAttribute="centerX" id="qSK-Rg-ZhY"/>
                                                             <constraint firstItem="0Wl-e5-EfR" firstAttribute="centerX" secondItem="yw8-Hw-tme" secondAttribute="centerX" id="riv-qW-wSa"/>
@@ -790,6 +791,9 @@
                         </constraints>
                     </view>
                     <size key="freeformSize" width="414" height="1000"/>
+                    <connections>
+                        <outlet property="stackVw" destination="VJd-s2-vwd" id="Coz-6Z-SIK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E94-vu-Zw5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
