@@ -80,7 +80,7 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
         } else if model.type == .library {
             
         } else if model.type == .restaurants {
-            
+            self.openRestaurantsVC()
         } else if model.type == .shopping {
             
         } else if model.type == .calendar {
@@ -101,6 +101,13 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
             self.openMoreVC()
         }
      }
+    
+    func openRestaurantsVC() {
+        if let controller = StoryboardUtils.getRestaurantsVC() as? RestaurantsVC {
+            controller.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
+    }
     
     func openCall911VC() {
         if let controller = StoryboardUtils.getCall911VC() as? Call911VC {
