@@ -42,8 +42,16 @@ extension MoreVC: UITableViewDelegate,UITableViewDataSource{
             if let controller = StoryboardUtils.getShareVC() as? ShareVC {
                 self.navigationController?.pushViewController(controller, animated: true)
             }
-        }  else if Constants.Array.moreArray[indexPath.row].type == .appVersion {
+        } else if Constants.Array.moreArray[indexPath.row].type == .appVersion {
             if let controller = StoryboardUtils.getAppVersionVC() as? AppVersionVC {
+                self.navigationController?.pushViewController(controller, animated: true)
+            }
+        } else if Constants.Array.moreArray[indexPath.row].type == .rateUs {
+            if let controller = StoryboardUtils.getRateUsVC() as? RateUsVC {
+                self.navigationController?.pushViewController(controller, animated: true)
+            }
+        } else if Constants.Array.moreArray[indexPath.row].type == .contactUs {
+            if let controller = StoryboardUtils.getContactUsVC() as? ContactUsVC {
                 self.navigationController?.pushViewController(controller, animated: true)
             }
         }
