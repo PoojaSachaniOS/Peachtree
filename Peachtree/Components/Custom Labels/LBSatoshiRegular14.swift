@@ -15,7 +15,7 @@ class LBSatoshiRegular14: UILabel {
     }
     
     func updateView() {
-        font = FontHelper.satoshiRegularFontWithSize(size: 14)
+        font = FontHelper.defaultSatoshiRegularFontWithSize(size: 14)
         textColor = Colors.color_AppThemeBlack?.withAlphaComponent(0.7)
     }
 }

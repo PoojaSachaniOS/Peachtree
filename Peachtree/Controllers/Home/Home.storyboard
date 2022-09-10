@@ -615,14 +615,14 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvR-4X-zNa">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvR-4X-zNa" customClass="LBSatoshiRegular14" customModule="Peachtree" customModuleProvider="target">
                                                 <rect key="frame" x="16" y="280.5" width="382" height="81.5"/>
                                                 <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitasse vulputate morbi nec, nec lorem nulla diam ut aliquam. Viverra sit nunc arcu non.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EvX-T3-39R">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EvX-T3-39R" customClass="LBSeparator" customModule="Peachtree" customModuleProvider="target">
                                                 <rect key="frame" x="16" y="394" width="382" height="1"/>
                                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                                 <constraints>
@@ -644,38 +644,55 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ac2-XX-wmt">
                                                         <rect key="frame" x="0.0" y="0.0" width="178" height="120"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_globe" translatesAutoresizingMaskIntoConstraints="NO" id="ZD5-lb-0sa">
-                                                                <rect key="frame" x="67.5" y="17" width="40" height="40"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_globe" translatesAutoresizingMaskIntoConstraints="NO" id="ZD5-lb-0sa">
+                                                                <rect key="frame" x="69" y="17" width="40" height="40"/>
                                                                 <color key="tintColor" red="0.1133731976" green="0.89483410119999995" blue="0.74963623290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="40" id="WYI-04-dcP"/>
+                                                                    <constraint firstAttribute="width" secondItem="ZD5-lb-0sa" secondAttribute="height" multiplier="1:1" id="arB-pz-8e2"/>
+                                                                </constraints>
                                                             </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Website" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmO-gD-OBr" customClass="LBSatoshiMediumWhite22" customModule="Peachtree" customModuleProvider="target">
-                                                                <rect key="frame" x="61.5" y="72" width="52.5" height="17.5"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Website" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmO-gD-OBr" customClass="LBSatoshiMediumWhite22" customModule="Peachtree" customModuleProvider="target">
+                                                                <rect key="frame" x="63" y="69" width="52.5" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="CalifornianFB-Reg" family="Californian FB" pointSize="15"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
                                                         <color key="backgroundColor" red="0.88235294119999996" green="0.4039215686" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="mmO-gD-OBr" secondAttribute="bottom" constant="10" id="0VA-I4-MnB"/>
+                                                            <constraint firstItem="ZD5-lb-0sa" firstAttribute="centerX" secondItem="Ac2-XX-wmt" secondAttribute="centerX" id="1hq-Wq-Ubu"/>
+                                                            <constraint firstItem="ZD5-lb-0sa" firstAttribute="top" secondItem="Ac2-XX-wmt" secondAttribute="top" constant="17" id="dwq-h5-ebF"/>
+                                                            <constraint firstItem="mmO-gD-OBr" firstAttribute="top" secondItem="ZD5-lb-0sa" secondAttribute="bottom" constant="12" id="hx9-ui-mfv"/>
+                                                            <constraint firstItem="mmO-gD-OBr" firstAttribute="centerX" secondItem="ZD5-lb-0sa" secondAttribute="centerX" id="iDz-Bg-NmQ"/>
+                                                        </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yw8-Hw-tme">
                                                         <rect key="frame" x="198" y="0.0" width="178" height="120"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_call" translatesAutoresizingMaskIntoConstraints="NO" id="0Wl-e5-EfR">
-                                                                <rect key="frame" x="67.5" y="17" width="40" height="40"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_call" translatesAutoresizingMaskIntoConstraints="NO" id="0Wl-e5-EfR">
+                                                                <rect key="frame" x="69" y="17" width="40" height="40"/>
                                                                 <color key="tintColor" red="0.1133731976" green="0.89483410119999995" blue="0.74963623290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="0Wl-e5-EfR" secondAttribute="height" multiplier="1:1" id="9Ik-Yb-RVg"/>
+                                                                    <constraint firstAttribute="width" constant="40" id="mbn-JQ-PHu"/>
+                                                                </constraints>
                                                             </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Call" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFL-xz-ljZ" customClass="LBSatoshiMediumWhite22" customModule="Peachtree" customModuleProvider="target">
-                                                                <rect key="frame" x="70" y="72" width="35.5" height="21.5"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Call" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFL-xz-ljZ" customClass="LBSatoshiMediumWhite22" customModule="Peachtree" customModuleProvider="target">
+                                                                <rect key="frame" x="71.5" y="69" width="35.5" height="21.5"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
                                                         <color key="backgroundColor" red="0.88235294119999996" green="0.4039215686" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstItem="0Wl-e5-EfR" firstAttribute="top" secondItem="yw8-Hw-tme" secondAttribute="top" constant="17" id="JAh-Zz-wga"/>
+                                                            <constraint firstItem="uFL-xz-ljZ" firstAttribute="centerX" secondItem="0Wl-e5-EfR" secondAttribute="centerX" id="qSK-Rg-ZhY"/>
+                                                            <constraint firstItem="0Wl-e5-EfR" firstAttribute="centerX" secondItem="yw8-Hw-tme" secondAttribute="centerX" id="riv-qW-wSa"/>
+                                                            <constraint firstItem="uFL-xz-ljZ" firstAttribute="top" secondItem="0Wl-e5-EfR" secondAttribute="bottom" constant="12" id="urF-vW-UGG"/>
+                                                        </constraints>
                                                     </view>
                                                 </subviews>
                                                 <constraints>

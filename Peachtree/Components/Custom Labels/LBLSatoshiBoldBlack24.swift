@@ -16,7 +16,7 @@ class LBLSatoshiBoldBlack24: UILabel {
     
     func updateView() {
         font = FontHelper.defaultSatoshiBoldFontWithSize(size: 24)
-        textColor = UIColor.black
+        textColor = Colors.color_DarkBlue
     }
 
 }

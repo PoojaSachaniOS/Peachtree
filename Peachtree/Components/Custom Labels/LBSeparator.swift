@@ -1,5 +1,5 @@
 //
-//  LBLSatoshiBoldBlack18.swift
+//  LBSeparator.swift
 //  Peachtree
 //
 //  Created by Anand on 10/09/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LBLSatoshiBoldBlack20: UILabel {
+class LBSeparator: UILabel {
 
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -15,8 +15,7 @@ class LBLSatoshiBoldBlack20: UILabel {
     }
     
     func updateView() {
-        font = FontHelper.defaultSatoshiBoldFontWithSize(size: 20)
-        textColor = Colors.color_DarkBlue
+        backgroundColor = Colors.colorSeparator
     }
 
 }

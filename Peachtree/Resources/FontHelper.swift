@@ -20,6 +20,10 @@ struct FontHelper {
         return UIFont(name: FontHelper.AppFont.fontSatoshiBold, size: size)!
     }
 
+    static func defaultSatoshiRegularFontWithSize(size: CGFloat) -> UIFont {
+        return UIFont(name: FontHelper.AppFont.fontSatoshiRegular, size: size)!
+    }
+
     
     static func californianBoldFontWithSize(size: CGFloat) -> UIFont {
         return UIFont(name: FontHelper.AppFont.californian_fontBold, size: size)!
@@ -30,7 +34,7 @@ struct FontHelper {
     }
     
     struct AppFont {
-        static let fontRegular = "Satoshi-Regular"
+        static let fontSatoshiRegular = "Satoshi-Regular"
         static let fontMedium = "Satoshi-Medium"
         static let fontSatoshiBold = "Satoshi-Bold"
         static let californian_fontRegular = "CalifornianFB-Reg"

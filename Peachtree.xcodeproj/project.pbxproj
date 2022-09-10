@@ -53,6 +53,7 @@
 		17D6D56828CCB777007D677B /* LBLSatoshiBoldBlack20.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6D56728CCB777007D677B /* LBLSatoshiBoldBlack20.swift */; };
 		17D6D56A28CCB807007D677B /* Satoshi-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 17D6D56928CCB807007D677B /* Satoshi-Regular.otf */; };
 		17D6D56C28CCBB77007D677B /* LBLSatoshiBoldBlack24.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6D56B28CCBB77007D677B /* LBLSatoshiBoldBlack24.swift */; };
+		17D6D56E28CCC26D007D677B /* LBSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6D56D28CCC26D007D677B /* LBSeparator.swift */; };
 		440826D5408EAABB00C349E9 /* Pods_Peachtree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30EACD0BD546F38AD117D1F4 /* Pods_Peachtree.framework */; };
 		6E168BF232B156B7B567D7BD /* Pods_PeachtreeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D049E48422CA0FE2E143879 /* Pods_PeachtreeTests.framework */; };
 		C89A792B28CA5EB0006A06CC /* Californian FB Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C89A792A28CA5EB0006A06CC /* Californian FB Bold.ttf */; };
@@ -151,6 +152,7 @@
 		17D6D56728CCB777007D677B /* LBLSatoshiBoldBlack20.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBLSatoshiBoldBlack20.swift; sourceTree = "<group>"; };
 		17D6D56928CCB807007D677B /* Satoshi-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Regular.otf"; sourceTree = "<group>"; };
 		17D6D56B28CCBB77007D677B /* LBLSatoshiBoldBlack24.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBLSatoshiBoldBlack24.swift; sourceTree = "<group>"; };
+		17D6D56D28CCC26D007D677B /* LBSeparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBSeparator.swift; sourceTree = "<group>"; };
 		30EACD0BD546F38AD117D1F4 /* Pods_Peachtree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Peachtree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DBEC4A8F2B89E57FD1AFADE /* Pods-Peachtree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peachtree.debug.xcconfig"; path = "Target Support Files/Pods-Peachtree/Pods-Peachtree.debug.xcconfig"; sourceTree = "<group>"; };
 		4E7589A0586418D9F2A1D815 /* Pods-PeachtreeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeachtreeTests.release.xcconfig"; path = "Target Support Files/Pods-PeachtreeTests/Pods-PeachtreeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -568,6 +570,7 @@
 				C8A1734828CC78F1002C52BE /* LBSatoshiRegular12.swift */,
 				17D6D56728CCB777007D677B /* LBLSatoshiBoldBlack20.swift */,
 				17D6D56B28CCBB77007D677B /* LBLSatoshiBoldBlack24.swift */,
+				17D6D56D28CCC26D007D677B /* LBSeparator.swift */,
 			);
 			path = "Custom Labels";
 			sourceTree = "<group>";
@@ -869,6 +872,7 @@
 				17D6D56828CCB777007D677B /* LBLSatoshiBoldBlack20.swift in Sources */,
 				17D6D55D28CC9B46007D677B /* RestaurantsTableCell.swift in Sources */,
 				172F20A728BFC052007096DB /* StoryboardUtils.swift in Sources */,
+				17D6D56E28CCC26D007D677B /* LBSeparator.swift in Sources */,
 				172F20A428BFBE71007096DB /* GetStartedVC.swift in Sources */,
 				172F206E28BFBD91007096DB /* AppDelegate.swift in Sources */,
 				176A4DFC28C45D5400B3D465 /* HomeCollectionVWCell.swift in Sources */,
