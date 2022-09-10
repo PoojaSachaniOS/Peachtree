@@ -1190,7 +1190,7 @@
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="back_white"/>
                                         <connections>
-                                            <action selector="btnBackTapped:" destination="JqX-kA-Xvd" eventType="touchUpInside" id="80Y-3L-huc"/>
+                                            <action selector="btnBackTapped:" destination="JqX-kA-Xvd" eventType="touchUpInside" id="lWq-H7-kY1"/>
                                         </connections>
                                     </button>
                                 </subviews>

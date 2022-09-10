@@ -14,6 +14,8 @@ class RestaurantsDetailsVC: UIViewController {
 
     }
     
-
+    @IBAction func btnBackTapped(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
 
 }
