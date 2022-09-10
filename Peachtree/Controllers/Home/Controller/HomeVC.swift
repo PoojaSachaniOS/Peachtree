@@ -82,7 +82,7 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
         } else if model.type == .restaurants {
             self.openRestaurantsVC()
         } else if model.type == .shopping {
-            
+            self.openShoppingVC()
         } else if model.type == .calendar {
             self.openWebViewVC("https://peachtree-city.org/calendar.aspx")
         } else if model.type == .notifyMe {
@@ -104,6 +104,13 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
     
     func openRestaurantsVC() {
         if let controller = StoryboardUtils.getRestaurantsVC() as? RestaurantsVC {
+            controller.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
+    }
+    
+    func openShoppingVC() {
+        if let controller = StoryboardUtils.getShoppingVC() as? ShoppingVC {
             controller.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(controller, animated: true)
         }

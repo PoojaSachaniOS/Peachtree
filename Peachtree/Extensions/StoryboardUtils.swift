@@ -92,4 +92,11 @@ extension StoryboardUtils{
     static func getRestaurantsVC()-> UIViewController{
         return Home.instance.instantiateViewController(withIdentifier: "RestaurantsVC")
     }
+    
+    static func getShoppingVC()-> UIViewController{
+        return Home.instance.instantiateViewController(withIdentifier: "ShoppingVC")
+    }
+
+    
+    
 }
