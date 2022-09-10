@@ -12,6 +12,7 @@
 		<string>Satoshi-Bold.otf</string>
 		<string>Satoshi-Regular.otf</string>
 		<string>Satoshi-Medium.otf</string>
+		<string>Satoshi-Light.otf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
