@@ -12,7 +12,7 @@ class HomeVC: UIViewController {
     var arr: [HomeVCTableItem<AccountVCTableItemType>] = []
 
     enum AccountVCTableItemType {
-        case shareMyLocation, renewGolfCart, cityHall, publicSafety, reportAnIssue, library, restaurants, shopping, calendar, notifyMe, pools, recreationAndSpecialEvent, golfCartHelp, call911, onlinePayment
+        case shareMyLocation, renewGolfCart, cityHall, publicSafety, reportAnIssue, library, restaurants, shopping, calendar, notifyMe, pools, recreationAndSpecialEvent, golfCartHelp, call911, onlinePayment, settings
     }
 
     override func viewDidLoad() {
@@ -27,6 +27,7 @@ class HomeVC: UIViewController {
     
     private func initializeData() {
         arr.append(HomeVCTableItem(iconName: "imgShareMyLocation", title:"Share My Location", type: .shareMyLocation, showArrow: true))
+        arr.append(HomeVCTableItem(iconName: "imgOnlinePayments", title:"Settins", type: .settings, showArrow: true))
         arr.append(HomeVCTableItem(iconName: "imgRenewGolfCart", title:"Register/Renew Golf Cart", type: .renewGolfCart, showArrow: true))
         arr.append(HomeVCTableItem(iconName: "imgCityHall", title:"City hall", type: .cityHall, showArrow: true))
         arr.append(HomeVCTableItem(iconName: "imgPublicSafety", title:"Public Safety", type: .publicSafety, showArrow: true))
@@ -64,8 +65,7 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let model = arr[indexPath.row]
         if model.type == .shareMyLocation {
-            //  self.openShareMyLocationVC()
-            openMoreVC()
+             self.openShareMyLocationVC()
         } else if model.type == .renewGolfCart {
             self.openWebViewVC("https://peachtree-city.org/216/Paths-Golf-Carts")
         } else if model.type == .cityHall {
@@ -92,14 +92,22 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
         } else if model.type == .recreationAndSpecialEvent {
             
         } else if model.type == .golfCartHelp {
-            
+            self.openGolfCartHelpVC()
         } else if model.type == .call911 {
-            
+            self.openCall911VC()
         } else if model.type == .onlinePayment {
             self.openWebViewVC("https://peachtree-city.org/list.aspx")
-
+        } else if model.type == .settings {
+            self.openMoreVC()
         }
      }
+    
+    func openCall911VC() {
+        if let controller = StoryboardUtils.getCall911VC() as? Call911VC {
+            controller.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
+    }
     
     func openShareMyLocationVC() {
         if let controller = StoryboardUtils.getLocationVC() as? LocationVC {
@@ -118,6 +126,14 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
     func openWebViewVC(_ webUrl:String) {
         if let controller = StoryboardUtils.getWebViewVC() as? WebViewVC {
             controller.strWebUrl = webUrl
+            controller.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
+    }
+    
+    
+    func openGolfCartHelpVC() {
+        if let controller = StoryboardUtils.getGolfCartHelpVC() as? GolfCartHelpVC {
             controller.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(controller, animated: true)
         }

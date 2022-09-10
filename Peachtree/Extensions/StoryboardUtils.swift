@@ -73,5 +73,21 @@ extension StoryboardUtils{
         return More.instance.instantiateViewController(withIdentifier: "AppVersionVC")
     }
     
+    static func getRateUsVC()-> UIViewController{
+        return More.instance.instantiateViewController(withIdentifier: "RateUsVC")
+    }
     
+    static func getContactUsVC()-> UIViewController{
+        return More.instance.instantiateViewController(withIdentifier: "ContactUsVC")
+    }
+    
+    static func getCall911VC()-> UIViewController{
+        return Home.instance.instantiateViewController(withIdentifier: "Call911VC")
+    }
+    
+    static func getGolfCartHelpVC()-> UIViewController{
+        return Home.instance.instantiateViewController(withIdentifier: "GolfCartHelpVC")
+    }
+    
+   
 }

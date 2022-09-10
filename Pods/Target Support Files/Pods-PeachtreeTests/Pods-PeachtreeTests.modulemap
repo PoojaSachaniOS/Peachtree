@@ -1,0 +1,6 @@
+framework module Pods_PeachtreeTests {
+  umbrella header "Pods-PeachtreeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
