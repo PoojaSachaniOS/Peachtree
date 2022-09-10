@@ -840,7 +840,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurants" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qff-hu-poo" customClass="LBCalifornianBoldWhite20" customModule="Peachtree" customModuleProvider="target">
-                                        <rect key="frame" x="169.5" y="74" width="75.5" height="16"/>
+                                        <rect key="frame" x="172.5" y="74" width="69" height="16"/>
                                         <fontDescription key="fontDescription" name="CalifornianFB-Reg" family="Californian FB" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -874,7 +874,7 @@
                                 <rect key="frame" x="0.0" y="112" width="414" height="75"/>
                                 <subviews>
                                     <searchBar contentMode="redraw" placeholder="Search Location" translatesAutoresizingMaskIntoConstraints="NO" id="rRp-r4-zSa">
-                                        <rect key="frame" x="10" y="15.5" width="314" height="44"/>
+                                        <rect key="frame" x="10" y="16" width="314" height="44"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="NMo-dm-r86"/>
@@ -919,6 +919,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="searchBar" destination="rRp-r4-zSa" id="G7o-SV-f6V"/>
                         <outlet property="tblVwRestaurants" destination="oPZ-UI-jea" id="6yG-gd-ONS"/>
                     </connections>
                 </viewController>

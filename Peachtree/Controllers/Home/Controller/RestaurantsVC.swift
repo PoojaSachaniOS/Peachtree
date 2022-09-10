@@ -10,9 +10,12 @@ import UIKit
 class RestaurantsVC: UIViewController {
     @IBOutlet weak var tblVwRestaurants: UITableView!
 
+    @IBOutlet weak var searchBar: UISearchBar!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.registerNib()
+        searchBar.searchTextField.backgroundColor = .white
+        searchBar.layer.cornerRadius = 8
     }
     
     private func registerNib() {
