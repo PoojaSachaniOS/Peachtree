@@ -73,5 +73,7 @@ extension StoryboardUtils{
         return More.instance.instantiateViewController(withIdentifier: "AppVersionVC")
     }
     
-    
+    static func getCall911VC()-> UIViewController{
+        return Home.instance.instantiateViewController(withIdentifier: "Call911VC")
+    }
 }

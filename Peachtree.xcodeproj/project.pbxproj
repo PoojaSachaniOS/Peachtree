@@ -39,6 +39,10 @@
 		176A4DFB28C45D5400B3D465 /* HomeCollectionVWCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 176A4DF928C45D5400B3D465 /* HomeCollectionVWCell.xib */; };
 		176A4DFC28C45D5400B3D465 /* HomeCollectionVWCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176A4DFA28C45D5400B3D465 /* HomeCollectionVWCell.swift */; };
 		17704EEF28C6DDA30032C96C /* WebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17704EEE28C6DDA30032C96C /* WebViewVC.swift */; };
+		17D6D55028CC51E7007D677B /* Call911VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6D54F28CC51E7007D677B /* Call911VC.swift */; };
+		17D6D55328CC53D9007D677B /* CallTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6D55128CC53D9007D677B /* CallTableCell.swift */; };
+		17D6D55428CC53D9007D677B /* CallTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17D6D55228CC53D9007D677B /* CallTableCell.xib */; };
+		17D6D55628CC5487007D677B /* NSObject+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6D55528CC5487007D677B /* NSObject+Name.swift */; };
 		C89A792B28CA5EB0006A06CC /* Californian FB Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C89A792A28CA5EB0006A06CC /* Californian FB Bold.ttf */; };
 		C89A792D28CA5F85006A06CC /* LBCalifornianBoldBlack24.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89A792C28CA5F85006A06CC /* LBCalifornianBoldBlack24.swift */; };
 		C8A2DEE428CBAB6D005578DE /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8A2DEE328CBAB6D005578DE /* More.storyboard */; };
@@ -117,6 +121,10 @@
 		176A4DF928C45D5400B3D465 /* HomeCollectionVWCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCollectionVWCell.xib; sourceTree = "<group>"; };
 		176A4DFA28C45D5400B3D465 /* HomeCollectionVWCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionVWCell.swift; sourceTree = "<group>"; };
 		17704EEE28C6DDA30032C96C /* WebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewVC.swift; sourceTree = "<group>"; };
+		17D6D54F28CC51E7007D677B /* Call911VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Call911VC.swift; sourceTree = "<group>"; };
+		17D6D55128CC53D9007D677B /* CallTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallTableCell.swift; sourceTree = "<group>"; };
+		17D6D55228CC53D9007D677B /* CallTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CallTableCell.xib; sourceTree = "<group>"; };
+		17D6D55528CC5487007D677B /* NSObject+Name.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Name.swift"; sourceTree = "<group>"; };
 		C89A792A28CA5EB0006A06CC /* Californian FB Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Californian FB Bold.ttf"; sourceTree = "<group>"; };
 		C89A792C28CA5F85006A06CC /* LBCalifornianBoldBlack24.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBCalifornianBoldBlack24.swift; sourceTree = "<group>"; };
 		C8A2DEE328CBAB6D005578DE /* More.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = More.storyboard; sourceTree = "<group>"; };
@@ -269,6 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				C8EDCB9628CA6CA7003C52BF /* Extensions.swift */,
+				17D6D55528CC5487007D677B /* NSObject+Name.swift */,
 				172F20A628BFC052007096DB /* StoryboardUtils.swift */,
 				172F20CE28C0C0DA007096DB /* Constants.swift */,
 			);
@@ -369,6 +378,7 @@
 			children = (
 				172F20B128BFC529007096DB /* HomeVC.swift */,
 				17704EEE28C6DDA30032C96C /* WebViewVC.swift */,
+				17D6D54F28CC51E7007D677B /* Call911VC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -376,6 +386,8 @@
 		176A4DF828C45D3800B3D465 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				17D6D55128CC53D9007D677B /* CallTableCell.swift */,
+				17D6D55228CC53D9007D677B /* CallTableCell.xib */,
 				176A4DFA28C45D5400B3D465 /* HomeCollectionVWCell.swift */,
 				176A4DF928C45D5400B3D465 /* HomeCollectionVWCell.xib */,
 			);
@@ -611,6 +623,7 @@
 				172F20CD28C0C009007096DB /* Search.storyboard in Resources */,
 				C8AC29D728CA580000E6CE0D /* Satoshi-Medium.ttf in Resources */,
 				172F20B028BFC50B007096DB /* Home.storyboard in Resources */,
+				17D6D55428CC53D9007D677B /* CallTableCell.xib in Resources */,
 				C8AC29D328CA57AB00E6CE0D /* Satoshi-Regular.ttf in Resources */,
 				172F207728BFBD91007096DB /* Assets.xcassets in Resources */,
 				172F20BA28BFC75E007096DB /* Location.storyboard in Resources */,
@@ -656,6 +669,7 @@
 				176A4DFC28C45D5400B3D465 /* HomeCollectionVWCell.swift in Sources */,
 				C8AC29D928CA588B00E6CE0D /* FontHelper.swift in Sources */,
 				17704EEF28C6DDA30032C96C /* WebViewVC.swift in Sources */,
+				17D6D55328CC53D9007D677B /* CallTableCell.swift in Sources */,
 				172F20BC28BFC79A007096DB /* LocationVC.swift in Sources */,
 				C8A2DEF628CBBF4D005578DE /* ShareVC.swift in Sources */,
 				172F20B528BFC58F007096DB /* HomeTabBarController.swift in Sources */,
@@ -667,7 +681,9 @@
 				C8AC29C628CA511100E6CE0D /* PublicSafetyVC.swift in Sources */,
 				172F20CB28C0BFF9007096DB /* SearchVC.swift in Sources */,
 				172F20CF28C0C0DA007096DB /* Constants.swift in Sources */,
+				17D6D55628CC5487007D677B /* NSObject+Name.swift in Sources */,
 				C8EDCB9728CA6CA7003C52BF /* Extensions.swift in Sources */,
+				17D6D55028CC51E7007D677B /* Call911VC.swift in Sources */,
 				C89A792D28CA5F85006A06CC /* LBCalifornianBoldBlack24.swift in Sources */,
 				C8C2B9E528CA635C0080281B /* LBSatoshiMediumWhite22.swift in Sources */,
 				172F20AA28BFC1A5007096DB /* TermsOfUseVC.swift in Sources */,

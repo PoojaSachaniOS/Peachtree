@@ -94,13 +94,20 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
         } else if model.type == .golfCartHelp {
             
         } else if model.type == .call911 {
-            
+            self.openCall911VC()
         } else if model.type == .onlinePayment {
             self.openWebViewVC("https://peachtree-city.org/list.aspx")
         } else if model.type == .settings {
             self.openMoreVC()
         }
      }
+    
+    func openCall911VC() {
+        if let controller = StoryboardUtils.getCall911VC() as? Call911VC {
+            controller.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
+    }
     
     func openShareMyLocationVC() {
         if let controller = StoryboardUtils.getLocationVC() as? LocationVC {
