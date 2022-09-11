@@ -67,7 +67,7 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
         if model.type == .shareMyLocation {
              self.openShareMyLocationVC()
         } else if model.type == .renewGolfCart {
-            self.openWebViewVC("https://peachtree-city.org/216/Paths-Golf-Carts")
+            self.openWebViewVC("https://peachtree-city.org/216/Paths-Golf-Carts", title: "")
         } else if model.type == .cityHall {
             
         }  else if model.type == .publicSafety {
@@ -76,7 +76,7 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
                 self.navigationController?.pushViewController(controller, animated: true)
             }
         } else if model.type == .reportAnIssue {
-            self.openWebViewVC("https://peachtree-city.org/128/Report-a-Problem")
+            self.openWebViewVC("https://peachtree-city.org/128/Report-a-Problem", title: model.title ?? "")
         } else if model.type == .library {
             
         } else if model.type == .restaurants {
@@ -84,9 +84,9 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
         } else if model.type == .shopping {
             self.openShoppingVC()
         } else if model.type == .calendar {
-            self.openWebViewVC("https://peachtree-city.org/calendar.aspx")
+            self.openWebViewVC("https://peachtree-city.org/calendar.aspx", title: model.title ?? "")
         } else if model.type == .notifyMe {
-            self.openWebViewVC("https://peachtree-city.org/list.aspx")
+            self.openWebViewVC("https://peachtree-city.org/list.aspx", title: model.title ?? "")
         } else if model.type == .pools {
             
         } else if model.type == .recreationAndSpecialEvent {
@@ -96,7 +96,7 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
         } else if model.type == .call911 {
             self.openCall911VC()
         } else if model.type == .onlinePayment {
-            self.openWebViewVC("https://peachtree-city.org/list.aspx")
+            self.openWebViewVC("https://peachtree-city.org/list.aspx", title: model.title ?? "")
         } else if model.type == .settings {
             self.openMoreVC()
         }
@@ -137,9 +137,10 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
         }
     }
     
-    func openWebViewVC(_ webUrl:String) {
+    func openWebViewVC(_ webUrl:String, title: String) {
         if let controller = StoryboardUtils.getWebViewVC() as? WebViewVC {
             controller.strWebUrl = webUrl
+            controller.strNavTitle = title
             controller.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(controller, animated: true)
         }
