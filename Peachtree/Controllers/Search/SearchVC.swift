@@ -59,12 +59,14 @@ class SearchVC: UIViewController {
     
     private func registerNib() {
         self.tblVwSearch.register(SearchCategoriesTableCell.self)
+        self.tblVwSearch.register(RecentSearchTableCell.self)
     }
     
     @IBAction func btnAddressTapped(_ sender: Any) {
         btnAddress.isSelected = true
         btnCategories.isSelected = false
         self.configureButtons()
+        self.tblVwSearch.reloadData()
     }
     
 
@@ -72,6 +74,7 @@ class SearchVC: UIViewController {
         btnAddress.isSelected = false
         btnCategories.isSelected = true
         self.configureButtons()
+        self.tblVwSearch.reloadData()
     }
 }
 
@@ -83,9 +86,25 @@ extension SearchVC: UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if btnAddress.isSelected {
-            return self.tableView(tableView, categoriesCellForRowAt: indexPath)
+            return self.tableView(tableView, recentSearchCellForRowAt: indexPath)
         }
         return self.tableView(tableView, categoriesCellForRowAt: indexPath)
+    }
+    
+    func tableView(_ tableView: UITableView, recentSearchCellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tblVwSearch.dequeueReusableCell(withIdentifier: RecentSearchTableCell.className, for: indexPath) as! RecentSearchTableCell
+        
+        cell.vwBgForImg.addRoundedViewCorners(width: 4, colorBorder: (Colors.color_AppOrange!).withAlphaComponent(0.1), BackgroundColor: (Colors.color_AppOrange?.withAlphaComponent(0.10))!)
+
+        cell.vwBg.addRoundedViewCorners(width: 8, colorBorder: (Colors.color_borderLightBlack!).withAlphaComponent(0.1), BackgroundColor: UIColor.white)
+        cell.backgroundColor = Colors.color_AppBackground
+        cell.backgroundColor = .clear
+        cell.selectionStyle = .none
+        
+        let model = aryList[indexPath.row]
+        cell.lblRecentSearch.text = model
+        
+        return cell
     }
     
     func tableView(_ tableView: UITableView, categoriesCellForRowAt indexPath: IndexPath) -> UITableViewCell {
