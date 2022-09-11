@@ -1553,7 +1553,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share My Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzZ-gv-k9u" customClass="LBCalifornianBoldWhite20" customModule="Peachtree" customModuleProvider="target">
-                                        <rect key="frame" x="136.66666666666666" y="69.666666666666671" width="140.99999999999997" height="21"/>
+                                        <rect key="frame" x="136.66666666666666" y="70" width="140.99999999999997" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -1582,9 +1582,28 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pd9-W1-zGw">
                                 <rect key="frame" x="0.0" y="120" width="414" height="72"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HAQ-6K-kON">
+                                        <rect key="frame" x="16" y="12" width="382" height="48"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KhK-Us-41R">
+                                                <rect key="frame" x="0.0" y="0.0" width="186" height="48"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5bC-Gg-qY5">
+                                                <rect key="frame" x="196" y="0.0" width="186" height="48"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
                                 <color key="backgroundColor" name="AppOrange_color"/>
                                 <constraints>
+                                    <constraint firstItem="HAQ-6K-kON" firstAttribute="top" secondItem="pd9-W1-zGw" secondAttribute="top" constant="12" id="4Gj-na-36E"/>
+                                    <constraint firstAttribute="trailing" secondItem="HAQ-6K-kON" secondAttribute="trailing" constant="16" id="8bM-cQ-Dqa"/>
+                                    <constraint firstAttribute="bottom" secondItem="HAQ-6K-kON" secondAttribute="bottom" constant="12" id="HtD-R3-sWN"/>
                                     <constraint firstAttribute="height" constant="72" id="juh-EI-ltl"/>
+                                    <constraint firstItem="HAQ-6K-kON" firstAttribute="leading" secondItem="pd9-W1-zGw" secondAttribute="leading" constant="16" id="oEw-nz-7Kj"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -1602,6 +1621,9 @@
                             <constraint firstItem="Y4Z-Ml-FQs" firstAttribute="trailing" secondItem="pd9-W1-zGw" secondAttribute="trailing" id="mK6-Q5-lck"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="stackVw" destination="HAQ-6K-kON" id="n20-nB-6Ba"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NGA-Cb-49z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
