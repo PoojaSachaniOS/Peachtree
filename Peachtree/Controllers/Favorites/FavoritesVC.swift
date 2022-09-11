@@ -13,6 +13,7 @@ class FavoritesVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.registerNib()
+        self.tblVwFavorites.reloadData()
     }
 
     private func registerNib() {
@@ -36,8 +37,12 @@ extension FavoritesVC: UITableViewDelegate,UITableViewDataSource{
         cell.backgroundColor = .clear
         cell.selectionStyle = .none
         
-        cell.vwBg.addRoundedViewCorners(width: 8, colorBorder: (Colors.color_borderLightBlack!).withAlphaComponent(0.1), BackgroundColor: UIColor.white)
+        cell.vwBg.addRoundedViewCorners(width: 8, colorBorder: (Colors.color_borderLightBlack!).withAlphaComponent(0.1), BackgroundColor: UIColor.red)
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
 }
