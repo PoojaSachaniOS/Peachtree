@@ -14,7 +14,6 @@ class FavoritesVC: UIViewController {
         super.viewDidLoad()
         self.registerNib()
     }
-    
 
     private func registerNib() {
         self.tblVwFavorites.register(FavoritesTableCell.self)
