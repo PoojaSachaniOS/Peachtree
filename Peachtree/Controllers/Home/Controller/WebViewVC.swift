@@ -10,12 +10,15 @@ import WebKit
 
 class WebViewVC: UIViewController {
     @IBOutlet weak var webVw: WKWebView!
+    @IBOutlet weak var lblHeaderTitle: LBCalifornianBoldWhite20!
+    
     var strWebUrl:String?
     var strNavTitle:String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.loadWebVwRequest()
+        self.lblHeaderTitle.text = strNavTitle
     }
     
     private func loadWebVwRequest() {
@@ -30,7 +33,10 @@ class WebViewVC: UIViewController {
         }
         
     }
-
+    
+    @IBAction func backTaped(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
 
 }
 
