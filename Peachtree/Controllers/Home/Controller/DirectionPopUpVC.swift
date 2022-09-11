@@ -47,6 +47,7 @@ extension DirectionPopUpVC: UITableViewDelegate,UITableViewDataSource{
         let model = arr[indexPath.row]
         cell.lblName.text = model.title
         cell.imgVw.image = UIImage.init(named: model.iconName!)
+        cell.vwBg.addRoundedViewCorners(width: 6, colorBorder: .clear, BackgroundColor: (Colors.color_AppOrange?.withAlphaComponent(0.10))!)
         return cell
     }
    

@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="343" height="125"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PQy-BI-XOJ">
-                                <rect key="frame" x="14" y="44.5" width="36" height="36"/>
+                                <rect key="frame" x="15" y="44.5" width="36" height="36"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7cH-sn-RN1">
                                         <rect key="frame" x="8" y="8" width="20" height="20"/>
@@ -40,7 +40,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XIQ-A4-mJz" customClass="LBLSatoshiMediumBlack18" customModule="Peachtree" customModuleProvider="target">
-                                <rect key="frame" x="66" y="52" width="261" height="21"/>
+                                <rect key="frame" x="67" y="52" width="260" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -50,7 +50,7 @@
                         <constraints>
                             <constraint firstItem="PQy-BI-XOJ" firstAttribute="centerY" secondItem="BRM-Sb-BnX" secondAttribute="centerY" id="E8S-aJ-fxm"/>
                             <constraint firstItem="XIQ-A4-mJz" firstAttribute="centerY" secondItem="PQy-BI-XOJ" secondAttribute="centerY" id="GdB-KV-byv"/>
-                            <constraint firstItem="PQy-BI-XOJ" firstAttribute="leading" secondItem="BRM-Sb-BnX" secondAttribute="leading" constant="14" id="NRx-ZU-SMJ"/>
+                            <constraint firstItem="PQy-BI-XOJ" firstAttribute="leading" secondItem="BRM-Sb-BnX" secondAttribute="leading" constant="15" id="NRx-ZU-SMJ"/>
                             <constraint firstAttribute="trailing" secondItem="XIQ-A4-mJz" secondAttribute="trailing" constant="16" id="hYn-0w-Oi3"/>
                             <constraint firstItem="XIQ-A4-mJz" firstAttribute="leading" secondItem="PQy-BI-XOJ" secondAttribute="trailing" constant="16" id="mgh-PQ-GMU"/>
                         </constraints>
@@ -67,6 +67,7 @@
             <connections>
                 <outlet property="imgVw" destination="7cH-sn-RN1" id="TBl-Zc-itE"/>
                 <outlet property="lblName" destination="XIQ-A4-mJz" id="rA8-nF-TVe"/>
+                <outlet property="vwBg" destination="PQy-BI-XOJ" id="BVS-jY-5h8"/>
             </connections>
             <point key="canvasLocation" x="154.34782608695653" y="88.727678571428569"/>
         </tableViewCell>
