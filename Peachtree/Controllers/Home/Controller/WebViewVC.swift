@@ -19,8 +19,11 @@ class WebViewVC: UIViewController {
         super.viewDidLoad()
         self.loadWebVwRequest()
         self.lblHeaderTitle.text = strNavTitle
+        self.setNeedsStatusBarAppearanceUpdate()
     }
-    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     private func loadWebVwRequest() {
         if let strWebUrl = strWebUrl, !strWebUrl.isEmpty {
             let link = URL(string:strWebUrl)!

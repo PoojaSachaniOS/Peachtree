@@ -12,10 +12,14 @@ class FavoritesVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setNeedsStatusBarAppearanceUpdate()
         self.registerNib()
         self.tblVwFavorites.reloadData()
+        
     }
-
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     private func registerNib() {
         self.tblVwFavorites.register(FavoritesTableCell.self)
     }

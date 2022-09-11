@@ -15,9 +15,12 @@ class RestaurantsDetailsVC: UIViewController {
         super.viewDidLoad()
         self.setUpUI()
         self.addTapGesture()
-        
+        self.setNeedsStatusBarAppearanceUpdate()
+
     }
-    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     func addTapGesture() {
         let tapGesOnDirection = UITapGestureRecognizer(target: self, action: #selector(self.directionTapGestureTapped(_:)))
         tapGesOnDirection.numberOfTapsRequired = 1

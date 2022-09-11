@@ -22,8 +22,11 @@ class DirectionPopUpVC: UIViewController {
         vwBg.addRoundedViewCorners(width: 16, colorBorder: .clear, BackgroundColor: .white)
         self.registerNib()
         self.initializeData()
+        self.setNeedsStatusBarAppearanceUpdate()
     }
-    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     private func registerNib() {
         self.tblVwDirections.register(DirectionTableCell.self)
     }
