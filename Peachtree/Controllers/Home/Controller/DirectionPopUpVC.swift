@@ -33,6 +33,10 @@ class DirectionPopUpVC: UIViewController {
         arr.append(DirectionTableItem(iconName: "imgBicyles", title:"Direction by Bicycles", type: .biCycle))
         arr.append(DirectionTableItem(iconName: "imgWalking", title:"Walking", type: .walking))
     }
+    
+    @IBAction func backCloseTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
   
 }
 
