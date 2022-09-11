@@ -71,6 +71,8 @@
 		17D6D59D28CE048F007D677B /* RecentSearchTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6D59B28CE048F007D677B /* RecentSearchTableCell.swift */; };
 		17D6D59E28CE048F007D677B /* RecentSearchTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17D6D59C28CE048F007D677B /* RecentSearchTableCell.xib */; };
 		17D81D0828CE1EB600C3C05F /* LBSatoshiMediumBlack17.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D81D0728CE1EB600C3C05F /* LBSatoshiMediumBlack17.swift */; };
+		17D81D0D28CE27AF00C3C05F /* FavoritesTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D81D0B28CE27AF00C3C05F /* FavoritesTableCell.swift */; };
+		17D81D0E28CE27AF00C3C05F /* FavoritesTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17D81D0C28CE27AF00C3C05F /* FavoritesTableCell.xib */; };
 		440826D5408EAABB00C349E9 /* Pods_Peachtree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30EACD0BD546F38AD117D1F4 /* Pods_Peachtree.framework */; };
 		6E168BF232B156B7B567D7BD /* Pods_PeachtreeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D049E48422CA0FE2E143879 /* Pods_PeachtreeTests.framework */; };
 		C89A792B28CA5EB0006A06CC /* Californian FB Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C89A792A28CA5EB0006A06CC /* Californian FB Bold.ttf */; };
@@ -191,6 +193,8 @@
 		17D6D59B28CE048F007D677B /* RecentSearchTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearchTableCell.swift; sourceTree = "<group>"; };
 		17D6D59C28CE048F007D677B /* RecentSearchTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentSearchTableCell.xib; sourceTree = "<group>"; };
 		17D81D0728CE1EB600C3C05F /* LBSatoshiMediumBlack17.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBSatoshiMediumBlack17.swift; sourceTree = "<group>"; };
+		17D81D0B28CE27AF00C3C05F /* FavoritesTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableCell.swift; sourceTree = "<group>"; };
+		17D81D0C28CE27AF00C3C05F /* FavoritesTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesTableCell.xib; sourceTree = "<group>"; };
 		30EACD0BD546F38AD117D1F4 /* Pods_Peachtree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Peachtree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DBEC4A8F2B89E57FD1AFADE /* Pods-Peachtree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peachtree.debug.xcconfig"; path = "Target Support Files/Pods-Peachtree/Pods-Peachtree.debug.xcconfig"; sourceTree = "<group>"; };
 		4E7589A0586418D9F2A1D815 /* Pods-PeachtreeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeachtreeTests.release.xcconfig"; path = "Target Support Files/Pods-PeachtreeTests/Pods-PeachtreeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -429,6 +433,8 @@
 			children = (
 				172F20C528C0AF2F007096DB /* FavoritesVC.swift */,
 				172F20C728C0AF5F007096DB /* Favorites.storyboard */,
+				17D81D0B28CE27AF00C3C05F /* FavoritesTableCell.swift */,
+				17D81D0C28CE27AF00C3C05F /* FavoritesTableCell.xib */,
 			);
 			path = Favorites;
 			sourceTree = "<group>";
@@ -806,6 +812,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8A2DEE428CBAB6D005578DE /* More.storyboard in Resources */,
+				17D81D0E28CE27AF00C3C05F /* FavoritesTableCell.xib in Resources */,
 				172F207A28BFBD91007096DB /* LaunchScreen.storyboard in Resources */,
 				172F20C128BFCABA007096DB /* Weather.storyboard in Resources */,
 				172F20D128C0CB67007096DB /* Colors.xcassets in Resources */,
@@ -972,6 +979,7 @@
 				172F20B228BFC529007096DB /* HomeVC.swift in Sources */,
 				C8EDCB9328CA66C2003C52BF /* LBCalifornianBoldWhite20.swift in Sources */,
 				172F20BF28BFCA95007096DB /* WeatherVC.swift in Sources */,
+				17D81D0D28CE27AF00C3C05F /* FavoritesTableCell.swift in Sources */,
 				C8EDCB9528CA6AE5003C52BF /* LBSatoshiBoldBlack18.swift in Sources */,
 				17D6D56828CCB777007D677B /* LBLSatoshiBoldBlack20.swift in Sources */,
 				17D6D55D28CC9B46007D677B /* RestaurantsTableCell.swift in Sources */,

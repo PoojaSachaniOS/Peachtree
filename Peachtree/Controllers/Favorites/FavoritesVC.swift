@@ -8,6 +8,7 @@
 import UIKit
 
 class FavoritesVC: UIViewController {
+    @IBOutlet weak var tblVwFavorites: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,4 +27,25 @@ class FavoritesVC: UIViewController {
     }
     */
 
+}
+
+extension FavoritesVC: UITableViewDelegate,UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return self.tableView(tableView, favoritesCellForRowAt: indexPath)
+    }
+    
+    func tableView(_ tableView: UITableView, favoritesCellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tblVwFavorites.dequeueReusableCell(withIdentifier: FavoritesTableCell.className, for: indexPath) as! FavoritesTableCell
+        cell.backgroundColor = Colors.color_AppBackground
+        cell.backgroundColor = .clear
+        cell.selectionStyle = .none
+        
+        cell.vwBg.addRoundedViewCorners(width: 8, colorBorder: (Colors.color_borderLightBlack!).withAlphaComponent(0.1), BackgroundColor: UIColor.white)
+        
+        return cell
+    }
 }
