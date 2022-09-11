@@ -70,7 +70,7 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
         if model.type == .shareMyLocation {
              self.openShareMyLocationVC()
         } else if model.type == .renewGolfCart {
-            self.openWebViewVC("https://peachtree-city.org/216/Paths-Golf-Carts", title: "")
+            self.openWebViewVC("https://peachtree-city.org/216/Paths-Golf-Carts", title: model.title ?? "")
         } else if model.type == .cityHall {
             
         }  else if model.type == .publicSafety {
