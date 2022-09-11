@@ -1029,7 +1029,7 @@
                                 <rect key="frame" x="0.0" y="112" width="414" height="888"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NI7-U7-7cT">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="609"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="619"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E0t-N6-qGG">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="304"/>
@@ -1179,15 +1179,15 @@
                                                 <rect key="frame" x="30" y="503" width="354" height="86"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_direction" translatesAutoresizingMaskIntoConstraints="NO" id="KMr-uq-wfA">
-                                                        <rect key="frame" x="160" y="13" width="34" height="34"/>
+                                                        <rect key="frame" x="161" y="10" width="32" height="32"/>
                                                         <color key="tintColor" red="0.1133731976" green="0.89483410119999995" blue="0.74963623290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="KMr-uq-wfA" secondAttribute="height" multiplier="1:1" id="8gm-OA-u0g"/>
-                                                            <constraint firstAttribute="width" constant="34" id="VRq-O5-E97"/>
+                                                            <constraint firstAttribute="width" constant="32" id="VRq-O5-E97"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Directions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8D-hU-BMC" customClass="LBSatoshiBoldBlack18" customModule="Peachtree" customModuleProvider="target">
-                                                        <rect key="frame" x="129.5" y="52" width="95" height="21.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Directions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8D-hU-BMC" customClass="LBLSatoshiBoldBlack18" customModule="Peachtree" customModuleProvider="target">
+                                                        <rect key="frame" x="129.5" y="47" width="95" height="29"/>
                                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -1195,11 +1195,12 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="c8D-hU-BMC" secondAttribute="bottom" constant="10" id="A1Y-i8-a7T"/>
                                                     <constraint firstItem="KMr-uq-wfA" firstAttribute="centerX" secondItem="OHj-KG-EHq" secondAttribute="centerX" id="D25-No-eDD"/>
                                                     <constraint firstItem="c8D-hU-BMC" firstAttribute="centerX" secondItem="KMr-uq-wfA" secondAttribute="centerX" id="L3I-6Z-dfs"/>
                                                     <constraint firstAttribute="height" constant="86" id="TJw-U6-bkv"/>
                                                     <constraint firstItem="c8D-hU-BMC" firstAttribute="top" secondItem="KMr-uq-wfA" secondAttribute="bottom" constant="5" id="cKa-UJ-h11"/>
-                                                    <constraint firstItem="KMr-uq-wfA" firstAttribute="top" secondItem="OHj-KG-EHq" secondAttribute="top" constant="13" id="yus-uH-3Hn"/>
+                                                    <constraint firstItem="KMr-uq-wfA" firstAttribute="top" secondItem="OHj-KG-EHq" secondAttribute="top" constant="10" id="yus-uH-3Hn"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -1210,7 +1211,7 @@
                                             <constraint firstAttribute="trailing" secondItem="OHj-KG-EHq" secondAttribute="trailing" constant="30" id="3ZT-QH-ORx"/>
                                             <constraint firstItem="bTd-70-FcW" firstAttribute="top" secondItem="aOA-W0-P3H" secondAttribute="bottom" constant="7" id="5q5-WS-TaG"/>
                                             <constraint firstItem="9Nm-pr-Bh8" firstAttribute="top" secondItem="bTd-70-FcW" secondAttribute="bottom" constant="25" id="KKs-OA-rEr"/>
-                                            <constraint firstAttribute="bottom" secondItem="OHj-KG-EHq" secondAttribute="bottom" constant="20" id="Nzs-Sw-jCe"/>
+                                            <constraint firstAttribute="bottom" secondItem="OHj-KG-EHq" secondAttribute="bottom" constant="30" id="Nzs-Sw-jCe"/>
                                             <constraint firstAttribute="trailing" secondItem="E0t-N6-qGG" secondAttribute="trailing" id="Pyh-1T-sH3"/>
                                             <constraint firstItem="E0t-N6-qGG" firstAttribute="top" secondItem="NI7-U7-7cT" secondAttribute="top" id="S67-b6-Orr"/>
                                             <constraint firstItem="aOA-W0-P3H" firstAttribute="top" secondItem="E0t-N6-qGG" secondAttribute="bottom" constant="26" id="SoN-c7-oG0"/>
@@ -1291,6 +1292,7 @@
                     <size key="freeformSize" width="414" height="1000"/>
                     <connections>
                         <outlet property="stackVw" destination="9Nm-pr-Bh8" id="WQi-35-zKv"/>
+                        <outlet property="vwBgDirection" destination="OHj-KG-EHq" id="edx-yM-RZZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qju-GH-ZzA" userLabel="First Responder" sceneMemberID="firstResponder"/>

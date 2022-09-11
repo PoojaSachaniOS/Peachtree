@@ -9,7 +9,8 @@ import UIKit
 
 class RestaurantsDetailsVC: UIViewController {
     @IBOutlet weak var stackVw: UIStackView!
-
+    @IBOutlet weak var vwBgDirection: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setUpUI()
@@ -27,5 +28,7 @@ class RestaurantsDetailsVC: UIViewController {
                 view.addRoundedViewCorners(width: 8, colorBorder: .clear, BackgroundColor: Colors.color_AppOrange!)
             }
         }
+        
+        vwBgDirection.addRoundedViewCorners(width: 10, colorBorder: Colors.color_AppThemeBlack!, BackgroundColor: .white)
     }
 }
