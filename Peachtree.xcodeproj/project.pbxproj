@@ -75,7 +75,6 @@
 		17D81D0E28CE27AF00C3C05F /* FavoritesTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17D81D0C28CE27AF00C3C05F /* FavoritesTableCell.xib */; };
 		440826D5408EAABB00C349E9 /* Pods_Peachtree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30EACD0BD546F38AD117D1F4 /* Pods_Peachtree.framework */; };
 		6E168BF232B156B7B567D7BD /* Pods_PeachtreeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D049E48422CA0FE2E143879 /* Pods_PeachtreeTests.framework */; };
-		C864E8A228CE372300BA030D /* RecreationAndEventsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C864E8A128CE372300BA030D /* RecreationAndEventsVC.swift */; };
 		C89A792B28CA5EB0006A06CC /* Californian FB Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C89A792A28CA5EB0006A06CC /* Californian FB Bold.ttf */; };
 		C89A792D28CA5F85006A06CC /* LBCalifornianBoldBlack24.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89A792C28CA5F85006A06CC /* LBCalifornianBoldBlack24.swift */; };
 		C8A1734528CC6634002C52BE /* RateUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A1734428CC6634002C52BE /* RateUsVC.swift */; };
@@ -202,7 +201,6 @@
 		5D049E48422CA0FE2E143879 /* Pods_PeachtreeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeachtreeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94946781E772F6DCC306A140 /* Pods-Peachtree-PeachtreeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peachtree-PeachtreeUITests.debug.xcconfig"; path = "Target Support Files/Pods-Peachtree-PeachtreeUITests/Pods-Peachtree-PeachtreeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9F9FD81939F98441AFD33B30 /* Pods-Peachtree.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peachtree.release.xcconfig"; path = "Target Support Files/Pods-Peachtree/Pods-Peachtree.release.xcconfig"; sourceTree = "<group>"; };
-		C864E8A128CE372300BA030D /* RecreationAndEventsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecreationAndEventsVC.swift; sourceTree = "<group>"; };
 		C89A792A28CA5EB0006A06CC /* Californian FB Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Californian FB Bold.ttf"; sourceTree = "<group>"; };
 		C89A792C28CA5F85006A06CC /* LBCalifornianBoldBlack24.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBCalifornianBoldBlack24.swift; sourceTree = "<group>"; };
 		C8A1734428CC6634002C52BE /* RateUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateUsVC.swift; sourceTree = "<group>"; };
@@ -535,14 +533,6 @@
 			path = Pools;
 			sourceTree = "<group>";
 		};
-		C864E8A028CE370400BA030D /* RecreationAndEvent */ = {
-			isa = PBXGroup;
-			children = (
-				C864E8A128CE372300BA030D /* RecreationAndEventsVC.swift */,
-			);
-			path = RecreationAndEvent;
-			sourceTree = "<group>";
-		};
 		C89D381D28CA5CC1002CD210 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -633,7 +623,6 @@
 		C8AC29C828CA515A00E6CE0D /* Sub View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C864E8A028CE370400BA030D /* RecreationAndEvent */,
 				C864E89B28CE2BA100BA030D /* Pools */,
 				C8BB1C4B28CCF9B000A66FDF /* Restaurants */,
 				C8AC29C728CA511C00E6CE0D /* Public Safety */,
@@ -987,7 +976,6 @@
 				C8A2DEF928CBC165005578DE /* AppVersionVC.swift in Sources */,
 				17D6D55828CC57F1007D677B /* GolfCartHelpVC.swift in Sources */,
 				172F207228BFBD91007096DB /* ViewController.swift in Sources */,
-				C864E8A228CE372300BA030D /* RecreationAndEventsVC.swift in Sources */,
 				17D6D59D28CE048F007D677B /* RecentSearchTableCell.swift in Sources */,
 				C8A1734728CC7397002C52BE /* LBSatoshiBoldLightGrey14.swift in Sources */,
 				17D6D59728CDF0C9007D677B /* SearchCategoriesTableCell.swift in Sources */,
