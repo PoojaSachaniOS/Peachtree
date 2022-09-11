@@ -19,8 +19,11 @@ class PublicSafetyVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpUI()
+        self.setNeedsStatusBarAppearanceUpdate()
     }
-    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     func setUpUI() {
         for view: UIView in self.stackViewPublic.subviews {
             if view.isKind(of: UIView.self) {

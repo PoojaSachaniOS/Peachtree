@@ -13,8 +13,12 @@ class Call911VC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.registerNib()
+        self.setNeedsStatusBarAppearanceUpdate()
+
     }
-    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     private func registerNib() {
         self.tblVw.register(CallTableCell.self)
     }

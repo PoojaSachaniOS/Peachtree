@@ -16,8 +16,12 @@ class RestaurantsVC: UIViewController {
         self.registerNib()
         searchBar.searchTextField.backgroundColor = .white
         searchBar.layer.cornerRadius = 8
+        self.setNeedsStatusBarAppearanceUpdate()
+
     }
-    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     private func registerNib() {
         self.tblVwRestaurants.register(RestaurantsTableCell.self)
     }

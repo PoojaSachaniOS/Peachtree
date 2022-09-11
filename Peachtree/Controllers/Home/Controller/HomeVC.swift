@@ -19,8 +19,11 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         self.registerNib()
         self.initializeData()
+        self.setNeedsStatusBarAppearanceUpdate()
     }
-    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     private func registerNib() {
         collectionVwHome.register(UINib(nibName: "HomeCollectionVWCell", bundle: nil), forCellWithReuseIdentifier: "HomeCollectionVWCell")
     }
@@ -88,9 +91,9 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
         } else if model.type == .notifyMe {
             self.openWebViewVC("https://peachtree-city.org/list.aspx", title: model.title ?? "")
         } else if model.type == .pools {
-            
+            openPoolsVC()
         } else if model.type == .recreationAndSpecialEvent {
-            
+            openRecreationAndEventsVC()
         } else if model.type == .golfCartHelp {
             self.openGolfCartHelpVC()
         } else if model.type == .call911 {
@@ -118,6 +121,19 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
     
     func openCall911VC() {
         if let controller = StoryboardUtils.getCall911VC() as? Call911VC {
+            controller.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
+    }
+    
+    func openPoolsVC() {
+        if let controller = StoryboardUtils.getPoolsVC() as? PoolsVC {
+            controller.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
+    }
+    func openRecreationAndEventsVC() {
+        if let controller = StoryboardUtils.getRecreationAndEventsVC() as? RecreationAndEventsVC {
             controller.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(controller, animated: true)
         }

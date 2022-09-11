@@ -1,18 +1,22 @@
 //
-//  RestaurantsVC.swift
+//  RecreationAndEventsVC.swift
 //  Peachtree
 //
-//  Created by Anand on 10/09/22.
+//  Created by Pooja Softradix on 11/09/22.
 //
 
 import UIKit
 
-class ShoppingVC: UIViewController {
+class RecreationAndEventsVC: UIViewController {
+    
     @IBOutlet weak var tblVwRestaurants: UITableView!
-
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.registerNib()
+        searchBar.searchTextField.backgroundColor = .white
+        searchBar.layer.cornerRadius = 8
         self.setNeedsStatusBarAppearanceUpdate()
 
     }
@@ -28,22 +32,27 @@ class ShoppingVC: UIViewController {
     }
 }
 
-extension ShoppingVC: UITableViewDelegate,UITableViewDataSource{
+extension RecreationAndEventsVC: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tblVwRestaurants.dequeueReusableCell(withIdentifier: RestaurantsTableCell.className, for: indexPath) as! RestaurantsTableCell
-        /*
-        cell.vwBg.addRoundedViewCorners(width: 8, colorBorder: .clear, BackgroundColor: Colors.color_AppOrange!)
-        cell.selectionStyle = .none
         cell.backgroundColor = .clear
-         */
+        cell.selectionStyle = .none
         return cell
     }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+   
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.openRestaurantsDetails()
     }
+
+    func openRestaurantsDetails() {
+        if let controller = StoryboardUtils.getRestaurantsDetailsVC() as? RestaurantsDetailsVC {
+            controller.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
+    }
+
 }

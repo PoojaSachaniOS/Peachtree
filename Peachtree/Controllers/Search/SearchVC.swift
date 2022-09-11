@@ -17,11 +17,15 @@ class SearchVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setNeedsStatusBarAppearanceUpdate()
         self.initializeUI()
         self.registerNib()
         aryList = ["Atm", "Bakery", "Bank","Atm", "Bakery", "Bank"]
+        
     }
-    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     func initializeUI() {
         for view: UIView in self.stackVw.subviews {
             if (view is UIButton) {
