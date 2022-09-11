@@ -12,7 +12,7 @@ class ShareMyLocationVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setUpUI()
+       // self.setUpUI()
     }
     
     @IBAction func backTaped(_ sender: Any) {

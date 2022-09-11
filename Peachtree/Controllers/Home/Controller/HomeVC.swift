@@ -70,9 +70,10 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
         if model.type == .shareMyLocation {
              self.openShareMyLocationVC()
         } else if model.type == .renewGolfCart {
-            self.openWebViewVC("https://peachtree-city.org/216/Paths-Golf-Carts", title: "")
+            self.openWebViewVC("https://peachtree-city.org/216/Paths-Golf-Carts", title: model.title ?? "")
         } else if model.type == .cityHall {
-            
+            self.openWebViewVC("https://peachtree-city.org/", title: model.title ?? "")
+
         }  else if model.type == .publicSafety {
             if let controller = StoryboardUtils.getPublicSafety() as? PublicSafetyVC {
                 controller.hidesBottomBarWhenPushed = true
@@ -93,6 +94,7 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
         } else if model.type == .pools {
             openPoolsVC()
         } else if model.type == .recreationAndSpecialEvent {
+            self.openWebViewVC("https://peachtree-city.org/126/Recreation-Special-Events", title: model.title ?? "")           
         } else if model.type == .golfCartHelp {
             self.openGolfCartHelpVC()
         } else if model.type == .call911 {
