@@ -72,12 +72,12 @@
                                     <constraint firstAttribute="trailing" secondItem="eN1-vS-fv3" secondAttribute="trailing" constant="28" id="xFQ-iU-zXS"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hcu-Hw-HHo">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgBgHome" translatesAutoresizingMaskIntoConstraints="NO" id="hcu-Hw-HHo">
                                 <rect key="frame" x="0.0" y="112" width="414" height="750"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rQA-fo-qGn">
                                 <rect key="frame" x="5" y="122" width="404" height="740"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="faK-ym-yG3">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -1593,18 +1593,18 @@
                                                         <rect key="frame" x="8" y="7" width="34" height="34"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8MW-IG-Z4W">
-                                                                <rect key="frame" x="8" y="8" width="18" height="18"/>
+                                                                <rect key="frame" x="4" y="4" width="26" height="26"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                             </view>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="linkColor"/>
                                                         <constraints>
-                                                            <constraint firstItem="8MW-IG-Z4W" firstAttribute="leading" secondItem="cgH-Li-dUM" secondAttribute="leading" constant="8" id="PtG-lb-thT"/>
-                                                            <constraint firstAttribute="trailing" secondItem="8MW-IG-Z4W" secondAttribute="trailing" constant="8" id="SPJ-X9-eqJ"/>
+                                                            <constraint firstItem="8MW-IG-Z4W" firstAttribute="leading" secondItem="cgH-Li-dUM" secondAttribute="leading" constant="4" id="PtG-lb-thT"/>
+                                                            <constraint firstAttribute="trailing" secondItem="8MW-IG-Z4W" secondAttribute="trailing" constant="4" id="SPJ-X9-eqJ"/>
                                                             <constraint firstAttribute="width" constant="34" id="Ugi-AN-2Cc"/>
                                                             <constraint firstAttribute="width" secondItem="cgH-Li-dUM" secondAttribute="height" multiplier="1:1" id="Zzr-29-A5k"/>
-                                                            <constraint firstItem="8MW-IG-Z4W" firstAttribute="top" secondItem="cgH-Li-dUM" secondAttribute="top" constant="8" id="ptN-ON-fVE"/>
-                                                            <constraint firstAttribute="bottom" secondItem="8MW-IG-Z4W" secondAttribute="bottom" constant="8" id="vLH-SK-Ljb"/>
+                                                            <constraint firstItem="8MW-IG-Z4W" firstAttribute="top" secondItem="cgH-Li-dUM" secondAttribute="top" constant="4" id="ptN-ON-fVE"/>
+                                                            <constraint firstAttribute="bottom" secondItem="8MW-IG-Z4W" secondAttribute="bottom" constant="4" id="vLH-SK-Ljb"/>
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drop Pin on current location" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dze-bm-nXw" customClass="LBSatoshiMediumWhite12" customModule="Peachtree" customModuleProvider="target">
@@ -1710,6 +1710,7 @@
         <image name="icon_direction" width="38" height="38"/>
         <image name="icon_globe" width="40" height="40.333332061767578"/>
         <image name="imgBgGolfCart" width="343" height="210"/>
+        <image name="imgBgHome" width="375" height="731"/>
         <image name="imgBgNavigation" width="375" height="112"/>
         <image name="imgClose" width="28" height="28"/>
         <image name="imgFavouriteTabBarSelected" width="24" height="21"/>

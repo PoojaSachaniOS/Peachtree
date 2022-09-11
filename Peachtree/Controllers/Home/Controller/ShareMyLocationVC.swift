@@ -34,9 +34,9 @@ class ShareMyLocationVC: UIViewController {
         
         vwOuterBgDropPin.addRoundedViewCorners(width: vwOuterBgDropPin.frame.size.height/2, colorBorder: .clear, BackgroundColor: (Colors.color_AppOrange?.withAlphaComponent(0.28))!)
         vwInnerBgDropPin.addRoundedViewCorners(width: vwOuterBgDropPin.frame.size.height/2, colorBorder: .white, BackgroundColor: (Colors.color_AppOrange)!)
-        
         vwOuterBgShare.addRoundedViewCorners(width: vwOuterBgDropPin.frame.size.height/2, colorBorder: .clear, BackgroundColor: (Colors.color_AppOrange?.withAlphaComponent(0.28))!)
         vwInnerBgShare.addRoundedViewCorners(width: vwOuterBgDropPin.frame.size.height/2, colorBorder: .white, BackgroundColor: (Colors.color_AppOrange)!)
+        vwInnerBgDropPin.addRoundedViewCorners(width: vwInnerBgDropPin.frame.size.height/2, colorBorder: .white, BackgroundColor: (Colors.color_AppOrange)!)
 
     }
 }
