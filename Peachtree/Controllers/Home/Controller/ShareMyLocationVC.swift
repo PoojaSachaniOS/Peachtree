@@ -10,6 +10,9 @@ import UIKit
 class ShareMyLocationVC: UIViewController {
     @IBOutlet weak var stackVw: UIStackView!
 
+    @IBOutlet weak var vwOuterBgDropPin: UIView!
+    @IBOutlet weak var vwInnerBgDropPin: UIView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setUpUI()
@@ -27,5 +30,9 @@ class ShareMyLocationVC: UIViewController {
             }
         }
         stackVw.backgroundColor = Colors.color_AppOrange
+        
+        vwOuterBgDropPin.addRoundedViewCorners(width: vwOuterBgDropPin.frame.size.height/2, colorBorder: .clear, BackgroundColor: (Colors.color_AppOrange?.withAlphaComponent(0.28))!)
+        vwInnerBgDropPin.addRoundedViewCorners(width: vwOuterBgDropPin.frame.size.height/2, colorBorder: .white, BackgroundColor: (Colors.color_AppOrange)!)
+
     }
 }
