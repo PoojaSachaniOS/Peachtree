@@ -82,6 +82,7 @@
 		C864E8AC28CE469C00BA030D /* ViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C864E8A728CE469C00BA030D /* ViewAnimator.swift */; };
 		C864E8AD28CE469C00BA030D /* AnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C864E8A828CE469C00BA030D /* AnimationType.swift */; };
 		C864E8AF28CE46AA00BA030D /* UICollectionView + ViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C864E8AE28CE46AA00BA030D /* UICollectionView + ViewAnimator.swift */; };
+		C864E8B128CE4A2800BA030D /* LBSatoshiMediumWhite12.swift in Sources */ = {isa = PBXBuildFile; fileRef = C864E8B028CE4A2800BA030D /* LBSatoshiMediumWhite12.swift */; };
 		C89A792B28CA5EB0006A06CC /* Californian FB Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C89A792A28CA5EB0006A06CC /* Californian FB Bold.ttf */; };
 		C89A792D28CA5F85006A06CC /* LBCalifornianBoldBlack24.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89A792C28CA5F85006A06CC /* LBCalifornianBoldBlack24.swift */; };
 		C8A1734528CC6634002C52BE /* RateUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A1734428CC6634002C52BE /* RateUsVC.swift */; };
@@ -215,6 +216,7 @@
 		C864E8A728CE469C00BA030D /* ViewAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAnimator.swift; sourceTree = "<group>"; };
 		C864E8A828CE469C00BA030D /* AnimationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationType.swift; sourceTree = "<group>"; };
 		C864E8AE28CE46AA00BA030D /* UICollectionView + ViewAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView + ViewAnimator.swift"; sourceTree = "<group>"; };
+		C864E8B028CE4A2800BA030D /* LBSatoshiMediumWhite12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBSatoshiMediumWhite12.swift; sourceTree = "<group>"; };
 		C89A792A28CA5EB0006A06CC /* Californian FB Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Californian FB Bold.ttf"; sourceTree = "<group>"; };
 		C89A792C28CA5F85006A06CC /* LBCalifornianBoldBlack24.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBCalifornianBoldBlack24.swift; sourceTree = "<group>"; };
 		C8A1734428CC6634002C52BE /* RateUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateUsVC.swift; sourceTree = "<group>"; };
@@ -692,6 +694,7 @@
 				17D6D58D28CDD724007D677B /* LBLSatoshiMediumBlack18.swift */,
 				17D6D59928CDFBA1007D677B /* LBLSatoshiBoldBlack16.swift */,
 				17D81D0728CE1EB600C3C05F /* LBSatoshiMediumBlack17.swift */,
+				C864E8B028CE4A2800BA030D /* LBSatoshiMediumWhite12.swift */,
 			);
 			path = "Custom Labels";
 			sourceTree = "<group>";
@@ -1047,6 +1050,7 @@
 				C8A2DEEA28CBABE0005578DE /* MoreListTableVWCell.swift in Sources */,
 				172F207028BFBD91007096DB /* SceneDelegate.swift in Sources */,
 				C8BB1C4A28CCF79F00A66FDF /* LBSatoshiMediumWhite14.swift in Sources */,
+				C864E8B128CE4A2800BA030D /* LBSatoshiMediumWhite12.swift in Sources */,
 				172F20C628C0AF2F007096DB /* FavoritesVC.swift in Sources */,
 				C8BB1C4828CCF75600A66FDF /* LBSatoshiWhite60.swift in Sources */,
 				C8A1734928CC78F1002C52BE /* LBSatoshiRegularLightGrey12.swift in Sources */,
