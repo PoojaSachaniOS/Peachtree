@@ -7,42 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03A162D14747BDE70935EF53DC917732 /* FloatRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C51B8BD727C79E8372F9AA95CACB68 /* FloatRatingView.swift */; };
-		1FE5FBE2173F44C64AD51D6BD7278C2A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		03649EF710AC817B187E1B962A00300C /* Pods-Peachtree-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D791A0F03E53CF5DB80FA50EF9987F1 /* Pods-Peachtree-dummy.m */; };
+		03A162D14747BDE70935EF53DC917732 /* FloatRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AA04493EECEA9709CD578DADE9C161 /* FloatRatingView.swift */; };
+		0F4D7F31A9E91B95D3368A2C8A5E6EF0 /* Pods-Peachtree-PeachtreeUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 312506312F8E13262D0156E9F8A6D052 /* Pods-Peachtree-PeachtreeUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FEAB38B2D1700082EBBE0A3CE7F2B82 /* AnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34F2D269567F2CC96922CE171DEF5FE /* AnimationType.swift */; };
+		11AFF4981010C5E49B6B29E020240CE3 /* ViewAnimator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FAC9E02152051EC662A2854C044413 /* ViewAnimator-dummy.m */; };
+		11DD56690BF77208D070E5BE092C3F56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		3785B6EF016D1A2EB96A8ABF19B8264C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		5E4A2A2A44E08B6BD27291CAB5659084 /* FloatRatingView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3CD2E79BB9DCC7740902259CBC17E7 /* FloatRatingView-dummy.m */; };
-		657DAEBF0FC3B854A8878215DCF7C7C8 /* FloatRatingView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 140D44DC1F216F8E9E2C0BE700FE49E8 /* FloatRatingView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D75F468F65DC5C63D04CE2742233E0D /* Pods-Peachtree-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D791A0F03E53CF5DB80FA50EF9987F1 /* Pods-Peachtree-dummy.m */; };
-		A351EAFA024DB7D896B5BE63D0ED37B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		5E4A2A2A44E08B6BD27291CAB5659084 /* FloatRatingView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8A3A6D946186B23E9471427B993D92 /* FloatRatingView-dummy.m */; };
+		657DAEBF0FC3B854A8878215DCF7C7C8 /* FloatRatingView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA417844622A2643184CDBAEB540DF9E /* FloatRatingView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68C592A390F5B04D7FA5EA65595C80BB /* Pods-Peachtree-PeachtreeUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D5890FA7347CC341E357E3B16FD2DC /* Pods-Peachtree-PeachtreeUITests-dummy.m */; };
+		69580813FFAB42001ED4546D29320903 /* Pods-Peachtree-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 825CA16AF06BF07BE3D8FB5556E0F260 /* Pods-Peachtree-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E13A5BFA8F8C7D82E76EDB4D86AAA80 /* ViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F594D129310802C2DA8F0ED143146A /* ViewAnimator.swift */; };
+		7E1DFDF3189218032B9C7949AC84BC20 /* ViewAnimator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DCD2119D85B4B0C41104DD9187E7192 /* ViewAnimator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9155B56913329BA2915E95AEABC3574A /* UICollectionView + ViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95259AAA7A9E7B231D8467E196222E3 /* UICollectionView + ViewAnimator.swift */; };
+		A1F6C9E53C36AD6526461FB4E9DD8F89 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DCBA894F18BF5CFABCBBC5F549916C /* Animation.swift */; };
 		A4275D0606AA2F633F046D22827D6D6C /* Pods-PeachtreeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A0811B4CB394EFC0970664034E7B46 /* Pods-PeachtreeTests-dummy.m */; };
+		C331980536BE9345E994439CD554C306 /* ViewAnimatorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEB041D691D1F6440E317EF111EEF1C /* ViewAnimatorConfig.swift */; };
 		D005856C93C7B563734F81320FCE6662 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		D1C1E6087A86263524CB278874080A3E /* UITableView + ViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C04F269AA8726DDA24ED17FA4BB6C /* UITableView + ViewAnimator.swift */; };
 		D34B10A28967A0DF2ED038F78D9B5EFB /* Pods-PeachtreeTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CDD122904CB5409F1F009E47879FC20B /* Pods-PeachtreeTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E51EE7AAFD1C7DFE1399A01A627308A0 /* Pods-Peachtree-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 825CA16AF06BF07BE3D8FB5556E0F260 /* Pods-Peachtree-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F3A315C2BBFA7BBC9E3D4D6B89116697 /* Pods-Peachtree-PeachtreeUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 312506312F8E13262D0156E9F8A6D052 /* Pods-Peachtree-PeachtreeUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F645EBCD2EBBAB0955CF3DFD816838B2 /* Pods-Peachtree-PeachtreeUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D5890FA7347CC341E357E3B16FD2DC /* Pods-Peachtree-PeachtreeUITests-dummy.m */; };
+		D8C8A3CB55B531ACBC39881969E38797 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		F2287C78F601912D1FC092EC4915B3B8 /* Directions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8A7CFF1F7879681FDB2362B19FD6B6 /* Directions.swift */; };
+		FA83D0C2A0147A38953447927AE9ADFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6C56A4197DB9DE6994EEDC983EF9D978 /* PBXContainerItemProxy */ = {
+		03FD0194B3693C6478BE7B7603FB4612 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE757DC2461D0AA2D5AC6791CC56EFC8;
+			remoteInfo = FloatRatingView;
+		};
+		430193AED70C9239FBE6E9252C4F7C80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE757DC2461D0AA2D5AC6791CC56EFC8;
+			remoteInfo = FloatRatingView;
+		};
+		B8C7CDDE7174FA916409B0A75E03958C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 88B7EC32403699D1E397417B3019E32B;
 			remoteInfo = "Pods-Peachtree";
 		};
-		86EC7227D30749DB45B8CE123E367008 /* PBXContainerItemProxy */ = {
+		BE2E7E38F4349DCB21DC86DD69574C2E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DE757DC2461D0AA2D5AC6791CC56EFC8;
-			remoteInfo = FloatRatingView;
+			remoteGlobalIDString = 91BFC2827E7E6E2B51AB2CFF58AC6317;
+			remoteInfo = ViewAnimator;
 		};
-		EB21D0C3F380D32D3981F7ABF1D855CD /* PBXContainerItemProxy */ = {
+		DD46F7B1625CD25AF962E508A5574336 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DE757DC2461D0AA2D5AC6791CC56EFC8;
-			remoteInfo = FloatRatingView;
+			remoteGlobalIDString = 91BFC2827E7E6E2B51AB2CFF58AC6317;
+			remoteInfo = ViewAnimator;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -50,43 +74,58 @@
 		07F7E2C56CD5512DFF1E94FC4F8DEC43 /* Pods-PeachtreeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PeachtreeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		0C792B86A3AAA55AE501E6FB0DAF1B53 /* Pods-Peachtree-PeachtreeUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Peachtree-PeachtreeUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0D314A099CE8EAC4E887FC2674E8DC48 /* Pods-Peachtree */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Peachtree"; path = Pods_Peachtree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		12C51B8BD727C79E8372F9AA95CACB68 /* FloatRatingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FloatRatingView.swift; sourceTree = "<group>"; };
-		140D44DC1F216F8E9E2C0BE700FE49E8 /* FloatRatingView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FloatRatingView-umbrella.h"; sourceTree = "<group>"; };
 		1D791A0F03E53CF5DB80FA50EF9987F1 /* Pods-Peachtree-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Peachtree-dummy.m"; sourceTree = "<group>"; };
+		1EEB041D691D1F6440E317EF111EEF1C /* ViewAnimatorConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewAnimatorConfig.swift; path = Sources/ViewAnimatorConfig.swift; sourceTree = "<group>"; };
 		29BB62E58F4DEA1FD27EB85FE3851AF7 /* FloatRatingView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FloatRatingView; path = FloatRatingView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C3CD2E79BB9DCC7740902259CBC17E7 /* FloatRatingView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FloatRatingView-dummy.m"; sourceTree = "<group>"; };
+		2A64A0C2993AD0AC2DF4871B146D701A /* FloatRatingView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FloatRatingView.debug.xcconfig; sourceTree = "<group>"; };
+		2DCD2119D85B4B0C41104DD9187E7192 /* ViewAnimator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ViewAnimator-umbrella.h"; sourceTree = "<group>"; };
+		2F2F18F422AD1BF6EE3C31CA7B97E2A5 /* FloatRatingView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FloatRatingView-Info.plist"; sourceTree = "<group>"; };
 		312506312F8E13262D0156E9F8A6D052 /* Pods-Peachtree-PeachtreeUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Peachtree-PeachtreeUITests-umbrella.h"; sourceTree = "<group>"; };
 		3291CC6695C2A2925D4DDA3ED4E25935 /* Pods-Peachtree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Peachtree.debug.xcconfig"; sourceTree = "<group>"; };
 		36385FE1DBCF7FADDC4434E9BF1D2DEE /* Pods-Peachtree-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Peachtree-frameworks.sh"; sourceTree = "<group>"; };
 		41D5890FA7347CC341E357E3B16FD2DC /* Pods-Peachtree-PeachtreeUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Peachtree-PeachtreeUITests-dummy.m"; sourceTree = "<group>"; };
+		44DCBA894F18BF5CFABCBBC5F549916C /* Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animation.swift; path = Sources/Protocols/Animation.swift; sourceTree = "<group>"; };
+		4786AA8778C8B3872C872F1D2A9F358B /* FloatRatingView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FloatRatingView-prefix.pch"; sourceTree = "<group>"; };
 		5246F2AFB3E27B467FD406B792314D0B /* Pods-PeachtreeTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PeachtreeTests.modulemap"; sourceTree = "<group>"; };
 		5D3B3817BC50D57A0A886659DAAA88F6 /* Pods-Peachtree-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Peachtree-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5DF83AE89EFCBB6E9179C999E658959D /* Pods-PeachtreeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PeachtreeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		643C04F269AA8726DDA24ED17FA4BB6C /* UITableView + ViewAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView + ViewAnimator.swift"; path = "Sources/Extensions/UITableView + ViewAnimator.swift"; sourceTree = "<group>"; };
+		67F594D129310802C2DA8F0ED143146A /* ViewAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewAnimator.swift; path = Sources/ViewAnimator.swift; sourceTree = "<group>"; };
+		6D8A3A6D946186B23E9471427B993D92 /* FloatRatingView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FloatRatingView-dummy.m"; sourceTree = "<group>"; };
 		6F40A1BC5132FE3E4E1EA2638170A9C1 /* Pods-Peachtree-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Peachtree-acknowledgements.plist"; sourceTree = "<group>"; };
 		72A0811B4CB394EFC0970664034E7B46 /* Pods-PeachtreeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PeachtreeTests-dummy.m"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		80FAC9E02152051EC662A2854C044413 /* ViewAnimator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ViewAnimator-dummy.m"; sourceTree = "<group>"; };
 		825CA16AF06BF07BE3D8FB5556E0F260 /* Pods-Peachtree-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Peachtree-umbrella.h"; sourceTree = "<group>"; };
+		92B4D36BAF993A5266C788AFB488A239 /* ViewAnimator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ViewAnimator-prefix.pch"; sourceTree = "<group>"; };
+		94AA04493EECEA9709CD578DADE9C161 /* FloatRatingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FloatRatingView.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E38760B71FD54B6AA2006F6AEE2D00C /* ViewAnimator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ViewAnimator-Info.plist"; sourceTree = "<group>"; };
 		9E62FA6851989D11B4DE8F830CA5493D /* Pods-Peachtree-PeachtreeUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Peachtree-PeachtreeUITests"; path = Pods_Peachtree_PeachtreeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A34F2D269567F2CC96922CE171DEF5FE /* AnimationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationType.swift; path = Sources/Models/AnimationType.swift; sourceTree = "<group>"; };
 		A64A87BEAEFF8BE0C2144D534B351C09 /* Pods-Peachtree-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Peachtree-Info.plist"; sourceTree = "<group>"; };
-		AA44E61C255739BF5722BBDC012854FA /* FloatRatingView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FloatRatingView.modulemap; sourceTree = "<group>"; };
+		A76921F7329D552AD6FA723972B6337A /* ViewAnimator */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ViewAnimator; path = ViewAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A79B3FD88E2268B5E545F641C7E61F0D /* ViewAnimator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ViewAnimator.modulemap; sourceTree = "<group>"; };
 		AAE3A92809BE8566F1DB112C9248BD6A /* Pods-Peachtree-PeachtreeUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Peachtree-PeachtreeUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AD8A7CFF1F7879681FDB2362B19FD6B6 /* Directions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Directions.swift; path = Sources/Models/Directions.swift; sourceTree = "<group>"; };
 		B02D09DB878E493DF1BAF04E6B477592 /* Pods-Peachtree-PeachtreeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Peachtree-PeachtreeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B854A277F94788E6B18966E3964FAD73 /* Pods-PeachtreeTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PeachtreeTests-Info.plist"; sourceTree = "<group>"; };
-		BDD5DCB0770E49A7DD5BDB6CF5C19E81 /* FloatRatingView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FloatRatingView-Info.plist"; sourceTree = "<group>"; };
-		BEF2F80C8E81A605E4F3EB298F30144B /* FloatRatingView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FloatRatingView-prefix.pch"; sourceTree = "<group>"; };
+		B95259AAA7A9E7B231D8467E196222E3 /* UICollectionView + ViewAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView + ViewAnimator.swift"; path = "Sources/Extensions/UICollectionView + ViewAnimator.swift"; sourceTree = "<group>"; };
+		BBDD30E0D50AF7874022A3A6F2390372 /* FloatRatingView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FloatRatingView.release.xcconfig; sourceTree = "<group>"; };
+		C02E9D4F02F5A6B27D4C96545977933A /* ViewAnimator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ViewAnimator.debug.xcconfig; sourceTree = "<group>"; };
 		C3CB7CF6E0FC12A1F20F41199D2F45C9 /* Pods-Peachtree-PeachtreeUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Peachtree-PeachtreeUITests-Info.plist"; sourceTree = "<group>"; };
+		C42A7B6C80D493939BADF0E6DBA6579B /* FloatRatingView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FloatRatingView.modulemap; sourceTree = "<group>"; };
 		C56FA4CB51803497A3F52FD822B89096 /* Pods-Peachtree-PeachtreeUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Peachtree-PeachtreeUITests.modulemap"; sourceTree = "<group>"; };
 		C7EDFCCDFA157D89446F2BD7D814BFBD /* Pods-PeachtreeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PeachtreeTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		C8F7372611A3DB70A00F24CD1C7352B4 /* FloatRatingView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FloatRatingView.release.xcconfig; sourceTree = "<group>"; };
+		C7F8815090C136BA854638DF1626AA10 /* ViewAnimator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ViewAnimator.release.xcconfig; sourceTree = "<group>"; };
 		CDD122904CB5409F1F009E47879FC20B /* Pods-PeachtreeTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PeachtreeTests-umbrella.h"; sourceTree = "<group>"; };
 		D0D5BA1796273CF69CCFAC84BA9C46BC /* Pods-Peachtree.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Peachtree.release.xcconfig"; sourceTree = "<group>"; };
 		DD3E743DFAE66336C25CA5D1F783DFC6 /* Pods-PeachtreeTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PeachtreeTests"; path = Pods_PeachtreeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD98CAA978F6004803BB0505B89999DC /* Pods-Peachtree-PeachtreeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Peachtree-PeachtreeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DE335A13103787937B9031DFAFA29D3C /* Pods-Peachtree-PeachtreeUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Peachtree-PeachtreeUITests-frameworks.sh"; sourceTree = "<group>"; };
 		E2FB1C96E545C59BC458B80441789AD4 /* Pods-PeachtreeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PeachtreeTests.release.xcconfig"; sourceTree = "<group>"; };
-		F8A6B0C839CEAC7793D4332D8C80870F /* FloatRatingView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FloatRatingView.debug.xcconfig; sourceTree = "<group>"; };
 		FA236E74EA0F1175CE02E3D0B09665C5 /* Pods-Peachtree.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Peachtree.modulemap"; sourceTree = "<group>"; };
+		FA417844622A2643184CDBAEB540DF9E /* FloatRatingView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FloatRatingView-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +137,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2533212D055905DDA14F7586332EF76B /* Frameworks */ = {
+		5A4057F3193EBDAC7F27720C033F16A4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FE5FBE2173F44C64AD51D6BD7278C2A /* Foundation.framework in Frameworks */,
+				FA83D0C2A0147A38953447927AE9ADFA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94502534D785567782652D48E4EA7AF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11DD56690BF77208D070E5BE092C3F56 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4680EA7702BCA2D7A2DA249BB274D37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C8A3CB55B531ACBC39881969E38797 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,21 +169,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E634E3217443F6DE149832D833BE4783 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A351EAFA024DB7D896B5BE63D0ED37B2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1C9886B8C48A9D4E001630695FCD893D /* Pods */ = {
+		1479784A73EF947FF41EA328343F9EFC /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C192E578356CD7456CF800158DA76860 /* FloatRatingView */,
+				A79B3FD88E2268B5E545F641C7E61F0D /* ViewAnimator.modulemap */,
+				80FAC9E02152051EC662A2854C044413 /* ViewAnimator-dummy.m */,
+				9E38760B71FD54B6AA2006F6AEE2D00C /* ViewAnimator-Info.plist */,
+				92B4D36BAF993A5266C788AFB488A239 /* ViewAnimator-prefix.pch */,
+				2DCD2119D85B4B0C41104DD9187E7192 /* ViewAnimator-umbrella.h */,
+				C02E9D4F02F5A6B27D4C96545977933A /* ViewAnimator.debug.xcconfig */,
+				C7F8815090C136BA854638DF1626AA10 /* ViewAnimator.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ViewAnimator";
+			sourceTree = "<group>";
+		};
+		2A8D9A725ED71D8F04B7D8DD46CB2993 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF3338F603CA187556E7EFC656B049C5 /* FloatRatingView */,
+				B461818FAEA2BC090B7E8E8C64C76730 /* ViewAnimator */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -149,21 +212,6 @@
 			path = "Target Support Files/Pods-PeachtreeTests";
 			sourceTree = "<group>";
 		};
-		41300DE42670FEC7841D96BA3B75F2C7 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				AA44E61C255739BF5722BBDC012854FA /* FloatRatingView.modulemap */,
-				2C3CD2E79BB9DCC7740902259CBC17E7 /* FloatRatingView-dummy.m */,
-				BDD5DCB0770E49A7DD5BDB6CF5C19E81 /* FloatRatingView-Info.plist */,
-				BEF2F80C8E81A605E4F3EB298F30144B /* FloatRatingView-prefix.pch */,
-				140D44DC1F216F8E9E2C0BE700FE49E8 /* FloatRatingView-umbrella.h */,
-				F8A6B0C839CEAC7793D4332D8C80870F /* FloatRatingView.debug.xcconfig */,
-				C8F7372611A3DB70A00F24CD1C7352B4 /* FloatRatingView.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/FloatRatingView";
-			sourceTree = "<group>";
-		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,14 +220,35 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C192E578356CD7456CF800158DA76860 /* FloatRatingView */ = {
+		58E3DE7E6CD8241E658713227CA6D1E6 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				12C51B8BD727C79E8372F9AA95CACB68 /* FloatRatingView.swift */,
-				41300DE42670FEC7841D96BA3B75F2C7 /* Support Files */,
+				C42A7B6C80D493939BADF0E6DBA6579B /* FloatRatingView.modulemap */,
+				6D8A3A6D946186B23E9471427B993D92 /* FloatRatingView-dummy.m */,
+				2F2F18F422AD1BF6EE3C31CA7B97E2A5 /* FloatRatingView-Info.plist */,
+				4786AA8778C8B3872C872F1D2A9F358B /* FloatRatingView-prefix.pch */,
+				FA417844622A2643184CDBAEB540DF9E /* FloatRatingView-umbrella.h */,
+				2A64A0C2993AD0AC2DF4871B146D701A /* FloatRatingView.debug.xcconfig */,
+				BBDD30E0D50AF7874022A3A6F2390372 /* FloatRatingView.release.xcconfig */,
 			);
-			name = FloatRatingView;
-			path = FloatRatingView;
+			name = "Support Files";
+			path = "../Target Support Files/FloatRatingView";
+			sourceTree = "<group>";
+		};
+		B461818FAEA2BC090B7E8E8C64C76730 /* ViewAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				44DCBA894F18BF5CFABCBBC5F549916C /* Animation.swift */,
+				A34F2D269567F2CC96922CE171DEF5FE /* AnimationType.swift */,
+				AD8A7CFF1F7879681FDB2362B19FD6B6 /* Directions.swift */,
+				B95259AAA7A9E7B231D8467E196222E3 /* UICollectionView + ViewAnimator.swift */,
+				643C04F269AA8726DDA24ED17FA4BB6C /* UITableView + ViewAnimator.swift */,
+				67F594D129310802C2DA8F0ED143146A /* ViewAnimator.swift */,
+				1EEB041D691D1F6440E317EF111EEF1C /* ViewAnimatorConfig.swift */,
+				1479784A73EF947FF41EA328343F9EFC /* Support Files */,
+			);
+			name = ViewAnimator;
+			path = ViewAnimator;
 			sourceTree = "<group>";
 		};
 		C6D2017856795CD0D1E2F06180876C13 /* Pods-Peachtree */ = {
@@ -199,13 +268,25 @@
 			path = "Target Support Files/Pods-Peachtree";
 			sourceTree = "<group>";
 		};
+		CE6BFFEE9284079B0B72C6CBDEA46FD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29BB62E58F4DEA1FD27EB85FE3851AF7 /* FloatRatingView */,
+				0D314A099CE8EAC4E887FC2674E8DC48 /* Pods-Peachtree */,
+				9E62FA6851989D11B4DE8F830CA5493D /* Pods-Peachtree-PeachtreeUITests */,
+				DD3E743DFAE66336C25CA5D1F783DFC6 /* Pods-PeachtreeTests */,
+				A76921F7329D552AD6FA723972B6337A /* ViewAnimator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				1C9886B8C48A9D4E001630695FCD893D /* Pods */,
-				DBE8342A8E1EFA2F58783CDFCC9E0D29 /* Products */,
+				2A8D9A725ED71D8F04B7D8DD46CB2993 /* Pods */,
+				CE6BFFEE9284079B0B72C6CBDEA46FD3 /* Products */,
 				E26106514738C499F5962D743465D0C8 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -216,17 +297,6 @@
 				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DBE8342A8E1EFA2F58783CDFCC9E0D29 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				29BB62E58F4DEA1FD27EB85FE3851AF7 /* FloatRatingView */,
-				0D314A099CE8EAC4E887FC2674E8DC48 /* Pods-Peachtree */,
-				9E62FA6851989D11B4DE8F830CA5493D /* Pods-Peachtree-PeachtreeUITests */,
-				DD3E743DFAE66336C25CA5D1F783DFC6 /* Pods-PeachtreeTests */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		DCFC7AE5407FA5A5F65D330578AE2346 /* Pods-Peachtree-PeachtreeUITests */ = {
@@ -256,14 +326,40 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		FF3338F603CA187556E7EFC656B049C5 /* FloatRatingView */ = {
+			isa = PBXGroup;
+			children = (
+				94AA04493EECEA9709CD578DADE9C161 /* FloatRatingView.swift */,
+				58E3DE7E6CD8241E658713227CA6D1E6 /* Support Files */,
+			);
+			name = FloatRatingView;
+			path = FloatRatingView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		152427C913B4057038FFEF4AE4839348 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F4D7F31A9E91B95D3368A2C8A5E6EF0 /* Pods-Peachtree-PeachtreeUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		19B0BF6231EE8F39C1647547176AFF8B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D34B10A28967A0DF2ED038F78D9B5EFB /* Pods-PeachtreeTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28127C0FAC28A87731E07C99A268C720 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69580813FFAB42001ED4546D29320903 /* Pods-Peachtree-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,19 +371,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		44724A0F4BEED372AF8CE24A3E4C03E1 /* Headers */ = {
+		5857DE774CBAFF6820E3AFB900812A12 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3A315C2BBFA7BBC9E3D4D6B89116697 /* Pods-Peachtree-PeachtreeUITests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7124031EAC10BB60A0A20BF326B17605 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E51EE7AAFD1C7DFE1399A01A627308A0 /* Pods-Peachtree-umbrella.h in Headers */,
+				7E1DFDF3189218032B9C7949AC84BC20 /* ViewAnimator-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +394,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				592A09DE4DD8A9D0CF588FB9758E916D /* PBXTargetDependency */,
+				96144CDE65E097DEBA43FA89319AA3CD /* PBXTargetDependency */,
 			);
 			name = "Pods-PeachtreeTests";
 			productName = Pods_PeachtreeTests;
@@ -315,17 +403,18 @@
 		};
 		74E36E864F9962DC18A4EBD8BFD46A99 /* Pods-Peachtree-PeachtreeUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA413E0D4C8BBA9596FDC85AD38D7479 /* Build configuration list for PBXNativeTarget "Pods-Peachtree-PeachtreeUITests" */;
+			buildConfigurationList = 5A8A17A62B35E89F8A60C50FCC9672E6 /* Build configuration list for PBXNativeTarget "Pods-Peachtree-PeachtreeUITests" */;
 			buildPhases = (
-				44724A0F4BEED372AF8CE24A3E4C03E1 /* Headers */,
-				BD06959D46ED0DAEF446A97DDF343561 /* Sources */,
-				2533212D055905DDA14F7586332EF76B /* Frameworks */,
-				BE35159294AE6339591E733E42816B27 /* Resources */,
+				152427C913B4057038FFEF4AE4839348 /* Headers */,
+				69A59F9B7DE55B722EAEA8372986DE6E /* Sources */,
+				94502534D785567782652D48E4EA7AF6 /* Frameworks */,
+				7625CE02A897826EFD8BC2CF09139375 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3D58D278E7CB6CDC34AF64D1837F454B /* PBXTargetDependency */,
+				8C7DBBA4FD6170D428FB6821864AC630 /* PBXTargetDependency */,
+				BC9FC39E130F65075108B8BA66FA16D8 /* PBXTargetDependency */,
 			);
 			name = "Pods-Peachtree-PeachtreeUITests";
 			productName = Pods_Peachtree_PeachtreeUITests;
@@ -334,21 +423,40 @@
 		};
 		88B7EC32403699D1E397417B3019E32B /* Pods-Peachtree */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 33BB7E78592B587CB6DF205AE31D6521 /* Build configuration list for PBXNativeTarget "Pods-Peachtree" */;
+			buildConfigurationList = EC2B865A5B06DCE52E9341463130D794 /* Build configuration list for PBXNativeTarget "Pods-Peachtree" */;
 			buildPhases = (
-				7124031EAC10BB60A0A20BF326B17605 /* Headers */,
-				1E75C81157D3F5E53680D81D025FCAE6 /* Sources */,
-				E634E3217443F6DE149832D833BE4783 /* Frameworks */,
-				D31C7CDC82EA012EEDEF5595530114A0 /* Resources */,
+				28127C0FAC28A87731E07C99A268C720 /* Headers */,
+				61F429D9CB4FFE761F6C81D1DF79D313 /* Sources */,
+				C4680EA7702BCA2D7A2DA249BB274D37 /* Frameworks */,
+				7F8A4B31AC092DA002CB25F8F0B39A0E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				397ECF56D6D0C3A9F9C19F0D02679B20 /* PBXTargetDependency */,
+				B2A692DBF915EC7C400111A6D979BB82 /* PBXTargetDependency */,
+				6E9B15AD893BFAF648D9A6B48B17BD02 /* PBXTargetDependency */,
 			);
 			name = "Pods-Peachtree";
 			productName = Pods_Peachtree;
 			productReference = 0D314A099CE8EAC4E887FC2674E8DC48 /* Pods-Peachtree */;
+			productType = "com.apple.product-type.framework";
+		};
+		91BFC2827E7E6E2B51AB2CFF58AC6317 /* ViewAnimator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D92F2F329EF943C423E2CC30E85E0FEC /* Build configuration list for PBXNativeTarget "ViewAnimator" */;
+			buildPhases = (
+				5857DE774CBAFF6820E3AFB900812A12 /* Headers */,
+				9FE68D106BBE75877F21BB6175794914 /* Sources */,
+				5A4057F3193EBDAC7F27720C033F16A4 /* Frameworks */,
+				6C2DBC31B7CEBB271D907F6E4D416F11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ViewAnimator;
+			productName = ViewAnimator;
+			productReference = A76921F7329D552AD6FA723972B6337A /* ViewAnimator */;
 			productType = "com.apple.product-type.framework";
 		};
 		DE757DC2461D0AA2D5AC6791CC56EFC8 /* FloatRatingView */ = {
@@ -387,7 +495,7 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = DBE8342A8E1EFA2F58783CDFCC9E0D29 /* Products */;
+			productRefGroup = CE6BFFEE9284079B0B72C6CBDEA46FD3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -395,6 +503,7 @@
 				88B7EC32403699D1E397417B3019E32B /* Pods-Peachtree */,
 				74E36E864F9962DC18A4EBD8BFD46A99 /* Pods-Peachtree-PeachtreeUITests */,
 				0F053273BF41D059056D70FC07E4FFDE /* Pods-PeachtreeTests */,
+				91BFC2827E7E6E2B51AB2CFF58AC6317 /* ViewAnimator */,
 			);
 		};
 /* End PBXProject section */
@@ -407,14 +516,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE35159294AE6339591E733E42816B27 /* Resources */ = {
+		6C2DBC31B7CEBB271D907F6E4D416F11 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D31C7CDC82EA012EEDEF5595530114A0 /* Resources */ = {
+		7625CE02A897826EFD8BC2CF09139375 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F8A4B31AC092DA002CB25F8F0B39A0E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -431,19 +547,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1E75C81157D3F5E53680D81D025FCAE6 /* Sources */ = {
+		61F429D9CB4FFE761F6C81D1DF79D313 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D75F468F65DC5C63D04CE2742233E0D /* Pods-Peachtree-dummy.m in Sources */,
+				03649EF710AC817B187E1B962A00300C /* Pods-Peachtree-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BD06959D46ED0DAEF446A97DDF343561 /* Sources */ = {
+		69A59F9B7DE55B722EAEA8372986DE6E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F645EBCD2EBBAB0955CF3DFD816838B2 /* Pods-Peachtree-PeachtreeUITests-dummy.m in Sources */,
+				68C592A390F5B04D7FA5EA65595C80BB /* Pods-Peachtree-PeachtreeUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FE68D106BBE75877F21BB6175794914 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1F6C9E53C36AD6526461FB4E9DD8F89 /* Animation.swift in Sources */,
+				0FEAB38B2D1700082EBBE0A3CE7F2B82 /* AnimationType.swift in Sources */,
+				F2287C78F601912D1FC092EC4915B3B8 /* Directions.swift in Sources */,
+				9155B56913329BA2915E95AEABC3574A /* UICollectionView + ViewAnimator.swift in Sources */,
+				D1C1E6087A86263524CB278874080A3E /* UITableView + ViewAnimator.swift in Sources */,
+				7E13A5BFA8F8C7D82E76EDB4D86AAA80 /* ViewAnimator.swift in Sources */,
+				11AFF4981010C5E49B6B29E020240CE3 /* ViewAnimator-dummy.m in Sources */,
+				C331980536BE9345E994439CD554C306 /* ViewAnimatorConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,30 +598,42 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		397ECF56D6D0C3A9F9C19F0D02679B20 /* PBXTargetDependency */ = {
+		6E9B15AD893BFAF648D9A6B48B17BD02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ViewAnimator;
+			target = 91BFC2827E7E6E2B51AB2CFF58AC6317 /* ViewAnimator */;
+			targetProxy = BE2E7E38F4349DCB21DC86DD69574C2E /* PBXContainerItemProxy */;
+		};
+		8C7DBBA4FD6170D428FB6821864AC630 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FloatRatingView;
 			target = DE757DC2461D0AA2D5AC6791CC56EFC8 /* FloatRatingView */;
-			targetProxy = EB21D0C3F380D32D3981F7ABF1D855CD /* PBXContainerItemProxy */;
+			targetProxy = 03FD0194B3693C6478BE7B7603FB4612 /* PBXContainerItemProxy */;
 		};
-		3D58D278E7CB6CDC34AF64D1837F454B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FloatRatingView;
-			target = DE757DC2461D0AA2D5AC6791CC56EFC8 /* FloatRatingView */;
-			targetProxy = 86EC7227D30749DB45B8CE123E367008 /* PBXContainerItemProxy */;
-		};
-		592A09DE4DD8A9D0CF588FB9758E916D /* PBXTargetDependency */ = {
+		96144CDE65E097DEBA43FA89319AA3CD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Peachtree";
 			target = 88B7EC32403699D1E397417B3019E32B /* Pods-Peachtree */;
-			targetProxy = 6C56A4197DB9DE6994EEDC983EF9D978 /* PBXContainerItemProxy */;
+			targetProxy = B8C7CDDE7174FA916409B0A75E03958C /* PBXContainerItemProxy */;
+		};
+		B2A692DBF915EC7C400111A6D979BB82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FloatRatingView;
+			target = DE757DC2461D0AA2D5AC6791CC56EFC8 /* FloatRatingView */;
+			targetProxy = 430193AED70C9239FBE6E9252C4F7C80 /* PBXContainerItemProxy */;
+		};
+		BC9FC39E130F65075108B8BA66FA16D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ViewAnimator;
+			target = 91BFC2827E7E6E2B51AB2CFF58AC6317 /* ViewAnimator */;
+			targetProxy = DD46F7B1625CD25AF962E508A5574336 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		03AA32428FB09EAD7662BB9628650DD1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8F7372611A3DB70A00F24CD1C7352B4 /* FloatRatingView.release.xcconfig */;
+			baseConfigurationReference = BBDD30E0D50AF7874022A3A6F2390372 /* FloatRatingView.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -523,12 +666,10 @@
 			};
 			name = Release;
 		};
-		04D3005AC50C32A9AAD2366E71B0FB42 /* Debug */ = {
+		142B71488EABD04855AF04021A2A0B3E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3291CC6695C2A2925D4DDA3ED4E25935 /* Pods-Peachtree.debug.xcconfig */;
+			baseConfigurationReference = C02E9D4F02F5A6B27D4C96545977933A /* ViewAnimator.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -537,23 +678,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Peachtree/Pods-Peachtree-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ViewAnimator/ViewAnimator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ViewAnimator/ViewAnimator-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Peachtree/Pods-Peachtree.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/ViewAnimator/ViewAnimator.modulemap";
+				PRODUCT_MODULE_NAME = ViewAnimator;
+				PRODUCT_NAME = ViewAnimator;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -597,12 +737,10 @@
 			};
 			name = Debug;
 		};
-		536B429D086DC55EB2909947DCA5680C /* Debug */ = {
+		5C7B434F8AAB2242CE11246D76A17537 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD98CAA978F6004803BB0505B89999DC /* Pods-Peachtree-PeachtreeUITests.debug.xcconfig */;
+			baseConfigurationReference = C7F8815090C136BA854638DF1626AA10 /* ViewAnimator.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -611,60 +749,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Peachtree-PeachtreeUITests/Pods-Peachtree-PeachtreeUITests-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ViewAnimator/ViewAnimator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ViewAnimator/ViewAnimator-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Peachtree-PeachtreeUITests/Pods-Peachtree-PeachtreeUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/ViewAnimator/ViewAnimator.modulemap";
+				PRODUCT_MODULE_NAME = ViewAnimator;
+				PRODUCT_NAME = ViewAnimator;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		620E2A6F84CEB0786AC912DA31128B57 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0D5BA1796273CF69CCFAC84BA9C46BC /* Pods-Peachtree.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Peachtree/Pods-Peachtree-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Peachtree/Pods-Peachtree.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -696,6 +796,44 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-PeachtreeTests/Pods-PeachtreeTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8044FDCD8994ECF4212E65C0EDD498E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B02D09DB878E493DF1BAF04E6B477592 /* Pods-Peachtree-PeachtreeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Peachtree-PeachtreeUITests/Pods-Peachtree-PeachtreeUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Peachtree-PeachtreeUITests/Pods-Peachtree-PeachtreeUITests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -838,9 +976,9 @@
 			};
 			name = Release;
 		};
-		C6005980BC8FB36C18E9E98934AB018E /* Release */ = {
+		CA34B331EE8F2F149E11FD14E46AFB50 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B02D09DB878E493DF1BAF04E6B477592 /* Pods-Peachtree-PeachtreeUITests.release.xcconfig */;
+			baseConfigurationReference = DD98CAA978F6004803BB0505B89999DC /* Pods-Peachtree-PeachtreeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -870,15 +1008,14 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		D4B02EFFD886574A7CD73AF1AD8C05B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8A6B0C839CEAC7793D4332D8C80870F /* FloatRatingView.debug.xcconfig */;
+			baseConfigurationReference = 2A64A0C2993AD0AC2DF4871B146D701A /* FloatRatingView.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -910,6 +1047,81 @@
 			};
 			name = Debug;
 		};
+		E5B92C4562E26E2EB0E0F2DC69730845 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0D5BA1796273CF69CCFAC84BA9C46BC /* Pods-Peachtree.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Peachtree/Pods-Peachtree-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Peachtree/Pods-Peachtree.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E6CC8C2435288597C84D0973F2CE5F19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3291CC6695C2A2925D4DDA3ED4E25935 /* Pods-Peachtree.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Peachtree/Pods-Peachtree-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Peachtree/Pods-Peachtree.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -918,15 +1130,6 @@
 			buildConfigurations = (
 				411D928E7941F4212B69DA2F58BD67A3 /* Debug */,
 				709EEFDD271F044C07D5CE54F4E03F52 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		33BB7E78592B587CB6DF205AE31D6521 /* Build configuration list for PBXNativeTarget "Pods-Peachtree" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				04D3005AC50C32A9AAD2366E71B0FB42 /* Debug */,
-				620E2A6F84CEB0786AC912DA31128B57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -940,6 +1143,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		5A8A17A62B35E89F8A60C50FCC9672E6 /* Build configuration list for PBXNativeTarget "Pods-Peachtree-PeachtreeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA34B331EE8F2F149E11FD14E46AFB50 /* Debug */,
+				8044FDCD8994ECF4212E65C0EDD498E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B621BC7DA610282792D4B9AE34E24527 /* Build configuration list for PBXNativeTarget "FloatRatingView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -949,11 +1161,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA413E0D4C8BBA9596FDC85AD38D7479 /* Build configuration list for PBXNativeTarget "Pods-Peachtree-PeachtreeUITests" */ = {
+		D92F2F329EF943C423E2CC30E85E0FEC /* Build configuration list for PBXNativeTarget "ViewAnimator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				536B429D086DC55EB2909947DCA5680C /* Debug */,
-				C6005980BC8FB36C18E9E98934AB018E /* Release */,
+				142B71488EABD04855AF04021A2A0B3E /* Debug */,
+				5C7B434F8AAB2242CE11246D76A17537 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC2B865A5B06DCE52E9341463130D794 /* Build configuration list for PBXNativeTarget "Pods-Peachtree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6CC8C2435288597C84D0973F2CE5F19 /* Debug */,
+				E5B92C4562E26E2EB0E0F2DC69730845 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

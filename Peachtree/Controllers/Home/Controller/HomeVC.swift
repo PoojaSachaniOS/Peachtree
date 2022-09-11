@@ -14,12 +14,23 @@ class HomeVC: UIViewController {
     enum AccountVCTableItemType {
         case shareMyLocation, renewGolfCart, cityHall, publicSafety, reportAnIssue, library, restaurants, shopping, calendar, notifyMe, pools, recreationAndSpecialEvent, golfCartHelp, call911, onlinePayment, settings
     }
+    private let animations = [AnimationType.vector((CGVector(dx: 0, dy: 260)))]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.registerNib()
         self.initializeData()
         self.setNeedsStatusBarAppearanceUpdate()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0) {
+           // self.items = Array(repeating: nil, count: 15)
+            self.collectionVwHome.reloadData()
+            self.collectionVwHome.performBatchUpdates({
+                UIView.animate(views: self.collectionVwHome.orderedVisibleCells,
+                               animations: self.animations, completion: {
+                })
+            }, completion: nil)
+        }
+
     }
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -226,3 +237,4 @@ class MoreItem<T> {
         self.type = type
     }
 }
+

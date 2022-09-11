@@ -1,16 +1,20 @@
 PODS:
   - FloatRatingView (4.0)
+  - ViewAnimator (3.1.0)
 
 DEPENDENCIES:
   - FloatRatingView
+  - ViewAnimator
 
 SPEC REPOS:
   trunk:
     - FloatRatingView
+    - ViewAnimator
 
 SPEC CHECKSUMS:
   FloatRatingView: bb6bdddfbeec51b1d387b4bd50abc27b4dfccd48
+  ViewAnimator: a9ceed80266e00fd435ec4fb99b2df64d580d0e4
 
-PODFILE CHECKSUM: aa562e036b3c8ca1bcc72646513755d76e23239e
+PODFILE CHECKSUM: ecbe13c32c2ce9ef9725d883ddca00becf146838
 
 COCOAPODS: 1.11.3
