@@ -100,7 +100,8 @@ extension StoryboardUtils{
     static func getRestaurantsDetailsVC()-> UIViewController{
         return Home.instance.instantiateViewController(withIdentifier: "RestaurantsDetailsVC")
     }
-
     
-    
+    static func getDirectionPopUpVC()-> UIViewController{
+        return Home.instance.instantiateViewController(withIdentifier: "DirectionPopUpVC")
+    }
 }

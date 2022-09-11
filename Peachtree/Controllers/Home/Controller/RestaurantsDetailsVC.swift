@@ -14,11 +14,37 @@ class RestaurantsDetailsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setUpUI()
-
+        self.addTapGesture()
+        
+    }
+    
+    func addTapGesture() {
+        let tapGesOnDirection = UITapGestureRecognizer(target: self, action: #selector(self.directionTapGestureTapped(_:)))
+        tapGesOnDirection.numberOfTapsRequired = 1
+        vwBgDirection.addGestureRecognizer(tapGesOnDirection)
+    }
+    
+    @objc func directionTapGestureTapped(_ sender: Any?) {
+        self.view.endEditing(true)
+        self.openDirectionPopUpVC()
     }
     
     @IBAction func btnBackTapped(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func btnDirectionTapped(_ sender: Any) {
+        self.openDirectionPopUpVC()
+    }
+    
+    func openDirectionPopUpVC() {
+        if let vcDirectionPopUp = StoryboardUtils.getDirectionPopUpVC() as? DirectionPopUpVC {
+            vcDirectionPopUp.providesPresentationContextTransitionStyle = true
+            vcDirectionPopUp.definesPresentationContext = true
+            vcDirectionPopUp.modalPresentationStyle = UIModalPresentationStyle.overFullScreen;
+            vcDirectionPopUp.view.backgroundColor = UIColor.init(white: 0.4, alpha: 0.8)
+            self.present(vcDirectionPopUp, animated: true, completion: nil)
+        }
     }
     
     func setUpUI() {
