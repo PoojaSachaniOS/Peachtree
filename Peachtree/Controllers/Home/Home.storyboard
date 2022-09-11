@@ -1647,6 +1647,7 @@
                     </view>
                     <connections>
                         <outlet property="stackVw" destination="HAQ-6K-kON" id="n20-nB-6Ba"/>
+                        <outlet property="vwInnerBgDropPin" destination="8MW-IG-Z4W" id="tWU-Jg-G6W"/>
                         <outlet property="vwOuterBgDropPin" destination="cgH-Li-dUM" id="kjf-Zc-Tcp"/>
                     </connections>
                 </viewController>
