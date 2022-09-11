@@ -1584,10 +1584,30 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oEY-3a-tSb">
-                                <rect key="frame" x="0.0" y="112" width="414" height="72"/>
+                                <rect key="frame" x="0.0" y="112" width="414" height="82"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uTp-VQ-Tve">
+                                        <rect key="frame" x="16" y="16" width="382" height="50"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lHu-7T-Sda">
+                                                <rect key="frame" x="0.0" y="0.0" width="181" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nL8-SH-Pdz">
+                                                <rect key="frame" x="201" y="0.0" width="181" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                    </stackView>
+                                </subviews>
                                 <color key="backgroundColor" name="AppOrange_color"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="72" id="Q1q-uq-k5f"/>
+                                    <constraint firstAttribute="trailing" secondItem="uTp-VQ-Tve" secondAttribute="trailing" constant="16" id="2bG-LK-jsq"/>
+                                    <constraint firstItem="uTp-VQ-Tve" firstAttribute="leading" secondItem="oEY-3a-tSb" secondAttribute="leading" constant="16" id="9Jg-a5-BYT"/>
+                                    <constraint firstAttribute="height" constant="82" id="Q1q-uq-k5f"/>
+                                    <constraint firstItem="uTp-VQ-Tve" firstAttribute="top" secondItem="oEY-3a-tSb" secondAttribute="top" constant="16" id="Xx9-Dd-12M"/>
+                                    <constraint firstAttribute="bottom" secondItem="uTp-VQ-Tve" secondAttribute="bottom" constant="16" id="h8E-wo-ifD"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -1602,10 +1622,13 @@
                             <constraint firstItem="oEY-3a-tSb" firstAttribute="leading" secondItem="2Nt-3T-dPQ" secondAttribute="leading" id="uHz-ik-5P0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="stackVw" destination="uTp-VQ-Tve" id="NlB-bP-T5X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OOo-Dq-m0a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1316" y="886"/>
+            <point key="canvasLocation" x="1314.4927536231885" y="885.32608695652186"/>
         </scene>
     </scenes>
     <resources>
@@ -1627,6 +1650,9 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
