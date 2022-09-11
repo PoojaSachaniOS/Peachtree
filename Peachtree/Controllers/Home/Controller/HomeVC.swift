@@ -27,7 +27,6 @@ class HomeVC: UIViewController {
     
     private func initializeData() {
         arr.append(HomeVCTableItem(iconName: "imgShareMyLocation", title:"Share My Location", type: .shareMyLocation, showArrow: true))
-        arr.append(HomeVCTableItem(iconName: "imgOnlinePayments", title:"Settins", type: .settings, showArrow: true))
         arr.append(HomeVCTableItem(iconName: "imgRenewGolfCart", title:"Register/Renew Golf Cart", type: .renewGolfCart, showArrow: true))
         arr.append(HomeVCTableItem(iconName: "imgCityHall", title:"City hall", type: .cityHall, showArrow: true))
         arr.append(HomeVCTableItem(iconName: "imgPublicSafety", title:"Public Safety", type: .publicSafety, showArrow: true))
@@ -45,6 +44,7 @@ class HomeVC: UIViewController {
         arr.append(HomeVCTableItem(iconName: "imgGolfCartHelp", title:"Golf Cart Help", type: .golfCartHelp, showArrow: true))
         arr.append(HomeVCTableItem(iconName: "imgCall911", title:"Call 911", type: .call911, showArrow: true))
         arr.append(HomeVCTableItem(iconName: "imgOnlinePayments", title:"Online Payments", type: .onlinePayment, showArrow: true))
+        arr.append(HomeVCTableItem(iconName: "imgOnlinePayments", title:"More Info", type: .settings, showArrow: true))
     }
     
 }

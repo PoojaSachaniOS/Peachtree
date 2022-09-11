@@ -35,6 +35,7 @@ extension RestaurantsVC: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tblVwRestaurants.dequeueReusableCell(withIdentifier: RestaurantsTableCell.className, for: indexPath) as! RestaurantsTableCell
         cell.backgroundColor = .clear
+        cell.selectionStyle = .none
         return cell
     }
    
