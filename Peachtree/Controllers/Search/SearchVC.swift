@@ -45,14 +45,14 @@ class SearchVC: UIViewController {
             btnAddress.addRoundedViewCorners(width: 4, colorBorder: Colors.color_AppOrange!, BackgroundColor: Colors.color_AppOrange!)
             btnAddress.setTitleColor(.white, for: .normal)
                         
-            btnCategories.addRoundedViewCorners(width: 4, colorBorder: Colors.color_AppThemeBlack!, BackgroundColor: .white)
+            btnCategories.addRoundedViewCorners(width: 4, colorBorder: Colors.color_AppThemeBlack!.withAlphaComponent(0.4), BackgroundColor: .white)
             btnCategories.setTitleColor(Colors.color_AppThemeBlack, for: .normal)
         } else {
             
             btnCategories.addRoundedViewCorners(width: 4, colorBorder: Colors.color_AppOrange!, BackgroundColor: Colors.color_AppOrange!)
             btnCategories.setTitleColor(.white, for: .normal)
                         
-            btnAddress.addRoundedViewCorners(width: 4, colorBorder: Colors.color_AppThemeBlack!, BackgroundColor: .white)
+            btnAddress.addRoundedViewCorners(width: 4, colorBorder: Colors.color_AppThemeBlack!.withAlphaComponent(0.4), BackgroundColor: .white)
             btnAddress.setTitleColor(Colors.color_AppThemeBlack, for: .normal)
         }
     }
