@@ -21,9 +21,7 @@ class ButtonSearchCategories: UIButton {
     
     func updateView() {
         isEnabled = false
-        backgroundColor = Colors.color_AppOrange
         titleLabel?.font = FontHelper.defaultSatoshiBoldFontWithSize(size: 16)
-        setTitleColor(.white, for: .normal)
         setTitleColor(Colors.color_AppThemeBlack, for: .selected)
         layer.cornerRadius = 4
         layer.masksToBounds = true
