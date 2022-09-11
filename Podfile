@@ -6,6 +6,7 @@ target 'Peachtree' do
   use_frameworks!
 pod 'FloatRatingView'
   # Pods for Peachtree
+  pod "ViewAnimator"
 
   target 'PeachtreeTests' do
     inherit! :search_paths

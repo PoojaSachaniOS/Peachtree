@@ -76,6 +76,12 @@
 		17D81D1028CE31E800C3C05F /* ShareMyLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D81D0F28CE31E800C3C05F /* ShareMyLocationVC.swift */; };
 		440826D5408EAABB00C349E9 /* Pods_Peachtree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30EACD0BD546F38AD117D1F4 /* Pods_Peachtree.framework */; };
 		6E168BF232B156B7B567D7BD /* Pods_PeachtreeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D049E48422CA0FE2E143879 /* Pods_PeachtreeTests.framework */; };
+		C864E8A928CE469C00BA030D /* Directions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C864E8A428CE469C00BA030D /* Directions.swift */; };
+		C864E8AA28CE469C00BA030D /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C864E8A528CE469C00BA030D /* Animation.swift */; };
+		C864E8AB28CE469C00BA030D /* ViewAnimatorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C864E8A628CE469C00BA030D /* ViewAnimatorConfig.swift */; };
+		C864E8AC28CE469C00BA030D /* ViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C864E8A728CE469C00BA030D /* ViewAnimator.swift */; };
+		C864E8AD28CE469C00BA030D /* AnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C864E8A828CE469C00BA030D /* AnimationType.swift */; };
+		C864E8AF28CE46AA00BA030D /* UICollectionView + ViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C864E8AE28CE46AA00BA030D /* UICollectionView + ViewAnimator.swift */; };
 		C89A792B28CA5EB0006A06CC /* Californian FB Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C89A792A28CA5EB0006A06CC /* Californian FB Bold.ttf */; };
 		C89A792D28CA5F85006A06CC /* LBCalifornianBoldBlack24.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89A792C28CA5F85006A06CC /* LBCalifornianBoldBlack24.swift */; };
 		C8A1734528CC6634002C52BE /* RateUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A1734428CC6634002C52BE /* RateUsVC.swift */; };
@@ -203,6 +209,12 @@
 		5D049E48422CA0FE2E143879 /* Pods_PeachtreeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeachtreeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94946781E772F6DCC306A140 /* Pods-Peachtree-PeachtreeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peachtree-PeachtreeUITests.debug.xcconfig"; path = "Target Support Files/Pods-Peachtree-PeachtreeUITests/Pods-Peachtree-PeachtreeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9F9FD81939F98441AFD33B30 /* Pods-Peachtree.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peachtree.release.xcconfig"; path = "Target Support Files/Pods-Peachtree/Pods-Peachtree.release.xcconfig"; sourceTree = "<group>"; };
+		C864E8A428CE469C00BA030D /* Directions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Directions.swift; sourceTree = "<group>"; };
+		C864E8A528CE469C00BA030D /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		C864E8A628CE469C00BA030D /* ViewAnimatorConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAnimatorConfig.swift; sourceTree = "<group>"; };
+		C864E8A728CE469C00BA030D /* ViewAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAnimator.swift; sourceTree = "<group>"; };
+		C864E8A828CE469C00BA030D /* AnimationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationType.swift; sourceTree = "<group>"; };
+		C864E8AE28CE46AA00BA030D /* UICollectionView + ViewAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView + ViewAnimator.swift"; sourceTree = "<group>"; };
 		C89A792A28CA5EB0006A06CC /* Californian FB Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Californian FB Bold.ttf"; sourceTree = "<group>"; };
 		C89A792C28CA5F85006A06CC /* LBCalifornianBoldBlack24.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBCalifornianBoldBlack24.swift; sourceTree = "<group>"; };
 		C8A1734428CC6634002C52BE /* RateUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateUsVC.swift; sourceTree = "<group>"; };
@@ -367,10 +379,12 @@
 		172F20A528BFBFEA007096DB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C864E8A328CE469C00BA030D /* Models */,
 				C8EDCB9628CA6CA7003C52BF /* Extensions.swift */,
 				17D6D55528CC5487007D677B /* NSObject+Name.swift */,
 				172F20A628BFC052007096DB /* StoryboardUtils.swift */,
 				172F20CE28C0C0DA007096DB /* Constants.swift */,
+				C864E8AE28CE46AA00BA030D /* UICollectionView + ViewAnimator.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -534,6 +548,18 @@
 				17D6D57128CCC792007D677B /* PoolsVC.swift */,
 			);
 			path = Pools;
+			sourceTree = "<group>";
+		};
+		C864E8A328CE469C00BA030D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C864E8A428CE469C00BA030D /* Directions.swift */,
+				C864E8A528CE469C00BA030D /* Animation.swift */,
+				C864E8A628CE469C00BA030D /* ViewAnimatorConfig.swift */,
+				C864E8A728CE469C00BA030D /* ViewAnimator.swift */,
+				C864E8A828CE469C00BA030D /* AnimationType.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		C89D381D28CA5CC1002CD210 /* Resources */ = {
@@ -977,6 +1003,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8A2DEF928CBC165005578DE /* AppVersionVC.swift in Sources */,
+				C864E8A928CE469C00BA030D /* Directions.swift in Sources */,
 				17D6D55828CC57F1007D677B /* GolfCartHelpVC.swift in Sources */,
 				172F207228BFBD91007096DB /* ViewController.swift in Sources */,
 				17D6D59D28CE048F007D677B /* RecentSearchTableCell.swift in Sources */,
@@ -1013,6 +1040,8 @@
 				172F20B528BFC58F007096DB /* HomeTabBarController.swift in Sources */,
 				17D6D57628CCCCB6007D677B /* LBSatoshiLight16.swift in Sources */,
 				C8BB1C4528CCE0EE00A66FDF /* WeeklyForecastCollectionCell.swift in Sources */,
+				C864E8AD28CE469C00BA030D /* AnimationType.swift in Sources */,
+				C864E8AC28CE469C00BA030D /* ViewAnimator.swift in Sources */,
 				C8A2DEF128CBBBEE005578DE /* LBSatoshiRegularLightGrey14.swift in Sources */,
 				C8A2DEEE28CBB7C4005578DE /* LBSatoshiMediumBlack22.swift in Sources */,
 				C8A2DEEA28CBABE0005578DE /* MoreListTableVWCell.swift in Sources */,
@@ -1033,6 +1062,8 @@
 				17D6D56C28CCBB77007D677B /* LBLSatoshiBoldBlack24.swift in Sources */,
 				17D6D55028CC51E7007D677B /* Call911VC.swift in Sources */,
 				17D81D1028CE31E800C3C05F /* ShareMyLocationVC.swift in Sources */,
+				C864E8AA28CE469C00BA030D /* Animation.swift in Sources */,
+				C864E8AB28CE469C00BA030D /* ViewAnimatorConfig.swift in Sources */,
 				C89A792D28CA5F85006A06CC /* LBCalifornianBoldBlack24.swift in Sources */,
 				C8C2B9E528CA635C0080281B /* LBSatoshiMediumWhite22.swift in Sources */,
 				17D6D55A28CC99E2007D677B /* RestaurantsVC.swift in Sources */,
@@ -1040,6 +1071,7 @@
 				172F20AD28BFC451007096DB /* OnboardingVC.swift in Sources */,
 				C8A1734528CC6634002C52BE /* RateUsVC.swift in Sources */,
 				C8BB1C4628CCE0EE00A66FDF /* DailyForecastCollectionCell.swift in Sources */,
+				C864E8AF28CE46AA00BA030D /* UICollectionView + ViewAnimator.swift in Sources */,
 				C8A2DEF328CBBCB4005578DE /* LBSatoshiBoldBlack20.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
