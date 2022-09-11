@@ -28,8 +28,8 @@
                                     <constraint firstAttribute="width" constant="30" id="bce-bf-sOD"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgl-9h-OIH" customClass="LBSatoshiBoldLightGrey14" customModule="Peachtree" customModuleProvider="target">
-                                <rect key="frame" x="60" y="68" width="41.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In publishing and graphic design, Lorem ipsum is a placeholder text commonly used" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgl-9h-OIH" customClass="LBSatoshiMediumBlack17" customModule="Peachtree" customModuleProvider="target">
+                                <rect key="frame" x="60" y="68" width="257" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

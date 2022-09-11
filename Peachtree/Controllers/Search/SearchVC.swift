@@ -102,7 +102,7 @@ extension SearchVC: UITableViewDelegate,UITableViewDataSource{
         cell.selectionStyle = .none
         
         let model = aryList[indexPath.row]
-        cell.lblRecentSearch.text = model
+        cell.lblRecentSearch.text = "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used."
         
         return cell
     }
@@ -125,6 +125,9 @@ extension SearchVC: UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if btnAddress.isSelected {
+            return 80.0
+        }
         return 100.0
     }
     

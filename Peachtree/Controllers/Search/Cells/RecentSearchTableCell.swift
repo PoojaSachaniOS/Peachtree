@@ -10,7 +10,7 @@ import UIKit
 class RecentSearchTableCell: UITableViewCell {
     @IBOutlet weak var vwBg: UIView!
     @IBOutlet weak var vwBgForImg: UIView!
-    @IBOutlet weak var lblRecentSearch: LBSatoshiBoldLightGrey14!
+    @IBOutlet weak var lblRecentSearch: LBSatoshiMediumBlack17!
 
     override func awakeFromNib() {
         super.awakeFromNib()
