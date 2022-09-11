@@ -23,7 +23,7 @@ class ShareMyLocationVC: UIViewController {
         for view: UIView in self.stackVw.subviews {
             if view.isKind(of: UIView.self) {
                 view.backgroundColor = Colors.color_AppOrange
-                view.addRoundedViewCorners(width: 8, colorBorder: .clear, BackgroundColor: UIColor.white)
+                view.addRoundedViewCorners(width: 8, colorBorder: UIColor.white, BackgroundColor: UIColor.white.withAlphaComponent(0.4))
             }
         }
         stackVw.backgroundColor = Colors.color_AppOrange
