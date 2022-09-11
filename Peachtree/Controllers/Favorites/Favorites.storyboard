@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eO6-DT-TGu">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -9,22 +9,72 @@
     </dependencies>
     <scenes>
         <!--FavoritesVC-->
-        <scene sceneID="s0d-6b-0kx">
+        <scene sceneID="CXr-t4-LCf">
             <objects>
-                <viewController storyboardIdentifier="FavoritesVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="FavoritesVC" customModule="Peachtree" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                <viewController storyboardIdentifier="FavoritesVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eO6-DT-TGu" customClass="FavoritesVC" customModule="Peachtree" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s66-gU-WN9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgBgNavigation" translatesAutoresizingMaskIntoConstraints="NO" id="J2W-ZD-iYZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="112"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="112" id="Ttf-wL-rR2"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zOi-dH-Cpo">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="112"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BxY-yi-BYT" customClass="LBCalifornianBoldWhite20" customModule="Peachtree" customModuleProvider="target">
+                                        <rect key="frame" x="172.5" y="66.5" width="69" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="BxY-yi-BYT" secondAttribute="bottom" constant="25" id="4tc-y5-hBv"/>
+                                    <constraint firstItem="BxY-yi-BYT" firstAttribute="centerX" secondItem="zOi-dH-Cpo" secondAttribute="centerX" id="sFD-1a-LWC"/>
+                                    <constraint firstAttribute="height" constant="112" id="uXU-yB-BRm"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gtp-cI-V6P">
+                                <rect key="frame" x="0.0" y="192" width="414" height="670"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="eO6-DT-TGu" id="t58-cA-QJz"/>
+                                    <outlet property="delegate" destination="eO6-DT-TGu" id="TSY-yw-dCq"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NkK-YY-TJa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NkK-YY-TJa" firstAttribute="trailing" secondItem="J2W-ZD-iYZ" secondAttribute="trailing" id="2Tj-bH-IDE"/>
+                            <constraint firstItem="gtp-cI-V6P" firstAttribute="leading" secondItem="NkK-YY-TJa" secondAttribute="leading" id="8eD-En-gk2"/>
+                            <constraint firstItem="J2W-ZD-iYZ" firstAttribute="leading" secondItem="NkK-YY-TJa" secondAttribute="leading" id="9j3-pP-3kz"/>
+                            <constraint firstItem="zOi-dH-Cpo" firstAttribute="width" secondItem="NkK-YY-TJa" secondAttribute="width" id="BuY-O3-lDV"/>
+                            <constraint firstItem="zOi-dH-Cpo" firstAttribute="top" secondItem="s66-gU-WN9" secondAttribute="top" id="IvY-2k-27Z"/>
+                            <constraint firstItem="NkK-YY-TJa" firstAttribute="bottom" secondItem="gtp-cI-V6P" secondAttribute="bottom" id="Nzg-7U-D7n"/>
+                            <constraint firstItem="gtp-cI-V6P" firstAttribute="top" secondItem="zOi-dH-Cpo" secondAttribute="bottom" constant="80" id="Vmx-ER-Ku7"/>
+                            <constraint firstItem="J2W-ZD-iYZ" firstAttribute="top" secondItem="s66-gU-WN9" secondAttribute="top" id="W5A-Vn-1hk"/>
+                            <constraint firstItem="NkK-YY-TJa" firstAttribute="trailing" secondItem="gtp-cI-V6P" secondAttribute="trailing" id="XcH-Ii-iNR"/>
+                            <constraint firstItem="zOi-dH-Cpo" firstAttribute="centerX" secondItem="NkK-YY-TJa" secondAttribute="centerX" id="amG-fr-rGu"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tblVwFavorites" destination="gtp-cI-V6P" id="x2m-eJ-5AT"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="raB-y9-JhV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="79"/>
+            <point key="canvasLocation" x="18.840579710144929" y="78.348214285714278"/>
         </scene>
     </scenes>
     <resources>
+        <image name="imgBgNavigation" width="375" height="112"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
