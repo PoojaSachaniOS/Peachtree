@@ -476,7 +476,6 @@
 				17D6D55928CC99E2007D677B /* RestaurantsVC.swift */,
 				17D6D55F28CC9DF8007D677B /* ShoppingVC.swift */,
 				17D6D56128CC9F33007D677B /* RestaurantsDetailsVC.swift */,
-				17D6D57128CCC792007D677B /* PoolsVC.swift */,
 				17D6D58728CDBCE6007D677B /* DirectionPopUpVC.swift */,
 			);
 			path = Controller;
@@ -529,6 +528,7 @@
 		C864E89B28CE2BA100BA030D /* Pools */ = {
 			isa = PBXGroup;
 			children = (
+				17D6D57128CCC792007D677B /* PoolsVC.swift */,
 			);
 			path = Pools;
 			sourceTree = "<group>";
