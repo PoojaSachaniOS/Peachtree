@@ -28,7 +28,7 @@
                                     <constraint firstAttribute="width" secondItem="wM0-Ph-3Bf" secondAttribute="height" multiplier="1:1" id="Jtq-MI-y9B"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELr-0J-eYs">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELr-0J-eYs" customClass="LBLSatoshiBoldBlack16" customModule="Peachtree" customModuleProvider="target">
                                 <rect key="frame" x="90" y="68" width="41.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -54,6 +54,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="lblCategoriesName" destination="ELr-0J-eYs" id="mvp-wX-gaD"/>
                 <outlet property="vwBg" destination="chS-HR-nJO" id="DAd-fB-WiN"/>
                 <outlet property="vwBgForImg" destination="wM0-Ph-3Bf" id="poT-de-mg8"/>
             </connections>

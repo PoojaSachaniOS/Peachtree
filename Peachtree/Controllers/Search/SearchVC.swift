@@ -13,10 +13,13 @@ class SearchVC: UIViewController {
     @IBOutlet weak var btnAddress: UIButton!
     @IBOutlet weak var tblVwSearch: UITableView!
 
+    var aryList = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.initializeUI()
         self.registerNib()
+        aryList = ["Atm", "Bakery", "Bank","Atm", "Bakery", "Bank"]
     }
     
     func initializeUI() {
@@ -75,7 +78,7 @@ class SearchVC: UIViewController {
 
 extension SearchVC: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return aryList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -94,12 +97,16 @@ extension SearchVC: UITableViewDelegate,UITableViewDataSource{
         cell.backgroundColor = Colors.color_AppBackground
         cell.backgroundColor = .clear
         cell.selectionStyle = .none
+        
+        let model = aryList[indexPath.row]
+        cell.lblCategoriesName.text = model
+        
         return cell
 
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 112.0
+        return 100.0
     }
     
    

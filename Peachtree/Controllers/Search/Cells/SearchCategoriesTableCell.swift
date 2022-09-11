@@ -10,6 +10,7 @@ import UIKit
 class SearchCategoriesTableCell: UITableViewCell {
     @IBOutlet weak var vwBg: UIView!
     @IBOutlet weak var vwBgForImg: UIView!
+    @IBOutlet weak var lblCategoriesName: LBLSatoshiBoldBlack16!
 
     override func awakeFromNib() {
         super.awakeFromNib()
