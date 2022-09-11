@@ -75,10 +75,10 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hcu-Hw-HHo">
                                 <rect key="frame" x="0.0" y="112" width="414" height="624"/>
                             </imageView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rQA-fo-qGn">
-                                <rect key="frame" x="0.0" y="112" width="414" height="624"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rQA-fo-qGn">
+                                <rect key="frame" x="5" y="122" width="404" height="614"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="faK-ym-yG3">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="faK-ym-yG3">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -95,13 +95,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="hcu-Hw-HHo" secondAttribute="bottom" id="6C1-is-6nf"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rQA-fo-qGn" secondAttribute="trailing" id="GH6-cG-RTA"/>
-                            <constraint firstItem="rQA-fo-qGn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Q6Z-BD-Irz"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rQA-fo-qGn" secondAttribute="trailing" constant="5" id="GH6-cG-RTA"/>
+                            <constraint firstItem="rQA-fo-qGn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="5" id="Q6Z-BD-Irz"/>
                             <constraint firstItem="hcu-Hw-HHo" firstAttribute="top" secondItem="z16-gi-GNM" secondAttribute="bottom" id="RGM-Bq-jpS"/>
                             <constraint firstItem="lpF-Dn-5cn" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="TIM-5X-NzH"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="rQA-fo-qGn" secondAttribute="bottom" id="VVM-j6-qp0"/>
                             <constraint firstItem="lpF-Dn-5cn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Y77-T6-PCy"/>
-                            <constraint firstItem="rQA-fo-qGn" firstAttribute="top" secondItem="z16-gi-GNM" secondAttribute="bottom" id="ZEW-ES-9Z0"/>
+                            <constraint firstItem="rQA-fo-qGn" firstAttribute="top" secondItem="z16-gi-GNM" secondAttribute="bottom" constant="10" id="ZEW-ES-9Z0"/>
                             <constraint firstItem="z16-gi-GNM" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="bOA-4H-r0h"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="lpF-Dn-5cn" secondAttribute="trailing" id="eNt-fA-8od"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="hcu-Hw-HHo" secondAttribute="trailing" id="eql-tN-fJ8"/>

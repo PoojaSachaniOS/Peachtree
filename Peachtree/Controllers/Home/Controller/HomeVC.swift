@@ -133,7 +133,7 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
     }
  
     func openShareMyLocationVC() {
-        if let controller = StoryboardUtils.getLocationVC() as? LocationVC {
+        if let controller = StoryboardUtils.getShareMyLocationVC() as? ShareMyLocationVC {
             controller.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(controller, animated: true)
         }
@@ -166,17 +166,35 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 
-        let noOfCellsInRow = 3
+//        let noOfCellsInRow = 3
+//
+//        let flowLayout = collectionViewLayout as! UICollectionViewFlowLayout
+//
+//        let totalSpace = flowLayout.sectionInset.left
+//            + flowLayout.sectionInset.right
+//            + (flowLayout.minimumInteritemSpacing * CGFloat(noOfCellsInRow - 1))
+//
+//        let size = Int((collectionView.bounds.width - totalSpace) / CGFloat(noOfCellsInRow))
+//
+//        return CGSize(width: size, height: size)
+        
+        let remaider = (Double(indexPath.item + 12)/3).truncatingRemainder(dividingBy: 15)
+        let remaider1 = (Double(indexPath.item + 17)/3).truncatingRemainder(dividingBy: 3)
+        let remaider2 = (Double(indexPath.item - 15)/3).truncatingRemainder(dividingBy: 3)
 
-        let flowLayout = collectionViewLayout as! UICollectionViewFlowLayout
+        if remaider == 0 {
+            return CGSize(width: (collectionView.frame.size.width + 120)/2, height: 104)
+        }
 
-        let totalSpace = flowLayout.sectionInset.left
-            + flowLayout.sectionInset.right
-            + (flowLayout.minimumInteritemSpacing * CGFloat(noOfCellsInRow - 1))
+        else if remaider1 == 0 {
+            return CGSize(width: (collectionView.frame.size.width + 115)/2, height: 104)
+        }
+        else if remaider2 == 0 {
+            return CGSize(width: (collectionView.frame.size.width + 115)/2, height: 104)
+        }
 
-        let size = Int((collectionView.bounds.width - totalSpace) / CGFloat(noOfCellsInRow))
-
-        return CGSize(width: size, height: size)
+        return CGSize(width: (collectionView.frame.size.width - 9 )/3, height: 104)
+        
     }
 }
 

@@ -105,6 +105,10 @@ extension StoryboardUtils{
         return Home.instance.instantiateViewController(withIdentifier: "DirectionPopUpVC")
     }
     
+    static func getShareMyLocationVC()-> UIViewController{
+        return Home.instance.instantiateViewController(withIdentifier: "ShareMyLocationVC")
+    }
+    
     static func getPoolsVC()-> UIViewController{
         return Home.instance.instantiateViewController(withIdentifier: "PoolsVC")
     }
