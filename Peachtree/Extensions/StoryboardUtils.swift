@@ -104,4 +104,8 @@ extension StoryboardUtils{
     static func getDirectionPopUpVC()-> UIViewController{
         return Home.instance.instantiateViewController(withIdentifier: "DirectionPopUpVC")
     }
+    
+    static func getShareMyLocationVC()-> UIViewController{
+        return Home.instance.instantiateViewController(withIdentifier: "ShareMyLocationVC")
+    }
 }

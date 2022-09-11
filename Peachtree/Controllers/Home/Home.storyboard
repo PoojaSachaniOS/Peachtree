@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -1533,6 +1533,69 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qjD-tq-zsl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3316" y="876"/>
+        </scene>
+        <!--Share My LocationVC-->
+        <scene sceneID="KWG-jk-0TF">
+            <objects>
+                <viewController storyboardIdentifier="ShareMyLocationVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yZJ-Py-Qbd" customClass="ShareMyLocationVC" customModule="Peachtree" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0iS-hP-Ihb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rHc-O5-vzV">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="112"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgBgNavigation" translatesAutoresizingMaskIntoConstraints="NO" id="xql-Zw-7EZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="112"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="112" id="3aL-dG-Q2s"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share My Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6n4-3x-lYy" customClass="LBCalifornianBoldWhite20" customModule="Peachtree" customModuleProvider="target">
+                                        <rect key="frame" x="153.66666666666666" y="74" width="106.99999999999997" height="16"/>
+                                        <fontDescription key="fontDescription" name="CalifornianFB-Reg" family="Californian FB" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xiC-2E-MRr">
+                                        <rect key="frame" x="15" y="52" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="ieg-Y6-DFF"/>
+                                            <constraint firstAttribute="width" secondItem="xiC-2E-MRr" secondAttribute="height" multiplier="1:1" id="sIU-rv-1SZ"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="back_white"/>
+                                        <connections>
+                                            <action selector="backTaped:" destination="yZJ-Py-Qbd" eventType="touchUpInside" id="wsY-6A-tu6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.94117647410000005" blue="0.94117647410000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="6n4-3x-lYy" secondAttribute="bottom" constant="22" id="265-G9-aLV"/>
+                                    <constraint firstItem="xql-Zw-7EZ" firstAttribute="top" secondItem="rHc-O5-vzV" secondAttribute="top" id="EgG-0X-TbY"/>
+                                    <constraint firstAttribute="bottom" secondItem="xql-Zw-7EZ" secondAttribute="bottom" id="FuH-G3-fXT"/>
+                                    <constraint firstItem="6n4-3x-lYy" firstAttribute="centerX" secondItem="rHc-O5-vzV" secondAttribute="centerX" id="VVC-Wi-Phj"/>
+                                    <constraint firstItem="xql-Zw-7EZ" firstAttribute="leading" secondItem="rHc-O5-vzV" secondAttribute="leading" id="dN8-ho-mRY"/>
+                                    <constraint firstItem="xiC-2E-MRr" firstAttribute="leading" secondItem="rHc-O5-vzV" secondAttribute="leading" constant="15" id="hRE-kj-CFN"/>
+                                    <constraint firstItem="xiC-2E-MRr" firstAttribute="centerY" secondItem="6n4-3x-lYy" secondAttribute="centerY" id="pCS-jZ-sP7"/>
+                                    <constraint firstAttribute="trailing" secondItem="xql-Zw-7EZ" secondAttribute="trailing" id="vwV-Nu-c01"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2Nt-3T-dPQ"/>
+                        <color key="backgroundColor" name="AppOrange_color"/>
+                        <constraints>
+                            <constraint firstItem="rHc-O5-vzV" firstAttribute="top" secondItem="0iS-hP-Ihb" secondAttribute="top" id="0Tg-zV-xnA"/>
+                            <constraint firstItem="rHc-O5-vzV" firstAttribute="leading" secondItem="2Nt-3T-dPQ" secondAttribute="leading" id="Ctn-u2-nwI"/>
+                            <constraint firstItem="rHc-O5-vzV" firstAttribute="trailing" secondItem="2Nt-3T-dPQ" secondAttribute="trailing" id="M1Z-lg-RYd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OOo-Dq-m0a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1316" y="886"/>
         </scene>
     </scenes>
     <resources>

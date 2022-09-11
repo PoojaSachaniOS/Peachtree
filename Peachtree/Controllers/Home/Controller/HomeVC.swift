@@ -124,7 +124,7 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
     }
     
     func openShareMyLocationVC() {
-        if let controller = StoryboardUtils.getLocationVC() as? LocationVC {
+        if let controller = StoryboardUtils.getShareMyLocationVC() as? ShareMyLocationVC {
             controller.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(controller, animated: true)
         }
