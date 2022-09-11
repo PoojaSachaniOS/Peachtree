@@ -72,12 +72,12 @@
                                     <constraint firstAttribute="trailing" secondItem="eN1-vS-fv3" secondAttribute="trailing" constant="28" id="xFQ-iU-zXS"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hcu-Hw-HHo">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgBgHome" translatesAutoresizingMaskIntoConstraints="NO" id="hcu-Hw-HHo">
                                 <rect key="frame" x="0.0" y="112" width="414" height="750"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rQA-fo-qGn">
                                 <rect key="frame" x="5" y="122" width="404" height="740"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="faK-ym-yG3">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -1663,6 +1663,7 @@
         <image name="icon_direction" width="38" height="38"/>
         <image name="icon_globe" width="40" height="40.333332061767578"/>
         <image name="imgBgGolfCart" width="343" height="210"/>
+        <image name="imgBgHome" width="375" height="731"/>
         <image name="imgBgNavigation" width="375" height="112"/>
         <image name="imgClose" width="28" height="28"/>
         <image name="imgFavouriteTabBarSelected" width="24" height="21"/>
