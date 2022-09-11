@@ -108,4 +108,8 @@ extension StoryboardUtils{
     static func getPoolsVC()-> UIViewController{
         return Home.instance.instantiateViewController(withIdentifier: "PoolsVC")
     }
+    static func getRecreationAndEventsVC()-> UIViewController{
+        return Home.instance.instantiateViewController(withIdentifier: "RecreationAndEventsVC")
+    }
+    
 }

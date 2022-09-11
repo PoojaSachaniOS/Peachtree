@@ -93,7 +93,7 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
         } else if model.type == .pools {
             openPoolsVC()
         } else if model.type == .recreationAndSpecialEvent {
-            
+            openRecreationAndEventsVC()
         } else if model.type == .golfCartHelp {
             self.openGolfCartHelpVC()
         } else if model.type == .call911 {
@@ -128,6 +128,12 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
     
     func openPoolsVC() {
         if let controller = StoryboardUtils.getPoolsVC() as? PoolsVC {
+            controller.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
+    }
+    func openRecreationAndEventsVC() {
+        if let controller = StoryboardUtils.getRecreationAndEventsVC() as? RecreationAndEventsVC {
             controller.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(controller, animated: true)
         }
