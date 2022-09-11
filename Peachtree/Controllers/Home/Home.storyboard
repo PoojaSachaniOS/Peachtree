@@ -1583,13 +1583,23 @@
                                     <constraint firstAttribute="trailing" secondItem="xql-Zw-7EZ" secondAttribute="trailing" id="vwV-Nu-c01"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oEY-3a-tSb">
+                                <rect key="frame" x="0.0" y="112" width="414" height="72"/>
+                                <color key="backgroundColor" name="AppOrange_color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="Q1q-uq-k5f"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2Nt-3T-dPQ"/>
-                        <color key="backgroundColor" name="AppOrange_color"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="rHc-O5-vzV" firstAttribute="top" secondItem="0iS-hP-Ihb" secondAttribute="top" id="0Tg-zV-xnA"/>
                             <constraint firstItem="rHc-O5-vzV" firstAttribute="leading" secondItem="2Nt-3T-dPQ" secondAttribute="leading" id="Ctn-u2-nwI"/>
                             <constraint firstItem="rHc-O5-vzV" firstAttribute="trailing" secondItem="2Nt-3T-dPQ" secondAttribute="trailing" id="M1Z-lg-RYd"/>
+                            <constraint firstItem="2Nt-3T-dPQ" firstAttribute="trailing" secondItem="oEY-3a-tSb" secondAttribute="trailing" id="gI3-E2-FHj"/>
+                            <constraint firstItem="oEY-3a-tSb" firstAttribute="top" secondItem="rHc-O5-vzV" secondAttribute="bottom" id="gSI-Rp-CrZ"/>
+                            <constraint firstItem="oEY-3a-tSb" firstAttribute="leading" secondItem="2Nt-3T-dPQ" secondAttribute="leading" id="uHz-ik-5P0"/>
                         </constraints>
                     </view>
                 </viewController>
