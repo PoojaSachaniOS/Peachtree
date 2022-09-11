@@ -76,18 +76,30 @@
                                     <constraint firstAttribute="height" constant="46" id="PDE-FK-SB7"/>
                                 </constraints>
                             </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Wbr-HH-hUY">
+                                <rect key="frame" x="0.0" y="192" width="414" height="670"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="DJd-1z-k8j" id="w4n-qt-YRS"/>
+                                    <outlet property="delegate" destination="DJd-1z-k8j" id="i41-Ho-Tzm"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JrQ-rb-elG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="JrQ-rb-elG" firstAttribute="trailing" secondItem="Yi7-x5-RMd" secondAttribute="trailing" id="524-r4-qDz"/>
+                            <constraint firstItem="JrQ-rb-elG" firstAttribute="trailing" secondItem="Wbr-HH-hUY" secondAttribute="trailing" id="ANk-g7-3de"/>
                             <constraint firstItem="Yi7-x5-RMd" firstAttribute="leading" secondItem="JrQ-rb-elG" secondAttribute="leading" id="OJo-q7-m1n"/>
                             <constraint firstItem="Yi7-x5-RMd" firstAttribute="top" secondItem="PK1-Qe-Qke" secondAttribute="top" id="ObC-FT-oMl"/>
                             <constraint firstItem="27h-s9-IpE" firstAttribute="centerX" secondItem="JrQ-rb-elG" secondAttribute="centerX" id="Vy3-eT-kdY"/>
+                            <constraint firstItem="JrQ-rb-elG" firstAttribute="bottom" secondItem="Wbr-HH-hUY" secondAttribute="bottom" id="b23-Gi-Hd4"/>
                             <constraint firstItem="9hg-oc-76R" firstAttribute="top" secondItem="27h-s9-IpE" secondAttribute="bottom" constant="24" id="dgX-l5-s8U"/>
                             <constraint firstItem="27h-s9-IpE" firstAttribute="top" secondItem="PK1-Qe-Qke" secondAttribute="top" id="ea4-Ys-l8E"/>
                             <constraint firstItem="JrQ-rb-elG" firstAttribute="trailing" secondItem="9hg-oc-76R" secondAttribute="trailing" constant="16" id="kCb-ne-2M1"/>
+                            <constraint firstItem="Wbr-HH-hUY" firstAttribute="top" secondItem="9hg-oc-76R" secondAttribute="bottom" constant="10" id="p5a-mN-ZOY"/>
                             <constraint firstItem="27h-s9-IpE" firstAttribute="width" secondItem="JrQ-rb-elG" secondAttribute="width" id="pCu-MX-7cn"/>
+                            <constraint firstItem="Wbr-HH-hUY" firstAttribute="leading" secondItem="JrQ-rb-elG" secondAttribute="leading" id="xTV-O5-Dbx"/>
                             <constraint firstItem="9hg-oc-76R" firstAttribute="leading" secondItem="JrQ-rb-elG" secondAttribute="leading" constant="16" id="zFj-QF-je9"/>
                         </constraints>
                     </view>
@@ -95,6 +107,7 @@
                         <outlet property="btnAddress" destination="8rG-mI-dvJ" id="9WE-T3-GfX"/>
                         <outlet property="btnCategories" destination="PYi-dp-jaI" id="Hm0-VD-1tc"/>
                         <outlet property="stackVw" destination="9hg-oc-76R" id="fCh-AE-3Gy"/>
+                        <outlet property="tblVwSearch" destination="Wbr-HH-hUY" id="Aq2-sf-qiQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dcL-uU-Pb2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

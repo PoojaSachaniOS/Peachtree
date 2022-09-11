@@ -11,10 +11,12 @@ class SearchVC: UIViewController {
     @IBOutlet weak var stackVw: UIStackView!
     @IBOutlet weak var btnCategories: UIButton!
     @IBOutlet weak var btnAddress: UIButton!
+    @IBOutlet weak var tblVwSearch: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.initializeUI()
+        self.registerNib()
     }
     
     func initializeUI() {
@@ -25,6 +27,8 @@ class SearchVC: UIViewController {
             }
         }
         
+        self.tblVwSearch.backgroundColor = Colors.color_AppBackground
+        self.view.backgroundColor = Colors.color_AppBackground
         btnAddress.isSelected = true
         btnCategories.isSelected = false
         self.configureButtons()
@@ -50,7 +54,9 @@ class SearchVC: UIViewController {
         }
     }
     
-    
+    private func registerNib() {
+        self.tblVwSearch.register(SearchCategoriesTableCell.self)
+    }
     
     @IBAction func btnAddressTapped(_ sender: Any) {
         btnAddress.isSelected = true
@@ -64,4 +70,46 @@ class SearchVC: UIViewController {
         btnCategories.isSelected = true
         self.configureButtons()
     }
+}
+
+
+extension SearchVC: UITableViewDelegate,UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if btnAddress.isSelected {
+            return self.tableView(tableView, categoriesCellForRowAt: indexPath)
+        }
+        return self.tableView(tableView, categoriesCellForRowAt: indexPath)
+    }
+    
+    func tableView(_ tableView: UITableView, categoriesCellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tblVwSearch.dequeueReusableCell(withIdentifier: SearchCategoriesTableCell.className, for: indexPath) as! SearchCategoriesTableCell
+        
+        cell.vwBg.addRoundedViewCorners(width: 8, colorBorder: (Colors.color_borderLightBlack!).withAlphaComponent(0.1), BackgroundColor: UIColor.white)
+        cell.backgroundColor = Colors.color_AppBackground
+        cell.backgroundColor = .clear
+        cell.selectionStyle = .none
+        return cell
+
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 88.0
+    }
+    
+   
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.openRestaurantsDetails()
+    }
+
+    func openRestaurantsDetails() {
+        if let controller = StoryboardUtils.getRestaurantsDetailsVC() as? RestaurantsDetailsVC {
+            controller.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
+    }
+
 }

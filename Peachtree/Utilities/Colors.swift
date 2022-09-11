@@ -9,6 +9,5 @@ class Colors {
     static let color_LightGrey = UIColor(named: "AppThemeLightGrey")
     static let color_DarkBlue = UIColor(named: "AppThemeDarkBlue")
     static let colorSeparator = UIColor(named: "AppThemeSeparator")
-
-    
+    static let color_AppBackground = UIColor(named: "AppThemeBackgroundColor")
 }

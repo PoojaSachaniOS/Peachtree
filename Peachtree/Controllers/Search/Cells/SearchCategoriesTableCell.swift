@@ -7,7 +7,8 @@
 
 import UIKit
 
-class SearchCategoriesVC: UITableViewCell {
+class SearchCategoriesTableCell: UITableViewCell {
+    @IBOutlet weak var vwBg: UIView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
