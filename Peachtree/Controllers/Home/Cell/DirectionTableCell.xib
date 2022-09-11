@@ -31,7 +31,7 @@
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="PQy-BI-XOJ" secondAttribute="height" multiplier="1:1" id="0ip-zB-UQa"/>
                                     <constraint firstItem="7cH-sn-RN1" firstAttribute="centerX" secondItem="PQy-BI-XOJ" secondAttribute="centerX" id="ORJ-5w-er9"/>
@@ -39,7 +39,7 @@
                                     <constraint firstItem="7cH-sn-RN1" firstAttribute="centerY" secondItem="PQy-BI-XOJ" secondAttribute="centerY" id="geh-ID-veK"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XIQ-A4-mJz">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XIQ-A4-mJz" customClass="LBLSatoshiMediumBlack18" customModule="Peachtree" customModuleProvider="target">
                                 <rect key="frame" x="66" y="52" width="261" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -64,12 +64,16 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgVw" destination="7cH-sn-RN1" id="TBl-Zc-itE"/>
+                <outlet property="lblName" destination="XIQ-A4-mJz" id="rA8-nF-TVe"/>
+            </connections>
             <point key="canvasLocation" x="154.34782608695653" y="88.727678571428569"/>
         </tableViewCell>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

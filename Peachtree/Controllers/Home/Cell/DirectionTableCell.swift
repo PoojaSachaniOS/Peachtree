@@ -8,6 +8,8 @@
 import UIKit
 
 class DirectionTableCell: UITableViewCell {
+    @IBOutlet weak var lblName: LBLSatoshiMediumBlack18!
+    @IBOutlet weak var imgVw: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
