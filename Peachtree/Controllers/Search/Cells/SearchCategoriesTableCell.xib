@@ -55,6 +55,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="vwBg" destination="chS-HR-nJO" id="DAd-fB-WiN"/>
+                <outlet property="vwBgForImg" destination="wM0-Ph-3Bf" id="poT-de-mg8"/>
             </connections>
             <point key="canvasLocation" x="164.49275362318841" y="118.86160714285714"/>
         </tableViewCell>

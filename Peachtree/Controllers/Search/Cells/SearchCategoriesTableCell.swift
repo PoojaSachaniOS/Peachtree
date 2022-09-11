@@ -9,6 +9,7 @@ import UIKit
 
 class SearchCategoriesTableCell: UITableViewCell {
     @IBOutlet weak var vwBg: UIView!
+    @IBOutlet weak var vwBgForImg: UIView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
