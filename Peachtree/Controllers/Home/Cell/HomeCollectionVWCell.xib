@@ -17,17 +17,17 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tH0-Nf-GUA">
-                        <rect key="frame" x="10" y="5" width="111" height="122"/>
+                        <rect key="frame" x="10" y="5" width="111" height="119"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jsp-FS-8tn">
-                                <rect key="frame" x="33.5" y="15" width="44" height="44"/>
+                                <rect key="frame" x="33.5" y="8" width="44" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="jsp-FS-8tn" secondAttribute="height" multiplier="1:1" id="16i-xI-T7o"/>
                                     <constraint firstAttribute="width" constant="44" id="GAM-Lo-tga"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ClN-rl-OIY">
-                                <rect key="frame" x="2" y="65" width="107" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ClN-rl-OIY" customClass="LBSatoshiMediumWhite12" customModule="Peachtree" customModuleProvider="target">
+                                <rect key="frame" x="2" y="54" width="107" height="59"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -35,12 +35,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.30196079609999998" green="0.2901961207" blue="0.2941176593" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="ClN-rl-OIY" firstAttribute="top" secondItem="jsp-FS-8tn" secondAttribute="bottom" constant="6" id="39x-zo-5hD"/>
-                            <constraint firstItem="jsp-FS-8tn" firstAttribute="top" secondItem="tH0-Nf-GUA" secondAttribute="top" constant="15" id="95P-9d-hMk"/>
+                            <constraint firstItem="ClN-rl-OIY" firstAttribute="top" secondItem="jsp-FS-8tn" secondAttribute="bottom" constant="2" id="39x-zo-5hD"/>
+                            <constraint firstItem="jsp-FS-8tn" firstAttribute="top" secondItem="tH0-Nf-GUA" secondAttribute="top" constant="8" id="95P-9d-hMk"/>
                             <constraint firstItem="ClN-rl-OIY" firstAttribute="leading" secondItem="tH0-Nf-GUA" secondAttribute="leading" constant="2" id="IfV-Ru-T1w"/>
                             <constraint firstAttribute="trailing" secondItem="ClN-rl-OIY" secondAttribute="trailing" constant="2" id="R2v-DW-aZK"/>
                             <constraint firstItem="jsp-FS-8tn" firstAttribute="centerX" secondItem="tH0-Nf-GUA" secondAttribute="centerX" id="uL4-d0-Y8b"/>
-                            <constraint firstAttribute="bottom" secondItem="ClN-rl-OIY" secondAttribute="bottom" constant="9" id="w73-Ws-Fao"/>
+                            <constraint firstAttribute="bottom" secondItem="ClN-rl-OIY" secondAttribute="bottom" constant="6" id="w73-Ws-Fao"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -48,7 +48,7 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="tH0-Nf-GUA" secondAttribute="trailing" constant="10" id="49s-D7-wDR"/>
-                <constraint firstAttribute="bottom" secondItem="tH0-Nf-GUA" secondAttribute="bottom" constant="5" id="F7V-kC-Y1e"/>
+                <constraint firstAttribute="bottom" secondItem="tH0-Nf-GUA" secondAttribute="bottom" constant="8" id="F7V-kC-Y1e"/>
                 <constraint firstItem="tH0-Nf-GUA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="b1F-ge-AhB"/>
                 <constraint firstItem="tH0-Nf-GUA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="wEd-qB-R6w"/>
             </constraints>
