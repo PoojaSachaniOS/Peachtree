@@ -82,19 +82,27 @@
                                     <constraint firstAttribute="trailing" secondItem="0BF-hy-ZHH" secondAttribute="trailing" constant="20" id="toH-MA-9S9"/>
                                 </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgMapBg" translatesAutoresizingMaskIntoConstraints="NO" id="VJS-dU-h7y">
+                                <rect key="frame" x="0.0" y="230" width="414" height="632"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="S5g-gN-E6E"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="VJS-dU-h7y" firstAttribute="top" secondItem="51a-Bq-rsk" secondAttribute="bottom" id="8Ba-9w-ngm"/>
                             <constraint firstItem="51a-Bq-rsk" firstAttribute="top" secondItem="A61-Ju-Rkm" secondAttribute="bottom" id="9UV-Ez-z26"/>
                             <constraint firstItem="S5g-gN-E6E" firstAttribute="trailing" secondItem="51a-Bq-rsk" secondAttribute="trailing" id="HdJ-em-eAa"/>
+                            <constraint firstItem="S5g-gN-E6E" firstAttribute="bottom" secondItem="VJS-dU-h7y" secondAttribute="bottom" id="JJN-pL-Ck3"/>
                             <constraint firstItem="A61-Ju-Rkm" firstAttribute="top" secondItem="RhO-Em-Qp7" secondAttribute="top" id="KDG-tq-MqS"/>
+                            <constraint firstItem="VJS-dU-h7y" firstAttribute="leading" secondItem="S5g-gN-E6E" secondAttribute="leading" id="RrN-RD-vlk"/>
                             <constraint firstItem="A61-Ju-Rkm" firstAttribute="width" secondItem="S5g-gN-E6E" secondAttribute="width" id="dsw-Dy-83s"/>
                             <constraint firstItem="A61-Ju-Rkm" firstAttribute="centerX" secondItem="S5g-gN-E6E" secondAttribute="centerX" id="iHR-86-h3P"/>
+                            <constraint firstItem="VJS-dU-h7y" firstAttribute="trailing" secondItem="S5g-gN-E6E" secondAttribute="trailing" id="sEq-7c-zVO"/>
                             <constraint firstItem="51a-Bq-rsk" firstAttribute="leading" secondItem="S5g-gN-E6E" secondAttribute="leading" id="sxL-vX-eUm"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="headerViewHeight" destination="fMW-bX-3DN" id="AFP-HK-zRd"/>
                         <outlet property="searchBar" destination="uJU-jd-wnh" id="XkH-t1-vWZ"/>
                     </connections>
                 </viewController>
@@ -105,6 +113,7 @@
     </scenes>
     <resources>
         <image name="imgBgNavigation" width="375" height="112"/>
+        <image name="imgMapBg" width="375" height="304"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -10,7 +10,7 @@ import UIKit
 class GolfCartHelpVC: UIViewController {
     @IBOutlet weak var stackVw: UIStackView!
     @IBOutlet weak var lblDescrptn: LBSatoshiRegularLightGrey14!
-
+    @IBOutlet weak var headerViewHeight: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setUpUI()

@@ -56,10 +56,9 @@
         <!--Location-->
         <scene sceneID="gGM-nS-v62">
             <objects>
-                <navigationController id="hsW-0s-fL7" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="hsW-0s-fL7" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Location" image="imgLocationTabBarUnSelected" selectedImage="imgLocationTabBarSelected" id="ZtT-B1-IBO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4me-ZO-mA5">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -109,10 +108,9 @@
         <!--Search-->
         <scene sceneID="8cP-6L-utS">
             <objects>
-                <navigationController id="UZJ-SG-D1T" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="UZJ-SG-D1T" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Search" image="imgSearchTabBarUnSelected" selectedImage="imgSearchTabBarSelected" id="kDn-KL-vhq"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cNN-a5-lYk">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -136,10 +134,9 @@
         <!--Favorites-->
         <scene sceneID="Phu-ZF-obI">
             <objects>
-                <navigationController id="PjB-z1-FUb" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="PjB-z1-FUb" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Favorites" image="imgFavouriteTabBarUnSelected" selectedImage="imgFavouriteTabBarSelected" id="Oy3-1n-S4c"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="os6-hw-DfY">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

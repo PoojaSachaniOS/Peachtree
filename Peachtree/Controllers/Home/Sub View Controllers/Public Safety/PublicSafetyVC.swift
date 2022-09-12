@@ -14,7 +14,7 @@ class PublicSafetyVC: UIViewController {
     @IBOutlet weak var StackViewFireAndEMS: UIStackView!
     @IBOutlet weak var stackViewPublic: UIStackView!
     @IBOutlet weak var mainV: UIView!
-    
+    @IBOutlet weak var headerViewHeight: NSLayoutConstraint!
     // MARK: - View Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -10,7 +10,7 @@ import UIKit
 class RestaurantsDetailsVC: UIViewController {
     @IBOutlet weak var stackVw: UIStackView!
     @IBOutlet weak var vwBgDirection: UIView!
-    
+    @IBOutlet weak var headerViewHeight: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setUpUI()

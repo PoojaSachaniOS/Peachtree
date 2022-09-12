@@ -9,7 +9,7 @@ import UIKit
 
 class ShoppingVC: UIViewController {
     @IBOutlet weak var tblVwRestaurants: UITableView!
-
+    @IBOutlet weak var headerViewHeight: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.registerNib()

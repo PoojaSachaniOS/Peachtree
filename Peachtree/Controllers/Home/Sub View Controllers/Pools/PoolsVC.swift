@@ -8,7 +8,7 @@
 import UIKit
 
 class PoolsVC: UIViewController {
-
+    @IBOutlet weak var headerViewHeight: NSLayoutConstraint!
     @IBOutlet weak var tblVwRestaurants: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     

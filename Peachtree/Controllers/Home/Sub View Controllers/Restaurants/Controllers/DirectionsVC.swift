@@ -10,7 +10,7 @@ import UIKit
 
 
 class DirectionsVC: UIViewController {
-
+    @IBOutlet weak var headerViewHeight: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setNeedsStatusBarAppearanceUpdate()

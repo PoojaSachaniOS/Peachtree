@@ -9,7 +9,7 @@ import UIKit
 
 class Call911VC: UIViewController {
     @IBOutlet weak var tblVw: UITableView!
-
+    @IBOutlet weak var headerViewHeight: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.registerNib()

@@ -9,7 +9,7 @@ import UIKit
 
 class ShareMyLocationVC: UIViewController {
     @IBOutlet weak var stackVw: UIStackView!
-
+    @IBOutlet weak var headerViewHeight: NSLayoutConstraint!
     @IBOutlet weak var vwOuterBgDropPin: UIView!
     @IBOutlet weak var vwInnerBgDropPin: UIView!
     @IBOutlet weak var vwOuterBgShare: UIView!

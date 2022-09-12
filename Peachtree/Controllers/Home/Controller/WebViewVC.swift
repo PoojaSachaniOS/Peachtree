@@ -11,7 +11,7 @@ import WebKit
 class WebViewVC: UIViewController {
     @IBOutlet weak var webVw: WKWebView!
     @IBOutlet weak var lblHeaderTitle: LBCalifornianBoldWhite20!
-    
+    @IBOutlet weak var headerViewHeight: NSLayoutConstraint!
     var strWebUrl:String?
     var strNavTitle:String?
     

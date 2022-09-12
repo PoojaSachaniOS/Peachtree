@@ -9,7 +9,7 @@ import UIKit
 
 class RestaurantsVC: UIViewController {
     @IBOutlet weak var tblVwRestaurants: UITableView!
-
+    @IBOutlet weak var headerViewHeight: NSLayoutConstraint!
     @IBOutlet weak var searchBar: UISearchBar!
     override func viewDidLoad() {
         super.viewDidLoad()

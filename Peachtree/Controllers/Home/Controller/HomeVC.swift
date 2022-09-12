@@ -9,6 +9,7 @@ import UIKit
 
 class HomeVC: UIViewController {
     @IBOutlet weak var collectionVwHome: UICollectionView!
+    @IBOutlet weak var headerViewHeight: NSLayoutConstraint!
     var arr: [HomeVCTableItem<AccountVCTableItemType>] = []
 
     enum AccountVCTableItemType {
