@@ -22,7 +22,9 @@ class SearchVC: UIViewController {
         self.initializeUI()
         self.registerNib()
         aryList = ["Atm", "Bakery", "Bank","Atm", "Bakery", "Bank"]
-        
+        if !(UIDevice.current.hasNotch)  {
+            headerViewHeight.constant = 80
+        }
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
