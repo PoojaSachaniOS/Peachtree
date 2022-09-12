@@ -42,6 +42,7 @@ class RestaurantsDetailsVC: UIViewController {
     
     func openDirectionPopUpVC() {
         if let vcDirectionPopUp = StoryboardUtils.getDirectionPopUpVC() as? DirectionPopUpVC {
+            vcDirectionPopUp.delegate = self
             vcDirectionPopUp.providesPresentationContextTransitionStyle = true
             vcDirectionPopUp.definesPresentationContext = true
             vcDirectionPopUp.modalPresentationStyle = UIModalPresentationStyle.overFullScreen;
@@ -59,5 +60,16 @@ class RestaurantsDetailsVC: UIViewController {
         }
         
         vwBgDirection.addRoundedViewCorners(width: 10, colorBorder: Colors.color_AppThemeBlack!, BackgroundColor: .white)
+    }
+    func openDirectionVC() {
+        if let controller = StoryboardUtils.getDirectionsVC() as? DirectionsVC {
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
+    }
+}
+
+extension RestaurantsDetailsVC: DirectionDelegates {
+    func openDirectionVC(type: String) {
+        openDirectionVC()
     }
 }

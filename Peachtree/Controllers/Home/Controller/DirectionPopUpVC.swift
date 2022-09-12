@@ -7,12 +7,16 @@
 
 import UIKit
 
+protocol DirectionDelegates {
+    func openDirectionVC(type: String)
+}
+
 class DirectionPopUpVC: UIViewController {
     @IBOutlet weak var vwBg: UIView!
     @IBOutlet weak var tblVwDirections: UITableView!
 
     var arr: [DirectionTableItem<DirectionTableItemType>] = []
-
+    var delegate: DirectionDelegates?
     enum DirectionTableItemType {
         case golfCart, biCycle, walking
     }
@@ -23,6 +27,8 @@ class DirectionPopUpVC: UIViewController {
         self.registerNib()
         self.initializeData()
         self.setNeedsStatusBarAppearanceUpdate()
+       
+
     }
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -60,6 +66,10 @@ extension DirectionPopUpVC: UITableViewDelegate,UITableViewDataSource{
    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //self.openRestaurantsDetails()
+        dismiss(animated: true, completion: nil)
+
+        self.delegate?.openDirectionVC(type: "")
+
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
