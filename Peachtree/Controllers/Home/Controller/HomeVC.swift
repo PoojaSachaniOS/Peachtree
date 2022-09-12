@@ -31,7 +31,6 @@ class HomeVC: UIViewController {
                 })
             }, completion: nil)
         }
-
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -49,7 +48,6 @@ class HomeVC: UIViewController {
         arr.append(HomeVCTableItem(iconName: "imgPublicSafety", title:"Public Safety", type: .publicSafety, showArrow: true))
         arr.append(HomeVCTableItem(iconName: "imgReportProblem", title:"Report a Problem", type: .reportAnIssue, showArrow: true))
         arr.append(HomeVCTableItem(iconName: "imgLibrary", title:"Library", type: .library, showArrow: true))
-        
         arr.append(HomeVCTableItem(iconName: "imgRestaurants", title:"Restaurants", type: .restaurants, showArrow: true))
         arr.append(HomeVCTableItem(iconName: "imgShopping", title:"Shopping", type: .shopping, showArrow: true))
         arr.append(HomeVCTableItem(iconName: "imgCalendar", title:"Calendar", type: .calendar, showArrow: true))
@@ -171,14 +169,12 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
         }
     }
     
-    
     func openGolfCartHelpVC() {
         if let controller = StoryboardUtils.getGolfCartHelpVC() as? GolfCartHelpVC {
             controller.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(controller, animated: true)
         }
     }
-
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 
@@ -203,10 +199,10 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
         }
 
         else if remaider1 == 0 {
-            return CGSize(width: (collectionView.frame.size.width + 115)/2, height: 104)
+            return CGSize(width: (collectionView.frame.size.width + 120)/2, height: 104)
         }
         else if remaider2 == 0 {
-            return CGSize(width: (collectionView.frame.size.width + 115)/2, height: 104)
+            return CGSize(width: (collectionView.frame.size.width + 120)/2, height: 104)
         }
 
         return CGSize(width: (collectionView.frame.size.width - 9 )/3, height: 104)
