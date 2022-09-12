@@ -17,6 +17,9 @@ class ShareMyLocationVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setUpUI()
+        if !(UIDevice.current.hasNotch)  {
+            headerViewHeight.constant = 80
+        }
     }
     
     @IBAction func backTaped(_ sender: Any) {

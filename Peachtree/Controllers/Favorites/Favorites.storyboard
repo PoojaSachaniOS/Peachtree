@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eO6-DT-TGu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eO6-DT-TGu">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,18 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgBgNavigation" translatesAutoresizingMaskIntoConstraints="NO" id="J2W-ZD-iYZ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="112"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="112" id="Ttf-wL-rR2"/>
-                                </constraints>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zOi-dH-Cpo">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="112"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                 <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgBgNavigation" translatesAutoresizingMaskIntoConstraints="NO" id="J2W-ZD-iYZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BxY-yi-BYT" customClass="LBCalifornianBoldWhite20" customModule="Peachtree" customModuleProvider="target">
-                                        <rect key="frame" x="172.5" y="66.5" width="69" height="20.5"/>
+                                        <rect key="frame" x="172.5" y="54.5" width="69" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -36,12 +33,16 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="BxY-yi-BYT" secondAttribute="bottom" constant="25" id="4tc-y5-hBv"/>
+                                    <constraint firstAttribute="trailing" secondItem="J2W-ZD-iYZ" secondAttribute="trailing" id="kJF-Hm-TOJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="J2W-ZD-iYZ" secondAttribute="bottom" id="q7S-QZ-Y25"/>
+                                    <constraint firstItem="J2W-ZD-iYZ" firstAttribute="leading" secondItem="zOi-dH-Cpo" secondAttribute="leading" id="sDj-YL-cNR"/>
                                     <constraint firstItem="BxY-yi-BYT" firstAttribute="centerX" secondItem="zOi-dH-Cpo" secondAttribute="centerX" id="sFD-1a-LWC"/>
-                                    <constraint firstAttribute="height" constant="112" id="uXU-yB-BRm"/>
+                                    <constraint firstAttribute="height" constant="100" id="uXU-yB-BRm"/>
+                                    <constraint firstItem="J2W-ZD-iYZ" firstAttribute="top" secondItem="zOi-dH-Cpo" secondAttribute="top" id="yio-oc-6WY"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gtp-cI-V6P">
-                                <rect key="frame" x="0.0" y="192" width="414" height="670"/>
+                                <rect key="frame" x="0.0" y="180" width="414" height="682"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="eO6-DT-TGu" id="t58-cA-QJz"/>
@@ -52,19 +53,17 @@
                         <viewLayoutGuide key="safeArea" id="NkK-YY-TJa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="NkK-YY-TJa" firstAttribute="trailing" secondItem="J2W-ZD-iYZ" secondAttribute="trailing" id="2Tj-bH-IDE"/>
                             <constraint firstItem="gtp-cI-V6P" firstAttribute="leading" secondItem="NkK-YY-TJa" secondAttribute="leading" id="8eD-En-gk2"/>
-                            <constraint firstItem="J2W-ZD-iYZ" firstAttribute="leading" secondItem="NkK-YY-TJa" secondAttribute="leading" id="9j3-pP-3kz"/>
                             <constraint firstItem="zOi-dH-Cpo" firstAttribute="width" secondItem="NkK-YY-TJa" secondAttribute="width" id="BuY-O3-lDV"/>
                             <constraint firstItem="zOi-dH-Cpo" firstAttribute="top" secondItem="s66-gU-WN9" secondAttribute="top" id="IvY-2k-27Z"/>
                             <constraint firstItem="NkK-YY-TJa" firstAttribute="bottom" secondItem="gtp-cI-V6P" secondAttribute="bottom" id="Nzg-7U-D7n"/>
                             <constraint firstItem="gtp-cI-V6P" firstAttribute="top" secondItem="zOi-dH-Cpo" secondAttribute="bottom" constant="80" id="Vmx-ER-Ku7"/>
-                            <constraint firstItem="J2W-ZD-iYZ" firstAttribute="top" secondItem="s66-gU-WN9" secondAttribute="top" id="W5A-Vn-1hk"/>
                             <constraint firstItem="NkK-YY-TJa" firstAttribute="trailing" secondItem="gtp-cI-V6P" secondAttribute="trailing" id="XcH-Ii-iNR"/>
                             <constraint firstItem="zOi-dH-Cpo" firstAttribute="centerX" secondItem="NkK-YY-TJa" secondAttribute="centerX" id="amG-fr-rGu"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="headerViewHeight" destination="uXU-yB-BRm" id="Z4a-Jt-gMq"/>
                         <outlet property="tblVwFavorites" destination="gtp-cI-V6P" id="x2m-eJ-5AT"/>
                     </connections>
                 </viewController>

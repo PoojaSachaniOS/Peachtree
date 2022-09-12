@@ -12,6 +12,7 @@ class SearchVC: UIViewController {
     @IBOutlet weak var btnCategories: UIButton!
     @IBOutlet weak var btnAddress: UIButton!
     @IBOutlet weak var tblVwSearch: UITableView!
+    @IBOutlet weak var headerViewHeight: NSLayoutConstraint!
 
     var aryList = [String]()
     

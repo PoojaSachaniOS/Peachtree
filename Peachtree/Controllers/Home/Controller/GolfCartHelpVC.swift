@@ -33,6 +33,8 @@ class GolfCartHelpVC: UIViewController {
         }
         
         self.lblDescrptn.setLineSpacing(lineSpacing: 2.5, lineHeightMultiple: 0)
-
+        if !(UIDevice.current.hasNotch)  {
+            headerViewHeight.constant = 80
+        }
     }
 }

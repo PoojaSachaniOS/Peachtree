@@ -27,8 +27,7 @@ class DirectionPopUpVC: UIViewController {
         self.registerNib()
         self.initializeData()
         self.setNeedsStatusBarAppearanceUpdate()
-       
-
+    
     }
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent

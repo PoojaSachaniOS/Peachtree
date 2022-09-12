@@ -9,6 +9,7 @@ import UIKit
 
 class FavoritesVC: UIViewController {
     @IBOutlet weak var tblVwFavorites: UITableView!
+    @IBOutlet weak var headerViewHeight: NSLayoutConstraint!
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -16,7 +16,9 @@ class RestaurantsDetailsVC: UIViewController {
         self.setUpUI()
         self.addTapGesture()
         self.setNeedsStatusBarAppearanceUpdate()
-
+        if !(UIDevice.current.hasNotch)  {
+            headerViewHeight.constant = 80
+        }
     }
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent

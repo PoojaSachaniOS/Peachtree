@@ -14,7 +14,8 @@ class WeatherVC: UIViewController {
     @IBOutlet private weak var lblTemp: UILabel!
     @IBOutlet private weak var lblCity: UILabel!
     @IBOutlet private weak var lblMainDes: UILabel!
-    
+    @IBOutlet weak var headerViewHeight: NSLayoutConstraint!
+
     @IBOutlet private var collectionViewDailyForcast: UICollectionView!
     @IBOutlet private var collectionViewWeeklyForecast: UICollectionView!
     var weekArr = ["MON","TUE","WED","THU","FRI","SAT","SUN"]
@@ -24,6 +25,9 @@ class WeatherVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setNeedsStatusBarAppearanceUpdate()
+        if !(UIDevice.current.hasNotch)  {
+            headerViewHeight.constant = 80
+        }
     }
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent

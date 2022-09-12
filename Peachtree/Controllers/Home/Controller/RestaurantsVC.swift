@@ -17,7 +17,9 @@ class RestaurantsVC: UIViewController {
         searchBar.searchTextField.backgroundColor = .white
         searchBar.layer.cornerRadius = 8
         self.setNeedsStatusBarAppearanceUpdate()
-
+        if !(UIDevice.current.hasNotch)  {
+            headerViewHeight.constant = 80
+        }
     }
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent

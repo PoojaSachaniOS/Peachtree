@@ -17,6 +17,9 @@ class LocationVC: UIViewController {
         searchBar.layer.cornerRadius = 8
         searchBar.backgroundColor = .white
         searchBar.searchTextField.backgroundColor = .white
+        if !(UIDevice.current.hasNotch)  {
+            headerViewHeight.constant = 160
+        }
     }
     
 
