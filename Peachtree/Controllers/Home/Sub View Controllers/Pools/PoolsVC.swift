@@ -15,9 +15,10 @@ class PoolsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.registerNib()
-        searchBar.searchTextField.backgroundColor = .white
         searchBar.layer.cornerRadius = 8
         self.setNeedsStatusBarAppearanceUpdate()
+        searchBar.backgroundColor = .white
+        searchBar.searchTextField.backgroundColor = .white
 
     }
     override var preferredStatusBarStyle: UIStatusBarStyle {
