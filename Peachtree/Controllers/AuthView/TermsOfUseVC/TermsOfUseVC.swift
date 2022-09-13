@@ -20,6 +20,14 @@ class TermsOfUseVC: UIViewController {
         self.loadHtmlFile()
     }
     
+    @IBAction func acceptedTaped(_ sender: Any) {
+        if #available(iOS 13.0, *) {
+            SceneDelegate.shared?.makingRootFlow(Constants.AppRootFlow.kEnterHome)
+        } else {
+            AppDelegate.instance().makingRootFlow(Constants.AppRootFlow.kEnterHome)
+        }    }
+    @IBAction func declineTaped(_ sender: Any) {
+    }
     // ----------------------------------
     //  MARK: - PRIVATE METHOD(S)
     //

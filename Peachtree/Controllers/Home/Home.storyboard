@@ -841,6 +841,21 @@
                                             <outlet property="delegate" destination="0Rf-fA-tCT" id="4Hl-Vs-xec"/>
                                         </connections>
                                     </tableView>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xwI-f1-8Rp">
+                                        <rect key="frame" x="0.0" y="10" width="414" height="680"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgMapBg" translatesAutoresizingMaskIntoConstraints="NO" id="npK-EJ-bBj">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="680"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="npK-EJ-bBj" firstAttribute="leading" secondItem="xwI-f1-8Rp" secondAttribute="leading" id="DEc-fG-QP1"/>
+                                            <constraint firstAttribute="trailing" secondItem="npK-EJ-bBj" secondAttribute="trailing" id="DJ8-LE-DY4"/>
+                                            <constraint firstItem="npK-EJ-bBj" firstAttribute="top" secondItem="xwI-f1-8Rp" secondAttribute="top" id="bzN-Uf-egf"/>
+                                            <constraint firstAttribute="bottom" secondItem="npK-EJ-bBj" secondAttribute="bottom" id="rPt-7q-ieI"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -848,6 +863,10 @@
                                     <constraint firstAttribute="trailing" secondItem="oPZ-UI-jea" secondAttribute="trailing" id="L5z-kq-rIX"/>
                                     <constraint firstAttribute="bottom" secondItem="oPZ-UI-jea" secondAttribute="bottom" id="jim-aH-KvO"/>
                                     <constraint firstItem="oPZ-UI-jea" firstAttribute="leading" secondItem="oQQ-Co-k65" secondAttribute="leading" id="nqk-qE-0h3"/>
+                                    <constraint firstItem="xwI-f1-8Rp" firstAttribute="top" secondItem="oQQ-Co-k65" secondAttribute="top" constant="10" id="oqt-sH-ka4"/>
+                                    <constraint firstAttribute="trailing" secondItem="xwI-f1-8Rp" secondAttribute="trailing" id="p1y-CC-W2b"/>
+                                    <constraint firstItem="xwI-f1-8Rp" firstAttribute="leading" secondItem="oQQ-Co-k65" secondAttribute="leading" id="rVS-bN-UOW"/>
+                                    <constraint firstAttribute="bottom" secondItem="xwI-f1-8Rp" secondAttribute="bottom" id="tvz-Je-XD5"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aPR-8t-mdD">
@@ -875,6 +894,18 @@
                                             <action selector="backTaped:" destination="0Rf-fA-tCT" eventType="touchUpInside" id="lOu-v6-MMq"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKX-fm-2pz">
+                                        <rect key="frame" x="355" y="38" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="w65-Rk-3Bm"/>
+                                            <constraint firstAttribute="width" secondItem="kKX-fm-2pz" secondAttribute="height" multiplier="1:1" id="zZl-Mw-hRa"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="map_icon"/>
+                                        <connections>
+                                            <action selector="mapTaped:" destination="0Rf-fA-tCT" eventType="touchUpInside" id="F3q-vZ-vYr"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.93725490570000003" green="0.94117647410000005" blue="0.94117647410000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -883,6 +914,8 @@
                                     <constraint firstItem="ZlC-zY-DvU" firstAttribute="leading" secondItem="aPR-8t-mdD" secondAttribute="leading" id="FqL-sf-ln2"/>
                                     <constraint firstItem="ZlC-zY-DvU" firstAttribute="top" secondItem="aPR-8t-mdD" secondAttribute="top" id="Iim-5t-Ore"/>
                                     <constraint firstAttribute="height" constant="100" id="NJ9-Hb-o97"/>
+                                    <constraint firstItem="kKX-fm-2pz" firstAttribute="centerY" secondItem="dxL-th-ny1" secondAttribute="centerY" id="Vgi-sv-up6"/>
+                                    <constraint firstAttribute="trailing" secondItem="kKX-fm-2pz" secondAttribute="trailing" constant="15" id="c58-er-woD"/>
                                     <constraint firstAttribute="bottom" secondItem="ZlC-zY-DvU" secondAttribute="bottom" id="ewZ-n2-vth"/>
                                     <constraint firstItem="Qff-hu-poo" firstAttribute="centerY" secondItem="ZlC-zY-DvU" secondAttribute="centerY" constant="10" id="mEK-gb-dU3"/>
                                     <constraint firstItem="dxL-th-ny1" firstAttribute="centerY" secondItem="Qff-hu-poo" secondAttribute="centerY" id="obH-oT-Vhq"/>
@@ -909,6 +942,9 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Sort By"/>
+                                        <connections>
+                                            <action selector="sortBytaped:" destination="0Rf-fA-tCT" eventType="touchUpInside" id="Nre-B2-Uh0"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" name="AppOrange_color"/>
@@ -939,6 +975,7 @@
                     </view>
                     <connections>
                         <outlet property="headerViewHeight" destination="NJ9-Hb-o97" id="ksA-tW-J3j"/>
+                        <outlet property="mapBackView" destination="xwI-f1-8Rp" id="TqJ-yl-ON5"/>
                         <outlet property="searchBar" destination="rRp-r4-zSa" id="G7o-SV-f6V"/>
                         <outlet property="tblVwRestaurants" destination="oPZ-UI-jea" id="6yG-gd-ONS"/>
                     </connections>
@@ -1850,6 +1887,7 @@
         <image name="imgShareInDetail" width="20.333333969116211" height="21.333333969116211"/>
         <image name="imgUp" width="116" height="108"/>
         <image name="imgVehicle" width="38" height="27.333333969116211"/>
+        <image name="map_icon" width="34" height="34"/>
         <namedColor name="AppOrange_color">
             <color red="0.88200002908706665" green="0.40400001406669617" blue="0.14900000393390656" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

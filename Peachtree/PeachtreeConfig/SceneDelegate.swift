@@ -10,11 +10,13 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    private(set) static var shared: SceneDelegate?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        
         guard let _ = (scene as? UIWindowScene) else { return }
-        self.makingRootFlow(Constants.AppRootFlow.kEnterHome)
+        Self.shared = self
+        self.makingRootFlow(Constants.AppRootFlow.kGetStarted)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

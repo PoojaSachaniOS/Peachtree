@@ -76,6 +76,8 @@
 		17D81D1028CE31E800C3C05F /* ShareMyLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D81D0F28CE31E800C3C05F /* ShareMyLocationVC.swift */; };
 		440826D5408EAABB00C349E9 /* Pods_Peachtree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30EACD0BD546F38AD117D1F4 /* Pods_Peachtree.framework */; };
 		6E168BF232B156B7B567D7BD /* Pods_PeachtreeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D049E48422CA0FE2E143879 /* Pods_PeachtreeTests.framework */; };
+		C830480F28D10F50000CEEB2 /* ButtonOrange.swift in Sources */ = {isa = PBXBuildFile; fileRef = C830480E28D10F50000CEEB2 /* ButtonOrange.swift */; };
+		C830481128D113D6000CEEB2 /* ButtonGrey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C830481028D113D6000CEEB2 /* ButtonGrey.swift */; };
 		C864E8A928CE469C00BA030D /* Directions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C864E8A428CE469C00BA030D /* Directions.swift */; };
 		C864E8AA28CE469C00BA030D /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C864E8A528CE469C00BA030D /* Animation.swift */; };
 		C864E8AB28CE469C00BA030D /* ViewAnimatorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C864E8A628CE469C00BA030D /* ViewAnimatorConfig.swift */; };
@@ -212,6 +214,8 @@
 		5D049E48422CA0FE2E143879 /* Pods_PeachtreeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeachtreeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94946781E772F6DCC306A140 /* Pods-Peachtree-PeachtreeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peachtree-PeachtreeUITests.debug.xcconfig"; path = "Target Support Files/Pods-Peachtree-PeachtreeUITests/Pods-Peachtree-PeachtreeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9F9FD81939F98441AFD33B30 /* Pods-Peachtree.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peachtree.release.xcconfig"; path = "Target Support Files/Pods-Peachtree/Pods-Peachtree.release.xcconfig"; sourceTree = "<group>"; };
+		C830480E28D10F50000CEEB2 /* ButtonOrange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonOrange.swift; sourceTree = "<group>"; };
+		C830481028D113D6000CEEB2 /* ButtonGrey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonGrey.swift; sourceTree = "<group>"; };
 		C864E8A428CE469C00BA030D /* Directions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Directions.swift; sourceTree = "<group>"; };
 		C864E8A528CE469C00BA030D /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		C864E8A628CE469C00BA030D /* ViewAnimatorConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAnimatorConfig.swift; sourceTree = "<group>"; };
@@ -523,6 +527,8 @@
 			isa = PBXGroup;
 			children = (
 				17D6D58F28CDE61E007D677B /* ButtonSearchCategories.swift */,
+				C830480E28D10F50000CEEB2 /* ButtonOrange.swift */,
+				C830481028D113D6000CEEB2 /* ButtonGrey.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -1037,6 +1043,7 @@
 				17D81D0D28CE27AF00C3C05F /* FavoritesTableCell.swift in Sources */,
 				C8EDCB9528CA6AE5003C52BF /* LBSatoshiBoldBlack18.swift in Sources */,
 				17D6D56828CCB777007D677B /* LBLSatoshiBoldBlack20.swift in Sources */,
+				C830481128D113D6000CEEB2 /* ButtonGrey.swift in Sources */,
 				17D6D55D28CC9B46007D677B /* RestaurantsTableCell.swift in Sources */,
 				172F20A728BFC052007096DB /* StoryboardUtils.swift in Sources */,
 				17D6D56E28CCC26D007D677B /* LBSeparator.swift in Sources */,
@@ -1060,6 +1067,7 @@
 				C8BB1C4528CCE0EE00A66FDF /* WeeklyForecastCollectionCell.swift in Sources */,
 				C864E8AD28CE469C00BA030D /* AnimationType.swift in Sources */,
 				C864E8AC28CE469C00BA030D /* ViewAnimator.swift in Sources */,
+				C830480F28D10F50000CEEB2 /* ButtonOrange.swift in Sources */,
 				C8A2DEF128CBBBEE005578DE /* LBSatoshiRegularLightGrey14.swift in Sources */,
 				C8A2DEEE28CBB7C4005578DE /* LBSatoshiMediumBlack22.swift in Sources */,
 				C8A2DEEA28CBABE0005578DE /* MoreListTableVWCell.swift in Sources */,
