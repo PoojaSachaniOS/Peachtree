@@ -112,6 +112,10 @@ extension UIView {
     func hideLoadingIndicator () {
         if let indicator: ProgressIndicator = self.viewWithTag(19518) as? ProgressIndicator {
             indicator.hide()
+//            UIView.animate(withDuration: 0.2) { () -> Void in
+//                self.centralActivityIndicator.alpha = 0.0
+//            }
+
         }
     }
     

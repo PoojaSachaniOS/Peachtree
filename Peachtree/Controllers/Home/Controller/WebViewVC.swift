@@ -17,6 +17,7 @@ class WebViewVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        webVw.navigationDelegate = self
         self.loadWebVwRequest()
         self.lblHeaderTitle.text = strNavTitle
         self.setNeedsStatusBarAppearanceUpdate()
@@ -25,6 +26,7 @@ class WebViewVC: UIViewController {
         return .lightContent
     }
     private func loadWebVwRequest() {
+        self.view.showLoadingIndicator()
         if let strWebUrl = strWebUrl, !strWebUrl.isEmpty {
             let link = URL(string:strWebUrl)!
             let request = URLRequest(url: link)
@@ -50,5 +52,8 @@ extension WebViewVC : WKNavigationDelegate {
     }
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        DispatchQueue.main.async {
+            self.view.hideLoadingIndicator()
+        }
     }
 }
