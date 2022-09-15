@@ -57,6 +57,10 @@ class TermsOfUseVC: UIViewController {
         self.navigationItem.setHidesBackButton(true, animated:true);
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
 }
 
 // ----------------------------------
