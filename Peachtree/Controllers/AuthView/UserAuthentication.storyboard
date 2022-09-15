@@ -124,7 +124,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms of use" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MlF-Jp-Jmm" customClass="LBCalifornianBoldWhite20" customModule="Peachtree" customModuleProvider="target">
-                                        <rect key="frame" x="171" y="52" width="72" height="16"/>
+                                        <rect key="frame" x="171" y="42" width="72" height="16"/>
                                         <fontDescription key="fontDescription" name="CalifornianFB-Reg" family="Californian FB" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -135,7 +135,7 @@
                                     <constraint firstAttribute="bottom" secondItem="IM7-7w-Fqf" secondAttribute="bottom" id="2f8-OP-JkY"/>
                                     <constraint firstAttribute="trailing" secondItem="IM7-7w-Fqf" secondAttribute="trailing" id="Ewr-S1-nmC"/>
                                     <constraint firstItem="IM7-7w-Fqf" firstAttribute="leading" secondItem="0eK-y5-n9H" secondAttribute="leading" id="GiJ-vS-Fab"/>
-                                    <constraint firstItem="MlF-Jp-Jmm" firstAttribute="centerY" secondItem="IM7-7w-Fqf" secondAttribute="centerY" constant="10" id="P6t-dY-Okr"/>
+                                    <constraint firstItem="MlF-Jp-Jmm" firstAttribute="centerY" secondItem="IM7-7w-Fqf" secondAttribute="centerY" id="P6t-dY-Okr"/>
                                     <constraint firstItem="IM7-7w-Fqf" firstAttribute="top" secondItem="0eK-y5-n9H" secondAttribute="top" id="asI-rE-vMc"/>
                                     <constraint firstAttribute="height" constant="100" id="iGV-4y-sdk"/>
                                     <constraint firstItem="MlF-Jp-Jmm" firstAttribute="centerX" secondItem="0eK-y5-n9H" secondAttribute="centerX" id="mHE-Rh-4EO"/>
