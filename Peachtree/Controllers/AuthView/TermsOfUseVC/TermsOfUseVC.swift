@@ -9,9 +9,7 @@ import UIKit
 import WebKit
 
 class TermsOfUseVC: UIViewController {
-    // ----------------------------------
     //  MARK: - IB-OUTLET(S)
-    //
     @IBOutlet weak var webVw: WKWebView!
     
     override func viewDidLoad() {
@@ -29,9 +27,8 @@ class TermsOfUseVC: UIViewController {
     
     @IBAction func declineTaped(_ sender: Any) {
     }
-    // ----------------------------------
+    
     //  MARK: - PRIVATE METHOD(S)
-    //
     private func loadHtmlFile() {
         self.webVw.navigationDelegate = self
         self.view.showLoadingIndicator()
