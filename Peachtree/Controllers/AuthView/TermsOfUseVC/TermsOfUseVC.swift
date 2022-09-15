@@ -12,9 +12,16 @@ class TermsOfUseVC: UIViewController {
     //  MARK: - IB-OUTLET(S)
     @IBOutlet weak var webVw: WKWebView!
     
+    @IBOutlet weak var constraintTitle: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.loadHtmlFile()
+        
+        if UIDevice.current.hasNotch {
+            constraintTitle.constant = 15
+        } else {
+            constraintTitle.constant = 0
+        }
     }
     
     @IBAction func acceptedTaped(_ sender: Any) {
@@ -84,4 +91,13 @@ extension TermsOfUseVC : WKNavigationDelegate {
         self.view.hideLoadingIndicator()
     }
     
+}
+extension UIDevice {
+
+    var hasNotch: Bool {
+        if #available(iOS 11.0, *) {
+           return UIApplication.shared.keyWindow?.safeAreaInsets.bottom ?? 0 > 0
+        }
+        return false
+   }
 }

@@ -39,6 +39,7 @@
 		1738625328D3AA7100D518FE /* ProgressIndicator.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1738625128D3AA7100D518FE /* ProgressIndicator.xib */; };
 		1738625428D3AA7100D518FE /* ProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1738625228D3AA7100D518FE /* ProgressIndicator.swift */; };
 		1738625628D3AB4100D518FE /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 1738625528D3AB4100D518FE /* loading.json */; };
+		1738625828D3B1C500D518FE /* HelperMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1738625728D3B1C500D518FE /* HelperMethods.swift */; };
 		176A4DFB28C45D5400B3D465 /* HomeCollectionVWCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 176A4DF928C45D5400B3D465 /* HomeCollectionVWCell.xib */; };
 		176A4DFC28C45D5400B3D465 /* HomeCollectionVWCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176A4DFA28C45D5400B3D465 /* HomeCollectionVWCell.swift */; };
 		17704EEF28C6DDA30032C96C /* WebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17704EEE28C6DDA30032C96C /* WebViewVC.swift */; };
@@ -176,6 +177,7 @@
 		1738625128D3AA7100D518FE /* ProgressIndicator.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressIndicator.xib; sourceTree = "<group>"; };
 		1738625228D3AA7100D518FE /* ProgressIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressIndicator.swift; sourceTree = "<group>"; };
 		1738625528D3AB4100D518FE /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		1738625728D3B1C500D518FE /* HelperMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HelperMethods.swift; path = Peachtree/Extensions/HelperMethods.swift; sourceTree = SOURCE_ROOT; };
 		176A4DF928C45D5400B3D465 /* HomeCollectionVWCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCollectionVWCell.xib; sourceTree = "<group>"; };
 		176A4DFA28C45D5400B3D465 /* HomeCollectionVWCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionVWCell.swift; sourceTree = "<group>"; };
 		17704EEE28C6DDA30032C96C /* WebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewVC.swift; sourceTree = "<group>"; };
@@ -399,6 +401,7 @@
 				C864E8A328CE469C00BA030D /* Models */,
 				C8EDCB9628CA6CA7003C52BF /* Extensions.swift */,
 				17D6D55528CC5487007D677B /* NSObject+Name.swift */,
+				1738625728D3B1C500D518FE /* HelperMethods.swift */,
 				172F20A628BFC052007096DB /* StoryboardUtils.swift */,
 				172F20CE28C0C0DA007096DB /* Constants.swift */,
 				C864E8AE28CE46AA00BA030D /* UICollectionView + ViewAnimator.swift */,
@@ -1054,6 +1057,7 @@
 			files = (
 				C8A2DEF928CBC165005578DE /* AppVersionVC.swift in Sources */,
 				C864E8A928CE469C00BA030D /* Directions.swift in Sources */,
+				1738625828D3B1C500D518FE /* HelperMethods.swift in Sources */,
 				17D6D55828CC57F1007D677B /* GolfCartHelpVC.swift in Sources */,
 				172F207228BFBD91007096DB /* ViewController.swift in Sources */,
 				17D6D59D28CE048F007D677B /* RecentSearchTableCell.swift in Sources */,
