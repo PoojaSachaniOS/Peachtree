@@ -19,7 +19,6 @@ class HomeVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         self.registerNib()
         self.initializeData()
         self.setNeedsStatusBarAppearanceUpdate()

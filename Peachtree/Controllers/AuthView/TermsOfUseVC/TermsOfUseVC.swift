@@ -13,8 +13,7 @@ class TermsOfUseVC: UIViewController {
     //  MARK: - IB-OUTLET(S)
     //
     @IBOutlet weak var webVw: WKWebView!
-    @IBOutlet weak var activityIndicatorVw: UIActivityIndicatorView!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.loadHtmlFile()
@@ -26,6 +25,8 @@ class TermsOfUseVC: UIViewController {
         } else {
             AppDelegate.instance().makingRootFlow(Constants.AppRootFlow.kEnterHome)
         }    }
+    
+    
     @IBAction func declineTaped(_ sender: Any) {
     }
     // ----------------------------------
@@ -33,13 +34,13 @@ class TermsOfUseVC: UIViewController {
     //
     private func loadHtmlFile() {
         self.webVw.navigationDelegate = self
-        activityIndicatorVw.startAnimating()
+        self.view.showLoadingIndicator()
         
         let url = URL (string: "https://www.google.co.in/")
         let requestObj = URLRequest(url: url!)
         webVw.load(requestObj)
     }
-
+    
     // ----------------------------------
     //  MARK: - OVERRIDE METHOD(S)
     //
@@ -51,7 +52,7 @@ class TermsOfUseVC: UIViewController {
         super.viewWillAppear(animated)
         self.navigationItem.setHidesBackButton(true, animated:true);
     }
-
+    
 }
 
 // ----------------------------------
@@ -78,12 +79,12 @@ extension TermsOfUseVC : WKNavigationDelegate {
     }
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        activityIndicatorVw.stopAnimating()
         if webView.isLoading { return }
+        self.view.hideLoadingIndicator()
     }
     
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
-        activityIndicatorVw.stopAnimating()
+        self.view.hideLoadingIndicator()
     }
     
 }

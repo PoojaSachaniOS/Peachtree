@@ -76,10 +76,6 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="elQ-CR-Cwp">
-                                <rect key="frame" x="197" y="438" width="20" height="20"/>
-                                <color key="color" red="0.12549019610000001" green="0.20392156859999999" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </activityIndicatorView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="n4Y-Gj-ABU">
                                 <rect key="frame" x="20.5" y="801" width="373" height="51"/>
                                 <subviews>
@@ -151,10 +147,8 @@
                         <constraints>
                             <constraint firstItem="n4Y-Gj-ABU" firstAttribute="centerX" secondItem="0d7-rS-khB" secondAttribute="centerX" id="7Ef-cq-CkR"/>
                             <constraint firstItem="0eK-y5-n9H" firstAttribute="leading" secondItem="0d7-rS-khB" secondAttribute="leading" id="FQW-4j-RQf"/>
-                            <constraint firstItem="elQ-CR-Cwp" firstAttribute="centerY" secondItem="Czg-A8-mc5" secondAttribute="centerY" id="HbS-17-N0N"/>
                             <constraint firstItem="0eK-y5-n9H" firstAttribute="trailing" secondItem="0d7-rS-khB" secondAttribute="trailing" id="Hy7-0K-BR0"/>
                             <constraint firstItem="0d7-rS-khB" firstAttribute="bottom" secondItem="n4Y-Gj-ABU" secondAttribute="bottom" constant="10" id="LDC-i9-RFl"/>
-                            <constraint firstItem="elQ-CR-Cwp" firstAttribute="centerX" secondItem="Czg-A8-mc5" secondAttribute="centerX" id="ODS-0P-SGo"/>
                             <constraint firstItem="n4Y-Gj-ABU" firstAttribute="top" secondItem="Czg-A8-mc5" secondAttribute="bottom" constant="5" id="Std-0y-LNP"/>
                             <constraint firstItem="0eK-y5-n9H" firstAttribute="top" secondItem="aYu-Vc-Wp8" secondAttribute="top" id="Xeg-jc-BFJ"/>
                             <constraint firstItem="n4Y-Gj-ABU" firstAttribute="width" secondItem="aYu-Vc-Wp8" secondAttribute="width" multiplier="0.9" id="bfM-gr-8Vu"/>
@@ -164,7 +158,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="activityIndicatorVw" destination="elQ-CR-Cwp" id="WXY-sp-nej"/>
                         <outlet property="webVw" destination="Czg-A8-mc5" id="B4Z-lJ-BzX"/>
                     </connections>
                 </viewController>
