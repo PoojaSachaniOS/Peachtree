@@ -7,6 +7,7 @@ target 'Peachtree' do
 pod 'FloatRatingView'
   # Pods for Peachtree
   pod "ViewAnimator"
+  pod 'lottie-ios'
 
   target 'PeachtreeTests' do
     inherit! :search_paths

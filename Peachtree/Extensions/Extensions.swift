@@ -105,6 +105,16 @@ extension UIView {
         self.layer.mask = mask
     }
     
+    func showLoadingIndicator() {
+        ProgressIndicator.shared().show( at: self)
+    }
+    
+    func hideLoadingIndicator () {
+        if let indicator: ProgressIndicator = self.viewWithTag(19518) as? ProgressIndicator {
+            indicator.hide()
+        }
+    }
+    
 }
 
 extension UINavigationController {
