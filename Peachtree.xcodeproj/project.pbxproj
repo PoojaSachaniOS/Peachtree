@@ -362,7 +362,6 @@
 		172F209E28BFBDF8007096DB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C8A2DEE228CBAB5B005578DE /* More */,
 				172F209F28BFBE08007096DB /* AuthView */,
 				172F20B328BFC56B007096DB /* HomeTabBar */,
 				172F20AE28BFC4EA007096DB /* Home */,
@@ -370,6 +369,7 @@
 				172F20BD28BFCA72007096DB /* Weather */,
 				172F20C428C0AF1B007096DB /* Favorites */,
 				172F20C928C0BF8B007096DB /* Search */,
+				C8A2DEE228CBAB5B005578DE /* More */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
