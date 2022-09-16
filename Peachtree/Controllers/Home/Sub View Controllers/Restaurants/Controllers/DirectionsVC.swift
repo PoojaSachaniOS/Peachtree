@@ -6,13 +6,12 @@
 //
 
 import UIKit
-
-
-
-class DirectionsVC: UIViewController {
-    @IBOutlet weak var headerViewHeight: NSLayoutConstraint!
+class DirectionsVC: CustomBaseVC {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Norma Stitts "
+        super.configureLeftBarButtonItem()
         self.setNeedsStatusBarAppearanceUpdate()
      }
        
@@ -23,5 +22,8 @@ class DirectionsVC: UIViewController {
     @IBAction func backTaped(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
-
+    
+    override func btnBackTapped() {
+        self.navigationController?.popViewController(animated: true)
+    }
 }

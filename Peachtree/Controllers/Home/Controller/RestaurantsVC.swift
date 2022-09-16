@@ -13,7 +13,9 @@ class RestaurantsVC: CustomBaseVC {
     @IBOutlet weak var tblVwRestaurants: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     var rightActionMap = true
-    
+    private var barButtonMapView: UIBarButtonItem!
+    private var barButtonListView: UIBarButtonItem!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         //RestaurantsVC
@@ -24,6 +26,7 @@ class RestaurantsVC: CustomBaseVC {
         searchBar.backgroundColor = .white
         searchBar.searchTextField.backgroundColor = .white
         self.setNeedsStatusBarAppearanceUpdate()
+        self.configureListMapBarButtonItems()
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -36,6 +39,29 @@ class RestaurantsVC: CustomBaseVC {
     
     @IBAction func backTaped(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    private func configureListMapBarButtonItems(){
+        barButtonListView = UIBarButtonItem(image: UIImage(named: "map_icon")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(barBtnListClicked))
+        barButtonMapView = UIBarButtonItem(image: UIImage(named: "imgListVw")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(barBtnMapClicked))
+        self.navigationItem.rightBarButtonItems = [self.barButtonListView]
+    }
+    
+    @objc private func barBtnMapClicked() {
+        self.navigationItem.setRightBarButtonItems([self.barButtonListView], animated: false)
+        print("Show All List")
+        self.mapBackView.isHidden = true
+        tblVwRestaurants.isHidden = false
+    }
+    
+    // ----------------------------------
+    //  MARK: - BAR BUTTION ACTION(S)
+    //
+    @objc private func barBtnListClicked() {
+        self.navigationItem.setRightBarButtonItems([self.barButtonMapView], animated: false)
+        print("Show Maps")
+        tblVwRestaurants.isHidden = true
+        self.mapBackView.isHidden = false
     }
     
     @IBAction func sortBytaped(_ sender: Any) {

@@ -7,18 +7,17 @@
 
 import UIKit
 
-class RestaurantsDetailsVC: UIViewController {
+class RestaurantsDetailsVC: CustomBaseVC {
     @IBOutlet weak var stackVw: UIStackView!
     @IBOutlet weak var vwBgDirection: UIView!
-    @IBOutlet weak var headerViewHeight: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        super.configureLeftBarButtonItem()
         self.setUpUI()
         self.addTapGesture()
+        self.navigationItem.title = "Restaurants  Details"
         self.setNeedsStatusBarAppearanceUpdate()
-        if !(UIDevice.current.hasNotch)  {
-            headerViewHeight.constant = 80
-        }
     }
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -27,6 +26,10 @@ class RestaurantsDetailsVC: UIViewController {
         let tapGesOnDirection = UITapGestureRecognizer(target: self, action: #selector(self.directionTapGestureTapped(_:)))
         tapGesOnDirection.numberOfTapsRequired = 1
         vwBgDirection.addGestureRecognizer(tapGesOnDirection)
+    }
+    
+    override func btnBackTapped() {
+        self.navigationController?.popViewController(animated: true)
     }
     
     @objc func directionTapGestureTapped(_ sender: Any?) {
