@@ -7,11 +7,13 @@
 
 import UIKit
 
-class RateUsVC: UIViewController {
+class RateUsVC: CustomBaseVC {
 
     @IBOutlet weak var vwRating: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        super.setupLeftBarButtonItem()
+        self.navigationItem.title = "Rate Us"
         DispatchQueue.main.async {
             self.vwRating.addDashedBorder(color: (Colors.color_LightGrey)!)
         }

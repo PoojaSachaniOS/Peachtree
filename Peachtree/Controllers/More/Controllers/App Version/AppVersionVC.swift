@@ -7,10 +7,12 @@
 
 import UIKit
 
-class AppVersionVC: UIViewController {
+class AppVersionVC: CustomBaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "App Version"
+        super.setupLeftBarButtonItem()
 
     }
     

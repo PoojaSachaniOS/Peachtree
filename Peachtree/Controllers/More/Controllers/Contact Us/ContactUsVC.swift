@@ -7,12 +7,14 @@
 
 import UIKit
 
-class ContactUsVC: UIViewController {
+class ContactUsVC: CustomBaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        super.setupLeftBarButtonItem()
+        self.navigationItem.title = "Contact Us"
+        
 
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func backTaped(_ sender: Any) {
