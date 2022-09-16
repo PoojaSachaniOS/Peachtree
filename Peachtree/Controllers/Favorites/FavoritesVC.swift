@@ -7,18 +7,15 @@
 
 import UIKit
 
-class FavoritesVC: UIViewController {
+class FavoritesVC: CustomBaseVC {
     @IBOutlet weak var tblVwFavorites: UITableView!
-    @IBOutlet weak var headerViewHeight: NSLayoutConstraint!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Favorites"
         self.setNeedsStatusBarAppearanceUpdate()
         self.registerNib()
         self.tblVwFavorites.reloadData()
-        if !(UIDevice.current.hasNotch)  {
-            headerViewHeight.constant = 80
-        }
     }
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent

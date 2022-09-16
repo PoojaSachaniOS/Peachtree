@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Californian FB Regular.ttf">
-            <string>CalifornianFB-Reg</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--WeatherVC-->
         <scene sceneID="s0d-6b-0kx">
@@ -22,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i4E-59-H0O">
-                                <rect key="frame" x="0.0" y="100" width="375" height="567"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lns-p0-CGr">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="560.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="659"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="92°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GP9-x0-XM8" customClass="LBSatoshiWhite60" customModule="Peachtree" customModuleProvider="target">
                                                 <rect key="frame" x="142" y="84" width="91" height="80"/>
@@ -273,40 +268,12 @@
                                     <constraint firstItem="Lns-p0-CGr" firstAttribute="leading" secondItem="i4E-59-H0O" secondAttribute="leading" id="vrL-Xb-zgh"/>
                                 </constraints>
                             </scrollView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MvG-da-HBr">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgBgNavigation" translatesAutoresizingMaskIntoConstraints="NO" id="KYP-Vx-r4X">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekU-bx-P0S" customClass="LBCalifornianBoldWhite20" customModule="Peachtree" customModuleProvider="target">
-                                        <rect key="frame" x="162" y="52" width="51" height="16"/>
-                                        <fontDescription key="fontDescription" name="CalifornianFB-Reg" family="Californian FB" pointSize="14"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.93725490570000003" green="0.94117647410000005" blue="0.94117647410000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstItem="KYP-Vx-r4X" firstAttribute="leading" secondItem="MvG-da-HBr" secondAttribute="leading" id="5rr-LP-iyU"/>
-                                    <constraint firstAttribute="trailing" secondItem="KYP-Vx-r4X" secondAttribute="trailing" id="EfW-gA-t0G"/>
-                                    <constraint firstItem="ekU-bx-P0S" firstAttribute="centerY" secondItem="KYP-Vx-r4X" secondAttribute="centerY" constant="10" id="Hnq-EV-mM1"/>
-                                    <constraint firstItem="KYP-Vx-r4X" firstAttribute="top" secondItem="MvG-da-HBr" secondAttribute="top" id="JuQ-J6-ip6"/>
-                                    <constraint firstAttribute="bottom" secondItem="KYP-Vx-r4X" secondAttribute="bottom" id="P72-6P-b0Q"/>
-                                    <constraint firstAttribute="height" constant="100" id="aTv-g3-iM2"/>
-                                    <constraint firstItem="ekU-bx-P0S" firstAttribute="centerX" secondItem="MvG-da-HBr" secondAttribute="centerX" id="jVI-01-Pii"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" red="0.26666668059999998" green="0.32549020649999999" blue="0.49019610879999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="MvG-da-HBr" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="3pw-Gt-148"/>
+                            <constraint firstItem="i4E-59-H0O" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="42P-L5-Ryb"/>
                             <constraint firstItem="i4E-59-H0O" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="DkZ-xl-yjx"/>
-                            <constraint firstItem="MvG-da-HBr" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="eHA-Dk-4gl"/>
-                            <constraint firstAttribute="trailing" secondItem="MvG-da-HBr" secondAttribute="trailing" id="fiV-yq-Ubg"/>
-                            <constraint firstItem="i4E-59-H0O" firstAttribute="top" secondItem="MvG-da-HBr" secondAttribute="bottom" id="ggr-d7-myp"/>
                             <constraint firstItem="i4E-59-H0O" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="jlN-MN-8jc"/>
                             <constraint firstAttribute="bottom" secondItem="i4E-59-H0O" secondAttribute="bottom" id="m8B-7j-MOy"/>
                         </constraints>
@@ -314,7 +281,6 @@
                     <connections>
                         <outlet property="collectionViewDailyForcast" destination="fVv-GI-L1W" id="VVO-hV-F42"/>
                         <outlet property="collectionViewWeeklyForecast" destination="QR6-2T-Xxd" id="S8Y-nc-faq"/>
-                        <outlet property="headerViewHeight" destination="aTv-g3-iM2" id="181-VK-dUZ"/>
                         <outlet property="lblCity" destination="PAl-9N-F3f" id="Ejd-Rc-TMQ"/>
                         <outlet property="lblMainDes" destination="taK-Ze-87N" id="FAA-VM-HD0"/>
                         <outlet property="lblTemp" destination="GP9-x0-XM8" id="yjG-6P-4ui"/>
@@ -326,7 +292,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="imgBgNavigation" width="375" height="112"/>
         <image name="imgWeatherTabBarSelected" width="24" height="24"/>
         <image name="imgWeatherTabBarUnSelected" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">

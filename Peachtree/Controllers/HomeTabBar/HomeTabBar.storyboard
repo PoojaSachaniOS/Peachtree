@@ -93,9 +93,10 @@
         <!--Weather-->
         <scene sceneID="2as-YN-H4D">
             <objects>
-                <navigationController navigationBarHidden="YES" id="7dl-uH-JI4" sceneMemberID="viewController">
+                <navigationController id="7dl-uH-JI4" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Weather" image="imgWeatherTabBarUnSelected" selectedImage="imgWeatherTabBarSelected" id="dSv-JT-qo7"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="72z-Et-1Vz">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -136,9 +137,10 @@
         <!--Favorites-->
         <scene sceneID="Phu-ZF-obI">
             <objects>
-                <navigationController navigationBarHidden="YES" id="PjB-z1-FUb" sceneMemberID="viewController">
+                <navigationController id="PjB-z1-FUb" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Favorites" image="imgFavouriteTabBarUnSelected" selectedImage="imgFavouriteTabBarSelected" id="Oy3-1n-S4c"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="os6-hw-DfY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
