@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeVC: UIViewController {
+class HomeVC: CustomBaseVC {
     @IBOutlet weak var collectionVwHome: UICollectionView!
     @IBOutlet weak var headerViewHeight: NSLayoutConstraint!
     var arr: [HomeVCTableItem<AccountVCTableItemType>] = []
@@ -16,10 +16,13 @@ class HomeVC: UIViewController {
         case shareMyLocation, renewGolfCart, cityHall, publicSafety, reportAnIssue, library, restaurants, shopping, calendar, notifyMe, pools, recreationAndSpecialEvent, golfCartHelp, call911, onlinePayment, settings
     }
     private let animations = [AnimationType.vector((CGVector(dx: 0, dy: 260)))]
+    private var btnTemp: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Home"
+        self.configureSearchBarButtonItem()
+        self.configureTempBarButtonItem()
         self.registerNib()
         self.initializeData()
         self.setNeedsStatusBarAppearanceUpdate()
@@ -33,6 +36,28 @@ class HomeVC: UIViewController {
             }, completion: nil)
         }
     }
+    
+    func configureSearchBarButtonItem() {
+        let leftBarbtn = UIBarButtonItem(image: UIImage.init(named: "imgSearch"), style: .plain, target: self, action:#selector(HomeVC.btnSearchTapped))
+        leftBarbtn.tintColor = UIColor.white
+        self.navigationItem.leftBarButtonItem  = leftBarbtn
+    }
+
+    @objc func btnSearchTapped() {
+    }
+    
+    func configureTempBarButtonItem() {
+        btnTemp = UIButton(type: .custom)
+        btnTemp.titleLabel?.numberOfLines = 0
+        btnTemp.titleLabel?.font = FontHelper.californianBoldFontWithSize(size: 17)
+        btnTemp.frame = CGRect()
+        btnTemp.frame.size.width = 100
+        btnTemp.frame.size.height = 50
+        self.btnTemp.setTitle(String(format: "%i\u{00B0} F\n%@",80,"Clear"), for: .normal)
+
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: btnTemp)
+    }
+
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
