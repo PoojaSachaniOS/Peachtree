@@ -8,6 +8,7 @@
 import UIKit
 
 class MoreVC: CustomBaseVC {
+    // MARK: - View Loading -
     @IBOutlet weak var tableVw: UITableView!
 
     override func viewDidLoad() {

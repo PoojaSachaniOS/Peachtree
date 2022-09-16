@@ -60,7 +60,6 @@
 		17D6D56C28CCBB77007D677B /* LBLSatoshiBoldBlack24.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6D56B28CCBB77007D677B /* LBLSatoshiBoldBlack24.swift */; };
 		17D6D56E28CCC26D007D677B /* LBSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6D56D28CCC26D007D677B /* LBSeparator.swift */; };
 		17D6D57028CCC438007D677B /* Satoshi-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 17D6D56F28CCC438007D677B /* Satoshi-Medium.otf */; };
-		17D6D57228CCC792007D677B /* PoolsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6D57128CCC792007D677B /* PoolsVC.swift */; };
 		17D6D57428CCC978007D677B /* Satoshi-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 17D6D57328CCC978007D677B /* Satoshi-Light.otf */; };
 		17D6D57628CCCCB6007D677B /* LBSatoshiLight16.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6D57528CCCCB6007D677B /* LBSatoshiLight16.swift */; };
 		17D6D58428CDB836007D677B /* LBLSatoshiMediumWhite16.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6D58328CDB836007D677B /* LBLSatoshiMediumWhite16.swift */; };
@@ -202,7 +201,6 @@
 		17D6D56B28CCBB77007D677B /* LBLSatoshiBoldBlack24.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBLSatoshiBoldBlack24.swift; sourceTree = "<group>"; };
 		17D6D56D28CCC26D007D677B /* LBSeparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBSeparator.swift; sourceTree = "<group>"; };
 		17D6D56F28CCC438007D677B /* Satoshi-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Medium.otf"; sourceTree = "<group>"; };
-		17D6D57128CCC792007D677B /* PoolsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoolsVC.swift; sourceTree = "<group>"; };
 		17D6D57328CCC978007D677B /* Satoshi-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Light.otf"; sourceTree = "<group>"; };
 		17D6D57528CCCCB6007D677B /* LBSatoshiLight16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBSatoshiLight16.swift; sourceTree = "<group>"; };
 		17D6D58328CDB836007D677B /* LBLSatoshiMediumWhite16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBLSatoshiMediumWhite16.swift; sourceTree = "<group>"; };
@@ -444,10 +442,10 @@
 				C8BB1C4B28CCF9B000A66FDF /* Restaurants */,
 				17F90B3C28D50C590078593D /* Shopping */,
 				17F90B3F28D50D590078593D /* Categories */,
+				176A4DF728C45D0F00B3D465 /* CategoriesDetails */,
 				17F90B4028D50D810078593D /* Call911 */,
 				17F90B4528D50FD40078593D /* GolfCartHelp */,
-				176A4DF828C45D3800B3D465 /* Cell */,
-				176A4DF728C45D0F00B3D465 /* Controller */,
+				17F90B4628D5109E0078593D /* DirectionPopUp */,
 				172F20AF28BFC50B007096DB /* Home.storyboard */,
 			);
 			path = Home;
@@ -544,14 +542,12 @@
 			path = CustomBaseViewController;
 			sourceTree = "<group>";
 		};
-		176A4DF728C45D0F00B3D465 /* Controller */ = {
+		176A4DF728C45D0F00B3D465 /* CategoriesDetails */ = {
 			isa = PBXGroup;
 			children = (
-				C8AC29C828CA515A00E6CE0D /* Sub View Controllers */,
 				17D6D56128CC9F33007D677B /* RestaurantsDetailsVC.swift */,
-				17D6D58728CDBCE6007D677B /* DirectionPopUpVC.swift */,
 			);
-			path = Controller;
+			path = CategoriesDetails;
 			sourceTree = "<group>";
 		};
 		176A4DF828C45D3800B3D465 /* Cell */ = {
@@ -733,6 +729,15 @@
 			path = GolfCartHelp;
 			sourceTree = "<group>";
 		};
+		17F90B4628D5109E0078593D /* DirectionPopUp */ = {
+			isa = PBXGroup;
+			children = (
+				176A4DF828C45D3800B3D465 /* Cell */,
+				17D6D58728CDBCE6007D677B /* DirectionPopUpVC.swift */,
+			);
+			path = DirectionPopUp;
+			sourceTree = "<group>";
+		};
 		4703E1C90F96F6193A73F7F3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -741,14 +746,6 @@
 				5D049E48422CA0FE2E143879 /* Pods_PeachtreeTests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C864E89B28CE2BA100BA030D /* Pools */ = {
-			isa = PBXGroup;
-			children = (
-				17D6D57128CCC792007D677B /* PoolsVC.swift */,
-			);
-			path = Pools;
 			sourceTree = "<group>";
 		};
 		C864E8A328CE469C00BA030D /* Models */ = {
@@ -791,7 +788,12 @@
 		C8A2DEE228CBAB5B005578DE /* More */ = {
 			isa = PBXGroup;
 			children = (
-				C8A2DEEF28CBB85D005578DE /* Controllers */,
+				C8A2DEE628CBABE0005578DE /* Cell */,
+				C8A2DEE528CBABE0005578DE /* MoreVC */,
+				C8A1734A28CC7958002C52BE /* Contact Us */,
+				C8A1734128CC65F3002C52BE /* Rate Us */,
+				C8A2DEF728CBC14F005578DE /* App Version */,
+				C8A2DEF428CBBF3A005578DE /* Share */,
 				C8A2DEE328CBAB6D005578DE /* More.storyboard */,
 			);
 			path = More;
@@ -800,31 +802,18 @@
 		C8A2DEE528CBABE0005578DE /* MoreVC */ = {
 			isa = PBXGroup;
 			children = (
-				C8A2DEE628CBABE0005578DE /* Cells */,
 				C8A2DEE928CBABE0005578DE /* MoreVC.swift */,
 			);
 			path = MoreVC;
 			sourceTree = "<group>";
 		};
-		C8A2DEE628CBABE0005578DE /* Cells */ = {
+		C8A2DEE628CBABE0005578DE /* Cell */ = {
 			isa = PBXGroup;
 			children = (
 				C8A2DEE728CBABE0005578DE /* MoreListTableVWCell.swift */,
 				C8A2DEE828CBABE0005578DE /* MoreListTableVWCell.xib */,
 			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
-		C8A2DEEF28CBB85D005578DE /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				C8A1734A28CC7958002C52BE /* Contact Us */,
-				C8A1734128CC65F3002C52BE /* Rate Us */,
-				C8A2DEF728CBC14F005578DE /* App Version */,
-				C8A2DEF428CBBF3A005578DE /* Share */,
-				C8A2DEE528CBABE0005578DE /* MoreVC */,
-			);
-			path = Controllers;
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		C8A2DEF428CBBF3A005578DE /* Share */ = {
@@ -849,14 +838,6 @@
 				C8AC29C528CA511100E6CE0D /* PublicSafetyVC.swift */,
 			);
 			path = "Public Safety";
-			sourceTree = "<group>";
-		};
-		C8AC29C828CA515A00E6CE0D /* Sub View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				C864E89B28CE2BA100BA030D /* Pools */,
-			);
-			path = "Sub View Controllers";
 			sourceTree = "<group>";
 		};
 		C8AC29C928CA552C00E6CE0D /* Components */ = {
@@ -1282,7 +1263,6 @@
 				1738625428D3AA7100D518FE /* ProgressIndicator.swift in Sources */,
 				172F20CB28C0BFF9007096DB /* SearchVC.swift in Sources */,
 				172F20CF28C0C0DA007096DB /* Constants.swift in Sources */,
-				17D6D57228CCC792007D677B /* PoolsVC.swift in Sources */,
 				17D6D55628CC5487007D677B /* NSObject+Name.swift in Sources */,
 				17D6D58E28CDD724007D677B /* LBLSatoshiMediumBlack18.swift in Sources */,
 				C8EDCB9728CA6CA7003C52BF /* Extensions.swift in Sources */,
