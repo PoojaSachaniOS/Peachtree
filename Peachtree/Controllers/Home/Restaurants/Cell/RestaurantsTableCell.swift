@@ -9,7 +9,6 @@ import UIKit
 
 class RestaurantsTableCell: UITableViewCell {
     @IBOutlet weak var vwBg: UIView!
-
     @IBOutlet weak var imgVwOuter: UIImageView!
     
     override func awakeFromNib() {

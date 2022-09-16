@@ -21,6 +21,7 @@ class MoreVC: CustomBaseVC {
     }
 }
 
+// MARK: - UITableViewDataSource & Delegate(S)
 extension MoreVC: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return Constants.Array.moreArray.count

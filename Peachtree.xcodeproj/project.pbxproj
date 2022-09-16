@@ -327,7 +327,6 @@
 				172F209D28BFBDD7007096DB /* PeachtreeConfig */,
 				172F209E28BFBDF8007096DB /* Controllers */,
 				172F20A528BFBFEA007096DB /* Extensions */,
-				C8AC29CB28CA559A00E6CE0D /* Font */,
 				C89D381D28CA5CC1002CD210 /* Resources */,
 				C8AC29C928CA552C00E6CE0D /* Components */,
 				172F20D328C0CBF8007096DB /* Utilities */,
@@ -763,6 +762,7 @@
 		C89D381D28CA5CC1002CD210 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C8AC29CB28CA559A00E6CE0D /* Font */,
 				1738625528D3AB4100D518FE /* loading.json */,
 				C8AC29D828CA588B00E6CE0D /* FontHelper.swift */,
 			);

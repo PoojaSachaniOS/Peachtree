@@ -9,6 +9,7 @@ import UIKit
 
 class FavoritesTableCell: UITableViewCell {
     @IBOutlet weak var vwBg: UIView!
+    @IBOutlet weak var imgVwOuter: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()

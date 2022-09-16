@@ -99,7 +99,7 @@ class SearchVC: UIViewController {
     }
 }
 
-
+// MARK: - UITableViewDataSource & Delegate(S)
 extension SearchVC: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return aryList.count

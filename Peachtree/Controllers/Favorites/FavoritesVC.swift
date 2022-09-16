@@ -26,6 +26,7 @@ class FavoritesVC: CustomBaseVC {
 
 }
 
+// MARK: - UITableViewDataSource & Delegate(S)
 extension FavoritesVC: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
@@ -40,13 +41,26 @@ extension FavoritesVC: UITableViewDelegate,UITableViewDataSource{
         cell.backgroundColor = Colors.color_AppBackground
         cell.backgroundColor = .clear
         cell.selectionStyle = .none
-        
-        cell.vwBg.addRoundedViewCorners(width: 8, colorBorder: (Colors.color_borderLightBlack!).withAlphaComponent(0.1), BackgroundColor: UIColor.red)
-        
+                
+        cell.vwBg.addRoundedViewCorners(width: 6, colorBorder: (Colors.color_borderLightBlack!).withAlphaComponent(0.1), BackgroundColor: UIColor.white)
+        cell.imgVwOuter.addRoundedViewCorners(width: 4, colorBorder: (Colors.color_AppOrange!).withAlphaComponent(0.1), BackgroundColor: (UIColor.white.withAlphaComponent(0.20)))
+
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.openRestaurantsDetails()
+    }
+
+    func openRestaurantsDetails() {
+        if let controller = StoryboardUtils.getRestaurantsDetailsVC() as? RestaurantsDetailsVC {
+            controller.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
+    }
+
 }
