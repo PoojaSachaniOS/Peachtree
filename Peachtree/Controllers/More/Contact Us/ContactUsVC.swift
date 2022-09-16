@@ -8,16 +8,11 @@
 import UIKit
 
 class ContactUsVC: CustomBaseVC {
-
+    
+    // MARK: - View Loading -
     override func viewDidLoad() {
         super.viewDidLoad()
         super.setupLeftBarButtonItem()
         self.navigationItem.title = "Contact Us"
-        
-
-    }
-    
-    @IBAction func backTaped(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
     }
 }

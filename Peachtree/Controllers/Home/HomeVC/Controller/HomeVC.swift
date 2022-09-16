@@ -169,13 +169,6 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
         }
     }
     
-    func openPoolsVC() {
-        if let controller = StoryboardUtils.getPoolsVC() as? PoolsVC {
-            controller.hidesBottomBarWhenPushed = true
-            self.navigationController?.pushViewController(controller, animated: true)
-        }
-    }
-    
     func openCategoriesVC(title: String) {
         if let controller = StoryboardUtils.getCategoriesVC() as? CategoriesVC {
             controller.hidesBottomBarWhenPushed = true

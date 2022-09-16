@@ -8,19 +8,15 @@
 import UIKit
 
 class MoreVC: CustomBaseVC {
-    // MARK: - View Loading -
     @IBOutlet weak var tableVw: UITableView!
 
+    // MARK: - View Loading -
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "More"
         super.setupLeftBarButtonItem()
         tableVw.register(MoreListTableVWCell.self)
         tableVw.separatorStyle = .none
-    }
-    
-    @IBAction func backTaped(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
     }
 }
 
