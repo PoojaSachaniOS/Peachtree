@@ -16,6 +16,8 @@ class TermsOfUseVC: UIViewController {
         super.viewDidLoad()
         self.loadHtmlFile()
         self.navigationItem.title = "Terms of use"
+        self.setNeedsStatusBarAppearanceUpdate()
+
     }
     
     @IBAction func acceptedTaped(_ sender: Any) {

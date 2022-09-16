@@ -11,6 +11,7 @@ class GetStartedVC: CustomBaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setNeedsStatusBarAppearanceUpdate()
 
     }
     
@@ -22,6 +23,10 @@ class GetStartedVC: CustomBaseVC {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         super.showNavigationBar()
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .default
     }
 }
 
