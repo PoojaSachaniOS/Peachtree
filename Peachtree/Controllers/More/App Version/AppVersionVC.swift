@@ -8,16 +8,12 @@
 import UIKit
 
 class AppVersionVC: CustomBaseVC {
-
+    //  MARK: - IB-OUTLET(S)
+    
+    // MARK: - View Loading -
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "App Version"
         super.setupLeftBarButtonItem()
-
     }
-    
-    @IBAction func backTaped(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
-    }
-
 }

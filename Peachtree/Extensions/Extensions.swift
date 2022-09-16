@@ -29,6 +29,7 @@ extension UIView {
             
             self.layer.addSublayer(shapeLayer)
         }
+    
     func dropShadowOnTableViewCell(color:UIColor) {
         self.clipsToBounds = true
         self.layer.masksToBounds = false
@@ -45,6 +46,7 @@ extension UIView {
         self.backgroundColor = BackgroundColor
         layer.masksToBounds = true
     }
+    
     func dropShadowOnHomeCell() {
         self.clipsToBounds = true
         self.layer.masksToBounds = false
@@ -112,17 +114,12 @@ extension UIView {
     func hideLoadingIndicator () {
         if let indicator: ProgressIndicator = self.viewWithTag(19518) as? ProgressIndicator {
             indicator.hide()
-//            UIView.animate(withDuration: 0.2) { () -> Void in
-//                self.centralActivityIndicator.alpha = 0.0
-//            }
-
         }
     }
     
 }
 
 extension UINavigationController {
-    
     func setStatusBar(backgroundColor: UIColor) {
         let statusBarFrame: CGRect
         if #available(iOS 13.0, *) {
@@ -420,75 +417,6 @@ extension UIImage {
     }
 }
 
-extension UIView {
-    func addTopBorderWithColor(color: UIColor, width: CGFloat) {
-        let border = CALayer()
-        border.backgroundColor = color.cgColor
-        border.frame = CGRect(x: 0, y: 0, width: self.frame.size.width, height: width)
-        self.layer.addSublayer(border)
-    }
-    
-    func addRightBorderWithColor(color: UIColor, width: CGFloat) {
-        let border = CALayer()
-        border.backgroundColor = color.cgColor
-        border.frame = CGRect(x: self.frame.size.width - width, y: 0, width: width, height: self.frame.size.height)
-        self.layer.addSublayer(border)
-    }
-    
-    func addBottomBorderWithColor(color: UIColor, width: CGFloat) {
-        let border = CALayer()
-        border.backgroundColor = color.cgColor
-        border.frame = CGRect(x: 0, y: self.frame.size.height - width, width: self.frame.size.width, height: width)
-        self.layer.addSublayer(border)
-    }
-    
-    func addLeftBorderWithColor(color: UIColor, width: CGFloat) {
-        let border = CALayer()
-        border.backgroundColor = color.cgColor
-        border.frame = CGRect(x: 0, y: 0, width: width, height: self.frame.size.height)
-        self.layer.addSublayer(border)
-    }
-    
-    func addBorder(toEdges edges: UIRectEdge, color: UIColor, thickness: CGFloat) {
-        
-        func addBorder(toEdge edges: UIRectEdge, color: UIColor, thickness: CGFloat) {
-            let border = CALayer()
-            border.backgroundColor = color.cgColor
-            
-            switch edges {
-            case .top:
-                border.frame = CGRect(x: 0, y: 0, width: frame.width, height: thickness)
-            case .bottom:
-                border.frame = CGRect(x: 0, y: frame.height - thickness, width: frame.width, height: thickness)
-            case .left:
-                border.frame = CGRect(x: 0, y: 0, width: thickness, height: frame.height)
-            case .right:
-                border.frame = CGRect(x: frame.width - thickness, y: 0, width: thickness, height: frame.height)
-            default:
-                break
-            }
-            
-            layer.addSublayer(border)
-        }
-        
-        if edges.contains(.top) || edges.contains(.all) {
-            addBorder(toEdge: .top, color: color, thickness: thickness)
-        }
-        
-        if edges.contains(.bottom) || edges.contains(.all) {
-            addBorder(toEdge: .bottom, color: color, thickness: thickness)
-        }
-        
-        if edges.contains(.left) || edges.contains(.all) {
-            addBorder(toEdge: .left, color: color, thickness: thickness)
-        }
-        
-        if edges.contains(.right) || edges.contains(.all) {
-            addBorder(toEdge: .right, color: color, thickness: thickness)
-        }
-    }
-}
-
 //MARK: -UIImageView
 extension UIImageView {
     func roundedImage() {
@@ -568,21 +496,6 @@ extension TimeInterval {
         }
         return String(format: "%d:%02d:%02d", hours, minutes, seconds)
     }
-}
-
-extension UIDevice {
-    /// Returns `true` if the device has a notch
-    var hasNotch1: Bool {
-        guard #available(iOS 11.0, *), let window = UIApplication.shared.windows.filter({$0.isKeyWindow}).first else { return false }
-        if UIDevice.current.orientation.isPortrait {
-            return window.safeAreaInsets.top >= 44
-        } else {
-            return window.safeAreaInsets.left > 0 || window.safeAreaInsets.right > 0
-        }
-    }
-    
-   
-    
 }
 
 extension Data {

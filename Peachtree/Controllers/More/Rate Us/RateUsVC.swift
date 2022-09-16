@@ -8,8 +8,10 @@
 import UIKit
 
 class RateUsVC: CustomBaseVC {
-
+    //  MARK: - IB-OUTLET(S)
     @IBOutlet weak var vwRating: UIView!
+    
+    // MARK: - View Loading -
     override func viewDidLoad() {
         super.viewDidLoad()
         super.setupLeftBarButtonItem()
@@ -17,10 +19,5 @@ class RateUsVC: CustomBaseVC {
         DispatchQueue.main.async {
             self.vwRating.addDashedBorder(color: (Colors.color_LightGrey)!)
         }
-        // Do any additional setup after loading the view.
-    }
-    
-    @IBAction func backTaped(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
     }
 }

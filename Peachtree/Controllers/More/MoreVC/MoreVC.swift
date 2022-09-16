@@ -8,6 +8,7 @@
 import UIKit
 
 class MoreVC: CustomBaseVC {
+    //  MARK: - IB-OUTLET(S)
     @IBOutlet weak var tableVw: UITableView!
 
     // MARK: - View Loading -
