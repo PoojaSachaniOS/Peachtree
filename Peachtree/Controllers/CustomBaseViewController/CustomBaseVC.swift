@@ -38,5 +38,14 @@ class CustomBaseVC: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
+    func configureLeftBarButtonItem() {
+        let leftBarbtn = UIBarButtonItem(image: UIImage.init(named: "back_white"), style: .plain, target: self, action:#selector(CustomBaseVC.btnBackTapped))
+        leftBarbtn.tintColor = UIColor.white
+        self.navigationItem.leftBarButtonItem  = leftBarbtn
+    }
+
+    @objc func btnBackTapped() {
+    }
+    
 }
 

@@ -7,9 +7,8 @@
 
 import UIKit
 
-class ShareMyLocationVC: UIViewController {
+class ShareMyLocationVC: CustomBaseVC {
     @IBOutlet weak var stackVw: UIStackView!
-    @IBOutlet weak var headerViewHeight: NSLayoutConstraint!
     @IBOutlet weak var vwOuterBgDropPin: UIView!
     @IBOutlet weak var vwInnerBgDropPin: UIView!
     @IBOutlet weak var vwOuterBgShare: UIView!
@@ -17,14 +16,16 @@ class ShareMyLocationVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        super.configureLeftBarButtonItem()
         self.navigationItem.title = "Share My Location"
         self.setUpUI()
-        if !(UIDevice.current.hasNotch)  {
-            headerViewHeight.constant = 80
-        }
     }
     
     @IBAction func backTaped(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    override func btnBackTapped() {//required
         self.navigationController?.popViewController(animated: true)
     }
     
@@ -35,6 +36,9 @@ class ShareMyLocationVC: UIViewController {
                 view.addRoundedViewCorners(width: 8, colorBorder: UIColor.white, BackgroundColor: UIColor.white.withAlphaComponent(0.4))
             }
         }
+        
+        
+        
         stackVw.backgroundColor = Colors.color_AppOrange
         
         vwOuterBgDropPin.addRoundedViewCorners(width: vwOuterBgDropPin.frame.size.height/2, colorBorder: .clear, BackgroundColor: (Colors.color_AppOrange?.withAlphaComponent(0.28))!)

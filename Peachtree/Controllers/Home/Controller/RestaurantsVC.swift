@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RestaurantsVC: UIViewController {
+class RestaurantsVC: CustomBaseVC {
     
     @IBOutlet weak var mapBackView: UIView!
     @IBOutlet weak var tblVwRestaurants: UITableView!
@@ -17,6 +17,7 @@ class RestaurantsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //RestaurantsVC
+        super.configureLeftBarButtonItem()
         self.navigationItem.title = "Restaurants"
         self.registerNib()
         searchBar.layer.cornerRadius = 8
@@ -66,6 +67,10 @@ class RestaurantsVC: UIViewController {
         alertController.addAction(actionByAlphabetically)
         alertController.addAction(actionCancel)
         self.present(alertController, animated: true, completion: nil)
+    }
+    
+    override func btnBackTapped() {//required
+        self.navigationController?.popViewController(animated: true)
     }
 }
 
