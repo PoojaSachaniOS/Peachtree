@@ -40,6 +40,7 @@ extension Call911VC: UITableViewDelegate,UITableViewDataSource{
         let cell = tblVw.dequeueReusableCell(withIdentifier: CallTableCell.className, for: indexPath) as! CallTableCell
        // cell.lblName.text = constant.Array.callArr[indexPath.row]
         cell.vwBg.addRoundedViewCorners(width: 8, colorBorder: .clear, BackgroundColor: Colors.color_AppOrange!)
+        cell.vwBgContainer.addRoundedViewCorners(width: 4, colorBorder: (Colors.color_AppOrange!).withAlphaComponent(0.1), BackgroundColor: (UIColor.white.withAlphaComponent(0.20)))
         cell.selectionStyle = .none
         cell.backgroundColor = .clear
         return cell

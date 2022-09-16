@@ -11,6 +11,7 @@ class CallTableCell : UITableViewCell {
 
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var vwBg: UIView!
+    @IBOutlet weak var vwBgContainer: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
     }
