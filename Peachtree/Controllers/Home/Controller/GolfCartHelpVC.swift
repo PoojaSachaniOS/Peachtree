@@ -7,12 +7,12 @@
 
 import UIKit
 
-class GolfCartHelpVC: UIViewController {
+class GolfCartHelpVC: CustomBaseVC {
     @IBOutlet weak var stackVw: UIStackView!
     @IBOutlet weak var lblDescrptn: LBSatoshiRegularLightGrey14!
-    @IBOutlet weak var headerViewHeight: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Golf Cart Help"
         self.setUpUI()
         self.setNeedsStatusBarAppearanceUpdate()
 
@@ -25,6 +25,7 @@ class GolfCartHelpVC: UIViewController {
     }
 
     func setUpUI() {
+        super.setupLeftBarButtonItem()
         for view: UIView in self.stackVw.subviews {
             if view.isKind(of: UIView.self) {
                 view.backgroundColor = Colors.color_AppOrange
@@ -33,8 +34,5 @@ class GolfCartHelpVC: UIViewController {
         }
         
         self.lblDescrptn.setLineSpacing(lineSpacing: 2.5, lineHeightMultiple: 0)
-        if !(UIDevice.current.hasNotch)  {
-            headerViewHeight.constant = 80
-        }
     }
 }

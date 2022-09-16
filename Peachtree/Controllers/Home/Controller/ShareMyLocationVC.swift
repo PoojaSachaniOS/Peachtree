@@ -14,8 +14,10 @@ class ShareMyLocationVC: UIViewController {
     @IBOutlet weak var vwInnerBgDropPin: UIView!
     @IBOutlet weak var vwOuterBgShare: UIView!
     @IBOutlet weak var vwInnerBgShare: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Share My Location"
         self.setUpUI()
         if !(UIDevice.current.hasNotch)  {
             headerViewHeight.constant = 80

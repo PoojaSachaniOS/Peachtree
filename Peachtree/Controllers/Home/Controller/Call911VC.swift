@@ -7,16 +7,14 @@
 
 import UIKit
 
-class Call911VC: UIViewController {
+class Call911VC: CustomBaseVC {
     @IBOutlet weak var tblVw: UITableView!
-    @IBOutlet weak var headerViewHeight: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
+        super.setupLeftBarButtonItem()
         self.registerNib()
+        self.navigationItem.title = "Call 911"
         self.setNeedsStatusBarAppearanceUpdate()
-        if !(UIDevice.current.hasNotch)  {
-            headerViewHeight.constant = 80
-        }
     }
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent

@@ -11,20 +11,18 @@ class RestaurantsVC: UIViewController {
     
     @IBOutlet weak var mapBackView: UIView!
     @IBOutlet weak var tblVwRestaurants: UITableView!
-    @IBOutlet weak var headerViewHeight: NSLayoutConstraint!
     @IBOutlet weak var searchBar: UISearchBar!
     var rightActionMap = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //RestaurantsVC
+        self.navigationItem.title = "Restaurants"
         self.registerNib()
         searchBar.layer.cornerRadius = 8
         searchBar.backgroundColor = .white
         searchBar.searchTextField.backgroundColor = .white
         self.setNeedsStatusBarAppearanceUpdate()
-        if !(UIDevice.current.hasNotch)  {
-            headerViewHeight.constant = 80
-        }
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {

@@ -27,6 +27,16 @@ class CustomBaseVC: UIViewController {
     func showNavigationBar() {
         navigationController?.setNavigationBarHidden(false, animated: true)
     }
+    
+    func setupLeftBarButtonItem() {
+        let leftBarbtn = UIBarButtonItem(image: UIImage.init(named: "back_white"), style: .plain, target: self, action:#selector(CustomBaseVC.btnLeftItemTapped))
+        leftBarbtn.tintColor = UIColor.white
+        self.navigationItem.leftBarButtonItem  = leftBarbtn
+    }
 
+    @objc func btnLeftItemTapped() {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
 }
 

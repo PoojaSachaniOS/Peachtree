@@ -7,17 +7,20 @@
 
 import UIKit
 
-class PublicSafetyVC: UIViewController {
+class PublicSafetyVC: CustomBaseVC {
     // MARK: - IB-OUTLET(S)
     @IBOutlet weak var vwFireDirection: UIView!
     @IBOutlet weak var vwPublicDirection: UIView!
     @IBOutlet weak var StackViewFireAndEMS: UIStackView!
     @IBOutlet weak var stackViewPublic: UIStackView!
     @IBOutlet weak var mainV: UIView!
-    @IBOutlet weak var headerViewHeight: NSLayoutConstraint!
+    
     // MARK: - View Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationItem.title = "Public Safety"
+        super.setupLeftBarButtonItem()
         setUpUI()
         self.setNeedsStatusBarAppearanceUpdate()
     }

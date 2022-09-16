@@ -7,14 +7,14 @@
 
 import UIKit
 
-class MoreVC: UIViewController {
+class MoreVC: CustomBaseVC {
     @IBOutlet weak var tableVw: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        self.navigationItem.title = "More"
+        super.setupLeftBarButtonItem()
         tableVw.register(MoreListTableVWCell.self)
-
         tableVw.separatorStyle = .none
     }
     

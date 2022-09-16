@@ -15,6 +15,7 @@ class WebViewVC: CustomBaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        super.setupLeftBarButtonItem()
         webVw.navigationDelegate = self
         self.loadWebVwRequest()
         self.navigationItem.title = strNavTitle
