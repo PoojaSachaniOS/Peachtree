@@ -15,19 +15,20 @@ class PublicSafetyVC: CustomBaseVC {
     @IBOutlet weak var stackViewPublic: UIStackView!
     @IBOutlet weak var mainV: UIView!
     
-    // MARK: - View Life cycle
+    // MARK: - View Loading -
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.navigationItem.title = "Public Safety"
-        super.setupLeftBarButtonItem()
         setUpUI()
         self.setNeedsStatusBarAppearanceUpdate()
     }
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
+    
     func setUpUI() {
+        self.navigationItem.title = "Public Safety"
+        super.setupLeftBarButtonItem()
         for view: UIView in self.stackViewPublic.subviews {
             if view.isKind(of: UIView.self) {
                 view.backgroundColor = Colors.color_AppOrange
@@ -42,9 +43,5 @@ class PublicSafetyVC: CustomBaseVC {
         }
         self.vwFireDirection.addRoundedViewCorners(width: 8, colorBorder: Colors.color_borderLightBlack!, BackgroundColor: UIColor.white)
         self.vwPublicDirection.addRoundedViewCorners(width: 8, colorBorder: Colors.color_borderLightBlack!, BackgroundColor: UIColor.white)
-    }
-    
-    @IBAction func backTaped(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
     }
 }

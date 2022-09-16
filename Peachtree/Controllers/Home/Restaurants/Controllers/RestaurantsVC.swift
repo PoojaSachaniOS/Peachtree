@@ -8,17 +8,17 @@
 import UIKit
 
 class RestaurantsVC: CustomBaseVC {
-    
+    //  MARK: - IB-OUTLET(S)
     @IBOutlet weak var mapBackView: UIView!
     @IBOutlet weak var tblVwRestaurants: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
-    var rightActionMap = true
+    
     private var barButtonMapView: UIBarButtonItem!
     private var barButtonListView: UIBarButtonItem!
-
+    
+    // MARK: - View Loading -
     override func viewDidLoad() {
         super.viewDidLoad()
-        //RestaurantsVC
         super.configureLeftBarButtonItem()
         self.navigationItem.title = "Restaurants"
         self.registerNib()
@@ -29,16 +29,18 @@ class RestaurantsVC: CustomBaseVC {
         self.configureListMapBarButtonItems()
     }
     
+    // MARK: - OVERRIDE METHOD(S)
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
     
-    private func registerNib() {
-        self.tblVwRestaurants.register(RestaurantsTableCell.self)
+    override func btnBackTapped() {
+        self.navigationController?.popViewController(animated: true)
     }
     
-    @IBAction func backTaped(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
+    //  MARK: - PRIVATE METHOD(S)
+    private func registerNib() {
+        self.tblVwRestaurants.register(RestaurantsTableCell.self)
     }
     
     private func configureListMapBarButtonItems(){
@@ -47,16 +49,13 @@ class RestaurantsVC: CustomBaseVC {
         self.navigationItem.rightBarButtonItems = [self.barButtonListView]
     }
     
+    //  MARK: - BAR BUTTION ACTION(S)
     @objc private func barBtnMapClicked() {
         self.navigationItem.setRightBarButtonItems([self.barButtonListView], animated: false)
-        print("Show All List")
         self.mapBackView.isHidden = true
         tblVwRestaurants.isHidden = false
     }
     
-    // ----------------------------------
-    //  MARK: - BAR BUTTION ACTION(S)
-    //
     @objc private func barBtnListClicked() {
         self.navigationItem.setRightBarButtonItems([self.barButtonMapView], animated: false)
         print("Show Maps")
@@ -66,17 +65,6 @@ class RestaurantsVC: CustomBaseVC {
     
     @IBAction func sortBytaped(_ sender: Any) {
         self.sortByOptions()
-    }
-    
-    @IBAction func mapTaped(_ sender: Any) {
-        rightActionMap = !rightActionMap
-        if rightActionMap {
-            self.mapBackView.isHidden = true
-            tblVwRestaurants.isHidden = false
-        } else {
-            tblVwRestaurants.isHidden = true
-            self.mapBackView.isHidden = false
-        }
     }
     
     func sortByOptions() {
@@ -94,12 +82,9 @@ class RestaurantsVC: CustomBaseVC {
         alertController.addAction(actionCancel)
         self.present(alertController, animated: true, completion: nil)
     }
-    
-    override func btnBackTapped() {//required
-        self.navigationController?.popViewController(animated: true)
-    }
 }
 
+// MARK: - UITableViewDataSource & Delegate(S)
 extension RestaurantsVC: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10

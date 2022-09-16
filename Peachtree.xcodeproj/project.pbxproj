@@ -438,6 +438,8 @@
 				17F90B2E28D506900078593D /* HomeVC */,
 				17F90B3428D507500078593D /* ShareMyLocation */,
 				17F90B3828D5090E0078593D /* WebView */,
+				C8AC29C728CA511C00E6CE0D /* Public Safety */,
+				C8BB1C4B28CCF9B000A66FDF /* Restaurants */,
 				176A4DF828C45D3800B3D465 /* Cell */,
 				176A4DF728C45D0F00B3D465 /* Controller */,
 				172F20AF28BFC50B007096DB /* Home.storyboard */,
@@ -542,7 +544,6 @@
 				C8AC29C828CA515A00E6CE0D /* Sub View Controllers */,
 				17D6D54F28CC51E7007D677B /* Call911VC.swift */,
 				17D6D55728CC57F1007D677B /* GolfCartHelpVC.swift */,
-				17D6D55928CC99E2007D677B /* RestaurantsVC.swift */,
 				17D6D55F28CC9DF8007D677B /* ShoppingVC.swift */,
 				17D6D56128CC9F33007D677B /* RestaurantsDetailsVC.swift */,
 				17D6D58728CDBCE6007D677B /* DirectionPopUpVC.swift */,
@@ -555,8 +556,6 @@
 			children = (
 				17D6D55128CC53D9007D677B /* CallTableCell.swift */,
 				17D6D55228CC53D9007D677B /* CallTableCell.xib */,
-				17D6D55B28CC9B46007D677B /* RestaurantsTableCell.swift */,
-				17D6D55C28CC9B46007D677B /* RestaurantsTableCell.xib */,
 				17D6D58928CDCFB6007D677B /* DirectionTableCell.swift */,
 				17D6D58A28CDCFB6007D677B /* DirectionTableCell.xib */,
 			);
@@ -642,6 +641,29 @@
 				17704EEE28C6DDA30032C96C /* WebViewVC.swift */,
 			);
 			path = WebView;
+			sourceTree = "<group>";
+		};
+		17F90B3928D50B2E0078593D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				17D6D55C28CC9B46007D677B /* RestaurantsTableCell.xib */,
+				17D6D55B28CC9B46007D677B /* RestaurantsTableCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		17F90B3A28D50B700078593D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		17F90B3B28D50B810078593D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		4703E1C90F96F6193A73F7F3 /* Frameworks */ = {
@@ -766,8 +788,6 @@
 			isa = PBXGroup;
 			children = (
 				C864E89B28CE2BA100BA030D /* Pools */,
-				C8BB1C4B28CCF9B000A66FDF /* Restaurants */,
-				C8AC29C728CA511C00E6CE0D /* Public Safety */,
 			);
 			path = "Sub View Controllers";
 			sourceTree = "<group>";
@@ -837,6 +857,9 @@
 		C8BB1C4B28CCF9B000A66FDF /* Restaurants */ = {
 			isa = PBXGroup;
 			children = (
+				17F90B3928D50B2E0078593D /* Cell */,
+				17F90B3B28D50B810078593D /* ViewModel */,
+				17F90B3A28D50B700078593D /* Model */,
 				C8DAD8A628CFA4B400370ECF /* Controllers */,
 			);
 			path = Restaurants;
@@ -845,6 +868,7 @@
 		C8DAD8A628CFA4B400370ECF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				17D6D55928CC99E2007D677B /* RestaurantsVC.swift */,
 				C8DAD8A728CFA4D800370ECF /* DirectionsVC.swift */,
 			);
 			path = Controllers;
