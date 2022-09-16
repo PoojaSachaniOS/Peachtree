@@ -7,13 +7,17 @@
 
 import UIKit
 
-class ShareVC: UIViewController {
+class ShareVC: CustomBaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        super.setupLeftBarButtonItem()
+        self.navigationItem.title = "Share App"
+        
         // Do any additional setup after loading the view.
     }
+    
     @IBAction func backTaped(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
