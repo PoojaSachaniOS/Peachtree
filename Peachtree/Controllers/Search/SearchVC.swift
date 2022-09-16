@@ -12,26 +12,36 @@ class SearchVC: UIViewController {
     @IBOutlet weak var btnCategories: UIButton!
     @IBOutlet weak var btnAddress: UIButton!
     @IBOutlet weak var tblVwSearch: UITableView!
-    @IBOutlet weak var headerViewHeight: NSLayoutConstraint!
+    private var btnTemp: UIButton!
 
     var aryList = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setNeedsStatusBarAppearanceUpdate()
+        self.configureTempBarButtonItem()
         self.initializeUI()
         self.registerNib()
+        self.navigationItem.title = "Search"
         aryList = ["Atm", "Bakery", "Bank","Atm", "Bakery", "Bank"]
-        if !(UIDevice.current.hasNotch)  {
-            headerViewHeight.constant = 80
-        }
+       
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
     
-    
+    func configureTempBarButtonItem() {
+        btnTemp = UIButton(type: .custom)
+        btnTemp.titleLabel?.numberOfLines = 0
+        btnTemp.titleLabel?.font = FontHelper.californianBoldFontWithSize(size: 17)
+        btnTemp.frame = CGRect()
+        btnTemp.frame.size.width = 100
+        btnTemp.frame.size.height = 50
+        self.btnTemp.setTitle(String(format: "%i\u{00B0} F\n%@",80,"Clear"), for: .normal)
+
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: btnTemp)
+    }
     
     func initializeUI() {
         for view: UIView in self.stackVw.subviews {
