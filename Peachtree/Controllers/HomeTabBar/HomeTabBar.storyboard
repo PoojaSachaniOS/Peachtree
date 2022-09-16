@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Upf-Aq-ydC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Upf-Aq-ydC">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -30,9 +30,10 @@
         <!--Home-->
         <scene sceneID="YIj-Lt-Zhb">
             <objects>
-                <navigationController navigationBarHidden="YES" id="Ofg-4N-1B9" sceneMemberID="viewController">
+                <navigationController id="Ofg-4N-1B9" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="imgHomeTabBarUnSelected" selectedImage="imgHomeTabBarSelected" id="Jgt-Jc-Igb"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="SWX-gA-z0k">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

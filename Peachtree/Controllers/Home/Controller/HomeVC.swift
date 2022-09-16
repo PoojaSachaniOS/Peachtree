@@ -19,6 +19,7 @@ class HomeVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Home"
         self.registerNib()
         self.initializeData()
         self.setNeedsStatusBarAppearanceUpdate()
@@ -36,6 +37,7 @@ class HomeVC: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
+    
     
     private func registerNib() {
         collectionVwHome.register(UINib(nibName: "HomeCollectionVWCell", bundle: nil), forCellWithReuseIdentifier: "HomeCollectionVWCell")

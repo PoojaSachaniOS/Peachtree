@@ -7,11 +7,21 @@
 
 import UIKit
 
-class GetStartedVC: UIViewController {
+class GetStartedVC: CustomBaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        super.hideNavigationBar()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        super.showNavigationBar()
     }
 }
 

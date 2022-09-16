@@ -38,13 +38,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func setUpNavigationAndTabBarAppearance() {
         if #available(iOS 15.0, *){
-            let appearance = UITabBarAppearance()
-            appearance.configureWithDefaultBackground()
-            appearance.backgroundColor = Colors.color_AppThemeBlack
-            appearance.stackedLayoutAppearance.selected.titleTextAttributes = [.foregroundColor: UIColor.white]
-            appearance.stackedLayoutAppearance.normal.titleTextAttributes = [.foregroundColor: UIColor.white]
+            let appearance = UINavigationBarAppearance()
+            appearance.configureWithOpaqueBackground()
+            appearance.backgroundColor = .red
+            appearance.backgroundImage = UIImage.init(named: "imgBgNavigation")!
+            
+            appearance.titleTextAttributes = [NSAttributedString.Key.font:FontHelper.californianBoldFontWithSize(size: 20), NSAttributedString.Key.foregroundColor: UIColor.white]
 
-            UITabBar.appearance().standardAppearance = appearance
+
+            UINavigationBar.appearance().standardAppearance = appearance
+            UINavigationBar.appearance().scrollEdgeAppearance = UINavigationBar.appearance().standardAppearance
+
+            let appearanceTabBar = UITabBarAppearance()
+            appearanceTabBar.configureWithDefaultBackground()
+            appearanceTabBar.backgroundColor = Colors.color_AppThemeBlack
+            appearanceTabBar.stackedLayoutAppearance.selected.titleTextAttributes = [.foregroundColor: UIColor.white]
+            appearanceTabBar.stackedLayoutAppearance.normal.titleTextAttributes = [.foregroundColor: UIColor.white]
+
+            UITabBar.appearance().standardAppearance = appearanceTabBar
             UITabBar.appearance().scrollEdgeAppearance = UITabBar.appearance().standardAppearance
                     
         } else {
@@ -73,7 +84,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if strRoot == Constants.AppRootFlow.kEnterHome {
             if let tabBar = StoryboardUtils.getHomeTabBar() as? HomeTabBarController {
                 let nav = UINavigationController(rootViewController: tabBar)
-                nav.isNavigationBarHidden = true
+              //  nav.isNavigationBarHidden = true
                 window?.rootViewController = tabBar
             }
         } else if strRoot == Constants.AppRootFlow.kGetStarted {

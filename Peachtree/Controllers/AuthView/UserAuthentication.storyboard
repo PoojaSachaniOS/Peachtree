@@ -7,11 +7,6 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Californian FB Regular.ttf">
-            <string>CalifornianFB-Reg</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Get StartedVC-->
         <scene sceneID="s0d-6b-0kx">
@@ -69,7 +64,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Czg-A8-mc5">
-                                <rect key="frame" x="0.0" y="112" width="414" height="684"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="752"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -116,49 +111,20 @@
                                     </constraint>
                                 </constraints>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0eK-y5-n9H">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="112"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgBgNavigation" translatesAutoresizingMaskIntoConstraints="NO" id="IM7-7w-Fqf">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="112"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms of use" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MlF-Jp-Jmm" customClass="LBCalifornianBoldWhite20" customModule="Peachtree" customModuleProvider="target">
-                                        <rect key="frame" x="171" y="48" width="72" height="16"/>
-                                        <fontDescription key="fontDescription" name="CalifornianFB-Reg" family="Californian FB" pointSize="14"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.93725490570000003" green="0.94117647410000005" blue="0.94117647410000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="IM7-7w-Fqf" secondAttribute="bottom" id="2f8-OP-JkY"/>
-                                    <constraint firstAttribute="trailing" secondItem="IM7-7w-Fqf" secondAttribute="trailing" id="Ewr-S1-nmC"/>
-                                    <constraint firstItem="IM7-7w-Fqf" firstAttribute="leading" secondItem="0eK-y5-n9H" secondAttribute="leading" id="GiJ-vS-Fab"/>
-                                    <constraint firstItem="MlF-Jp-Jmm" firstAttribute="centerY" secondItem="IM7-7w-Fqf" secondAttribute="centerY" id="P6t-dY-Okr"/>
-                                    <constraint firstItem="IM7-7w-Fqf" firstAttribute="top" secondItem="0eK-y5-n9H" secondAttribute="top" id="asI-rE-vMc"/>
-                                    <constraint firstAttribute="height" constant="112" id="iGV-4y-sdk"/>
-                                    <constraint firstItem="MlF-Jp-Jmm" firstAttribute="centerX" secondItem="0eK-y5-n9H" secondAttribute="centerX" id="mHE-Rh-4EO"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0d7-rS-khB"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="n4Y-Gj-ABU" firstAttribute="centerX" secondItem="0d7-rS-khB" secondAttribute="centerX" id="7Ef-cq-CkR"/>
-                            <constraint firstItem="0eK-y5-n9H" firstAttribute="leading" secondItem="0d7-rS-khB" secondAttribute="leading" id="FQW-4j-RQf"/>
-                            <constraint firstItem="0eK-y5-n9H" firstAttribute="trailing" secondItem="0d7-rS-khB" secondAttribute="trailing" id="Hy7-0K-BR0"/>
                             <constraint firstItem="0d7-rS-khB" firstAttribute="bottom" secondItem="n4Y-Gj-ABU" secondAttribute="bottom" constant="10" id="LDC-i9-RFl"/>
                             <constraint firstItem="n4Y-Gj-ABU" firstAttribute="top" secondItem="Czg-A8-mc5" secondAttribute="bottom" constant="5" id="Std-0y-LNP"/>
-                            <constraint firstItem="0eK-y5-n9H" firstAttribute="top" secondItem="aYu-Vc-Wp8" secondAttribute="top" id="Xeg-jc-BFJ"/>
+                            <constraint firstItem="Czg-A8-mc5" firstAttribute="top" secondItem="0d7-rS-khB" secondAttribute="top" id="Tm6-2m-he7"/>
                             <constraint firstItem="n4Y-Gj-ABU" firstAttribute="width" secondItem="aYu-Vc-Wp8" secondAttribute="width" multiplier="0.9" id="bfM-gr-8Vu"/>
                             <constraint firstItem="Czg-A8-mc5" firstAttribute="leading" secondItem="0d7-rS-khB" secondAttribute="leading" id="g8q-SE-uoK"/>
                             <constraint firstItem="0d7-rS-khB" firstAttribute="trailing" secondItem="Czg-A8-mc5" secondAttribute="trailing" id="hKv-dT-xqk"/>
-                            <constraint firstItem="Czg-A8-mc5" firstAttribute="top" secondItem="0eK-y5-n9H" secondAttribute="bottom" id="lu5-wj-Qw3"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="constraintTitle" destination="P6t-dY-Okr" id="Ek7-4T-ybY"/>
                         <outlet property="webVw" destination="Czg-A8-mc5" id="B4Z-lJ-BzX"/>
                     </connections>
                 </viewController>
@@ -201,7 +167,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="imgBgNavigation" width="375" height="112"/>
         <image name="imgSplashLogo" width="236" height="213.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

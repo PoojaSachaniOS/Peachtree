@@ -20,5 +20,13 @@ class CustomBaseVC: UIViewController {
     func disableLargeTitle(){
     }
     
+    func hideNavigationBar() {
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
+    func showNavigationBar() {
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+
 }
 

@@ -12,16 +12,10 @@ class TermsOfUseVC: UIViewController {
     //  MARK: - IB-OUTLET(S)
     @IBOutlet weak var webVw: WKWebView!
     
-    @IBOutlet weak var constraintTitle: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.loadHtmlFile()
-        
-        if UIDevice.current.hasNotch {
-            constraintTitle.constant = 15
-        } else {
-            constraintTitle.constant = 0
-        }
+        self.navigationItem.title = "Terms of use"
     }
     
     @IBAction func acceptedTaped(_ sender: Any) {

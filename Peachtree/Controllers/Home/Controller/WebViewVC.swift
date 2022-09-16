@@ -8,10 +8,8 @@
 import UIKit
 import WebKit
 
-class WebViewVC: UIViewController {
+class WebViewVC: CustomBaseVC {
     @IBOutlet weak var webVw: WKWebView!
-    @IBOutlet weak var lblHeaderTitle: LBCalifornianBoldWhite20!
-    @IBOutlet weak var headerViewHeight: NSLayoutConstraint!
     var strWebUrl:String?
     var strNavTitle:String?
     
@@ -19,12 +17,14 @@ class WebViewVC: UIViewController {
         super.viewDidLoad()
         webVw.navigationDelegate = self
         self.loadWebVwRequest()
-        self.lblHeaderTitle.text = strNavTitle
+        self.navigationItem.title = strNavTitle
         self.setNeedsStatusBarAppearanceUpdate()
     }
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
+    
     private func loadWebVwRequest() {
         self.view.showLoadingIndicator()
         if let strWebUrl = strWebUrl, !strWebUrl.isEmpty {
