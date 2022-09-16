@@ -24,10 +24,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window = window
         }
         for family in UIFont.familyNames {
-
+            
             let sName: String = family as String
             print("family: \(sName)")
-                    
+            
             for name in UIFont.fontNames(forFamilyName: sName) {
                 print("name: \(name as String)")
             }
@@ -44,38 +44,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             appearance.backgroundImage = UIImage.init(named: "imgBgNavigation")!
             
             appearance.titleTextAttributes = [NSAttributedString.Key.font:FontHelper.californianBoldFontWithSize(size: 20), NSAttributedString.Key.foregroundColor: UIColor.white]
-
-
+            
+            
             UINavigationBar.appearance().standardAppearance = appearance
             UINavigationBar.appearance().scrollEdgeAppearance = UINavigationBar.appearance().standardAppearance
-
+            
             let appearanceTabBar = UITabBarAppearance()
             appearanceTabBar.configureWithDefaultBackground()
             appearanceTabBar.backgroundColor = Colors.color_AppThemeBlack
             appearanceTabBar.stackedLayoutAppearance.selected.titleTextAttributes = [.foregroundColor: UIColor.white]
             appearanceTabBar.stackedLayoutAppearance.normal.titleTextAttributes = [.foregroundColor: UIColor.white]
-
+            
             UITabBar.appearance().standardAppearance = appearanceTabBar
             UITabBar.appearance().scrollEdgeAppearance = UITabBar.appearance().standardAppearance
-                    
+            
         } else {
+            UINavigationBar.appearance().setBackgroundImage(UIImage(named: "imgBgNavigation")!.resizableImage(withCapInsets: UIEdgeInsets.zero, resizingMode: .stretch), for: .default)
             UITabBar.appearance().barTintColor = UIColor.red
             UITabBar.appearance().unselectedItemTintColor = UIColor.green
             UITabBar.appearance().tintColor = UIColor.yellow
             UITabBar.appearance().shadowImage = UIImage()
             UITabBar.appearance().backgroundImage = UIImage()
-
+            
         }
         
     }
-
-
+    
+    
     // MARK: UISceneSession Lifecycle
-
+    
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
-
+    
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
     }
     
@@ -84,7 +85,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if strRoot == Constants.AppRootFlow.kEnterHome {
             if let tabBar = StoryboardUtils.getHomeTabBar() as? HomeTabBarController {
                 let nav = UINavigationController(rootViewController: tabBar)
-              //  nav.isNavigationBarHidden = true
+                //  nav.isNavigationBarHidden = true
                 window?.rootViewController = tabBar
             }
         } else if strRoot == Constants.AppRootFlow.kGetStarted {

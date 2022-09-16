@@ -9,10 +9,12 @@ import UIKit
 import WebKit
 
 class WebViewVC: CustomBaseVC {
+    //  MARK: - IB-OUTLET(S)
     @IBOutlet weak var webVw: WKWebView!
     var strWebUrl:String?
     var strNavTitle:String?
     
+    // MARK: - View Loading -
     override func viewDidLoad() {
         super.viewDidLoad()
         super.setupLeftBarButtonItem()
@@ -22,10 +24,12 @@ class WebViewVC: CustomBaseVC {
         self.setNeedsStatusBarAppearanceUpdate()
     }
     
+    // MARK: - OVERRIDE METHOD(S)
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
     
+    //  MARK: - PRIVATE METHOD(S)
     private func loadWebVwRequest() {
         self.view.showLoadingIndicator()
         if let strWebUrl = strWebUrl, !strWebUrl.isEmpty {
@@ -33,17 +37,7 @@ class WebViewVC: CustomBaseVC {
             let request = URLRequest(url: link)
             webVw.load(request)
         }
-        
-        if let strWebUrl = strWebUrl, !strWebUrl.isEmpty {
-            
-        }
-        
     }
-    
-    @IBAction func backTaped(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
-    }
-
 }
 
 //MARK: WKNavigation Delegate

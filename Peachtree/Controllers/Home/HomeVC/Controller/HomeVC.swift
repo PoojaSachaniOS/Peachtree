@@ -8,16 +8,18 @@
 import UIKit
 
 class HomeVC: CustomBaseVC {
+    //  MARK: - IB-OUTLET(S)
     @IBOutlet weak var collectionVwHome: UICollectionView!
-    @IBOutlet weak var headerViewHeight: NSLayoutConstraint!
+    
     var arr: [HomeVCTableItem<AccountVCTableItemType>] = []
-
     enum AccountVCTableItemType {
         case shareMyLocation, renewGolfCart, cityHall, publicSafety, reportAnIssue, library, restaurants, shopping, calendar, notifyMe, pools, recreationAndSpecialEvent, golfCartHelp, call911, onlinePayment, settings
     }
+    
     private let animations = [AnimationType.vector((CGVector(dx: 0, dy: 260)))]
     private var btnTemp: UIButton!
-
+    
+    // MARK: - View Loading -
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Home"
@@ -27,7 +29,7 @@ class HomeVC: CustomBaseVC {
         self.initializeData()
         self.setNeedsStatusBarAppearanceUpdate()
         DispatchQueue.main.asyncAfter(deadline: .now() + 0) {
-           // self.items = Array(repeating: nil, count: 15)
+            // self.items = Array(repeating: nil, count: 15)
             self.collectionVwHome.reloadData()
             self.collectionVwHome.performBatchUpdates({
                 UIView.animate(views: self.collectionVwHome.orderedVisibleCells,
@@ -37,16 +39,22 @@ class HomeVC: CustomBaseVC {
         }
     }
     
-    func configureSearchBarButtonItem() {
+    // MARK: - OVERRIDE METHOD(S)
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
+    //  MARK: - PRIVATE METHOD(S)
+    private func configureSearchBarButtonItem() {
         let leftBarbtn = UIBarButtonItem(image: UIImage.init(named: "imgSearch"), style: .plain, target: self, action:#selector(HomeVC.btnSearchTapped))
         leftBarbtn.tintColor = UIColor.white
         self.navigationItem.leftBarButtonItem  = leftBarbtn
     }
-
+    
     @objc func btnSearchTapped() {
     }
     
-    func configureTempBarButtonItem() {
+    private func configureTempBarButtonItem() {
         btnTemp = UIButton(type: .custom)
         btnTemp.titleLabel?.numberOfLines = 0
         btnTemp.titleLabel?.font = FontHelper.californianBoldFontWithSize(size: 17)
@@ -54,15 +62,9 @@ class HomeVC: CustomBaseVC {
         btnTemp.frame.size.width = 100
         btnTemp.frame.size.height = 50
         self.btnTemp.setTitle(String(format: "%i\u{00B0} F\n%@",80,"Clear"), for: .normal)
-
+        
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: btnTemp)
     }
-
-    
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
-    
     
     private func registerNib() {
         collectionVwHome.register(UINib(nibName: "HomeCollectionVWCell", bundle: nil), forCellWithReuseIdentifier: "HomeCollectionVWCell")
@@ -80,9 +82,9 @@ class HomeVC: CustomBaseVC {
         arr.append(HomeVCTableItem(iconName: "imgCalendar", title:"Calendar", type: .calendar, showArrow: true))
         arr.append(HomeVCTableItem(iconName: "imgNotifyMe", title:"Notify Me", type: .notifyMe, showArrow: true))
         arr.append(HomeVCTableItem(iconName: "imgPools", title:"Pools", type: .pools, showArrow: true))
-
+        
         arr.append(HomeVCTableItem(iconName: "imgRecreation", title:"Recreation & Special Events", type: .recreationAndSpecialEvent, showArrow: true))
-
+        
         arr.append(HomeVCTableItem(iconName: "imgGolfCartHelp", title:"Golf Cart Help", type: .golfCartHelp, showArrow: true))
         arr.append(HomeVCTableItem(iconName: "imgCall911", title:"Call 911", type: .call911, showArrow: true))
         arr.append(HomeVCTableItem(iconName: "imgOnlinePayments", title:"Online Payments", type: .onlinePayment, showArrow: true))
@@ -91,28 +93,29 @@ class HomeVC: CustomBaseVC {
     
 }
 
+// MARK: - UICollectionView delegate & datasource
 extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return arr.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = (collectionVwHome.dequeueReusableCell(withReuseIdentifier: "HomeCollectionVWCell", for: indexPath) as? HomeCollectionVWCell)!
+        let cell = (collectionVwHome.dequeueReusableCell(withReuseIdentifier: HomeCollectionVWCell.className, for: indexPath) as? HomeCollectionVWCell)!
         let model = arr[indexPath.row]
         cell.lblName.text = model.title
         cell.imageVw.image = UIImage.init(named: (model.iconName)!)
-             return cell
+        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let model = arr[indexPath.row]
         if model.type == .shareMyLocation {
-             self.openShareMyLocationVC()
+            self.openShareMyLocationVC()
         } else if model.type == .renewGolfCart {
             self.openWebViewVC("https://peachtree-city.org/216/Paths-Golf-Carts", title: model.title ?? "")
         } else if model.type == .cityHall {
             self.openWebViewVC("https://peachtree-city.org/", title: model.title ?? "")
-
+            
         }  else if model.type == .publicSafety {
             if let controller = StoryboardUtils.getPublicSafety() as? PublicSafetyVC {
                 controller.hidesBottomBarWhenPushed = true
@@ -133,7 +136,7 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
         } else if model.type == .pools {
             openPoolsVC()
         } else if model.type == .recreationAndSpecialEvent {
-            self.openWebViewVC("https://peachtree-city.org/126/Recreation-Special-Events", title: model.title ?? "")           
+            self.openWebViewVC("https://peachtree-city.org/126/Recreation-Special-Events", title: model.title ?? "")
         } else if model.type == .golfCartHelp {
             self.openGolfCartHelpVC()
         } else if model.type == .call911 {
@@ -143,7 +146,7 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
         } else if model.type == .settings {
             self.openMoreVC()
         }
-     }
+    }
     
     func openRestaurantsVC() {
         if let controller = StoryboardUtils.getRestaurantsVC() as? RestaurantsVC {
@@ -172,7 +175,7 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
             self.navigationController?.pushViewController(controller, animated: true)
         }
     }
- 
+    
     func openShareMyLocationVC() {
         if let controller = StoryboardUtils.getShareMyLocationVC() as? ShareMyLocationVC {
             controller.hidesBottomBarWhenPushed = true
@@ -204,63 +207,34 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-
-//        let noOfCellsInRow = 3
-//
-//        let flowLayout = collectionViewLayout as! UICollectionViewFlowLayout
-//
-//        let totalSpace = flowLayout.sectionInset.left
-//            + flowLayout.sectionInset.right
-//            + (flowLayout.minimumInteritemSpacing * CGFloat(noOfCellsInRow - 1))
-//
-//        let size = Int((collectionView.bounds.width - totalSpace) / CGFloat(noOfCellsInRow))
-//
-//        return CGSize(width: size, height: size)
+        
+        /*
+         let noOfCellsInRow = 3
+         let flowLayout = collectionViewLayout as! UICollectionViewFlowLayout
+         let totalSpace = flowLayout.sectionInset.left
+         + flowLayout.sectionInset.right
+         + (flowLayout.minimumInteritemSpacing * CGFloat(noOfCellsInRow - 1))
+         let size = Int((collectionView.bounds.width - totalSpace) / CGFloat(noOfCellsInRow))
+         return CGSize(width: size, height: size)
+         */
         
         let remaider = (Double(indexPath.item + 12)/3).truncatingRemainder(dividingBy: 15)
         let remaider1 = (Double(indexPath.item + 17)/3).truncatingRemainder(dividingBy: 3)
         let remaider2 = (Double(indexPath.item - 15)/3).truncatingRemainder(dividingBy: 3)
-
+        
         if remaider == 0 {
             return CGSize(width: (collectionView.frame.size.width + 120)/2, height: 104)
         }
-
+        
         else if remaider1 == 0 {
             return CGSize(width: (collectionView.frame.size.width + 120)/2, height: 104)
         }
         else if remaider2 == 0 {
             return CGSize(width: (collectionView.frame.size.width + 120)/2, height: 104)
         }
-
+        
         return CGSize(width: (collectionView.frame.size.width - 9 )/3, height: 104)
         
-    }
-}
-
-class HomeVCTableItem<T> {
-    var iconName: String?
-    var title: String?
-    var type: T?
-    var showArrow: Bool?
-    var isSelected: Bool? = false
-    
-    init(iconName: String?, title: String?, type: T?, showArrow: Bool?) {
-        self.iconName = iconName
-        self.title = title
-        self.type = type
-        self.showArrow = showArrow
-    }
-}
-
-class MoreItem<T> {
-    var title: String?
-    var type: T?
-    var iconName: String?
-    
-    init(iconName: String?,title: String?, type: T?) {
-        self.iconName = iconName
-        self.title = title
-        self.type = type
     }
 }
 

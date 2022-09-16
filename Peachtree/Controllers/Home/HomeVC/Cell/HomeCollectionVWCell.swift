@@ -8,10 +8,11 @@
 import UIKit
 
 class HomeCollectionVWCell: UICollectionViewCell {
-
+    //  MARK: - IB-OUTLET(S)
     @IBOutlet weak var backVw: UIView!
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var imageVw: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         backVw.layer.cornerRadius = 10

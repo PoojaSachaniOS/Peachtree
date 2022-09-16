@@ -79,6 +79,8 @@
 		17D81D0D28CE27AF00C3C05F /* FavoritesTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D81D0B28CE27AF00C3C05F /* FavoritesTableCell.swift */; };
 		17D81D0E28CE27AF00C3C05F /* FavoritesTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17D81D0C28CE27AF00C3C05F /* FavoritesTableCell.xib */; };
 		17D81D1028CE31E800C3C05F /* ShareMyLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D81D0F28CE31E800C3C05F /* ShareMyLocationVC.swift */; };
+		17F90B3328D506E20078593D /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F90B3228D506E20078593D /* HomeVM.swift */; };
+		17F90B3728D507DF0078593D /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F90B3628D507DF0078593D /* HomeModel.swift */; };
 		440826D5408EAABB00C349E9 /* Pods_Peachtree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30EACD0BD546F38AD117D1F4 /* Pods_Peachtree.framework */; };
 		6E168BF232B156B7B567D7BD /* Pods_PeachtreeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D049E48422CA0FE2E143879 /* Pods_PeachtreeTests.framework */; };
 		C830480F28D10F50000CEEB2 /* ButtonOrange.swift in Sources */ = {isa = PBXBuildFile; fileRef = C830480E28D10F50000CEEB2 /* ButtonOrange.swift */; };
@@ -218,6 +220,8 @@
 		17D81D0B28CE27AF00C3C05F /* FavoritesTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableCell.swift; sourceTree = "<group>"; };
 		17D81D0C28CE27AF00C3C05F /* FavoritesTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesTableCell.xib; sourceTree = "<group>"; };
 		17D81D0F28CE31E800C3C05F /* ShareMyLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareMyLocationVC.swift; sourceTree = "<group>"; };
+		17F90B3228D506E20078593D /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		17F90B3628D507DF0078593D /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		30EACD0BD546F38AD117D1F4 /* Pods_Peachtree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Peachtree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DBEC4A8F2B89E57FD1AFADE /* Pods-Peachtree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peachtree.debug.xcconfig"; path = "Target Support Files/Pods-Peachtree/Pods-Peachtree.debug.xcconfig"; sourceTree = "<group>"; };
 		4E7589A0586418D9F2A1D815 /* Pods-PeachtreeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeachtreeTests.release.xcconfig"; path = "Target Support Files/Pods-PeachtreeTests/Pods-PeachtreeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -382,9 +386,9 @@
 		172F209F28BFBE08007096DB /* AuthView */ = {
 			isa = PBXGroup;
 			children = (
-				172F20AB28BFC43A007096DB /* OnboardingVC */,
 				172F20A228BFBE4D007096DB /* GetStarted */,
 				172F20A828BFC196007096DB /* TermsOfUseVC */,
+				172F20AB28BFC43A007096DB /* OnboardingVC */,
 				172F20A028BFBE42007096DB /* UserAuthentication.storyboard */,
 			);
 			path = AuthView;
@@ -431,7 +435,9 @@
 		172F20AE28BFC4EA007096DB /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				C8AC29C828CA515A00E6CE0D /* Sub View Controllers */,
+				17F90B2E28D506900078593D /* HomeVC */,
+				17F90B3428D507500078593D /* ShareMyLocation */,
+				17F90B3828D5090E0078593D /* WebView */,
 				176A4DF828C45D3800B3D465 /* Cell */,
 				176A4DF728C45D0F00B3D465 /* Controller */,
 				172F20AF28BFC50B007096DB /* Home.storyboard */,
@@ -533,15 +539,13 @@
 		176A4DF728C45D0F00B3D465 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				172F20B128BFC529007096DB /* HomeVC.swift */,
-				17704EEE28C6DDA30032C96C /* WebViewVC.swift */,
+				C8AC29C828CA515A00E6CE0D /* Sub View Controllers */,
 				17D6D54F28CC51E7007D677B /* Call911VC.swift */,
 				17D6D55728CC57F1007D677B /* GolfCartHelpVC.swift */,
 				17D6D55928CC99E2007D677B /* RestaurantsVC.swift */,
 				17D6D55F28CC9DF8007D677B /* ShoppingVC.swift */,
 				17D6D56128CC9F33007D677B /* RestaurantsDetailsVC.swift */,
 				17D6D58728CDBCE6007D677B /* DirectionPopUpVC.swift */,
-				17D81D0F28CE31E800C3C05F /* ShareMyLocationVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -551,8 +555,6 @@
 			children = (
 				17D6D55128CC53D9007D677B /* CallTableCell.swift */,
 				17D6D55228CC53D9007D677B /* CallTableCell.xib */,
-				176A4DFA28C45D5400B3D465 /* HomeCollectionVWCell.swift */,
-				176A4DF928C45D5400B3D465 /* HomeCollectionVWCell.xib */,
 				17D6D55B28CC9B46007D677B /* RestaurantsTableCell.swift */,
 				17D6D55C28CC9B46007D677B /* RestaurantsTableCell.xib */,
 				17D6D58928CDCFB6007D677B /* DirectionTableCell.swift */,
@@ -580,6 +582,66 @@
 				17D6D59C28CE048F007D677B /* RecentSearchTableCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		17F90B2E28D506900078593D /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				17F90B3028D506B60078593D /* Cell */,
+				17F90B3528D507D30078593D /* Model */,
+				17F90B3128D506CF0078593D /* ViewModel */,
+				17F90B2F28D5069C0078593D /* Controller */,
+			);
+			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		17F90B2F28D5069C0078593D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				172F20B128BFC529007096DB /* HomeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		17F90B3028D506B60078593D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				176A4DF928C45D5400B3D465 /* HomeCollectionVWCell.xib */,
+				176A4DFA28C45D5400B3D465 /* HomeCollectionVWCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		17F90B3128D506CF0078593D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				17F90B3228D506E20078593D /* HomeVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		17F90B3428D507500078593D /* ShareMyLocation */ = {
+			isa = PBXGroup;
+			children = (
+				17D81D0F28CE31E800C3C05F /* ShareMyLocationVC.swift */,
+			);
+			path = ShareMyLocation;
+			sourceTree = "<group>";
+		};
+		17F90B3528D507D30078593D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				17F90B3628D507DF0078593D /* HomeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		17F90B3828D5090E0078593D /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				17704EEE28C6DDA30032C96C /* WebViewVC.swift */,
+			);
+			path = WebView;
 			sourceTree = "<group>";
 		};
 		4703E1C90F96F6193A73F7F3 /* Frameworks */ = {
@@ -1068,6 +1130,7 @@
 			files = (
 				C8A2DEF928CBC165005578DE /* AppVersionVC.swift in Sources */,
 				C864E8A928CE469C00BA030D /* Directions.swift in Sources */,
+				17F90B3728D507DF0078593D /* HomeModel.swift in Sources */,
 				1738625828D3B1C500D518FE /* HelperMethods.swift in Sources */,
 				17D6D55828CC57F1007D677B /* GolfCartHelpVC.swift in Sources */,
 				172F207228BFBD91007096DB /* ViewController.swift in Sources */,
@@ -1117,6 +1180,7 @@
 				C8BB1C4A28CCF79F00A66FDF /* LBSatoshiMediumWhite14.swift in Sources */,
 				C864E8B128CE4A2800BA030D /* LBSatoshiMediumWhite12.swift in Sources */,
 				172F20C628C0AF2F007096DB /* FavoritesVC.swift in Sources */,
+				17F90B3328D506E20078593D /* HomeVM.swift in Sources */,
 				C8BB1C4828CCF75600A66FDF /* LBSatoshiWhite60.swift in Sources */,
 				C8A1734928CC78F1002C52BE /* LBSatoshiRegularLightGrey12.swift in Sources */,
 				C8DAD8A828CFA4D800370ECF /* DirectionsVC.swift in Sources */,

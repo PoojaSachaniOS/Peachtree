@@ -8,13 +8,13 @@
 import UIKit
 
 class GetStartedVC: CustomBaseVC {
-
+    
+    // MARK: - View Loading -
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setNeedsStatusBarAppearanceUpdate()
-
     }
     
+    // MARK: - OVERRIDE METHOD(S)
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         super.hideNavigationBar()
@@ -30,11 +30,8 @@ class GetStartedVC: CustomBaseVC {
     }
 }
 
-// ----------------------------------
 //  MARK: - BUTTION ACTION(S)
-//
 extension GetStartedVC {
-    
     @IBAction func btnGetStartedTapped(_ sender: Any) {
         if let controllerTermsOfUse = StoryboardUtils.getTermsOfUseVC() as? TermsOfUseVC {
             navigationController?.pushViewController(controllerTermsOfUse, animated: true)

@@ -12,6 +12,7 @@ class TermsOfUseVC: UIViewController {
     //  MARK: - IB-OUTLET(S)
     @IBOutlet weak var webVw: WKWebView!
     
+    // MARK: - View Loading -
     override func viewDidLoad() {
         super.viewDidLoad()
         self.loadHtmlFile()
@@ -20,30 +21,7 @@ class TermsOfUseVC: UIViewController {
 
     }
     
-    @IBAction func acceptedTaped(_ sender: Any) {
-        if #available(iOS 13.0, *) {
-            SceneDelegate.shared?.makingRootFlow(Constants.AppRootFlow.kEnterHome)
-        } else {
-            AppDelegate.instance().makingRootFlow(Constants.AppRootFlow.kEnterHome)
-        }    }
-    
-    
-    @IBAction func declineTaped(_ sender: Any) {
-    }
-    
-    //  MARK: - PRIVATE METHOD(S)
-    private func loadHtmlFile() {
-        self.webVw.navigationDelegate = self
-        self.view.showLoadingIndicator()
-        
-        let url = URL (string: "https://www.google.co.in/")
-        let requestObj = URLRequest(url: url!)
-        webVw.load(requestObj)
-    }
-    
-    // ----------------------------------
     //  MARK: - OVERRIDE METHOD(S)
-    //
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -57,25 +35,35 @@ class TermsOfUseVC: UIViewController {
         return .lightContent
     }
     
+    //  MARK: - PRIVATE METHOD(S)
+    private func loadHtmlFile() {
+        self.webVw.navigationDelegate = self
+        self.view.showLoadingIndicator()
+        
+        let url = URL (string: "https://www.google.co.in/")
+        let requestObj = URLRequest(url: url!)
+        webVw.load(requestObj)
+    }
+    
+
 }
 
-// ----------------------------------
 //  MARK: - BUTTION ACTION(S)
-//
 extension TermsOfUseVC {
-    
     @IBAction func btnAcceptTapped(_ sender: Any) {
-        
+        if #available(iOS 13.0, *) {
+            SceneDelegate.shared?.makingRootFlow(Constants.AppRootFlow.kEnterHome)
+        } else {
+            AppDelegate.instance().makingRootFlow(Constants.AppRootFlow.kEnterHome)
+        }
     }
     
     @IBAction func btnDeclineTapped(_ sender: Any) {
+        exit(0)
     }
 }
 
-
-// ----------------------------------
 //  MARK: - WKNavigation DELEGATE(S)
-//
 extension TermsOfUseVC : WKNavigationDelegate {
     
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
@@ -91,13 +79,4 @@ extension TermsOfUseVC : WKNavigationDelegate {
         self.view.hideLoadingIndicator()
     }
     
-}
-extension UIDevice {
-
-    var hasNotch: Bool {
-        if #available(iOS 11.0, *) {
-           return UIApplication.shared.keyWindow?.safeAreaInsets.bottom ?? 0 > 0
-        }
-        return false
-   }
 }

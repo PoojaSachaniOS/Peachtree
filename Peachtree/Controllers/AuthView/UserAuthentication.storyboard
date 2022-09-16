@@ -85,8 +85,7 @@
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
                                         </variation>
                                         <connections>
-                                            <action selector="acceptedTaped:" destination="7lF-On-CSx" eventType="touchUpInside" id="AzC-DJ-Rns"/>
-                                            <action selector="btnAcceptTapped:" destination="7lF-On-CSx" eventType="touchUpInside" id="CLx-mr-fam"/>
+                                            <action selector="btnAcceptTapped:" destination="7lF-On-CSx" eventType="touchUpInside" id="rGC-EP-IPg"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqI-4N-QM9" customClass="ButtonGrey" customModule="Peachtree" customModuleProvider="target">
@@ -100,8 +99,7 @@
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
                                         </variation>
                                         <connections>
-                                            <action selector="btnDeclineTapped:" destination="7lF-On-CSx" eventType="touchUpInside" id="yY7-wK-MH9"/>
-                                            <action selector="declineTaped:" destination="7lF-On-CSx" eventType="touchUpInside" id="aP1-g6-dhd"/>
+                                            <action selector="btnDeclineTapped:" destination="7lF-On-CSx" eventType="touchUpInside" id="PU8-o6-yHQ"/>
                                         </connections>
                                     </button>
                                 </subviews>
