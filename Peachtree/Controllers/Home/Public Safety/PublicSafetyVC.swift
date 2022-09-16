@@ -22,6 +22,7 @@ class PublicSafetyVC: CustomBaseVC {
         self.setNeedsStatusBarAppearanceUpdate()
     }
     
+    // MARK: - OVERRIDE METHOD(S)
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }

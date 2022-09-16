@@ -124,7 +124,7 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
         } else if model.type == .reportAnIssue {
             self.openWebViewVC("https://peachtree-city.org/128/Report-a-Problem", title: model.title ?? "")
         } else if model.type == .library {
-            
+            self.openCategoriesVC(title: model.title ?? "Library")
         } else if model.type == .restaurants {
             self.openRestaurantsVC()
         } else if model.type == .shopping {
@@ -134,7 +134,7 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
         } else if model.type == .notifyMe {
             self.openWebViewVC("https://peachtree-city.org/list.aspx", title: model.title ?? "")
         } else if model.type == .pools {
-            openPoolsVC()
+            self.openCategoriesVC(title: model.title ?? "Pools")
         } else if model.type == .recreationAndSpecialEvent {
             self.openWebViewVC("https://peachtree-city.org/126/Recreation-Special-Events", title: model.title ?? "")
         } else if model.type == .golfCartHelp {
@@ -172,6 +172,14 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
     func openPoolsVC() {
         if let controller = StoryboardUtils.getPoolsVC() as? PoolsVC {
             controller.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
+    }
+    
+    func openCategoriesVC(title: String) {
+        if let controller = StoryboardUtils.getCategoriesVC() as? CategoriesVC {
+            controller.hidesBottomBarWhenPushed = true
+            controller.navigationItem.title = title
             self.navigationController?.pushViewController(controller, animated: true)
         }
     }

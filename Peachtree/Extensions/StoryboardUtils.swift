@@ -117,4 +117,8 @@ extension StoryboardUtils{
         return Home.instance.instantiateViewController(withIdentifier: "PoolsVC")
     }
     
+    static func getCategoriesVC()-> UIViewController{
+        return Home.instance.instantiateViewController(withIdentifier: "CategoriesVC")
+    }
+   
 }

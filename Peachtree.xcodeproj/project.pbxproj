@@ -81,6 +81,7 @@
 		17D81D1028CE31E800C3C05F /* ShareMyLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D81D0F28CE31E800C3C05F /* ShareMyLocationVC.swift */; };
 		17F90B3328D506E20078593D /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F90B3228D506E20078593D /* HomeVM.swift */; };
 		17F90B3728D507DF0078593D /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F90B3628D507DF0078593D /* HomeModel.swift */; };
+		17F90B4428D50E5C0078593D /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F90B4328D50E5C0078593D /* CategoriesVC.swift */; };
 		440826D5408EAABB00C349E9 /* Pods_Peachtree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30EACD0BD546F38AD117D1F4 /* Pods_Peachtree.framework */; };
 		6E168BF232B156B7B567D7BD /* Pods_PeachtreeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D049E48422CA0FE2E143879 /* Pods_PeachtreeTests.framework */; };
 		C830480F28D10F50000CEEB2 /* ButtonOrange.swift in Sources */ = {isa = PBXBuildFile; fileRef = C830480E28D10F50000CEEB2 /* ButtonOrange.swift */; };
@@ -222,6 +223,7 @@
 		17D81D0F28CE31E800C3C05F /* ShareMyLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareMyLocationVC.swift; sourceTree = "<group>"; };
 		17F90B3228D506E20078593D /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
 		17F90B3628D507DF0078593D /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		17F90B4328D50E5C0078593D /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
 		30EACD0BD546F38AD117D1F4 /* Pods_Peachtree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Peachtree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DBEC4A8F2B89E57FD1AFADE /* Pods-Peachtree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peachtree.debug.xcconfig"; path = "Target Support Files/Pods-Peachtree/Pods-Peachtree.debug.xcconfig"; sourceTree = "<group>"; };
 		4E7589A0586418D9F2A1D815 /* Pods-PeachtreeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeachtreeTests.release.xcconfig"; path = "Target Support Files/Pods-PeachtreeTests/Pods-PeachtreeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -440,6 +442,10 @@
 				17F90B3828D5090E0078593D /* WebView */,
 				C8AC29C728CA511C00E6CE0D /* Public Safety */,
 				C8BB1C4B28CCF9B000A66FDF /* Restaurants */,
+				17F90B3C28D50C590078593D /* Shopping */,
+				17F90B3F28D50D590078593D /* Categories */,
+				17F90B4028D50D810078593D /* Call911 */,
+				17F90B4528D50FD40078593D /* GolfCartHelp */,
 				176A4DF828C45D3800B3D465 /* Cell */,
 				176A4DF728C45D0F00B3D465 /* Controller */,
 				172F20AF28BFC50B007096DB /* Home.storyboard */,
@@ -542,9 +548,6 @@
 			isa = PBXGroup;
 			children = (
 				C8AC29C828CA515A00E6CE0D /* Sub View Controllers */,
-				17D6D54F28CC51E7007D677B /* Call911VC.swift */,
-				17D6D55728CC57F1007D677B /* GolfCartHelpVC.swift */,
-				17D6D55F28CC9DF8007D677B /* ShoppingVC.swift */,
 				17D6D56128CC9F33007D677B /* RestaurantsDetailsVC.swift */,
 				17D6D58728CDBCE6007D677B /* DirectionPopUpVC.swift */,
 			);
@@ -554,8 +557,6 @@
 		176A4DF828C45D3800B3D465 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				17D6D55128CC53D9007D677B /* CallTableCell.swift */,
-				17D6D55228CC53D9007D677B /* CallTableCell.xib */,
 				17D6D58928CDCFB6007D677B /* DirectionTableCell.swift */,
 				17D6D58A28CDCFB6007D677B /* DirectionTableCell.xib */,
 			);
@@ -664,6 +665,72 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		17F90B3C28D50C590078593D /* Shopping */ = {
+			isa = PBXGroup;
+			children = (
+				17F90B3E28D50C700078593D /* ViewModel */,
+				17F90B3D28D50C670078593D /* Controller */,
+			);
+			path = Shopping;
+			sourceTree = "<group>";
+		};
+		17F90B3D28D50C670078593D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				17D6D55F28CC9DF8007D677B /* ShoppingVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		17F90B3E28D50C700078593D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		17F90B3F28D50D590078593D /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				17F90B4328D50E5C0078593D /* CategoriesVC.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		17F90B4028D50D810078593D /* Call911 */ = {
+			isa = PBXGroup;
+			children = (
+				17F90B4128D50DA10078593D /* Cell */,
+				17F90B4228D50DB60078593D /* Controller */,
+			);
+			path = Call911;
+			sourceTree = "<group>";
+		};
+		17F90B4128D50DA10078593D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				17D6D55128CC53D9007D677B /* CallTableCell.swift */,
+				17D6D55228CC53D9007D677B /* CallTableCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		17F90B4228D50DB60078593D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				17D6D54F28CC51E7007D677B /* Call911VC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		17F90B4528D50FD40078593D /* GolfCartHelp */ = {
+			isa = PBXGroup;
+			children = (
+				17D6D55728CC57F1007D677B /* GolfCartHelpVC.swift */,
+			);
+			path = GolfCartHelp;
 			sourceTree = "<group>";
 		};
 		4703E1C90F96F6193A73F7F3 /* Frameworks */ = {
@@ -1182,6 +1249,7 @@
 				172F206E28BFBD91007096DB /* AppDelegate.swift in Sources */,
 				176A4DFC28C45D5400B3D465 /* HomeCollectionVWCell.swift in Sources */,
 				C8DAD8A528CFA45900370ECF /* LBLSatoshiMediumGreen18.swift in Sources */,
+				17F90B4428D50E5C0078593D /* CategoriesVC.swift in Sources */,
 				C8AC29D928CA588B00E6CE0D /* FontHelper.swift in Sources */,
 				17704EEF28C6DDA30032C96C /* WebViewVC.swift in Sources */,
 				17D6D58628CDBB12007D677B /* LBLSatoshiBoldBlack18.swift in Sources */,

@@ -8,7 +8,10 @@
 import UIKit
 
 class Call911VC: CustomBaseVC {
+    // MARK: - IB-OUTLET(S)
     @IBOutlet weak var tblVw: UITableView!
+    
+    // MARK: - View Loading -
     override func viewDidLoad() {
         super.viewDidLoad()
         super.setupLeftBarButtonItem()
@@ -16,17 +19,16 @@ class Call911VC: CustomBaseVC {
         self.navigationItem.title = "Call 911"
         self.setNeedsStatusBarAppearanceUpdate()
     }
+    
+    // MARK: - OVERRIDE METHOD(S)
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
+    
+    //  MARK: - PRIVATE METHOD(S)
     private func registerNib() {
         self.tblVw.register(CallTableCell.self)
     }
-    
-    @IBAction func backTaped(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
-    }
-
 }
 
 extension Call911VC: UITableViewDelegate,UITableViewDataSource{
