@@ -114,7 +114,8 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
         } else if model.type == .renewGolfCart {
             self.openWebViewVC("https://peachtree-city.org/216/Paths-Golf-Carts", title: model.title ?? "")
         } else if model.type == .cityHall {
-            self.openWebViewVC("https://peachtree-city.org/", title: model.title ?? "")
+            self.openCityHall()
+           // self.openWebViewVC("https://peachtree-city.org/", title: model.title ?? "")
             
         }  else if model.type == .publicSafety {
             if let controller = StoryboardUtils.getPublicSafety() as? PublicSafetyVC {
@@ -124,7 +125,8 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
         } else if model.type == .reportAnIssue {
             self.openWebViewVC("https://peachtree-city.org/128/Report-a-Problem", title: model.title ?? "")
         } else if model.type == .library {
-            self.openCategoriesVC(title: model.title ?? "Library")
+            self.openLibrary()
+           // self.openCategoriesVC(title: model.title ?? "Library")
         } else if model.type == .restaurants {
             self.openRestaurantsVC()
         } else if model.type == .shopping {
@@ -157,6 +159,20 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
     
     func openShoppingVC() {
         if let controller = StoryboardUtils.getShoppingVC() as? ShoppingVC {
+            controller.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
+    }
+    
+    func openLibrary() {
+        if let controller = StoryboardUtils.getLibraryVC() as? LibraryVC {
+            controller.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
+    }
+    
+    func openCityHall() {
+        if let controller = StoryboardUtils.getCityHallVC() as? CityHallVC {
             controller.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(controller, animated: true)
         }
