@@ -49,6 +49,9 @@ extension FavoritesVC: UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            return 130
+        }
         return 100
     }
     

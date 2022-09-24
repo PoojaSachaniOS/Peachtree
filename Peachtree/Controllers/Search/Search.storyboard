@@ -17,35 +17,43 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="9hg-oc-76R">
-                                <rect key="frame" x="16" y="64" width="382" height="46"/>
+                                <rect key="frame" x="16" y="64" width="382" height="45"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rG-mI-dvJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="185.5" height="46"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="185.5" height="45"/>
                                         <color key="backgroundColor" systemColor="systemMintColor"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Address/Place"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        </variation>
                                         <connections>
                                             <action selector="btnAddressTapped:" destination="DJd-1z-k8j" eventType="touchUpInside" id="zGC-pp-3pL"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYi-dp-jaI">
-                                        <rect key="frame" x="196.5" y="0.0" width="185.5" height="46"/>
+                                        <rect key="frame" x="196.5" y="0.0" width="185.5" height="45"/>
                                         <color key="backgroundColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Categories"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        </variation>
                                         <connections>
                                             <action selector="btnCategoriesTapped:" destination="DJd-1z-k8j" eventType="touchUpInside" id="pXK-4W-INK"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="PDE-FK-SB7"/>
+                                    <constraint firstAttribute="height" constant="45" id="PDE-FK-SB7">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                    </constraint>
                                 </constraints>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Wbr-HH-hUY">
-                                <rect key="frame" x="0.0" y="120" width="414" height="742"/>
+                                <rect key="frame" x="0.0" y="119" width="414" height="743"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="DJd-1z-k8j" id="w4n-qt-YRS"/>
@@ -65,6 +73,7 @@
                             <constraint firstItem="9hg-oc-76R" firstAttribute="leading" secondItem="JrQ-rb-elG" secondAttribute="leading" constant="16" id="zFj-QF-je9"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="d7g-k8-6mf"/>
                     <connections>
                         <outlet property="btnAddress" destination="8rG-mI-dvJ" id="9WE-T3-GfX"/>
                         <outlet property="btnCategories" destination="PYi-dp-jaI" id="Hm0-VD-1tc"/>
@@ -74,7 +83,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dcL-uU-Pb2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="78.348214285714278"/>
+            <point key="canvasLocation" x="928.98550724637687" y="78.348214285714278"/>
         </scene>
     </scenes>
     <resources>

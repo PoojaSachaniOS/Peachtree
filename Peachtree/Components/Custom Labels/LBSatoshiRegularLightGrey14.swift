@@ -15,8 +15,12 @@ class LBSatoshiRegularLightGrey14: UILabel {
     }
     
     func updateView() {
-        font = FontHelper.defaultSatoshiRegularFontWithSize(size: 14)
         textColor = Colors.color_LightGrey
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            font = FontHelper.defaultSatoshiRegularFontWithSize(size: 20)
+            return
+        }
+        font = FontHelper.defaultSatoshiRegularFontWithSize(size: 14)
     }
 }
 

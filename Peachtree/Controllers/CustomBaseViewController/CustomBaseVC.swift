@@ -12,6 +12,15 @@ class CustomBaseVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if (UIDevice.current.userInterfaceIdiom == .pad) {
+            self.navigationController?.additionalSafeAreaInsets.top = 20
+           // self.navigationController?.navigationItem.prompt = "hello"
+        }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
     }
     
     func configureNavigator(){

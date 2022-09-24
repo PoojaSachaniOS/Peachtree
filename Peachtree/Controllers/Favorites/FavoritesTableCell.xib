@@ -20,31 +20,35 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="06d-a3-Hz9">
                         <rect key="frame" x="16" y="5" width="292" height="75"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email_icon" translatesAutoresizingMaskIntoConstraints="NO" id="YcU-gs-BAG">
-                                <rect key="frame" x="17" y="15.5" width="44" height="44"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email_icon" translatesAutoresizingMaskIntoConstraints="NO" id="YcU-gs-BAG">
+                                <rect key="frame" x="15" y="15.5" width="44" height="44"/>
                                 <color key="backgroundColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="44" id="Mm5-ak-vTP"/>
+                                    <constraint firstAttribute="width" constant="44" id="Mm5-ak-vTP">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                    </constraint>
                                     <constraint firstAttribute="width" secondItem="YcU-gs-BAG" secondAttribute="height" multiplier="1:1" id="nHd-n4-1Gg"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carmen Sayid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHC-oK-Kxb" customClass="LBSatoshiMediumBlack14" customModule="Peachtree" customModuleProvider="target">
-                                <rect key="frame" x="75" y="20" width="197" height="16"/>
+                                <rect key="frame" x="73" y="17" width="199" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In-person, Address: xxxxxx" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIn-1Q-DW0" customClass="LBSatoshiRegularLightGrey14" customModule="Peachtree" customModuleProvider="target">
-                                <rect key="frame" x="97" y="40" width="175" height="15"/>
+                                <rect key="frame" x="93" y="38" width="179" height="15"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location_icon" translatesAutoresizingMaskIntoConstraints="NO" id="SzG-38-AA7">
-                                <rect key="frame" x="75" y="40" width="15" height="15"/>
+                                <rect key="frame" x="71" y="38" width="15" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="SzG-38-AA7" secondAttribute="height" multiplier="1:1" id="AJF-5Q-yRh"/>
-                                    <constraint firstAttribute="width" constant="15" id="aJL-VF-upF"/>
+                                    <constraint firstAttribute="width" constant="15" id="aJL-VF-upF">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="22"/>
+                                    </constraint>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -53,13 +57,14 @@
                             <constraint firstItem="aIn-1Q-DW0" firstAttribute="leading" secondItem="SzG-38-AA7" secondAttribute="trailing" constant="7" id="0QC-Db-76V"/>
                             <constraint firstItem="SzG-38-AA7" firstAttribute="top" secondItem="HHC-oK-Kxb" secondAttribute="bottom" constant="4" id="5wK-AK-7HA"/>
                             <constraint firstItem="HHC-oK-Kxb" firstAttribute="leading" secondItem="YcU-gs-BAG" secondAttribute="trailing" constant="14" id="BAa-hS-3ej"/>
-                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="aIn-1Q-DW0" secondAttribute="bottom" constant="20" id="C2o-cj-PpW"/>
                             <constraint firstItem="YcU-gs-BAG" firstAttribute="centerY" secondItem="06d-a3-Hz9" secondAttribute="centerY" id="MAj-Ie-WxL"/>
                             <constraint firstAttribute="trailing" secondItem="HHC-oK-Kxb" secondAttribute="trailing" constant="20" id="Nsm-fT-y3M"/>
+                            <constraint firstItem="HHC-oK-Kxb" firstAttribute="centerY" secondItem="06d-a3-Hz9" secondAttribute="centerY" constant="-12" id="XbC-5s-FKL"/>
                             <constraint firstAttribute="trailing" secondItem="aIn-1Q-DW0" secondAttribute="trailing" constant="20" id="apc-el-GmJ"/>
-                            <constraint firstItem="HHC-oK-Kxb" firstAttribute="top" secondItem="06d-a3-Hz9" secondAttribute="top" constant="20" id="d4y-1K-eg9"/>
-                            <constraint firstItem="SzG-38-AA7" firstAttribute="leading" secondItem="HHC-oK-Kxb" secondAttribute="leading" id="dE6-6U-pW5"/>
-                            <constraint firstItem="YcU-gs-BAG" firstAttribute="leading" secondItem="06d-a3-Hz9" secondAttribute="leading" constant="17" id="fer-nf-UOn"/>
+                            <constraint firstItem="SzG-38-AA7" firstAttribute="leading" secondItem="HHC-oK-Kxb" secondAttribute="leading" constant="-2" id="dE6-6U-pW5"/>
+                            <constraint firstItem="YcU-gs-BAG" firstAttribute="leading" secondItem="06d-a3-Hz9" secondAttribute="leading" constant="15" id="fer-nf-UOn">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
                             <constraint firstItem="aIn-1Q-DW0" firstAttribute="centerY" secondItem="SzG-38-AA7" secondAttribute="centerY" id="j9B-lX-roo"/>
                         </constraints>
                     </view>

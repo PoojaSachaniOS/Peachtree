@@ -22,6 +22,7 @@ class HomeVC: CustomBaseVC {
     // MARK: - View Loading -
     override func viewDidLoad() {
         super.viewDidLoad()
+     //   
         self.navigationItem.title = "Home"
         self.configureSearchBarButtonItem()
         self.configureTempBarButtonItem()

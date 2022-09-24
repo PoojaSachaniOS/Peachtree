@@ -15,9 +15,11 @@ class LBSatoshiLight16: UILabel {
     }
     
     func updateView() {
-        font = FontHelper.defaultSatoshiLightFontWithSize(size: 16)
         textColor = Colors.color_LightGrey
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            font = FontHelper.defaultSatoshiLightFontWithSize(size: 22)
+            return
+        }
+        font = FontHelper.defaultSatoshiLightFontWithSize(size: 16)
     }
-
-
 }

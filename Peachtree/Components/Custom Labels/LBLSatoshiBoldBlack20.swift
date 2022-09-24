@@ -15,8 +15,12 @@ class LBLSatoshiBoldBlack20: UILabel {
     }
     
     func updateView() {
-        font = FontHelper.defaultSatoshiBoldFontWithSize(size: 20)
         textColor = Colors.color_DarkBlue
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            font = FontHelper.defaultSatoshiBoldFontWithSize(size: 26)
+            return
+        }
+        font = FontHelper.defaultSatoshiBoldFontWithSize(size: 20)
     }
 
 }

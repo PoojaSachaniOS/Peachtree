@@ -15,8 +15,12 @@ class LBSatoshiMediumWhite14: UILabel {
     }
     
     func updateView() {
-        font = FontHelper.defaultSatoshiMediumFontWithSize(size: 14)
         textColor = UIColor.white
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            font = FontHelper.defaultSatoshiMediumFontWithSize(size: 20)
+            return
+        }
+        font = FontHelper.defaultSatoshiMediumFontWithSize(size: 14)
     }
 
 }

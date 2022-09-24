@@ -14,7 +14,11 @@ class LBSatoshiBoldLightGrey14: UILabel {
     }
     
     func updateView() {
-        font = FontHelper.satoshiBoldFontWithSize(size: 14)
         textColor = Colors.color_LightGrey
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            font = FontHelper.satoshiBoldFontWithSize(size: 20)
+            return
+        }
+        font = FontHelper.satoshiBoldFontWithSize(size: 14)
     }
 }

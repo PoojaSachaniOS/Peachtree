@@ -15,8 +15,12 @@ class LBSatoshiMediumBlack22: UILabel {
     }
     
     func updateView() {
-        font = FontHelper.satoshiRegularFontWithSize(size: 22)
         textColor = UIColor.black
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            font = FontHelper.satoshiRegularFontWithSize(size: 28)
+            return
+        }
+        font = FontHelper.satoshiRegularFontWithSize(size: 22)
     }
 }
 

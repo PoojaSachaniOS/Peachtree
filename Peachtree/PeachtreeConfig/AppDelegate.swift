@@ -42,9 +42,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             appearance.configureWithOpaqueBackground()
             appearance.backgroundColor = .red
             appearance.backgroundImage = UIImage.init(named: "imgBgNavigation")!
-            
-            appearance.titleTextAttributes = [NSAttributedString.Key.font:FontHelper.californianBoldFontWithSize(size: 20), NSAttributedString.Key.foregroundColor: UIColor.white]
-            
+//            appearance.titleTextAttributes.
+            let fontSize = (UIDevice.current.userInterfaceIdiom == .pad) ? 30.0 : 20.0
+            appearance.titleTextAttributes = [NSAttributedString.Key.font:FontHelper.californianBoldFontWithSize(size: fontSize), NSAttributedString.Key.foregroundColor: UIColor.white]
             
             UINavigationBar.appearance().standardAppearance = appearance
             UINavigationBar.appearance().scrollEdgeAppearance = UINavigationBar.appearance().standardAppearance

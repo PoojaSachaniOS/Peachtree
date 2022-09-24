@@ -27,7 +27,9 @@
                                         <rect key="frame" x="8" y="8" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="7cH-sn-RN1" secondAttribute="height" multiplier="1:1" id="GHQ-Se-o8a"/>
-                                            <constraint firstAttribute="width" constant="20" id="ZGh-lv-LtH"/>
+                                            <constraint firstAttribute="width" constant="20" id="ZGh-lv-LtH">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                                            </constraint>
                                         </constraints>
                                     </imageView>
                                 </subviews>

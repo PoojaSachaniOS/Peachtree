@@ -73,8 +73,12 @@ extension DirectionPopUpVC: UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            return 75
+        }
         return 66
     }
+    
 }
 
 class DirectionTableItem<T> {

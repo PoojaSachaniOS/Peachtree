@@ -35,6 +35,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="SWX-gA-z0k">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <navigationBarAppearance key="standardAppearance"/>
                     </navigationBar>
                     <connections>
                         <segue destination="3rE-Jy-jMt" kind="relationship" relationship="rootViewController" id="L7h-Tq-tre"/>

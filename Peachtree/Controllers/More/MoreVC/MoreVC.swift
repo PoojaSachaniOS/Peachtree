@@ -55,5 +55,4 @@ extension MoreVC: UITableViewDelegate,UITableViewDataSource{
             }
         }
     }
-    
 }

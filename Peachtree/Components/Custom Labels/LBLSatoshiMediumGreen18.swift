@@ -14,8 +14,12 @@ class LBLSatoshiMediumGreen18: UILabel {
     }
     
     func updateView() {
-        font = FontHelper.defaultSatoshiMediumFontWithSize(size: 18)
         textColor = Colors.color_Green
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            font = FontHelper.defaultSatoshiMediumFontWithSize(size: 24)
+            return
+        }
+        font = FontHelper.defaultSatoshiMediumFontWithSize(size: 18)
     }
 
 }
