@@ -42,7 +42,7 @@ struct FontHelper {
     
     static func isPad(_ size: CGFloat) -> CGFloat {
         if (UIDevice.current.userInterfaceIdiom == .pad) {
-            return size + 6.0
+            return size + 4.0
         }
         return size
     }

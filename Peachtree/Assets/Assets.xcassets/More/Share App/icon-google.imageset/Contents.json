@@ -2,18 +2,28 @@
   "images" : [
     {
       "filename" : "icn-google.png",
-      "idiom" : "universal",
+      "idiom" : "iphone",
       "scale" : "1x"
     },
     {
       "filename" : "icn-google@2x.png",
-      "idiom" : "universal",
+      "idiom" : "iphone",
       "scale" : "2x"
     },
     {
       "filename" : "icn-google@3x.png",
-      "idiom" : "universal",
+      "idiom" : "iphone",
       "scale" : "3x"
+    },
+    {
+      "filename" : "icn-google@2x-1.png",
+      "idiom" : "ipad",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "icn-google@3x-1.png",
+      "idiom" : "ipad",
+      "scale" : "2x"
     }
   ],
   "info" : {

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -36,7 +36,9 @@
                         <color key="backgroundColor" red="0.30196079609999998" green="0.2901961207" blue="0.2941176593" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="ClN-rl-OIY" firstAttribute="top" secondItem="jsp-FS-8tn" secondAttribute="bottom" constant="2" id="39x-zo-5hD"/>
-                            <constraint firstItem="jsp-FS-8tn" firstAttribute="top" secondItem="tH0-Nf-GUA" secondAttribute="top" constant="8" id="95P-9d-hMk"/>
+                            <constraint firstItem="jsp-FS-8tn" firstAttribute="top" secondItem="tH0-Nf-GUA" secondAttribute="top" constant="8" id="95P-9d-hMk">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
                             <constraint firstItem="ClN-rl-OIY" firstAttribute="leading" secondItem="tH0-Nf-GUA" secondAttribute="leading" constant="2" id="IfV-Ru-T1w"/>
                             <constraint firstAttribute="trailing" secondItem="ClN-rl-OIY" secondAttribute="trailing" constant="2" id="R2v-DW-aZK"/>
                             <constraint firstItem="jsp-FS-8tn" firstAttribute="centerX" secondItem="tH0-Nf-GUA" secondAttribute="centerX" id="uL4-d0-Y8b"/>

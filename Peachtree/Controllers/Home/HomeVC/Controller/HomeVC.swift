@@ -219,23 +219,23 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
          let size = Int((collectionView.bounds.width - totalSpace) / CGFloat(noOfCellsInRow))
          return CGSize(width: size, height: size)
          */
-        
+        let height : CGFloat = (UIDevice.current.userInterfaceIdiom == .pad) ? 140 : 104
         let remaider = (Double(indexPath.item + 12)/3).truncatingRemainder(dividingBy: 15)
         let remaider1 = (Double(indexPath.item + 17)/3).truncatingRemainder(dividingBy: 3)
         let remaider2 = (Double(indexPath.item - 15)/3).truncatingRemainder(dividingBy: 3)
         
         if remaider == 0 {
-            return CGSize(width: (collectionView.frame.size.width + 120)/2, height: 104)
+            return CGSize(width: (collectionView.frame.size.width + 120)/2, height: height)
         }
         
         else if remaider1 == 0 {
-            return CGSize(width: (collectionView.frame.size.width + 120)/2, height: 104)
+            return CGSize(width: (collectionView.frame.size.width + 120)/2, height: height)
         }
         else if remaider2 == 0 {
-            return CGSize(width: (collectionView.frame.size.width + 120)/2, height: 104)
+            return CGSize(width: (collectionView.frame.size.width + 120)/2, height: height)
         }
         
-        return CGSize(width: (collectionView.frame.size.width - 9 )/3, height: 104)
+        return CGSize(width: (collectionView.frame.size.width - 9 )/3, height: height)
         
     }
 }
