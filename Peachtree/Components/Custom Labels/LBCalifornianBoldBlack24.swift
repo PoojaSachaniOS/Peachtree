@@ -15,7 +15,11 @@ class LBCalifornianBoldBlack24: UILabel {
     }
     
     func updateView() {
-        font = FontHelper.californianBoldFontWithSize(size: 24)
+        let size : CGFloat = 24.0
+        font = FontHelper.californianBoldFontWithSize(size: (UIDevice.current.userInterfaceIdiom == .pad) ? size + 6.0 : size)
         textColor = UIColor.black
     }
 }
+
+
+
