@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class HomeTabBarController: UITabBarController, UITabBarControllerDelegate {
     let layerGradient = CAGradientLayer()
@@ -13,6 +14,8 @@ class HomeTabBarController: UITabBarController, UITabBarControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
+      /*  self.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: FontHelper.AppFont.fontSatoshiRegular, size: 30)!], for: .normal)
+        self.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: FontHelper.AppFont.fontSatoshiRegular, size: 30)!], for: .selected)*/
     }
     
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
