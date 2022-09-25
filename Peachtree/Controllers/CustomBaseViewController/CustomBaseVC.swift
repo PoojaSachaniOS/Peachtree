@@ -14,7 +14,6 @@ class CustomBaseVC: UIViewController {
         super.viewDidLoad()
         if (UIDevice.current.userInterfaceIdiom == .pad) {
             self.navigationController?.additionalSafeAreaInsets.top = 20
-           // self.navigationController?.navigationItem.prompt = "hello"
         }
     }
     

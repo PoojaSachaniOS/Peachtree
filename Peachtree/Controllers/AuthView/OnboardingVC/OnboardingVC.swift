@@ -7,7 +7,7 @@
 
 import UIKit
 
-class OnboardingVC: UIViewController {
+class OnboardingVC: CustomBaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()

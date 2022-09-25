@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SearchVC: UIViewController {
+class SearchVC: CustomBaseVC {
     @IBOutlet weak var stackVw: UIStackView!
     @IBOutlet weak var btnCategories: UIButton!
     @IBOutlet weak var btnAddress: UIButton!

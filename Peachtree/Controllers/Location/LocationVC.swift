@@ -7,12 +7,13 @@
 
 import UIKit
 
-class LocationVC: UIViewController {
+class LocationVC: CustomBaseVC {
 
     @IBOutlet weak var headerViewHeight: NSLayoutConstraint!
     @IBOutlet weak var searchBar: UISearchBar!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Location"
         self.setNeedsStatusBarAppearanceUpdate()
         searchBar.layer.cornerRadius = 8
         searchBar.backgroundColor = .white

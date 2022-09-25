@@ -11,7 +11,7 @@ protocol DirectionDelegates {
     func openDirectionVC(type: String)
 }
 
-class DirectionPopUpVC: UIViewController {
+class DirectionPopUpVC: CustomBaseVC {
     @IBOutlet weak var vwBg: UIView!
     @IBOutlet weak var tblVwDirections: UITableView!
 

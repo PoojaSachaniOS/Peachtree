@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WeatherVC: UIViewController {
+class WeatherVC: CustomBaseVC {
     // ----------------------------------
     //  MARK: - IB-OUTLET(S)
     //

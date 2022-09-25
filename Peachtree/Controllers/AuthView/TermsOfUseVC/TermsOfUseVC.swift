@@ -8,7 +8,7 @@
 import UIKit
 import WebKit
 
-class TermsOfUseVC: UIViewController {
+class TermsOfUseVC: CustomBaseVC {
     //  MARK: - IB-OUTLET(S)
     @IBOutlet weak var webVw: WKWebView!
     
