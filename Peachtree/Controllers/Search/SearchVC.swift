@@ -121,7 +121,7 @@ extension SearchVC: UITableViewDelegate,UITableViewDataSource{
         cell.backgroundColor = Colors.color_AppBackground
         cell.backgroundColor = .clear
         cell.selectionStyle = .none
-        
+        cell.layoutIfNeeded()
         let model = aryList[indexPath.row]
         cell.lblRecentSearch.text = "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used."
         
@@ -130,14 +130,13 @@ extension SearchVC: UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, categoriesCellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tblVwSearch.dequeueReusableCell(withIdentifier: SearchCategoriesTableCell.className, for: indexPath) as! SearchCategoriesTableCell
-        
         cell.vwBgForImg.addRoundedViewCorners(width: 16, colorBorder: (Colors.color_AppOrange!).withAlphaComponent(0.1), BackgroundColor: (Colors.color_AppOrange?.withAlphaComponent(0.10))!)
 
         cell.vwBg.addRoundedViewCorners(width: 8, colorBorder: (Colors.color_borderLightBlack!).withAlphaComponent(0.1), BackgroundColor: UIColor.white)
         cell.backgroundColor = Colors.color_AppBackground
         cell.backgroundColor = .clear
         cell.selectionStyle = .none
-        
+        cell.layoutIfNeeded()
         let model = aryList[indexPath.row]
         cell.lblCategoriesName.text = model
         
@@ -146,10 +145,15 @@ extension SearchVC: UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if btnAddress.isSelected {
-            return 80.0
-        }
-        return 100.0
+//        if btnAddress.isSelected {
+//            return 80.0
+//        }
+//        return 100.0
+        return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80.0
     }
     
    

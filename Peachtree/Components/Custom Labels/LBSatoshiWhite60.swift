@@ -16,7 +16,7 @@ class LBSatoshiWhite60: UILabel {
     func updateView() {
         textColor = UIColor.white
         if UIDevice.current.userInterfaceIdiom == .pad {
-            font = FontHelper.defaultSatoshiBoldFontWithSize(size: 80)
+            font = FontHelper.defaultSatoshiBoldFontWithSize(size: 70)
             return
         }
         font = FontHelper.defaultSatoshiBoldFontWithSize(size: 60)

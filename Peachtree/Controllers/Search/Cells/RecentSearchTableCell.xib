@@ -28,8 +28,8 @@
                                     <constraint firstAttribute="width" constant="30" id="bce-bf-sOD"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In publishing and graphic design, Lorem ipsum is a placeholder text commonly used" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgl-9h-OIH" customClass="LBSatoshiMediumBlack17" customModule="Peachtree" customModuleProvider="target">
-                                <rect key="frame" x="60" y="68" width="257" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In publishing and graphic design, Lorem ipsum is a placeholder text commonly used" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgl-9h-OIH" customClass="LBSatoshiMediumBlack17" customModule="Peachtree" customModuleProvider="target">
+                                <rect key="frame" x="60" y="10" width="257" height="137"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -38,6 +38,8 @@
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
                             <constraint firstItem="l3z-0m-3js" firstAttribute="leading" secondItem="lJ1-6Y-yHq" secondAttribute="leading" constant="14" id="9cT-Th-0eN"/>
+                            <constraint firstAttribute="bottom" secondItem="kgl-9h-OIH" secondAttribute="bottom" constant="10" id="Ngw-Bq-wRL"/>
+                            <constraint firstItem="kgl-9h-OIH" firstAttribute="top" secondItem="lJ1-6Y-yHq" secondAttribute="top" constant="10" id="TXi-FD-OGX"/>
                             <constraint firstItem="kgl-9h-OIH" firstAttribute="leading" secondItem="l3z-0m-3js" secondAttribute="trailing" constant="16" id="a5h-MY-i31"/>
                             <constraint firstItem="kgl-9h-OIH" firstAttribute="centerY" secondItem="l3z-0m-3js" secondAttribute="centerY" id="arz-tF-gjk"/>
                             <constraint firstItem="l3z-0m-3js" firstAttribute="centerY" secondItem="lJ1-6Y-yHq" secondAttribute="centerY" id="pqM-Qj-YeO"/>

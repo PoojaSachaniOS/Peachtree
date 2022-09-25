@@ -54,6 +54,7 @@ extension WeatherVC: UICollectionViewDelegate, UICollectionViewDataSource, UICol
         
         if collectionView == collectionViewDailyForcast{
             let cell = collectionViewDailyForcast.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! DailyForecastCollectionCell
+            cell.layoutIfNeeded()
             let temp = Int(ceil(((333 - 273.15) * 9/5) + 32))
             cell.lblTemp.text = String(format: "%i", temp)
             cell.lblTime.text = "3 Pm"
@@ -61,6 +62,7 @@ extension WeatherVC: UICollectionViewDelegate, UICollectionViewDataSource, UICol
         }
         
         let cellWeekly = collectionViewWeeklyForecast.dequeueReusableCell(withReuseIdentifier: "cell2", for: indexPath) as! WeeklyForecastCollectionCell
+        cellWeekly.layoutIfNeeded()
         cellWeekly.lblDayName.text = weekArr[indexPath.row]
         cellWeekly.lblMaxMinTemp.text = "44"
         return cellWeekly
@@ -72,13 +74,10 @@ extension WeatherVC: UICollectionViewDelegate, UICollectionViewDataSource, UICol
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         print(collectionViewDailyForcast.frame.size.height)
         
-        if collectionView == collectionViewDailyForcast{
-            
+        if collectionView == collectionViewDailyForcast {
             return CGSize(width: collectionViewDailyForcast.frame.size.height / 1.35, height: collectionViewDailyForcast.frame.size.height)
-            
         } else if collectionView == collectionViewWeeklyForecast{
-            
-            return CGSize(width: collectionViewWeeklyForecast.frame.size.height / 1.37, height: collectionViewWeeklyForecast.frame.size.height)
+            return CGSize(width: collectionViewWeeklyForecast.frame.size.height / 1.35, height: collectionViewWeeklyForecast.frame.size.height)
         }
         
         return CGSize.zero

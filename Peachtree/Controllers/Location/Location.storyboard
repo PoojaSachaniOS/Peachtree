@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3gb-NC-ZDo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3gb-NC-ZDo">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -27,7 +27,9 @@
                                         <rect key="frame" x="15" y="115" width="384" height="44"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="44" id="aUv-x4-Bzz"/>
+                                            <constraint firstAttribute="height" constant="44" id="aUv-x4-Bzz">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="54"/>
+                                            </constraint>
                                         </constraints>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -62,6 +64,9 @@
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
+                                        </variation>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ctc-wu-Cd5">
                                         <rect key="frame" x="0.0" y="49" width="414" height="1"/>
@@ -76,7 +81,9 @@
                                     <constraint firstItem="Ctc-wu-Cd5" firstAttribute="leading" secondItem="51a-Bq-rsk" secondAttribute="leading" id="8fC-bV-SN5"/>
                                     <constraint firstItem="0BF-hy-ZHH" firstAttribute="centerY" secondItem="51a-Bq-rsk" secondAttribute="centerY" id="Gaf-KS-es3"/>
                                     <constraint firstAttribute="bottom" secondItem="Ctc-wu-Cd5" secondAttribute="bottom" id="bsf-qa-Xlu"/>
-                                    <constraint firstAttribute="height" constant="50" id="fLn-DV-Zos"/>
+                                    <constraint firstAttribute="height" constant="50" id="fLn-DV-Zos">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                                    </constraint>
                                     <constraint firstItem="0BF-hy-ZHH" firstAttribute="leading" secondItem="51a-Bq-rsk" secondAttribute="leading" constant="20" id="iQB-lI-tGS"/>
                                     <constraint firstAttribute="trailing" secondItem="Ctc-wu-Cd5" secondAttribute="trailing" id="kaA-YQ-D2s"/>
                                     <constraint firstAttribute="trailing" secondItem="0BF-hy-ZHH" secondAttribute="trailing" constant="20" id="toH-MA-9S9"/>

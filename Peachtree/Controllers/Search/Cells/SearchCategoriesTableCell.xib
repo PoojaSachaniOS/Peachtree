@@ -29,7 +29,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELr-0J-eYs" customClass="LBLSatoshiBoldBlack16" customModule="Peachtree" customModuleProvider="target">
-                                <rect key="frame" x="90" y="68" width="41.5" height="21"/>
+                                <rect key="frame" x="90" y="10" width="41.5" height="137"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -37,6 +37,10 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ELr-0J-eYs" secondAttribute="bottom" constant="10" id="7gy-AK-1DJ"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="wM0-Ph-3Bf" secondAttribute="bottom" constant="10" id="NSa-Km-QIz"/>
+                            <constraint firstItem="ELr-0J-eYs" firstAttribute="top" secondItem="chS-HR-nJO" secondAttribute="top" constant="10" id="Oru-98-4S7"/>
+                            <constraint firstItem="wM0-Ph-3Bf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="chS-HR-nJO" secondAttribute="top" constant="10" id="Rzy-1j-V2M"/>
                             <constraint firstItem="ELr-0J-eYs" firstAttribute="centerY" secondItem="wM0-Ph-3Bf" secondAttribute="centerY" id="aaz-bX-3rf"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ELr-0J-eYs" secondAttribute="trailing" constant="10" id="anU-nQ-oP4"/>
                             <constraint firstItem="wM0-Ph-3Bf" firstAttribute="leading" secondItem="chS-HR-nJO" secondAttribute="leading" constant="14" id="dhR-Z7-kHW"/>
