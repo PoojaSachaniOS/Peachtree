@@ -94,6 +94,7 @@ extension ShoppingVC: UITableViewDelegate,UITableViewDataSource{
         let cell = tblVwShopping.dequeueReusableCell(withIdentifier: RestaurantsTableCell.className, for: indexPath) as! RestaurantsTableCell
         cell.backgroundColor = .clear
         cell.selectionStyle = .none
+        cell.layoutIfNeeded()
         cell.imgVwOuter.addRoundedViewCorners(width: 4, colorBorder: (Colors.color_AppOrange!).withAlphaComponent(0.1), BackgroundColor: (Colors.color_AppOrange?.withAlphaComponent(0.10))!)
         return cell
     }

@@ -41,10 +41,9 @@ extension FavoritesVC: UITableViewDelegate,UITableViewDataSource{
         cell.backgroundColor = Colors.color_AppBackground
         cell.backgroundColor = .clear
         cell.selectionStyle = .none
-                
+        cell.layoutIfNeeded()
         cell.vwBg.addRoundedViewCorners(width: 6, colorBorder: (Colors.color_borderLightBlack!).withAlphaComponent(0.1), BackgroundColor: UIColor.white)
         cell.imgVwOuter.addRoundedViewCorners(width: 4, colorBorder: (Colors.color_AppOrange!).withAlphaComponent(0.1), BackgroundColor: (UIColor.white.withAlphaComponent(0.20)))
-
         return cell
     }
     
