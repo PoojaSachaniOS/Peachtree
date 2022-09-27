@@ -90,6 +90,8 @@ class HomeVC: CustomBaseVC {
         arr.append(HomeVCTableItem(iconName: "imgCall911", title:"Call 911", type: .call911, showArrow: true))
         arr.append(HomeVCTableItem(iconName: "imgOnlinePayments", title:"Online Payments", type: .onlinePayment, showArrow: true))
         arr.append(HomeVCTableItem(iconName: "imgOnlinePayments", title:"More Info", type: .settings, showArrow: true))
+        arr.append(HomeVCTableItem(iconName: "imgOnlinePayments", title:"More Info", type: .settings, showArrow: true))
+
     }
     
 }
