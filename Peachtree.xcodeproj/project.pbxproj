@@ -41,6 +41,7 @@
 		1738625628D3AB4100D518FE /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 1738625528D3AB4100D518FE /* loading.json */; };
 		1738625828D3B1C500D518FE /* HelperMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1738625728D3B1C500D518FE /* HelperMethods.swift */; };
 		1738625B28D3B8EA00D518FE /* CustomBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1738625A28D3B8EA00D518FE /* CustomBaseVC.swift */; };
+		174DCC2E28E388D30007C9D5 /* CityHallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174DCC2D28E388D30007C9D5 /* CityHallVC.swift */; };
 		176A4DFB28C45D5400B3D465 /* HomeCollectionVWCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 176A4DF928C45D5400B3D465 /* HomeCollectionVWCell.xib */; };
 		176A4DFC28C45D5400B3D465 /* HomeCollectionVWCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176A4DFA28C45D5400B3D465 /* HomeCollectionVWCell.swift */; };
 		17704EEF28C6DDA30032C96C /* WebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17704EEE28C6DDA30032C96C /* WebViewVC.swift */; };
@@ -74,7 +75,6 @@
 		17D6D59A28CDFBA1007D677B /* LBLSatoshiBoldBlack16.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6D59928CDFBA1007D677B /* LBLSatoshiBoldBlack16.swift */; };
 		17D6D59D28CE048F007D677B /* RecentSearchTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6D59B28CE048F007D677B /* RecentSearchTableCell.swift */; };
 		17D6D59E28CE048F007D677B /* RecentSearchTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17D6D59C28CE048F007D677B /* RecentSearchTableCell.xib */; };
-		17D73F6628E3507F002C18E2 /* CityHallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D73F6528E3507F002C18E2 /* CityHallVC.swift */; };
 		17D73F6928E350BB002C18E2 /* LibraryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D73F6828E350BB002C18E2 /* LibraryVC.swift */; };
 		17D81D0828CE1EB600C3C05F /* LBSatoshiMediumBlack17.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D81D0728CE1EB600C3C05F /* LBSatoshiMediumBlack17.swift */; };
 		17D81D0D28CE27AF00C3C05F /* FavoritesTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D81D0B28CE27AF00C3C05F /* FavoritesTableCell.swift */; };
@@ -185,6 +185,7 @@
 		1738625528D3AB4100D518FE /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		1738625728D3B1C500D518FE /* HelperMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HelperMethods.swift; path = Peachtree/Extensions/HelperMethods.swift; sourceTree = SOURCE_ROOT; };
 		1738625A28D3B8EA00D518FE /* CustomBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBaseVC.swift; sourceTree = "<group>"; };
+		174DCC2D28E388D30007C9D5 /* CityHallVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityHallVC.swift; sourceTree = "<group>"; };
 		176A4DF928C45D5400B3D465 /* HomeCollectionVWCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCollectionVWCell.xib; sourceTree = "<group>"; };
 		176A4DFA28C45D5400B3D465 /* HomeCollectionVWCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionVWCell.swift; sourceTree = "<group>"; };
 		17704EEE28C6DDA30032C96C /* WebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewVC.swift; sourceTree = "<group>"; };
@@ -218,7 +219,6 @@
 		17D6D59928CDFBA1007D677B /* LBLSatoshiBoldBlack16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBLSatoshiBoldBlack16.swift; sourceTree = "<group>"; };
 		17D6D59B28CE048F007D677B /* RecentSearchTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearchTableCell.swift; sourceTree = "<group>"; };
 		17D6D59C28CE048F007D677B /* RecentSearchTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentSearchTableCell.xib; sourceTree = "<group>"; };
-		17D73F6528E3507F002C18E2 /* CityHallVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityHallVC.swift; sourceTree = "<group>"; };
 		17D73F6828E350BB002C18E2 /* LibraryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryVC.swift; sourceTree = "<group>"; };
 		17D81D0728CE1EB600C3C05F /* LBSatoshiMediumBlack17.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBSatoshiMediumBlack17.swift; sourceTree = "<group>"; };
 		17D81D0B28CE27AF00C3C05F /* FavoritesTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableCell.swift; sourceTree = "<group>"; };
@@ -591,7 +591,7 @@
 		17D73F6428E3503F002C18E2 /* CityHall */ = {
 			isa = PBXGroup;
 			children = (
-				17D73F6528E3507F002C18E2 /* CityHallVC.swift */,
+				174DCC2D28E388D30007C9D5 /* CityHallVC.swift */,
 			);
 			path = CityHall;
 			sourceTree = "<group>";
@@ -1239,7 +1239,6 @@
 				1738625828D3B1C500D518FE /* HelperMethods.swift in Sources */,
 				17D6D55828CC57F1007D677B /* GolfCartHelpVC.swift in Sources */,
 				172F207228BFBD91007096DB /* ViewController.swift in Sources */,
-				17D73F6628E3507F002C18E2 /* CityHallVC.swift in Sources */,
 				17D6D59D28CE048F007D677B /* RecentSearchTableCell.swift in Sources */,
 				C8A1734728CC7397002C52BE /* LBSatoshiBoldLightGrey14.swift in Sources */,
 				17D6D59728CDF0C9007D677B /* SearchCategoriesTableCell.swift in Sources */,
@@ -1252,6 +1251,7 @@
 				C8EDCB9328CA66C2003C52BF /* LBCalifornianBoldWhite20.swift in Sources */,
 				172F20BF28BFCA95007096DB /* WeatherVC.swift in Sources */,
 				17D81D0D28CE27AF00C3C05F /* FavoritesTableCell.swift in Sources */,
+				174DCC2E28E388D30007C9D5 /* CityHallVC.swift in Sources */,
 				C8EDCB9528CA6AE5003C52BF /* LBSatoshiBoldBlack18.swift in Sources */,
 				17D6D56828CCB777007D677B /* LBLSatoshiBoldBlack20.swift in Sources */,
 				C830481128D113D6000CEEB2 /* ButtonGrey.swift in Sources */,

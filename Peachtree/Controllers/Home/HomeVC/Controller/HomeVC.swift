@@ -81,7 +81,7 @@ class HomeVC: CustomBaseVC {
         arr.append(HomeVCTableItem(iconName: "imgRestaurants", title:"Restaurants", type: .restaurants, showArrow: true))
         arr.append(HomeVCTableItem(iconName: "imgShopping", title:"Shopping", type: .shopping, showArrow: true))
         arr.append(HomeVCTableItem(iconName: "imgCalendar", title:"Calendar", type: .calendar, showArrow: true))
-        arr.append(HomeVCTableItem(iconName: "imgNotifyMe", title:"Notify Me", type: .notifyMe, showArrow: true))
+        arr.append(HomeVCTableItem(iconName: "imgNotifyMe", title:"Subscribe", type: .notifyMe, showArrow: true))
         arr.append(HomeVCTableItem(iconName: "imgPools", title:"Pools", type: .pools, showArrow: true))
         
         arr.append(HomeVCTableItem(iconName: "imgRecreation", title:"Recreation Activities", type: .recreationAndSpecialEvent, showArrow: true))
