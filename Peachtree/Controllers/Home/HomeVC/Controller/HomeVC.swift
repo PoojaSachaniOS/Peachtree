@@ -13,7 +13,7 @@ class HomeVC: CustomBaseVC {
     
     var arr: [HomeVCTableItem<AccountVCTableItemType>] = []
     enum AccountVCTableItemType {
-        case shareMyLocation, renewGolfCart, cityHall, publicSafety, reportAnIssue, library, restaurants, shopping, calendar, notifyMe, pools, recreationAndSpecialEvent, golfCartHelp, call911, onlinePayment, virtual_visitors, applyForPermit, settings
+        case shareMyLocation, renewGolfCart, cityHall, publicSafety, reportAnIssue, library, restaurants, shopping, calendar, notifyMe, pools, recreationAndSpecialEvent, golfCartHelp, call911, onlinePayment, eventAroundTown, virtual_visitors, applyForPermit, settings
     }
     
     private let animations = [AnimationType.vector((CGVector(dx: 0, dy: 260)))]
@@ -89,6 +89,8 @@ class HomeVC: CustomBaseVC {
         arr.append(HomeVCTableItem(iconName: "imgGolfCartHelp", title:"Golf Cart Help", type: .golfCartHelp, showArrow: true))
         arr.append(HomeVCTableItem(iconName: "imgCall911", title:"Call 911", type: .call911, showArrow: true))
         arr.append(HomeVCTableItem(iconName: "imgOnlinePayments", title:"Online Payments", type: .onlinePayment, showArrow: true))
+        arr.append(HomeVCTableItem(iconName: "imgOnlinePayments", title:"Events around town", type: .eventAroundTown, showArrow: true))
+
         arr.append(HomeVCTableItem(iconName: "imgOnlinePayments", title:"Virtual Visitors Center", type: .virtual_visitors, showArrow: true))
         arr.append(HomeVCTableItem(iconName: "imgOnlinePayments", title:"Apply for a Permit", type: .applyForPermit, showArrow: true))
         arr.append(HomeVCTableItem(iconName: "imgOnlinePayments", title:"More Info", type: .settings, showArrow: true))
@@ -149,7 +151,11 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
             self.openCall911VC()
         } else if model.type == .onlinePayment {
             self.openWebViewVC("https://peachtree-city.org/list.aspx", title: model.title ?? "")
-        } else if model.type == .virtual_visitors {
+        } else if model.type == .eventAroundTown {
+            self.openWebViewVC("https://ptcpassport.visitpeachtreecity.com/events/", title: model.title ?? "")
+        }
+        
+        else if model.type == .virtual_visitors {
             self.openWebViewVC("https://ptcpassport.visitpeachtreecity.com/", title: model.title ?? "")
         } else if model.type == .applyForPermit {
             self.openWebViewVC("https://peachtree-city.org/1254/Permitting-Portal/", title: model.title ?? "")
