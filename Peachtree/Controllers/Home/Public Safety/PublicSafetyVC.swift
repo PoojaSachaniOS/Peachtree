@@ -45,4 +45,25 @@ class PublicSafetyVC: CustomBaseVC {
         self.vwFireDirection.addRoundedViewCorners(width: 8, colorBorder: Colors.color_borderLightBlack!, BackgroundColor: UIColor.white)
         self.vwPublicDirection.addRoundedViewCorners(width: 8, colorBorder: Colors.color_borderLightBlack!, BackgroundColor: UIColor.white)
     }
+    
+}
+
+//  MARK: - BUTTION ACTION(S)
+extension PublicSafetyVC {
+    @IBAction func btnPolicDepartTapped(_ sender: Any) {
+        self.openWebViewVC("https://peachtree-city.org/117/Police", title: "Police")
+    }
+    
+    @IBAction func btnFireEMSTapped(_ sender: Any) {
+        self.openWebViewVC("https://peachtree-city.org/1061/Fire-EMS", title: "Fire & EMS")
+    }
+    
+    func openWebViewVC(_ webUrl:String, title: String) {
+        if let controller = StoryboardUtils.getWebViewVC() as? WebViewVC {
+            controller.strWebUrl = webUrl
+            controller.strNavTitle = title
+            controller.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
+    }
 }
