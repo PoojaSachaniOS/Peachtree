@@ -120,5 +120,13 @@ extension StoryboardUtils{
     static func getCategoriesVC()-> UIViewController{
         return Home.instance.instantiateViewController(withIdentifier: "CategoriesVC")
     }
+    
+    static func getCityHallVC()-> UIViewController{
+        return Home.instance.instantiateViewController(withIdentifier: "CityHallVC")
+    }
+    
+    static func getLibraryVC()-> UIViewController{
+        return Home.instance.instantiateViewController(withIdentifier: "LibraryVC")
+    }
    
 }

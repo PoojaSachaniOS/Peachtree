@@ -74,6 +74,8 @@
 		17D6D59A28CDFBA1007D677B /* LBLSatoshiBoldBlack16.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6D59928CDFBA1007D677B /* LBLSatoshiBoldBlack16.swift */; };
 		17D6D59D28CE048F007D677B /* RecentSearchTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6D59B28CE048F007D677B /* RecentSearchTableCell.swift */; };
 		17D6D59E28CE048F007D677B /* RecentSearchTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17D6D59C28CE048F007D677B /* RecentSearchTableCell.xib */; };
+		17D73F6628E3507F002C18E2 /* CityHallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D73F6528E3507F002C18E2 /* CityHallVC.swift */; };
+		17D73F6928E350BB002C18E2 /* LibraryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D73F6828E350BB002C18E2 /* LibraryVC.swift */; };
 		17D81D0828CE1EB600C3C05F /* LBSatoshiMediumBlack17.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D81D0728CE1EB600C3C05F /* LBSatoshiMediumBlack17.swift */; };
 		17D81D0D28CE27AF00C3C05F /* FavoritesTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D81D0B28CE27AF00C3C05F /* FavoritesTableCell.swift */; };
 		17D81D0E28CE27AF00C3C05F /* FavoritesTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17D81D0C28CE27AF00C3C05F /* FavoritesTableCell.xib */; };
@@ -216,6 +218,8 @@
 		17D6D59928CDFBA1007D677B /* LBLSatoshiBoldBlack16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBLSatoshiBoldBlack16.swift; sourceTree = "<group>"; };
 		17D6D59B28CE048F007D677B /* RecentSearchTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearchTableCell.swift; sourceTree = "<group>"; };
 		17D6D59C28CE048F007D677B /* RecentSearchTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentSearchTableCell.xib; sourceTree = "<group>"; };
+		17D73F6528E3507F002C18E2 /* CityHallVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityHallVC.swift; sourceTree = "<group>"; };
+		17D73F6828E350BB002C18E2 /* LibraryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryVC.swift; sourceTree = "<group>"; };
 		17D81D0728CE1EB600C3C05F /* LBSatoshiMediumBlack17.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBSatoshiMediumBlack17.swift; sourceTree = "<group>"; };
 		17D81D0B28CE27AF00C3C05F /* FavoritesTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableCell.swift; sourceTree = "<group>"; };
 		17D81D0C28CE27AF00C3C05F /* FavoritesTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesTableCell.xib; sourceTree = "<group>"; };
@@ -436,6 +440,9 @@
 		172F20AE28BFC4EA007096DB /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				17D73F6728E35092002C18E2 /* Library */,
+				17D73F6828E350BB002C18E2 /* LibraryVC.swift */,
+				17D73F6428E3503F002C18E2 /* CityHall */,
 				17F90B2E28D506900078593D /* HomeVC */,
 				17F90B3428D507500078593D /* ShareMyLocation */,
 				17F90B3828D5090E0078593D /* WebView */,
@@ -579,6 +586,21 @@
 				17D6D59C28CE048F007D677B /* RecentSearchTableCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		17D73F6428E3503F002C18E2 /* CityHall */ = {
+			isa = PBXGroup;
+			children = (
+				17D73F6528E3507F002C18E2 /* CityHallVC.swift */,
+			);
+			path = CityHall;
+			sourceTree = "<group>";
+		};
+		17D73F6728E35092002C18E2 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Library;
 			sourceTree = "<group>";
 		};
 		17F90B2E28D506900078593D /* HomeVC */ = {
@@ -1217,6 +1239,7 @@
 				1738625828D3B1C500D518FE /* HelperMethods.swift in Sources */,
 				17D6D55828CC57F1007D677B /* GolfCartHelpVC.swift in Sources */,
 				172F207228BFBD91007096DB /* ViewController.swift in Sources */,
+				17D73F6628E3507F002C18E2 /* CityHallVC.swift in Sources */,
 				17D6D59D28CE048F007D677B /* RecentSearchTableCell.swift in Sources */,
 				C8A1734728CC7397002C52BE /* LBSatoshiBoldLightGrey14.swift in Sources */,
 				17D6D59728CDF0C9007D677B /* SearchCategoriesTableCell.swift in Sources */,
@@ -1290,6 +1313,7 @@
 				172F20AA28BFC1A5007096DB /* TermsOfUseVC.swift in Sources */,
 				172F20AD28BFC451007096DB /* OnboardingVC.swift in Sources */,
 				C8A1734528CC6634002C52BE /* RateUsVC.swift in Sources */,
+				17D73F6928E350BB002C18E2 /* LibraryVC.swift in Sources */,
 				C8BB1C4628CCE0EE00A66FDF /* DailyForecastCollectionCell.swift in Sources */,
 				C864E8AF28CE46AA00BA030D /* UICollectionView + ViewAnimator.swift in Sources */,
 				C8A2DEF328CBBCB4005578DE /* LBSatoshiBoldBlack20.swift in Sources */,

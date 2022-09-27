@@ -13,7 +13,7 @@ class LocationVC: CustomBaseVC {
     @IBOutlet weak var searchBar: UISearchBar!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "Location"
+        self.navigationItem.title = "Navigate"
         self.setNeedsStatusBarAppearanceUpdate()
         searchBar.layer.cornerRadius = 8
         searchBar.backgroundColor = .white

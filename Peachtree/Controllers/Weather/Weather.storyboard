@@ -109,7 +109,7 @@
                                                         </view>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="12w-zm-Z7z" secondAttribute="bottom" constant="10" id="DsL-ne-6bd"/>
+                                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="12w-zm-Z7z" secondAttribute="bottom" id="DsL-ne-6bd"/>
                                                             <constraint firstItem="Frd-Q9-8So" firstAttribute="trailing" secondItem="YLL-W7-eMg" secondAttribute="trailingMargin" id="FHJ-ji-nQa"/>
                                                             <constraint firstItem="Frd-Q9-8So" firstAttribute="top" secondItem="YLL-W7-eMg" secondAttribute="topMargin" id="UI2-EL-0u7"/>
                                                             <constraint firstItem="drQ-Lm-Fks" firstAttribute="top" secondItem="hPs-yx-Igl" secondAttribute="bottom" constant="5" id="Wgu-4v-vgi"/>

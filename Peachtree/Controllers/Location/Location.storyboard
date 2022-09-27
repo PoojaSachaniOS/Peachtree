@@ -35,16 +35,9 @@
                                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </searchBar>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMM-y2-PCe" customClass="LBCalifornianBoldWhite20" customModule="Peachtree" customModuleProvider="target">
-                                        <rect key="frame" x="174.5" y="62" width="65.5" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="WMM-y2-PCe" firstAttribute="centerX" secondItem="4bh-1X-oNt" secondAttribute="centerX" id="A8z-fD-ML6"/>
                                     <constraint firstAttribute="bottom" secondItem="uJU-jd-wnh" secondAttribute="bottom" constant="21" id="Bpk-r7-5mc"/>
                                     <constraint firstItem="4bh-1X-oNt" firstAttribute="leading" secondItem="A61-Ju-Rkm" secondAttribute="leading" id="PsH-6v-K2x"/>
                                     <constraint firstItem="4bh-1X-oNt" firstAttribute="top" secondItem="A61-Ju-Rkm" secondAttribute="top" id="V8u-Nt-E4c"/>
@@ -52,7 +45,6 @@
                                     <constraint firstAttribute="bottom" secondItem="4bh-1X-oNt" secondAttribute="bottom" id="ZeH-MG-zrh"/>
                                     <constraint firstAttribute="height" constant="180" id="fMW-bX-3DN"/>
                                     <constraint firstAttribute="trailing" secondItem="4bh-1X-oNt" secondAttribute="trailing" id="snS-Di-2iP"/>
-                                    <constraint firstItem="uJU-jd-wnh" firstAttribute="top" secondItem="WMM-y2-PCe" secondAttribute="bottom" constant="32" id="tZE-hC-ada"/>
                                     <constraint firstItem="uJU-jd-wnh" firstAttribute="leading" secondItem="A61-Ju-Rkm" secondAttribute="leading" constant="15" id="xE4-Q6-UQp"/>
                                 </constraints>
                             </view>

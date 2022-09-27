@@ -55,11 +55,11 @@
             </objects>
             <point key="canvasLocation" x="732" y="-1647"/>
         </scene>
-        <!--Location-->
+        <!--Navigate-->
         <scene sceneID="gGM-nS-v62">
             <objects>
                 <navigationController id="hsW-0s-fL7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Location" image="imgLocationTabBarUnSelected" selectedImage="imgLocationTabBarSelected" id="ZtT-B1-IBO"/>
+                    <tabBarItem key="tabBarItem" title="Navigate" image="imgLocationTabBarUnSelected" selectedImage="imgLocationTabBarSelected" id="ZtT-B1-IBO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4me-ZO-mA5">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
