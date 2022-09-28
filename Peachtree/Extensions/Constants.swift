@@ -8,6 +8,8 @@ class Constants {
     struct AppRootFlow {
         static let kEnterHome = "EnterHome"
         static let kGetStarted = "Welcome"
+        static let kTermsCondition = "Terms"
+
     }
     
     struct Array {
@@ -20,6 +22,13 @@ class Constants {
                                 MoreItem(iconName: "notification_list_icon", title: "Notification List", type: MoreType.notificationList),
                                 MoreItem(iconName: "rate_us_icon", title: "Rate Us", type: MoreType.rateUs)]
         
+    }
+    
+    struct UserDefault {
+        struct Key {
+            static let kAccessToken = "accessToken"
+            static let kAcceptedTerms = "acceptedTerms"
+        }
     }
 }
 

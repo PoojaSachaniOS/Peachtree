@@ -51,6 +51,7 @@ class TermsOfUseVC: CustomBaseVC {
 //  MARK: - BUTTION ACTION(S)
 extension TermsOfUseVC {
     @IBAction func btnAcceptTapped(_ sender: Any) {
+        UserDefaultManager.saveTermsAcceptedStatus(status: true)
         if #available(iOS 13.0, *) {
             SceneDelegate.shared?.makingRootFlow(Constants.AppRootFlow.kEnterHome)
         } else {
@@ -59,6 +60,7 @@ extension TermsOfUseVC {
     }
     
     @IBAction func btnDeclineTapped(_ sender: Any) {
+        UserDefaultManager.saveTermsAcceptedStatus(status: false)
         exit(0)
     }
 }

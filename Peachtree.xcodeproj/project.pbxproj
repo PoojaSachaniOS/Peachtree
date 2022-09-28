@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		172BE98728E4AA2C00F9FE3A /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172BE98628E4AA2C00F9FE3A /* UserDefaultManager.swift */; };
 		172F206E28BFBD91007096DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F206D28BFBD91007096DB /* AppDelegate.swift */; };
 		172F207028BFBD91007096DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F206F28BFBD91007096DB /* SceneDelegate.swift */; };
 		172F207228BFBD91007096DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F207128BFBD91007096DB /* ViewController.swift */; };
@@ -147,6 +148,7 @@
 
 /* Begin PBXFileReference section */
 		0BF9EC3023169AA26C69CB54 /* Pods-Peachtree-PeachtreeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peachtree-PeachtreeUITests.release.xcconfig"; path = "Target Support Files/Pods-Peachtree-PeachtreeUITests/Pods-Peachtree-PeachtreeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		172BE98628E4AA2C00F9FE3A /* UserDefaultManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
 		172F206A28BFBD91007096DB /* Peachtree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Peachtree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		172F206D28BFBD91007096DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		172F206F28BFBD91007096DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -414,6 +416,7 @@
 				C8EDCB9628CA6CA7003C52BF /* Extensions.swift */,
 				17D6D55528CC5487007D677B /* NSObject+Name.swift */,
 				1738625728D3B1C500D518FE /* HelperMethods.swift */,
+				172BE98628E4AA2C00F9FE3A /* UserDefaultManager.swift */,
 				172F20A628BFC052007096DB /* StoryboardUtils.swift */,
 				172F20CE28C0C0DA007096DB /* Constants.swift */,
 				C864E8AE28CE46AA00BA030D /* UICollectionView + ViewAnimator.swift */,
@@ -1282,6 +1285,7 @@
 				C830480F28D10F50000CEEB2 /* ButtonOrange.swift in Sources */,
 				C8A2DEF128CBBBEE005578DE /* LBSatoshiRegularLightGrey14.swift in Sources */,
 				C8A2DEEE28CBB7C4005578DE /* LBSatoshiMediumBlack22.swift in Sources */,
+				172BE98728E4AA2C00F9FE3A /* UserDefaultManager.swift in Sources */,
 				C8A2DEEA28CBABE0005578DE /* MoreListTableVWCell.swift in Sources */,
 				172F207028BFBD91007096DB /* SceneDelegate.swift in Sources */,
 				C8BB1C4A28CCF79F00A66FDF /* LBSatoshiMediumWhite14.swift in Sources */,

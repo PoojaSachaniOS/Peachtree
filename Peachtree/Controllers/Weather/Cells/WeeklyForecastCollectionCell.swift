@@ -1,9 +1,8 @@
 //
 //  WeeklyForecastCollectionCell.swift
-//  Villages GPS
+//  Peachtree
 //
-//  Created by apple on 21/08/18.
-//  Copyright © 2018 apple. All rights reserved.
+//  Created by Anand on 31/08/22.
 //
 
 import UIKit

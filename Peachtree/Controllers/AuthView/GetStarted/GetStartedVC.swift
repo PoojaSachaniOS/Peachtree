@@ -33,6 +33,7 @@ class GetStartedVC: CustomBaseVC {
 //  MARK: - BUTTION ACTION(S)
 extension GetStartedVC {
     @IBAction func btnGetStartedTapped(_ sender: Any) {
+        UserDefaultManager.saveAccessToken("1233")
         if let controllerTermsOfUse = StoryboardUtils.getTermsOfUseVC() as? TermsOfUseVC {
             navigationController?.pushViewController(controllerTermsOfUse, animated: true)
         }

@@ -16,7 +16,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         guard let _ = (scene as? UIWindowScene) else { return }
         Self.shared = self
-        self.makingRootFlow(Constants.AppRootFlow.kGetStarted)
+        
+        if !UserDefaultManager.getAccessToken().isEmpty {
+            if UserDefaultManager.getTermsAcceptedStatus() {
+                self.makingRootFlow(Constants.AppRootFlow.kEnterHome)
+            } else {
+                self.makingRootFlow(Constants.AppRootFlow.kTermsCondition)
+            }
+
+        } else {
+            self.makingRootFlow(Constants.AppRootFlow.kGetStarted)
+        }
+       
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -44,6 +56,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             }
         } else if strRoot == Constants.AppRootFlow.kGetStarted {
             if let controller = StoryboardUtils.getGetStartedVC() as? GetStartedVC {
+                let nav = UINavigationController(rootViewController: controller)
+                window?.rootViewController = nav
+            }
+        } else if strRoot == Constants.AppRootFlow.kTermsCondition {
+            if let controller = StoryboardUtils.getTermsOfUseVC() as? TermsOfUseVC {
                 let nav = UINavigationController(rootViewController: controller)
                 window?.rootViewController = nav
             }
