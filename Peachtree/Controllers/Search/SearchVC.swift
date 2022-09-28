@@ -158,12 +158,24 @@ extension SearchVC: UITableViewDelegate,UITableViewDataSource{
     
    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.openRestaurantsDetails()
+        if btnCategories.isSelected {
+            self.openCategoriesVC(title: aryList[indexPath.row])
+        } else {
+            self.openRestaurantsDetails()
+        }
     }
 
     func openRestaurantsDetails() {
         if let controller = StoryboardUtils.getRestaurantsDetailsVC() as? RestaurantsDetailsVC {
             controller.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
+    }
+    
+    func openCategoriesVC(title: String) {
+        if let controller = StoryboardUtils.getCategoriesVC() as? CategoriesVC {
+            controller.hidesBottomBarWhenPushed = true
+            controller.navigationItem.title = title
             self.navigationController?.pushViewController(controller, animated: true)
         }
     }

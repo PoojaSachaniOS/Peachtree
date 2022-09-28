@@ -51,7 +51,7 @@ class CategoriesVC: CustomBaseVC {
     
     private func configSearchBar() {
         if let textfield = searchBar.value(forKey: "searchField") as? UITextField {
-            let atrString = NSAttributedString(string: "Search pools",
+            let atrString = NSAttributedString(string: "Search \(navigationItem.title?.lowercased() ?? "")",
                                                attributes: [.foregroundColor : Colors.color_AppThemeBlack!,
                                                             .font : FontHelper.defaultSatoshiRegularFontWithSize(size: 14)])
             textfield.attributedPlaceholder = atrString
