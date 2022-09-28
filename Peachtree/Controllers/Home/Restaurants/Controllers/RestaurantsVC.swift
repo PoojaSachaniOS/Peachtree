@@ -21,10 +21,8 @@ class RestaurantsVC: CustomBaseVC {
         super.viewDidLoad()
         super.configureLeftBarButtonItem()
         self.navigationItem.title = "Restaurants"
+        self.configSearchBar()
         self.registerNib()
-        searchBar.layer.cornerRadius = 8
-        searchBar.backgroundColor = .white
-        searchBar.searchTextField.backgroundColor = .white
         self.setNeedsStatusBarAppearanceUpdate()
         self.configureListMapBarButtonItems()
     }
@@ -41,6 +39,19 @@ class RestaurantsVC: CustomBaseVC {
     //  MARK: - PRIVATE METHOD(S)
     private func registerNib() {
         self.tblVwRestaurants.register(RestaurantsTableCell.self)
+    }
+    
+    private func configSearchBar() {
+        if let textfield = searchBar.value(forKey: "searchField") as? UITextField {
+            let atrString = NSAttributedString(string: "Search cuisine or restaurant name",
+                                               attributes: [.foregroundColor : Colors.color_AppThemeBlack!,
+                                                            .font : FontHelper.defaultSatoshiRegularFontWithSize(size: 14)])
+            textfield.attributedPlaceholder = atrString
+            
+        }
+        searchBar.layer.cornerRadius = 8
+        searchBar.backgroundColor = .white
+        searchBar.searchTextField.backgroundColor = .white
     }
     
     private func configureListMapBarButtonItems(){

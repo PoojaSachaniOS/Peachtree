@@ -27,6 +27,7 @@ class ShoppingVC: CustomBaseVC {
         searchBar.searchTextField.backgroundColor = .white
         self.setNeedsStatusBarAppearanceUpdate()
         self.configureListMapBarButtonItems()
+        self.configSearchBar()
     }
     
     // MARK: - OVERRIDE METHOD(S)
@@ -47,6 +48,17 @@ class ShoppingVC: CustomBaseVC {
         barButtonListView = UIBarButtonItem(image: UIImage(named: "map_icon")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(barBtnListClicked))
         barButtonMapView = UIBarButtonItem(image: UIImage(named: "imgListVw")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(barBtnMapClicked))
         self.navigationItem.rightBarButtonItems = [self.barButtonListView]
+    }
+    
+    private func configSearchBar() {
+        if let textfield = searchBar.value(forKey: "searchField") as? UITextField {
+            let atrString = NSAttributedString(string: "Search for products, brands and more",
+                                               attributes: [.foregroundColor : Colors.color_AppThemeBlack!,
+                                                            .font : FontHelper.defaultSatoshiRegularFontWithSize(size: 14)])
+            textfield.attributedPlaceholder = atrString
+            
+        }
+        
     }
     
     //  MARK: - BAR BUTTION ACTION(S)
