@@ -22,10 +22,21 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l3z-0m-3js">
                                 <rect key="frame" x="14" y="63.5" width="30" height="30"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgClock" translatesAutoresizingMaskIntoConstraints="NO" id="P03-oI-qm2">
+                                        <rect key="frame" x="7.5" y="7.5" width="15" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="P03-oI-qm2" secondAttribute="height" multiplier="1:1" id="4pv-4v-Vjy"/>
+                                            <constraint firstAttribute="width" constant="15" id="c8p-43-xew"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="l3z-0m-3js" secondAttribute="height" multiplier="1:1" id="8l3-aN-jlC"/>
+                                    <constraint firstItem="P03-oI-qm2" firstAttribute="centerX" secondItem="l3z-0m-3js" secondAttribute="centerX" id="TAS-fs-rg2"/>
                                     <constraint firstAttribute="width" constant="30" id="bce-bf-sOD"/>
+                                    <constraint firstItem="P03-oI-qm2" firstAttribute="centerY" secondItem="l3z-0m-3js" secondAttribute="centerY" id="nLY-KF-ajW"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In publishing and graphic design, Lorem ipsum is a placeholder text commonly used" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgl-9h-OIH" customClass="LBSatoshiMediumBlack17" customModule="Peachtree" customModuleProvider="target">
@@ -64,6 +75,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="imgClock" width="26" height="26"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -110,6 +110,7 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
         let model = arr[indexPath.row]
         cell.lblName.text = model.title
         cell.imageVw.image = UIImage.init(named: (model.iconName)!)
+        cell.backVw.backgroundColor = Colors.color_AppThemeBlack?.withAlphaComponent(0.70)
         return cell
     }
     
