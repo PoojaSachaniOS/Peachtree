@@ -128,5 +128,8 @@ extension StoryboardUtils{
     static func getLibraryVC()-> UIViewController{
         return Home.instance.instantiateViewController(withIdentifier: "LibraryVC")
     }
-   
+    
+    static func getAthleticFacilitiesVC()-> UIViewController{
+        return Home.instance.instantiateViewController(withIdentifier: "AthleticFacilitiesVC")
+    }
 }

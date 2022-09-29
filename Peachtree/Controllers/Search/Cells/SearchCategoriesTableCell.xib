@@ -22,10 +22,21 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wM0-Ph-3Bf">
                                 <rect key="frame" x="14" y="48.5" width="60" height="60"/>
+                                <subviews>
+                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgClock" translatesAutoresizingMaskIntoConstraints="NO" id="eOA-tE-W4p">
+                                        <rect key="frame" x="17" y="17" width="26" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="26" id="IVC-Sl-4uh"/>
+                                            <constraint firstAttribute="width" secondItem="eOA-tE-W4p" secondAttribute="height" multiplier="1:1" id="sPe-N1-gQj"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="DCj-S1-7b7"/>
+                                    <constraint firstItem="eOA-tE-W4p" firstAttribute="centerY" secondItem="wM0-Ph-3Bf" secondAttribute="centerY" id="Ibd-RT-CfB"/>
                                     <constraint firstAttribute="width" secondItem="wM0-Ph-3Bf" secondAttribute="height" multiplier="1:1" id="Jtq-MI-y9B"/>
+                                    <constraint firstItem="eOA-tE-W4p" firstAttribute="centerX" secondItem="wM0-Ph-3Bf" secondAttribute="centerX" id="X5c-SB-7yo"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELr-0J-eYs" customClass="LBLSatoshiBoldBlack16" customModule="Peachtree" customModuleProvider="target">
@@ -58,6 +69,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="imgVwCategories" destination="eOA-tE-W4p" id="bZj-Eb-jsK"/>
                 <outlet property="lblCategoriesName" destination="ELr-0J-eYs" id="mvp-wX-gaD"/>
                 <outlet property="vwBg" destination="chS-HR-nJO" id="DAd-fB-WiN"/>
                 <outlet property="vwBgForImg" destination="wM0-Ph-3Bf" id="poT-de-mg8"/>
@@ -66,6 +78,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="imgClock" width="26" height="26"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

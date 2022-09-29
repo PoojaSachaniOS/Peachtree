@@ -1346,6 +1346,40 @@
             </objects>
             <point key="canvasLocation" x="672.46376811594212" y="721.875"/>
         </scene>
+        <!--Athletic FacilitiesVC-->
+        <scene sceneID="H37-U4-6bn">
+            <objects>
+                <viewController storyboardIdentifier="AthleticFacilitiesVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HG3-8y-XRO" customClass="AthleticFacilitiesVC" customModule="Peachtree" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XGq-VF-fCb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iAs-iW-P4U">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="HG3-8y-XRO" id="15k-Lt-Uxy"/>
+                                    <outlet property="delegate" destination="HG3-8y-XRO" id="D44-km-ipX"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wwm-Y6-HYR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wwm-Y6-HYR" firstAttribute="bottom" secondItem="iAs-iW-P4U" secondAttribute="bottom" id="Kj9-1c-f6T"/>
+                            <constraint firstItem="iAs-iW-P4U" firstAttribute="top" secondItem="wwm-Y6-HYR" secondAttribute="top" id="WtB-cs-pAo"/>
+                            <constraint firstItem="iAs-iW-P4U" firstAttribute="leading" secondItem="wwm-Y6-HYR" secondAttribute="leading" id="y8T-LG-JoP"/>
+                            <constraint firstItem="wwm-Y6-HYR" firstAttribute="trailing" secondItem="iAs-iW-P4U" secondAttribute="trailing" id="ykJ-P4-5Zo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tblVwAthlectic" destination="iAs-iW-P4U" id="tsl-wE-lpl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6gR-Jc-Wpy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1490" y="1495"/>
+        </scene>
         <!--DirectionsVC-->
         <scene sceneID="Eto-XJ-dAX">
             <objects>
