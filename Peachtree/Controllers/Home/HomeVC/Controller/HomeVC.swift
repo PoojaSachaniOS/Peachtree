@@ -82,14 +82,14 @@ class HomeVC: CustomBaseVC {
         arr.append(HomeVCTableItem(iconName: "imgShopping", title:"Shopping", type: .shopping, showArrow: true))
         arr.append(HomeVCTableItem(iconName: "imgCalendar", title:"Calendar", type: .calendar, showArrow: true))
         arr.append(HomeVCTableItem(iconName: "imgNotifyMe", title:"Subscribe", type: .notifyMe, showArrow: true))
-        arr.append(HomeVCTableItem(iconName: "imgPools", title:"Athletic facilities", type: .pools, showArrow: true))
+        arr.append(HomeVCTableItem(iconName: "imgPools", title:"Athletic Facilities", type: .pools, showArrow: true))
         
         arr.append(HomeVCTableItem(iconName: "imgRecreation", title:"Recreation Activities", type: .recreationAndSpecialEvent, showArrow: true))
         
 //        arr.append(HomeVCTableItem(iconName: "imgGolfCartHelp", title:"Golf Cart Help", type: .golfCartHelp, showArrow: true))
         arr.append(HomeVCTableItem(iconName: "imgCall911", title:"Call 911", type: .call911, showArrow: true))
         arr.append(HomeVCTableItem(iconName: "imgOnlinePayments", title:"Online Payments", type: .onlinePayment, showArrow: true))
-        arr.append(HomeVCTableItem(iconName: "imgOnlinePayments", title:"Events around town", type: .eventAroundTown, showArrow: true))
+        arr.append(HomeVCTableItem(iconName: "imgOnlinePayments", title:"Events Around Town", type: .eventAroundTown, showArrow: true))
 
         arr.append(HomeVCTableItem(iconName: "imgOnlinePayments", title:"Virtual Visitors Center", type: .virtual_visitors, showArrow: true))
         arr.append(HomeVCTableItem(iconName: "imgOnlinePayments", title:"Apply for a Permit", type: .applyForPermit, showArrow: true))

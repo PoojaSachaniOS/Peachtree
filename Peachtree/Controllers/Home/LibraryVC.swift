@@ -36,7 +36,7 @@ class LibraryVC: CustomBaseVC {
 extension LibraryVC {
     @IBAction func btnOpenWebsiteTapped(_ sender: Any) {
         if let title = self.navigationItem.title {
-            self.openWebViewVC("https://peachtree-city.org/", title: title)
+            self.openWebViewVC("https://www.peachtree-city.org/125/Library", title: title)
         }
     }
     
