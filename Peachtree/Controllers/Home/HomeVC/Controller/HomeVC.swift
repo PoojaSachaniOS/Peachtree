@@ -151,7 +151,7 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
         } else if model.type == .call911 {
             self.openCall911VC()
         } else if model.type == .onlinePayment {
-            self.openWebViewVC("https://peachtree-city.org/list.aspx", title: model.title ?? "")
+            self.openWebViewVC("https://peachtree-city.org/127/Services", title: model.title ?? "")
         } else if model.type == .eventAroundTown {
             self.openWebViewVC("https://ptcpassport.visitpeachtreecity.com/events/", title: model.title ?? "")
         }
