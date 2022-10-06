@@ -47,6 +47,7 @@
 		176A4DFC28C45D5400B3D465 /* HomeCollectionVWCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176A4DFA28C45D5400B3D465 /* HomeCollectionVWCell.swift */; };
 		17704EEF28C6DDA30032C96C /* WebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17704EEE28C6DDA30032C96C /* WebViewVC.swift */; };
 		178587FC28EF2D1C00D6B229 /* WeatherVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178587FB28EF2D1C00D6B229 /* WeatherVM.swift */; };
+		178587FE28EF353D00D6B229 /* TimeStamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178587FD28EF353D00D6B229 /* TimeStamp.swift */; };
 		17B3A70328E6160B0092E3B9 /* AthleticFacilitiesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B3A70228E6160B0092E3B9 /* AthleticFacilitiesVC.swift */; };
 		17D6D55028CC51E7007D677B /* Call911VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6D54F28CC51E7007D677B /* Call911VC.swift */; };
 		17D6D55328CC53D9007D677B /* CallTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6D55128CC53D9007D677B /* CallTableCell.swift */; };
@@ -194,6 +195,7 @@
 		176A4DFA28C45D5400B3D465 /* HomeCollectionVWCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionVWCell.swift; sourceTree = "<group>"; };
 		17704EEE28C6DDA30032C96C /* WebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewVC.swift; sourceTree = "<group>"; };
 		178587FB28EF2D1C00D6B229 /* WeatherVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVM.swift; sourceTree = "<group>"; };
+		178587FD28EF353D00D6B229 /* TimeStamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeStamp.swift; sourceTree = "<group>"; };
 		17B3A70228E6160B0092E3B9 /* AthleticFacilitiesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleticFacilitiesVC.swift; sourceTree = "<group>"; };
 		17D6D54F28CC51E7007D677B /* Call911VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Call911VC.swift; sourceTree = "<group>"; };
 		17D6D55128CC53D9007D677B /* CallTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallTableCell.swift; sourceTree = "<group>"; };
@@ -422,6 +424,7 @@
 				17D6D55528CC5487007D677B /* NSObject+Name.swift */,
 				1738625728D3B1C500D518FE /* HelperMethods.swift */,
 				172BE98628E4AA2C00F9FE3A /* UserDefaultManager.swift */,
+				178587FD28EF353D00D6B229 /* TimeStamp.swift */,
 				172F20A628BFC052007096DB /* StoryboardUtils.swift */,
 				172F20CE28C0C0DA007096DB /* Constants.swift */,
 				C864E8AE28CE46AA00BA030D /* UICollectionView + ViewAnimator.swift */,
@@ -1288,6 +1291,7 @@
 				C8EDCB9528CA6AE5003C52BF /* LBSatoshiBoldBlack18.swift in Sources */,
 				17D6D56828CCB777007D677B /* LBLSatoshiBoldBlack20.swift in Sources */,
 				C830481128D113D6000CEEB2 /* ButtonGrey.swift in Sources */,
+				178587FE28EF353D00D6B229 /* TimeStamp.swift in Sources */,
 				17D6D55D28CC9B46007D677B /* RestaurantsTableCell.swift in Sources */,
 				172F20A728BFC052007096DB /* StoryboardUtils.swift in Sources */,
 				17D6D56E28CCC26D007D677B /* LBSeparator.swift in Sources */,

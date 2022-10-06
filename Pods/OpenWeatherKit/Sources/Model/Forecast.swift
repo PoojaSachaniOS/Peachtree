@@ -23,6 +23,8 @@ public struct Forecast: Codable {
         public let main: Main
         public let weather: [WeatherData]
         public let wind: Wind
+        public let dt_txt: String
+
     }
     public let list: [List]
 }

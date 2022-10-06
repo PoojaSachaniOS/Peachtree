@@ -19,9 +19,9 @@ class WeatherVC: CustomBaseVC {
     @IBOutlet private var collectionViewDailyForcast: UICollectionView!
     @IBOutlet private var collectionViewWeeklyForecast: UICollectionView!
     var weekArr = ["MON","TUE","WED","THU","FRI","SAT","SUN"]
-     var resultAppendData = [Forecast.List]()
-     var weatherData : Forecast!
-
+    
+    let weatherVM = WeatherVM()
+    
     // ----------------------------------
     //  MARK: - VIEW LOADING
     //
@@ -29,6 +29,7 @@ class WeatherVC: CustomBaseVC {
         super.viewDidLoad()
         self.navigationItem.title = "Weather"
         self.setNeedsStatusBarAppearanceUpdate()
+       // self.callWeatherAPI()
        
     }
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -94,72 +95,40 @@ extension WeatherVC: UICollectionViewDelegate, UICollectionViewDataSource, UICol
 }
 
 extension WeatherVC {
-    private func weatherAPI() {
-            let weatherApi = WeatherApi(key: Constants.AppApiKeys.kOpenWeatherMapApiKey)
-            weatherApi.getForecastFor(lat: "latitude", lon: "longitude") { result in
-                switch result {
-                case .success(let weather):
-                    print(weather)
-                    self.weatherData = weather
-                    
-                    /*
-                    for (index,element) in self.weatherData.list.enumerated(){
-                        
-                        if index == 0 {
-                            self.resultAppendData.append(element)
-                        } else {
-                            
-                            let strPredate:String = self.convertDateFormatterToCompare(date: self.weatherData.list[index-1].dt_txt)
-                            let strCurrentItem:String = self.convertDateFormatterToCompare(date: self.weatherData.list[index].dt_txt)
-                            if strCurrentItem != strPredate{
-                                self.resultAppendData.append(element)
-                            }
-                        }
-                        
-                    }*/
-                    
-                    /*
-                DispatchQueue.main.async {
-                self.lblTemp.text = String(format: "%i\u{00B0}", Int(ceil(((self.weatherData.list[0].main.temp - 273.15) * 9/5) + 32)))
-                        
-                        self.lblCity.text = self.weatherData.city.name
-                        self.lblMainDes.text = self.weatherData.list[0].weather[0].main
-                        
-                        DispatchQueue.main.async {
-                            self.collectionViewDailyForcast .reloadData()
-                            self.collectionViewWeeklyForecast.reloadData()
-                            
-                            self.collectionViewWeeklyForecast.setNeedsLayout()
-                            self.collectionViewWeeklyForecast.layoutIfNeeded()
-                        }
-                        
-                    }*/
-                    
-                case .error(_):
-                    
-                    break
+    private func callWeatherAPI() {
+        self.weatherVM.getWeatherAPI(lat: "", lon: "") { [weak self] errMsg, success in
+            guard let strongSelf = self else { return }
+            strongSelf.view.hideLoadingIndicator()
+            
+            for (index,element) in strongSelf.weatherVM.weatherData.list.enumerated() {
+                if index == 0 {
+                    strongSelf.weatherVM.resultAppendData.append(element)
+                } else {
+                    let strPredate:String = TimeStamp.convertDateFormatterToCompare(date: strongSelf.weatherVM.weatherData.list[index-1].dt_txt)
+                    let strCurrentItem:String = TimeStamp.convertDateFormatterToCompare(date: strongSelf.weatherVM.weatherData.list[index].dt_txt)
+                    if strCurrentItem != strPredate {
+                        strongSelf.weatherVM.resultAppendData.append(element)
+                    }
                 }
             }
-    }
 
-    func convertDateFormatterToCompare(date: String) -> String {
-        
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        // dateFormatter.timeZone = NSTimeZone(name: "UTC") as TimeZone!
-        // dateFormatter.locale = Locale(identifier: "your_loc_id")
-        let convertedDate = dateFormatter.date(from: date)
-        
-        guard dateFormatter.date(from: date) != nil else {
-            assert(false, "no date from string")
-            return ""
+            
+            DispatchQueue.main.async {
+                
+         //       strongSelf.lblTemp.text = String(format: "%i\u{00B0}", Int(ceil(((strongSelf.weatherVM.weatherData.list[0].main.temp - 273.15) * 9/5) + 32)))
+                    
+                strongSelf.lblCity.text = strongSelf.weatherVM.weatherData.city.name
+                strongSelf.lblMainDes.text = strongSelf.weatherVM.weatherData.list[0].weather[0].main
+                    
+                    DispatchQueue.main.async {
+                        strongSelf.collectionViewDailyForcast .reloadData()
+                        strongSelf.collectionViewWeeklyForecast.reloadData()
+                        
+                        strongSelf.collectionViewWeeklyForecast.setNeedsLayout()
+                        strongSelf.collectionViewWeeklyForecast.layoutIfNeeded()
+                    }
+                    
+                }
         }
-        
-        dateFormatter.dateFormat = "yyyy-MM-dd"///this is what you want to convert format
-        //  dateFormatter.timeZone = NSTimeZone(name: "UTC") as TimeZone!
-        let timeStamp = dateFormatter.string(from: convertedDate!)
-        
-        return timeStamp
     }
-
 }
