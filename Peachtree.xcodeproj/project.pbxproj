@@ -46,6 +46,7 @@
 		176A4DFB28C45D5400B3D465 /* HomeCollectionVWCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 176A4DF928C45D5400B3D465 /* HomeCollectionVWCell.xib */; };
 		176A4DFC28C45D5400B3D465 /* HomeCollectionVWCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176A4DFA28C45D5400B3D465 /* HomeCollectionVWCell.swift */; };
 		17704EEF28C6DDA30032C96C /* WebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17704EEE28C6DDA30032C96C /* WebViewVC.swift */; };
+		178587FC28EF2D1C00D6B229 /* WeatherVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178587FB28EF2D1C00D6B229 /* WeatherVM.swift */; };
 		17B3A70328E6160B0092E3B9 /* AthleticFacilitiesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B3A70228E6160B0092E3B9 /* AthleticFacilitiesVC.swift */; };
 		17D6D55028CC51E7007D677B /* Call911VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6D54F28CC51E7007D677B /* Call911VC.swift */; };
 		17D6D55328CC53D9007D677B /* CallTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6D55128CC53D9007D677B /* CallTableCell.swift */; };
@@ -192,6 +193,7 @@
 		176A4DF928C45D5400B3D465 /* HomeCollectionVWCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCollectionVWCell.xib; sourceTree = "<group>"; };
 		176A4DFA28C45D5400B3D465 /* HomeCollectionVWCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionVWCell.swift; sourceTree = "<group>"; };
 		17704EEE28C6DDA30032C96C /* WebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewVC.swift; sourceTree = "<group>"; };
+		178587FB28EF2D1C00D6B229 /* WeatherVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVM.swift; sourceTree = "<group>"; };
 		17B3A70228E6160B0092E3B9 /* AthleticFacilitiesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleticFacilitiesVC.swift; sourceTree = "<group>"; };
 		17D6D54F28CC51E7007D677B /* Call911VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Call911VC.swift; sourceTree = "<group>"; };
 		17D6D55128CC53D9007D677B /* CallTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallTableCell.swift; sourceTree = "<group>"; };
@@ -487,7 +489,8 @@
 			isa = PBXGroup;
 			children = (
 				C8BB1C4228CCE0DE00A66FDF /* Cells */,
-				172F20BE28BFCA95007096DB /* WeatherVC.swift */,
+				178587FA28EF2D0900D6B229 /* ViewModel */,
+				178587F928EF2CFB00D6B229 /* Controller */,
 				172F20C028BFCABA007096DB /* Weather.storyboard */,
 			);
 			path = Weather;
@@ -571,6 +574,22 @@
 				17D6D58A28CDCFB6007D677B /* DirectionTableCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		178587F928EF2CFB00D6B229 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				172F20BE28BFCA95007096DB /* WeatherVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		178587FA28EF2D0900D6B229 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				178587FB28EF2D1C00D6B229 /* WeatherVM.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		17B3A70128E615CA0092E3B9 /* AthleticFacilitiesVC */ = {
@@ -1324,6 +1343,7 @@
 				C864E8AB28CE469C00BA030D /* ViewAnimatorConfig.swift in Sources */,
 				C89A792D28CA5F85006A06CC /* LBCalifornianBoldBlack24.swift in Sources */,
 				1738625B28D3B8EA00D518FE /* CustomBaseVC.swift in Sources */,
+				178587FC28EF2D1C00D6B229 /* WeatherVM.swift in Sources */,
 				C8C2B9E528CA635C0080281B /* LBSatoshiMediumWhite22.swift in Sources */,
 				17D6D55A28CC99E2007D677B /* RestaurantsVC.swift in Sources */,
 				172F20AA28BFC1A5007096DB /* TermsOfUseVC.swift in Sources */,

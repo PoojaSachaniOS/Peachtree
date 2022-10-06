@@ -30,6 +30,10 @@ class Constants {
             static let kAcceptedTerms = "acceptedTerms"
         }
     }
+    
+    struct AppApiKeys {
+        static let kOpenWeatherMapApiKey = "a7bbbd5e82c675f805e7ae084f742024"
+    }
 }
 
 enum MoreType {

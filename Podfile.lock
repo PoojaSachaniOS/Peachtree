@@ -1,24 +1,28 @@
 PODS:
   - FloatRatingView (4.0)
   - lottie-ios (3.4.1)
+  - OpenWeatherKit (2.2.0)
   - ViewAnimator (3.1.0)
 
 DEPENDENCIES:
   - FloatRatingView
   - lottie-ios
+  - OpenWeatherKit
   - ViewAnimator
 
 SPEC REPOS:
   trunk:
     - FloatRatingView
     - lottie-ios
+    - OpenWeatherKit
     - ViewAnimator
 
 SPEC CHECKSUMS:
   FloatRatingView: bb6bdddfbeec51b1d387b4bd50abc27b4dfccd48
   lottie-ios: 016449b5d8be0c3dcbcfa0a9988469999cd04c5d
+  OpenWeatherKit: 1e2891722f1a1afd13d72b60c98867d6204700fe
   ViewAnimator: a9ceed80266e00fd435ec4fb99b2df64d580d0e4
 
-PODFILE CHECKSUM: ead2965f2d6c96024e2f277a04d4b2034fc2e311
+PODFILE CHECKSUM: 180e863cb6baca9bb0b2a1323a06135d74ad42e1
 
 COCOAPODS: 1.11.3

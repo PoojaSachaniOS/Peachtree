@@ -8,7 +8,7 @@ pod 'FloatRatingView'
   # Pods for Peachtree
   pod "ViewAnimator"
   pod 'lottie-ios'
-
+  pod 'OpenWeatherKit'
   target 'PeachtreeTests' do
     inherit! :search_paths
     # Pods for testing
