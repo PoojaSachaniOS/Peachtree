@@ -22,8 +22,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lns-p0-CGr">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="659"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="92°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GP9-x0-XM8" customClass="LBSatoshiWhite60" customModule="Peachtree" customModuleProvider="target">
-                                                <rect key="frame" x="142" y="84" width="91" height="80"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GP9-x0-XM8" customClass="LBSatoshiWhite60" customModule="Peachtree" customModuleProvider="target">
+                                                <rect key="frame" x="187.5" y="84" width="0.0" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="gtH-NR-dnZ"/>
                                                 </constraints>
@@ -34,8 +34,11 @@
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="80"/>
                                                 </variation>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peachtree City, " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAl-9N-F3f">
-                                                <rect key="frame" x="100.5" y="168" width="174" height="29"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAl-9N-F3f">
+                                                <rect key="frame" x="187.5" y="168" width="0.0" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="M3S-3w-w4a"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="24"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -43,8 +46,11 @@
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="30"/>
                                                 </variation>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Georgia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taK-Ze-87N">
-                                                <rect key="frame" x="154.5" y="204" width="66" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taK-Ze-87N">
+                                                <rect key="frame" x="187.5" y="210" width="0.0" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="XLQ-LC-5vC"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -53,10 +59,10 @@
                                                 </variation>
                                             </label>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fVv-GI-L1W">
-                                                <rect key="frame" x="0.0" y="249" width="375" height="102"/>
+                                                <rect key="frame" x="0.0" y="259" width="375" height="140"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="102" id="jqU-in-XFo">
+                                                    <constraint firstAttribute="height" constant="140" id="jqU-in-XFo">
                                                         <variation key="heightClass=regular-widthClass=regular" constant="150"/>
                                                     </constraint>
                                                 </constraints>
@@ -68,10 +74,10 @@
                                                 </collectionViewFlowLayout>
                                                 <cells>
                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="YLL-W7-eMg" customClass="DailyForecastCollectionCell" customModule="Peachtree" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="58" height="102"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="58" height="140"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                            <rect key="frame" x="0.0" y="0.0" width="58" height="102"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="58" height="140"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="q" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Frd-Q9-8So" customClass="LBSatoshiMediumWhite14" customModule="Peachtree" customModuleProvider="target">
@@ -90,14 +96,14 @@
                                                                     </variation>
                                                                 </label>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="imgWeatherTabBarSelected" translatesAutoresizingMaskIntoConstraints="NO" id="drQ-Lm-Fks">
-                                                                    <rect key="frame" x="17" y="52" width="24" height="24"/>
+                                                                    <rect key="frame" x="9" y="52" width="40" height="40"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" secondItem="drQ-Lm-Fks" secondAttribute="height" multiplier="1:1" id="ZcH-ZQ-76K"/>
-                                                                        <constraint firstAttribute="height" constant="24" id="wiv-Ni-3TP"/>
+                                                                        <constraint firstAttribute="height" constant="40" id="wiv-Ni-3TP"/>
                                                                     </constraints>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12w-zm-Z7z" customClass="LBSatoshiMediumWhite14" customModule="Peachtree" customModuleProvider="target">
-                                                                    <rect key="frame" x="8" y="91" width="42" height="0.0"/>
+                                                                    <rect key="frame" x="8" y="107" width="42" height="0.0"/>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
@@ -122,7 +128,7 @@
                                                             <constraint firstItem="12w-zm-Z7z" firstAttribute="leading" secondItem="Frd-Q9-8So" secondAttribute="leading" id="ofO-Sb-16P"/>
                                                             <constraint firstItem="12w-zm-Z7z" firstAttribute="trailing" secondItem="Frd-Q9-8So" secondAttribute="trailing" id="z4d-sG-yme"/>
                                                         </constraints>
-                                                        <size key="customSize" width="58" height="102"/>
+                                                        <size key="customSize" width="58" height="140"/>
                                                         <connections>
                                                             <outlet property="imageVw" destination="drQ-Lm-Fks" id="NJw-ig-fwS"/>
                                                             <outlet property="lblTemp" destination="12w-zm-Z7z" id="E6A-jK-Jty"/>
@@ -136,7 +142,7 @@
                                                 </connections>
                                             </collectionView>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QR6-2T-Xxd">
-                                                <rect key="frame" x="0.0" y="453" width="375" height="102"/>
+                                                <rect key="frame" x="0.0" y="501" width="375" height="140"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="nW7-6G-1cW">
                                                     <size key="itemSize" width="50" height="50"/>
@@ -146,7 +152,7 @@
                                                 </collectionViewFlowLayout>
                                                 <cells>
                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell2" id="Apo-D0-c5d" customClass="WeeklyForecastCollectionCell" customModule="Peachtree" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="11" width="58" height="80"/>
+                                                        <rect key="frame" x="0.0" y="30" width="58" height="80"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                                             <rect key="frame" x="0.0" y="0.0" width="58" height="80"/>
@@ -162,14 +168,14 @@
                                                                     </variation>
                                                                 </label>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="imgWeatherTabBarUnSelected" translatesAutoresizingMaskIntoConstraints="NO" id="4Kq-lT-LTT">
-                                                                    <rect key="frame" x="17" y="18" width="24" height="24"/>
+                                                                    <rect key="frame" x="9" y="18" width="40" height="40"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="height" constant="24" id="bfM-uD-2qz"/>
+                                                                        <constraint firstAttribute="height" constant="40" id="bfM-uD-2qz"/>
                                                                         <constraint firstAttribute="width" secondItem="4Kq-lT-LTT" secondAttribute="height" multiplier="1:1" id="ve0-b4-z0e"/>
                                                                     </constraints>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMn-kl-uoE" customClass="LBSatoshiMediumWhite14" customModule="Peachtree" customModuleProvider="target">
-                                                                    <rect key="frame" x="8" y="52" width="42" height="0.0"/>
+                                                                    <rect key="frame" x="8" y="68" width="42" height="0.0"/>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
@@ -237,7 +243,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EZR-Sd-Vys">
-                                                <rect key="frame" x="0.0" y="375" width="375" height="54"/>
+                                                <rect key="frame" x="0.0" y="423" width="375" height="54"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekly Forecast" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i2J-Nl-dm1">
                                                         <rect key="frame" x="20" y="15" width="149" height="24"/>
@@ -317,6 +323,8 @@
                         <outlet property="lblCity" destination="PAl-9N-F3f" id="Ejd-Rc-TMQ"/>
                         <outlet property="lblMainDes" destination="taK-Ze-87N" id="FAA-VM-HD0"/>
                         <outlet property="lblTemp" destination="GP9-x0-XM8" id="yjG-6P-4ui"/>
+                        <outlet property="vwForDailyWeather" destination="Jqy-b7-1Q7" id="d90-9i-gYd"/>
+                        <outlet property="vwForWeeklyWeather" destination="EZR-Sd-Vys" id="zHq-iG-oVo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
