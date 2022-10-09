@@ -22,7 +22,6 @@ class WeatherVC: CustomBaseVC {
     
     @IBOutlet private var collectionViewDailyForcast: UICollectionView!
     @IBOutlet private var collectionViewWeeklyForecast: UICollectionView!
-    var weekArr = ["MON","TUE","WED","THU","FRI","SAT","SUN"]
     
     let weatherVM = WeatherVM()
     
@@ -112,13 +111,6 @@ extension WeatherVC: UICollectionViewDelegate, UICollectionViewDataSource, UICol
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
-       /* print(collectionViewDailyForcast.frame.size.height)
-        if collectionView == collectionViewDailyForcast {
-            return CGSize(width: collectionViewDailyForcast.frame.size.height / 2.2, height: collectionViewDailyForcast.frame.size.height)
-        } else if collectionView == collectionViewWeeklyForecast{
-            return CGSize(width: collectionViewWeeklyForecast.frame.size.height / 2.1, height: collectionViewWeeklyForecast.frame.size.height)
-        }
-        return CGSize.zero*/
         return CGSize(width: collectionViewWeeklyForecast.frame.size.height / 2.3, height: collectionViewWeeklyForecast.frame.size.height)
     }
     
@@ -139,43 +131,6 @@ extension WeatherVC {
         }) { (errorMessage) in
             debugPrint(errorMessage)
         }
-        
-        /* //    self.weatherVM.getWeatherAPI(lat: "", lon: "") { [weak self] errMsg, success in
-         self.weatherVM.getWeatherAPI() { [weak self] errMsg, success in
-         guard let strongSelf = self else { return }
-         DispatchQueue.main.async {
-         strongSelf.view.hideLoadingIndicator()
-         }
-         strongSelf.weatherVM.resultAppendData.removeAll()
-         for (index,element) in strongSelf.weatherVM.weatherData.list.enumerated() {
-         if index == 0 {
-         strongSelf.weatherVM.resultAppendData.append(element)
-         } else {
-         let strPredate:String = TimeStamp.convertDateFormatterToCompare(date: strongSelf.weatherVM.weatherData.list[index-1].dt_txt)
-         let strCurrentItem:String = TimeStamp.convertDateFormatterToCompare(date: strongSelf.weatherVM.weatherData.list[index].dt_txt)
-         if strCurrentItem != strPredate {
-         strongSelf.weatherVM.resultAppendData.append(element)
-         }
-         }
-         }
-         debugPrint(strongSelf.weatherVM.resultAppendData)
-         
-         DispatchQueue.main.async {
-         
-         //       strongSelf.lblTemp.text = String(format: "%i\u{00B0}", Int(ceil(((strongSelf.weatherVM.weatherData.list[0].main.temp - 273.15) * 9/5) + 32)))
-         
-         strongSelf.lblCity.text = strongSelf.weatherVM.weatherData.city.name
-         strongSelf.lblMainDes.text = strongSelf.weatherVM.weatherData.list[0].weather[0].main
-         
-         DispatchQueue.main.async {
-         strongSelf.collectionViewDailyForcast .reloadData()
-         strongSelf.collectionViewWeeklyForecast.reloadData()
-         
-         strongSelf.collectionViewWeeklyForecast.setNeedsLayout()
-         strongSelf.collectionViewWeeklyForecast.layoutIfNeeded()
-         }
-         }
-         }*/
     }
     
     func updateViews() {
