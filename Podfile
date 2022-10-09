@@ -10,6 +10,7 @@ pod 'FloatRatingView'
   pod 'lottie-ios'
   pod 'OpenWeatherKit'
   pod 'Alamofire', '~> 5.0.0'
+  pod 'Kingfisher'
   pod 'ObjectMapper'
 
   target 'PeachtreeTests' do

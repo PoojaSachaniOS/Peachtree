@@ -10,6 +10,8 @@ import UIKit
 class RestaurantsTableCell: UITableViewCell {
     @IBOutlet weak var vwBg: UIView!
     @IBOutlet weak var imgVwOuter: UIImageView!
+    @IBOutlet weak var lblName: LBSatoshiMediumBlack14!
+    @IBOutlet weak var lblAddress: LBSatoshiRegularLightGrey14!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class RestaurantsVC: CustomBaseVC {
     //  MARK: - IB-OUTLET(S)
@@ -105,6 +106,7 @@ class RestaurantsVC: CustomBaseVC {
 // MARK: - UITableViewDataSource & Delegate(S)
 extension RestaurantsVC: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+     //   return restaurantsVM.aryRestaurantsModel.count
         return 10
     }
     
@@ -114,6 +116,21 @@ extension RestaurantsVC: UITableViewDelegate,UITableViewDataSource{
         cell.selectionStyle = .none
         cell.layoutIfNeeded()
         cell.imgVwOuter.addRoundedViewCorners(width: 4, colorBorder: (Colors.color_AppOrange!).withAlphaComponent(0.1), BackgroundColor: (Colors.color_AppOrange?.withAlphaComponent(0.10))!)
+        
+        /*
+        cell.lblName.text = restaurantsVM.aryRestaurantsModel[indexPath.row].name
+        cell.lblAddress.text = restaurantsVM.aryRestaurantsModel[indexPath.row].location?.display_address![0]
+        */
+        
+        /*
+        if let url = restaurantsVM.aryRestaurantsModel[indexPath.row].image_url{
+            cell.imgVwOuter.kf.indicatorType = .activity
+            cell.imgVwOuter.kf.setImage(with: url, placeholder: nil, options: nil, progressBlock: nil, completionHandler: { result in
+            })
+        } else {
+            cell.imgVwOuter.image = #imageLiteral(resourceName: "placeholder")
+        }*/
+                
         return cell
     }
     
@@ -136,10 +153,8 @@ extension RestaurantsVC {
         restaurantsVM.fetchNearByRestaurants(searchText: searchText, latitude: latitude, longitude: longitude, offset: 0) { [weak self] errMsg, success in
             guard let strongSelf = self else { return }
             strongSelf.view.hideLoadingIndicator()
-            
             if success {
                 print("here is success")
-             
                 if strongSelf.restaurantsVM.aryRestaurantsModel.count > 0 {
                     strongSelf.offset += 50 //For pagination
                     strongSelf.tblVwRestaurants.reloadData()
