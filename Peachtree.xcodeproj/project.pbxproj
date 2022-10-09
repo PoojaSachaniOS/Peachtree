@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		17285EFC28F2D1A0003B0674 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17285EFB28F2D1A0003B0674 /* APIManager.swift */; };
 		17285EFE28F2D399003B0674 /* RestaurantsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17285EFD28F2D399003B0674 /* RestaurantsVM.swift */; };
+		17285F0028F2DB3B003B0674 /* RestaurantsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17285EFF28F2DB3B003B0674 /* RestaurantsModel.swift */; };
 		172BE98728E4AA2C00F9FE3A /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172BE98628E4AA2C00F9FE3A /* UserDefaultManager.swift */; };
 		172F206E28BFBD91007096DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F206D28BFBD91007096DB /* AppDelegate.swift */; };
 		172F207028BFBD91007096DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F206F28BFBD91007096DB /* SceneDelegate.swift */; };
@@ -157,6 +158,7 @@
 		0BF9EC3023169AA26C69CB54 /* Pods-Peachtree-PeachtreeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peachtree-PeachtreeUITests.release.xcconfig"; path = "Target Support Files/Pods-Peachtree-PeachtreeUITests/Pods-Peachtree-PeachtreeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		17285EFB28F2D1A0003B0674 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		17285EFD28F2D399003B0674 /* RestaurantsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsVM.swift; sourceTree = "<group>"; };
+		17285EFF28F2DB3B003B0674 /* RestaurantsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsModel.swift; sourceTree = "<group>"; };
 		172BE98628E4AA2C00F9FE3A /* UserDefaultManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
 		172F206A28BFBD91007096DB /* Peachtree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Peachtree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		172F206D28BFBD91007096DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -729,7 +731,7 @@
 		17F90B3A28D50B700078593D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				17285EFD28F2D399003B0674 /* RestaurantsVM.swift */,
+				17285EFF28F2DB3B003B0674 /* RestaurantsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -737,6 +739,7 @@
 		17F90B3B28D50B810078593D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				17285EFD28F2D399003B0674 /* RestaurantsVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -1307,6 +1310,7 @@
 				C8EDCB9328CA66C2003C52BF /* LBCalifornianBoldWhite20.swift in Sources */,
 				172F20BF28BFCA95007096DB /* WeatherVC.swift in Sources */,
 				17D81D0D28CE27AF00C3C05F /* FavoritesTableCell.swift in Sources */,
+				17285F0028F2DB3B003B0674 /* RestaurantsModel.swift in Sources */,
 				174DCC2E28E388D30007C9D5 /* CityHallVC.swift in Sources */,
 				C8EDCB9528CA6AE5003C52BF /* LBSatoshiBoldBlack18.swift in Sources */,
 				17D6D56828CCB777007D677B /* LBLSatoshiBoldBlack20.swift in Sources */,

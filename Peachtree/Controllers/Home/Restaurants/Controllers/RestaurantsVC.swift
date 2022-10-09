@@ -16,7 +16,9 @@ class RestaurantsVC: CustomBaseVC {
     private var barButtonMapView: UIBarButtonItem!
     private var barButtonListView: UIBarButtonItem!
     
+
     let restaurantsVM = RestaurantsVM()
+    fileprivate var offset:Int = 0
 
     
     // MARK: - View Loading -
@@ -137,7 +139,11 @@ extension RestaurantsVC {
             
             if success {
                 print("here is success")
-                self?.tblVwRestaurants.reloadData()
+             
+                if strongSelf.restaurantsVM.aryRestaurantsModel.count > 0 {
+                    strongSelf.offset += 50 //For pagination
+                    strongSelf.tblVwRestaurants.reloadData()
+                }
             }
 
         }
