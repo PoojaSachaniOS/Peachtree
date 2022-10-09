@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17285EFC28F2D1A0003B0674 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17285EFB28F2D1A0003B0674 /* APIManager.swift */; };
+		17285EFE28F2D399003B0674 /* RestaurantsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17285EFD28F2D399003B0674 /* RestaurantsVM.swift */; };
 		172BE98728E4AA2C00F9FE3A /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172BE98628E4AA2C00F9FE3A /* UserDefaultManager.swift */; };
 		172F206E28BFBD91007096DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F206D28BFBD91007096DB /* AppDelegate.swift */; };
 		172F207028BFBD91007096DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F206F28BFBD91007096DB /* SceneDelegate.swift */; };
@@ -153,6 +155,8 @@
 
 /* Begin PBXFileReference section */
 		0BF9EC3023169AA26C69CB54 /* Pods-Peachtree-PeachtreeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peachtree-PeachtreeUITests.release.xcconfig"; path = "Target Support Files/Pods-Peachtree-PeachtreeUITests/Pods-Peachtree-PeachtreeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		17285EFB28F2D1A0003B0674 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		17285EFD28F2D399003B0674 /* RestaurantsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsVM.swift; sourceTree = "<group>"; };
 		172BE98628E4AA2C00F9FE3A /* UserDefaultManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
 		172F206A28BFBD91007096DB /* Peachtree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Peachtree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		172F206D28BFBD91007096DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -317,6 +321,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17285EF928F2D146003B0674 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				17285EFA28F2D183003B0674 /* ApiManager */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		17285EFA28F2D183003B0674 /* ApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				17285EFB28F2D1A0003B0674 /* APIManager.swift */,
+			);
+			path = ApiManager;
+			sourceTree = "<group>";
+		};
 		172F206128BFBD91007096DB = {
 			isa = PBXGroup;
 			children = (
@@ -342,9 +362,9 @@
 		172F206C28BFBD91007096DB /* Peachtree */ = {
 			isa = PBXGroup;
 			children = (
-				C864E8A328CE469C00BA030D /* Models */,
 				172F209D28BFBDD7007096DB /* PeachtreeConfig */,
 				172F209E28BFBDF8007096DB /* Controllers */,
+				17285EF928F2D146003B0674 /* Network */,
 				172F20A528BFBFEA007096DB /* Extensions */,
 				C89D381D28CA5CC1002CD210 /* Resources */,
 				C8AC29C928CA552C00E6CE0D /* Components */,
@@ -497,6 +517,7 @@
 			children = (
 				C8BB1C4228CCE0DE00A66FDF /* Cells */,
 				178587FA28EF2D0900D6B229 /* ViewModel */,
+				C864E8A328CE469C00BA030D /* Models */,
 				178587F928EF2CFB00D6B229 /* Controller */,
 				172F20C028BFCABA007096DB /* Weather.storyboard */,
 			);
@@ -708,6 +729,7 @@
 		17F90B3A28D50B700078593D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				17285EFD28F2D399003B0674 /* RestaurantsVM.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1316,6 +1338,7 @@
 				C8BB1C4528CCE0EE00A66FDF /* WeeklyForecastCollectionCell.swift in Sources */,
 				C864E8AD28CE469C00BA030D /* AnimationType.swift in Sources */,
 				C864E8AC28CE469C00BA030D /* ViewAnimator.swift in Sources */,
+				17285EFE28F2D399003B0674 /* RestaurantsVM.swift in Sources */,
 				C830480F28D10F50000CEEB2 /* ButtonOrange.swift in Sources */,
 				C8A2DEF128CBBBEE005578DE /* LBSatoshiRegularLightGrey14.swift in Sources */,
 				C8A2DEEE28CBB7C4005578DE /* LBSatoshiMediumBlack22.swift in Sources */,
@@ -1329,6 +1352,7 @@
 				17F90B3328D506E20078593D /* HomeVM.swift in Sources */,
 				C8BB1C4828CCF75600A66FDF /* LBSatoshiWhite60.swift in Sources */,
 				C8A1734928CC78F1002C52BE /* LBSatoshiRegularLightGrey12.swift in Sources */,
+				17285EFC28F2D1A0003B0674 /* APIManager.swift in Sources */,
 				C8DAD8A828CFA4D800370ECF /* DirectionsVC.swift in Sources */,
 				189D0A4228EF514000A70F55 /* Weather.swift in Sources */,
 				17D6D56228CC9F33007D677B /* RestaurantsDetailsVC.swift in Sources */,

@@ -16,6 +16,9 @@ class RestaurantsVC: CustomBaseVC {
     private var barButtonMapView: UIBarButtonItem!
     private var barButtonListView: UIBarButtonItem!
     
+    let restaurantsVM = RestaurantsVM()
+
+    
     // MARK: - View Loading -
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +28,8 @@ class RestaurantsVC: CustomBaseVC {
         self.registerNib()
         self.setNeedsStatusBarAppearanceUpdate()
         self.configureListMapBarButtonItems()
+        
+        self.fetchRestaurants(searchText: "Restaurants", latitude: 28.9593506, longitude: -82.0122324)
     }
     
     // MARK: - OVERRIDE METHOD(S)
@@ -121,4 +126,21 @@ extension RestaurantsVC: UITableViewDelegate,UITableViewDataSource{
         }
     }
     
+}
+
+extension RestaurantsVC {
+    fileprivate func fetchRestaurants(searchText:String,latitude:Double,longitude:Double) {
+        self.view.showLoadingIndicator()
+        restaurantsVM.fetchNearByRestaurants(searchText: searchText, latitude: latitude, longitude: longitude, offset: 0) { [weak self] errMsg, success in
+            guard let strongSelf = self else { return }
+            strongSelf.view.hideLoadingIndicator()
+            
+            if success {
+                print("here is success")
+                self?.tblVwRestaurants.reloadData()
+            }
+
+        }
+    }
+
 }

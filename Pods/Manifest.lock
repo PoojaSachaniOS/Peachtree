@@ -1,28 +1,36 @@
 PODS:
+  - Alamofire (5.0.5)
   - FloatRatingView (4.0)
   - lottie-ios (3.4.1)
+  - ObjectMapper (4.2.0)
   - OpenWeatherKit (2.2.0)
   - ViewAnimator (3.1.0)
 
 DEPENDENCIES:
+  - Alamofire (~> 5.0.0)
   - FloatRatingView
   - lottie-ios
+  - ObjectMapper
   - OpenWeatherKit
   - ViewAnimator
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - FloatRatingView
     - lottie-ios
+    - ObjectMapper
     - OpenWeatherKit
     - ViewAnimator
 
 SPEC CHECKSUMS:
+  Alamofire: df2f8f826963b08b9a870791ad48e07a10090b2e
   FloatRatingView: bb6bdddfbeec51b1d387b4bd50abc27b4dfccd48
   lottie-ios: 016449b5d8be0c3dcbcfa0a9988469999cd04c5d
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   OpenWeatherKit: 1e2891722f1a1afd13d72b60c98867d6204700fe
   ViewAnimator: a9ceed80266e00fd435ec4fb99b2df64d580d0e4
 
-PODFILE CHECKSUM: 180e863cb6baca9bb0b2a1323a06135d74ad42e1
+PODFILE CHECKSUM: 9a7ed6a04fe339938dab2a9596dc25834dd1aaba
 
 COCOAPODS: 1.11.3

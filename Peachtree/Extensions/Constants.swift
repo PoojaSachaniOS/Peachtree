@@ -34,6 +34,17 @@ class Constants {
     struct AppApiKeys {
         static let kOpenWeatherMapApiKey = "a7bbbd5e82c675f805e7ae084f742024"
     }
+    
+    enum APIResponseCodes: Int {
+        case statusCodeSuccessful = 200
+        case statusCodeNoContentSuccessful = 204
+        case statusCodeInternalServerError = 500
+        case success = 1
+    }
+    
+    struct ValidationMessages {
+        static let internetAppearOffline = "No internet connection."
+    }
 }
 
 enum MoreType {

@@ -9,6 +9,9 @@ pod 'FloatRatingView'
   pod "ViewAnimator"
   pod 'lottie-ios'
   pod 'OpenWeatherKit'
+  pod 'Alamofire', '~> 5.0.0'
+  pod 'ObjectMapper'
+
   target 'PeachtreeTests' do
     inherit! :search_paths
     # Pods for testing
