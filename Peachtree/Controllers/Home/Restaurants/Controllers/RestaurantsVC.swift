@@ -17,8 +17,8 @@ class RestaurantsVC: CustomBaseVC {
     
     private var barButtonMapView: UIBarButtonItem!
     private var barButtonListView: UIBarButtonItem!
-    
-    
+    @IBOutlet weak var loaderView: LoadingView!
+        
     var restaurantsVM: RestaurantsVM!
     fileprivate var offset:Int = 0
     
@@ -27,12 +27,12 @@ class RestaurantsVC: CustomBaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Restaurants"
+        self.setNeedsStatusBarAppearanceUpdate()
         self.restaurantsVM = RestaurantsVM()
         self.restaurantsVM.vc = self
         super.configureLeftBarButtonItem()
         self.configSearchBar()
         self.registerNib()
-        self.setNeedsStatusBarAppearanceUpdate()
         self.configureListMapBarButtonItems()
         self.restaurantsVM.fetchRestaurants()
     }
@@ -151,5 +151,18 @@ extension RestaurantsVC: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
+}
+
+extension RestaurantsVC: UIScrollViewDelegate {
     
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let bottomEdge = scrollView.contentOffset.y + scrollView.frame.height
+        if bottomEdge >= scrollView.contentSize.height {    //We reached bottom
+            debugPrint("********** We reached bottom **********")
+            if !self.restaurantsVM.isLoadingMore {
+                self.restaurantsVM.isLoadingMore = true
+                self.restaurantsVM.fetchRestaurants()
+            }
+        }
+    }
 }

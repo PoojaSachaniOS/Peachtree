@@ -12,16 +12,20 @@ import CoreLocation
 class RestaurantsVM: NSObject {
     var vc: RestaurantsVC?
     var aryRestaurantsModel = [RestaurantsModel]()
-    
+    var latitude : Double = 0.0
+    var longitude : Double = 0.0
+    var offsetValue : Int = 0
+    var isLoadingMore : Bool = false
+
     override init() {
         super.init()
         vc = RestaurantsVC()
     }
-
+    
     func fetchNearByRestaurants(searchText:String?,latitude:Double,longitude:Double,offset:Int,callBack: ((_ errMsg: String,_ success: Bool) -> Void)!) {
         
-        let urlPathNearByRestaurants:String! =  "\("https://api.yelp.com/v3/businesses/search?latitude=")\(latitude)\("&longitude=")\(longitude)\("&sort_by=")\("distance")\("&limit=")\("50")\("&offset=")\(offset)\("&radius=40000&term=")\(String(describing: searchText!))"
-                
+        let urlPathNearByRestaurants:String! =  "\("https://api.yelp.com/v3/businesses/search?latitude=")\(latitude)\("&longitude=")\(longitude)\("&sort_by=")\("distance")\("&limit=")\("50")\("&offset=")\(offsetValue)\("&radius=40000&term=")\(String(describing: searchText!))"
+        
         ApiService.sendRequestForYelp(urlPath: urlPathNearByRestaurants, type: .get, parms: [:]) { response,suces in
             print("here is response", response)
             
@@ -36,28 +40,45 @@ class RestaurantsVM: NSObject {
     }
     
     func fetchRestaurants() {
-        LocationManager.shared.getLocation { (location:CLLocation?, error:NSError?) in
-            if let error = error {
-                self.alertMessage(message: error.localizedDescription, buttonText: "OK", completionHandler: nil)
-                return
+        if latitude == 0.0 {
+            LocationManager.shared.getLocation { (location:CLLocation?, error:NSError?) in
+                if let error = error {
+                    self.alertMessage(message: error.localizedDescription, buttonText: "OK", completionHandler: nil)
+                    return
+                }
+                guard let location = location else {
+                    self.alertMessage(message: "Unable to fetch location", buttonText: "OK", completionHandler: nil)
+                    return
+                }
+                self.latitude = (location.coordinate.latitude)
+                self.longitude = (location.coordinate.longitude)
+                self.fetchRestaurants(searchText: "Restaurants", latitude: (location.coordinate.latitude), longitude: (location.coordinate.longitude))
             }
-            guard let location = location else {
-                self.alertMessage(message: "Unable to fetch location", buttonText: "OK", completionHandler: nil)
-                return
+        } else {
+            self.fetchRestaurants(searchText: "Restaurants", latitude: self.latitude, longitude: self.longitude)
+        }
+        if isLoadingMore {
+            if offsetValue > 0 {
+                self.vc?.loaderView.showMessage("Loading...", animateLoader: true)
             }
-        self.fetchRestaurants(searchText: "Restaurants", latitude: (location.coordinate.latitude), longitude: (location.coordinate.longitude))
+        } else {
+            self.vc?.loaderView.hide()
         }
     }
     
     fileprivate func fetchRestaurants(searchText:String,latitude:Double,longitude:Double) {
-        ProgressIndicator.shared().show( at: (self.vc?.view)!)
+        if self.offsetValue == 0 {
+            ProgressIndicator.shared().show( at: (self.vc?.view)!)
+        }
         self.fetchNearByRestaurants(searchText: searchText, latitude: latitude, longitude: longitude, offset: 0) { [weak self] errMsg, success in
             guard let strongSelf = self else { return }
             ProgressIndicator.shared().hide(at: self?.vc?.view ?? UIView())
             if success {
                 print("here is success")
                 if strongSelf.aryRestaurantsModel.count > 0 {
-                  //  strongSelf.offset += 50 //For pagination
+                    strongSelf.offsetValue += 50 //For pagination
+                    strongSelf.isLoadingMore = false
+                    strongSelf.vc?.loaderView.hide()
                     if let viewController = strongSelf.vc {
                         viewController.tblVwRestaurants.reloadData()
                     }
@@ -65,7 +86,7 @@ class RestaurantsVM: NSObject {
             }
         }
     }
-
+    
     func alertMessage(message:String,buttonText:String,completionHandler:(()->())?) {
         let alert = UIAlertController(title: "Location", message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: buttonText, style: .default) { (action:UIAlertAction) in

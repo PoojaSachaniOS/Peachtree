@@ -684,10 +684,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oQQ-Co-k65">
-                                <rect key="frame" x="0.0" y="119" width="414" height="743"/>
+                                <rect key="frame" x="0.0" y="119" width="414" height="777"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="oPZ-UI-jea">
-                                        <rect key="frame" x="0.0" y="10" width="414" height="733"/>
+                                        <rect key="frame" x="0.0" y="10" width="414" height="767"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="dataSource" destination="0Rf-fA-tCT" id="1aw-CQ-Rei"/>
@@ -695,10 +695,10 @@
                                         </connections>
                                     </tableView>
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xwI-f1-8Rp">
-                                        <rect key="frame" x="0.0" y="10" width="414" height="733"/>
+                                        <rect key="frame" x="0.0" y="10" width="414" height="767"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgMapBg" translatesAutoresizingMaskIntoConstraints="NO" id="npK-EJ-bBj">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="733"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="767"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -722,20 +722,31 @@
                                     <constraint firstAttribute="bottom" secondItem="xwI-f1-8Rp" secondAttribute="bottom" id="tvz-Je-XD5"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6b8-hZ-EMA" customClass="LoadingView" customModule="Peachtree" customModuleProvider="target">
+                                <rect key="frame" x="5" y="802" width="404" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ckX-2y-wa2"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="N3h-kn-hGK"/>
                         <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="N3h-kn-hGK" firstAttribute="bottom" secondItem="6b8-hZ-EMA" secondAttribute="bottom" id="C2B-Xa-b3m"/>
                             <constraint firstItem="YlP-ie-Qdy" firstAttribute="top" secondItem="N3h-kn-hGK" secondAttribute="top" id="EJ9-aa-3Cs"/>
                             <constraint firstItem="N3h-kn-hGK" firstAttribute="trailing" secondItem="YlP-ie-Qdy" secondAttribute="trailing" id="U2v-P4-Ni8"/>
                             <constraint firstItem="oQQ-Co-k65" firstAttribute="leading" secondItem="N3h-kn-hGK" secondAttribute="leading" id="dCD-6b-8gF"/>
                             <constraint firstItem="YlP-ie-Qdy" firstAttribute="leading" secondItem="N3h-kn-hGK" secondAttribute="leading" id="hpk-sj-o5B"/>
                             <constraint firstItem="N3h-kn-hGK" firstAttribute="trailing" secondItem="oQQ-Co-k65" secondAttribute="trailing" id="jhN-lD-mKa"/>
-                            <constraint firstItem="N3h-kn-hGK" firstAttribute="bottom" secondItem="oQQ-Co-k65" secondAttribute="bottom" id="qjz-oO-d2m"/>
+                            <constraint firstItem="6b8-hZ-EMA" firstAttribute="leading" secondItem="N3h-kn-hGK" secondAttribute="leading" constant="5" id="l2P-8k-TzQ"/>
+                            <constraint firstItem="N3h-kn-hGK" firstAttribute="trailing" secondItem="6b8-hZ-EMA" secondAttribute="trailing" constant="5" id="oO5-Ks-bTI"/>
+                            <constraint firstAttribute="bottom" secondItem="oQQ-Co-k65" secondAttribute="bottom" id="qjz-oO-d2m"/>
                             <constraint firstItem="oQQ-Co-k65" firstAttribute="top" secondItem="YlP-ie-Qdy" secondAttribute="bottom" id="qrY-nV-glt"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="loaderView" destination="6b8-hZ-EMA" id="bnm-RU-KLI"/>
                         <outlet property="mapBackView" destination="xwI-f1-8Rp" id="TqJ-yl-ON5"/>
                         <outlet property="searchBar" destination="rRp-r4-zSa" id="G7o-SV-f6V"/>
                         <outlet property="tblVwRestaurants" destination="oPZ-UI-jea" id="6yG-gd-ONS"/>

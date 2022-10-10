@@ -94,6 +94,10 @@
 		1872EF3228F11EEC003565B0 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872EF3128F11EEC003565B0 /* DateExtension.swift */; };
 		1872EF7128F4303F003565B0 /* LocationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872EF7028F4303F003565B0 /* LocationRequest.swift */; };
 		189D0A4228EF514000A70F55 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189D0A4128EF514000A70F55 /* Weather.swift */; };
+		18D6C82628F480600023E0D3 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6C82528F480600023E0D3 /* ActivityIndicator.swift */; };
+		18D6C82E28F487B10023E0D3 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D6C82C28F487B10023E0D3 /* LoadingView.xib */; };
+		18D6C82F28F487B10023E0D3 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6C82D28F487B10023E0D3 /* LoadingView.swift */; };
+		18D6C83128F489320023E0D3 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6C83028F489320023E0D3 /* UIView+Extension.swift */; };
 		440826D5408EAABB00C349E9 /* Pods_Peachtree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30EACD0BD546F38AD117D1F4 /* Pods_Peachtree.framework */; };
 		6E168BF232B156B7B567D7BD /* Pods_PeachtreeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D049E48422CA0FE2E143879 /* Pods_PeachtreeTests.framework */; };
 		C830480F28D10F50000CEEB2 /* ButtonOrange.swift in Sources */ = {isa = PBXBuildFile; fileRef = C830480E28D10F50000CEEB2 /* ButtonOrange.swift */; };
@@ -248,6 +252,10 @@
 		1872EF3128F11EEC003565B0 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		1872EF7028F4303F003565B0 /* LocationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRequest.swift; sourceTree = "<group>"; };
 		189D0A4128EF514000A70F55 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		18D6C82528F480600023E0D3 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		18D6C82C28F487B10023E0D3 /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		18D6C82D28F487B10023E0D3 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		18D6C83028F489320023E0D3 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		30EACD0BD546F38AD117D1F4 /* Pods_Peachtree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Peachtree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DBEC4A8F2B89E57FD1AFADE /* Pods-Peachtree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peachtree.debug.xcconfig"; path = "Target Support Files/Pods-Peachtree/Pods-Peachtree.debug.xcconfig"; sourceTree = "<group>"; };
 		4E7589A0586418D9F2A1D815 /* Pods-PeachtreeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeachtreeTests.release.xcconfig"; path = "Target Support Files/Pods-PeachtreeTests/Pods-PeachtreeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -833,9 +841,21 @@
 		1872EF6F28F43030003565B0 /* Helper Classes */ = {
 			isa = PBXGroup;
 			children = (
+				18D6C82B28F487B10023E0D3 /* LoadingView */,
+				18D6C82528F480600023E0D3 /* ActivityIndicator.swift */,
 				1872EF7028F4303F003565B0 /* LocationRequest.swift */,
 			);
 			path = "Helper Classes";
+			sourceTree = "<group>";
+		};
+		18D6C82B28F487B10023E0D3 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				18D6C83028F489320023E0D3 /* UIView+Extension.swift */,
+				18D6C82C28F487B10023E0D3 /* LoadingView.xib */,
+				18D6C82D28F487B10023E0D3 /* LoadingView.swift */,
+			);
+			path = LoadingView;
 			sourceTree = "<group>";
 		};
 		4703E1C90F96F6193A73F7F3 /* Frameworks */ = {
@@ -1156,6 +1176,7 @@
 				1738625628D3AB4100D518FE /* loading.json in Resources */,
 				C8AC29D528CA57CF00E6CE0D /* Satoshi-Italic.ttf in Resources */,
 				172F20C828C0AF5F007096DB /* Favorites.storyboard in Resources */,
+				18D6C82E28F487B10023E0D3 /* LoadingView.xib in Resources */,
 				172F20B728BFC5C3007096DB /* HomeTabBar.storyboard in Resources */,
 				17D6D55E28CC9B46007D677B /* RestaurantsTableCell.xib in Resources */,
 				17D6D58C28CDCFB6007D677B /* DirectionTableCell.xib in Resources */,
@@ -1308,6 +1329,7 @@
 				17F90B3728D507DF0078593D /* HomeModel.swift in Sources */,
 				1738625828D3B1C500D518FE /* HelperMethods.swift in Sources */,
 				1872EF7128F4303F003565B0 /* LocationRequest.swift in Sources */,
+				18D6C82F28F487B10023E0D3 /* LoadingView.swift in Sources */,
 				17D6D55828CC57F1007D677B /* GolfCartHelpVC.swift in Sources */,
 				172F207228BFBD91007096DB /* ViewController.swift in Sources */,
 				17D6D59D28CE048F007D677B /* RecentSearchTableCell.swift in Sources */,
@@ -1324,6 +1346,7 @@
 				17D81D0D28CE27AF00C3C05F /* FavoritesTableCell.swift in Sources */,
 				17285F0028F2DB3B003B0674 /* RestaurantsModel.swift in Sources */,
 				174DCC2E28E388D30007C9D5 /* CityHallVC.swift in Sources */,
+				18D6C82628F480600023E0D3 /* ActivityIndicator.swift in Sources */,
 				C8EDCB9528CA6AE5003C52BF /* LBSatoshiBoldBlack18.swift in Sources */,
 				17D6D56828CCB777007D677B /* LBLSatoshiBoldBlack20.swift in Sources */,
 				C830481128D113D6000CEEB2 /* ButtonGrey.swift in Sources */,
@@ -1393,6 +1416,7 @@
 				172F20AA28BFC1A5007096DB /* TermsOfUseVC.swift in Sources */,
 				172F20AD28BFC451007096DB /* OnboardingVC.swift in Sources */,
 				C8A1734528CC6634002C52BE /* RateUsVC.swift in Sources */,
+				18D6C83128F489320023E0D3 /* UIView+Extension.swift in Sources */,
 				17D73F6928E350BB002C18E2 /* LibraryVC.swift in Sources */,
 				C8BB1C4628CCE0EE00A66FDF /* DailyForecastCollectionCell.swift in Sources */,
 				C864E8AF28CE46AA00BA030D /* UICollectionView + ViewAnimator.swift in Sources */,

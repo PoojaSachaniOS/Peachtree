@@ -32,9 +32,11 @@ class ProgressIndicator: UIView {
     }
     
     func hide() {
-        vwAnimated!.stop()
-        vwAnimated.layer.removeAllAnimations()
-        self.removeFromSuperview()
+        if let vw = vwAnimated {
+            vw.stop()
+            vw.layer.removeAllAnimations()
+            self.removeFromSuperview()
+        }
     }
     
     func animateRotation() {

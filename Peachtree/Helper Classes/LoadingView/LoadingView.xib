@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoadingView" customModule="Peachtree" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="SAZ-8Q-jw4" id="9Fk-qr-iq9"/>
+                <outlet property="lblStatus" destination="Mkw-Gc-jbf" id="gTM-rp-w9c"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="348" height="50"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iCR-Dj-AUe">
+                    <rect key="frame" x="114" y="5" width="120" height="40"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xmj-01-fOW">
+                            <rect key="frame" x="23" y="10" width="74.5" height="20"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mkw-Gc-jbf">
+                                    <rect key="frame" x="0.0" y="0.0" width="46.5" height="20"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="textColor" name="AppOrange_color"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="SAZ-8Q-jw4">
+                                    <rect key="frame" x="54.5" y="0.0" width="20" height="20"/>
+                                    <color key="color" name="AppOrange_color"/>
+                                </activityIndicatorView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="Nlv-do-b0W"/>
+                        <constraint firstItem="xmj-01-fOW" firstAttribute="centerY" secondItem="iCR-Dj-AUe" secondAttribute="centerY" id="g1D-xd-5f7"/>
+                        <constraint firstItem="xmj-01-fOW" firstAttribute="centerX" secondItem="iCR-Dj-AUe" secondAttribute="centerX" id="wI7-u6-hzM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="iCR-Dj-AUe" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="UBr-y7-Lwl"/>
+                <constraint firstItem="iCR-Dj-AUe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="eee-MH-Xq1"/>
+                <constraint firstAttribute="height" constant="50" id="hcj-ih-kgK"/>
+                <constraint firstAttribute="bottom" secondItem="iCR-Dj-AUe" secondAttribute="bottom" constant="5" id="ppl-Tr-WKQ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="hcj-ih-kgK"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="446" y="-344"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AppOrange_color">
+            <color red="0.88200002908706665" green="0.40400001406669617" blue="0.14900000393390656" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
