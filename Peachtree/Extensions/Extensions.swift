@@ -114,6 +114,8 @@ extension UIView {
     func hideLoadingIndicator () {
         if let indicator: ProgressIndicator = self.viewWithTag(19518) as? ProgressIndicator {
             indicator.hide()
+        } else {
+            
         }
     }
     
@@ -170,8 +172,6 @@ extension UITextField {
         self.rightView?.isUserInteractionEnabled = false
         self.rightViewMode = .always
     }
-    
- 
 }
 
 

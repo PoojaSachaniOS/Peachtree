@@ -6,10 +6,12 @@
 //
 
 import UIKit
+import Kingfisher
 
 class RestaurantsTableCell: UITableViewCell {
     @IBOutlet weak var vwBg: UIView!
-    @IBOutlet weak var imgVwOuter: UIImageView!
+
+    @IBOutlet weak var imgVwOuter: AnimatedImageView!
     @IBOutlet weak var lblName: LBSatoshiMediumBlack14!
     @IBOutlet weak var lblAddress: LBSatoshiRegularLightGrey14!
     

@@ -27,9 +27,8 @@ class WeatherVC: CustomBaseVC {
     
     //Location variables
     var weatherResult: Result?
-    var locationManger: CLLocationManager!
-    var currentlocation: CLLocation?
-    
+
+    var locationRequest = LocationManager.shared
     // ----------------------------------
     //  MARK: - VIEW LOADING
     //
@@ -40,9 +39,11 @@ class WeatherVC: CustomBaseVC {
         self.setNeedsStatusBarAppearanceUpdate()
     }
     
+   
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.getLocation()
+        self.callWeatherAPI()
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -121,68 +122,36 @@ extension WeatherVC: UICollectionViewDelegate, UICollectionViewDataSource, UICol
 
 extension WeatherVC {
     private func callWeatherAPI() {
-        self.weatherVM.getWeather(onSuccess: { (result) in
-            self.weatherResult = result
-            self.setCollectionVwHideOrShow(isHidden:false)
-            if let currentTemp = self.weatherResult?.current.temp {
-                self.lblTemp.text = "\(Int(currentTemp.rounded()))°F"
+        var loc = CLLocation()
+        LocationManager.shared.getLocation { (location:CLLocation?, error:NSError?) in
+            if let error = error {
+                self.alertMessage(message: error.localizedDescription, buttonText: "OK", completionHandler: nil)
+                return
             }
-            self.updateViews()
-        }) { (errorMessage) in
-            debugPrint(errorMessage)
+            guard let location = location else {
+                self.alertMessage(message: "Unable to fetch location", buttonText: "OK", completionHandler: nil)
+                return
+            }
+            loc = location
+            self.weatherVM.getWeather(lat: "\(location.coordinate.latitude)", long: "\(location.coordinate.longitude)") { result in
+                self.weatherResult = result
+                self.setCollectionVwHideOrShow(isHidden:false)
+                if let currentTemp = self.weatherResult?.current.temp {
+                    self.lblTemp.text = "\(Int(currentTemp.rounded()))°F"
+                }
+                self.updateViews()
+                LocationManager.shared.getReverseGeoCodedLocation(location: loc) { location, placemark, error in
+                    self.lblCity.text = placemark?.locality ?? ""
+                    self.lblMainDes.text = placemark?.administrativeArea ?? ""
+                }
+            } onError: { errorMessage in
+                debugPrint(errorMessage)
+            }
         }
     }
-    
+
     func updateViews() {
         self.collectionViewDailyForcast.reloadData()
         self.collectionViewWeeklyForecast.reloadData()
-    }
-}
-
-//MARK: - Location Data
-extension WeatherVC : CLLocationManagerDelegate {
-    func getLocation() {
-        if (CLLocationManager.locationServicesEnabled()) {
-            locationManger = CLLocationManager()
-            locationManger.delegate = self
-            locationManger.desiredAccuracy = kCLLocationAccuracyBest
-            locationManger.requestWhenInUseAuthorization()
-            locationManger.requestLocation()
-        }
-    }
-    
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if let location = locations.last {
-            self.currentlocation = location
-            
-            let latitude: Double = self.currentlocation!.coordinate.latitude
-            let longitude: Double = self.currentlocation!.coordinate.longitude
-            
-            self.weatherVM.setLatitude(latitude)
-            self.weatherVM.setLongitude(longitude)
-            
-            let geocoder = CLGeocoder()
-            geocoder.reverseGeocodeLocation(location) { (placemarks, error) in
-                if let error = error {
-                    debugPrint(error.localizedDescription)
-                }
-                if let placemarks = placemarks {
-                    if placemarks.count > 0 {
-                        let placemark = placemarks[0]
-                        if let city = placemark.locality {
-                            self.lblCity.text = city
-                        }
-                        if let administrativeArea = placemark.administrativeArea {
-                            self.lblMainDes.text = administrativeArea
-                        }
-                    }
-                }
-            }
-            self.callWeatherAPI()
-        }
-    }
-    
-    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        debugPrint(error.localizedDescription)
     }
 }

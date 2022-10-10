@@ -22,6 +22,15 @@ class ProgressIndicator: UIView {
         animateRotation()
     }
     
+    func hide( at superView: UIView) {
+        self.hide()
+        for vw in superView.subviews {
+            if vw.tag == 19518 {
+                vw.removeFromSuperview()
+            }
+        }
+    }
+    
     func hide() {
         vwAnimated!.stop()
         vwAnimated.layer.removeAllAnimations()
@@ -39,6 +48,7 @@ class ProgressIndicator: UIView {
     
     func addTo(superView: UIView) {
         superView.addSubview(self)
+      //  superView.tag = 99999
         let top = NSLayoutConstraint.init(item: superView, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top, multiplier: 1.0, constant: 0)
         let right = NSLayoutConstraint.init(item: superView, attribute: .leading, relatedBy: .equal, toItem: self, attribute: .leading, multiplier: 1.0, constant: 0)
         let botom = NSLayoutConstraint.init(item: superView, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottom, multiplier: 1.0, constant: 0)

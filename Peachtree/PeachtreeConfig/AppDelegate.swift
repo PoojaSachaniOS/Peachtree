@@ -26,10 +26,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         for family in UIFont.familyNames {
             
             let sName: String = family as String
-            print("family: \(sName)")
+          //  print("family: \(sName)")
             
             for name in UIFont.fontNames(forFamilyName: sName) {
-                print("name: \(name as String)")
+               // print("name: \(name as String)")
             }
         }
         return true

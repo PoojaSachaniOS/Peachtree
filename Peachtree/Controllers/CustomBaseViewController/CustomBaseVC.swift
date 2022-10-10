@@ -57,5 +57,14 @@ class CustomBaseVC: UIViewController {
     @objc func btnBackTapped() {
     }
     
+    
+    func alertMessage(message:String,buttonText:String,completionHandler:(()->())?) {
+        let alert = UIAlertController(title: "Location", message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: buttonText, style: .default) { (action:UIAlertAction) in
+            completionHandler?()
+        }
+        alert.addAction(action)
+        self.present(alert, animated: true, completion: nil)
+    }
 }
 

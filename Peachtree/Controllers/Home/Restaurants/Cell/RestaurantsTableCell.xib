@@ -20,7 +20,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Qy-CQ-yhR">
                         <rect key="frame" x="16" y="5" width="292" height="75"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email_icon" translatesAutoresizingMaskIntoConstraints="NO" id="CXM-Ur-6d4">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email_icon" translatesAutoresizingMaskIntoConstraints="NO" id="CXM-Ur-6d4" customClass="AnimatedImageView" customModule="Kingfisher">
                                 <rect key="frame" x="17" y="15.5" width="44" height="44"/>
                                 <color key="backgroundColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -75,7 +75,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="imgVwOuter" destination="CXM-Ur-6d4" id="aR5-8r-N8k"/>
+                <outlet property="imgVwOuter" destination="CXM-Ur-6d4" id="2dV-4g-a59"/>
                 <outlet property="lblAddress" destination="kqD-DG-D22" id="USo-Mp-U5w"/>
                 <outlet property="lblName" destination="zAH-2z-wtf" id="Wtv-qP-ijc"/>
                 <outlet property="vwBg" destination="8Qy-CQ-yhR" id="Bxq-Nn-Xoc"/>

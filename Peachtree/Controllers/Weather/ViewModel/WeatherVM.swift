@@ -11,30 +11,12 @@ import OpenWeatherKit
 class WeatherVM: NSObject {
     var resultAppendData = [Forecast.List]()
     var weatherData : Forecast!
-    var URL_LATITUDE = "60.99"
-    var URL_LONGITUDE = "30.0"
     let baseUrl = "https://api.openweathermap.org/data/2.5"
     let session = URLSession(configuration: .default)
     
     override init() {
         super.init()
       //  weatherVC = WeatherVC()
-    }
-    
-    func setLatitude(_ latitude: String) {
-        URL_LATITUDE = latitude
-    }
-    
-    func setLatitude(_ latitude: Double) {
-        setLatitude(String(latitude))
-    }
-    
-    func setLongitude(_ longitude: String) {
-        URL_LONGITUDE = longitude
-    }
-    
-    func setLongitude(_ longitude: Double) {
-        setLongitude(String(longitude))
     }
 
    /* func getWeatherAPI(lat: String = "36.0", lon: String = "72.0", callBack: ((_ errMsg: String,_ success: Bool) -> Void)!) {
@@ -56,9 +38,8 @@ class WeatherVM: NSObject {
         }
     }*/
     
-    
-    func getWeather(onSuccess: @escaping (Result) -> Void, onError: @escaping (String) -> Void) {
-        let url = baseUrl + "/onecall?lat=" + URL_LATITUDE + "&lon=" + URL_LONGITUDE + "&units=imperial" + "&appid=" + Constants.AppApiKeys.kOpenWeatherMapApiKey
+    func getWeather(lat:String, long:String, onSuccess: @escaping (Result) -> Void, onError: @escaping (String) -> Void) {
+        let url = baseUrl + "/onecall?lat=" + lat + "&lon=" + long + "&units=imperial" + "&appid=" + Constants.AppApiKeys.kOpenWeatherMapApiKey
         guard let url = URL(string: url) else {
             onError("Error building URL")
             return

@@ -14,7 +14,7 @@ class HomeTabBarController: UITabBarController, UITabBarControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
-        self.selectedIndex = 2
+       // self.selectedIndex = 2
       /*  self.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: FontHelper.AppFont.fontSatoshiRegular, size: 30)!], for: .normal)
         self.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: FontHelper.AppFont.fontSatoshiRegular, size: 30)!], for: .selected)*/
     }
