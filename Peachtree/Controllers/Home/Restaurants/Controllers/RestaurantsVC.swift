@@ -26,10 +26,10 @@ class RestaurantsVC: CustomBaseVC {
     // MARK: - View Loading -
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Restaurants"
         self.restaurantsVM = RestaurantsVM()
         self.restaurantsVM.vc = self
         super.configureLeftBarButtonItem()
-        self.navigationItem.title = "Restaurants"
         self.configSearchBar()
         self.registerNib()
         self.setNeedsStatusBarAppearanceUpdate()
@@ -142,6 +142,14 @@ extension RestaurantsVC: UITableViewDelegate,UITableViewDataSource{
             controller.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(controller, animated: true)
         }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
     
 }
