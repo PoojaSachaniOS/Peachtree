@@ -9,6 +9,12 @@ import UIKit
 import Kingfisher
 import CoreLocation
 
+enum SortListVia {
+    case distance
+    case alphabeticOrder
+    case reset
+}
+
 class RestaurantsVC: CustomBaseVC {
     //  MARK: - IB-OUTLET(S)
     @IBOutlet weak var mapBackView: UIView!
@@ -20,7 +26,7 @@ class RestaurantsVC: CustomBaseVC {
     @IBOutlet weak var loaderView: LoadingView!
     
     var restaurantsVM: RestaurantsVM!
-    fileprivate var offset:Int = 0
+    fileprivate var sortingState = SortListVia.reset
     
     
     // MARK: - View Loading -
@@ -92,15 +98,35 @@ class RestaurantsVC: CustomBaseVC {
     func sortByOptions() {
         let alertController = UIAlertController(title: "SORT BY", message: "Here’s to the crazy ones, the misfits, the rebels, the troublemakers...", preferredStyle: .alert)
         
-        let actionByDistance = UIAlertAction(title: "Via Distance", style: .default) { (action:UIAlertAction) in
+        let actionByDistanceLowtoHigh = UIAlertAction(title: "Via Distance", style: .default) { (action:UIAlertAction) in
+            self.sortingState = SortListVia.distance
+            self.restaurantsVM.aryRestaurantsModel = self.restaurantsVM.aryRestaurantsModel.sorted(by: { ($0.distance ?? 0.0) < ($1.distance ?? 0.0)} )
+            self.tblVwRestaurants.reloadData()
         }
+     /*   let actionByDistanceHightoLow = UIAlertAction(title: "Via Distance (High to Low)", style: .default) { (action:UIAlertAction) in
+            self.sortingState = SortListVia.distance
+            self.restaurantsVM.aryRestaurantsModel = self.restaurantsVM.aryRestaurantsModel.sorted(by: { ($0.distance ?? 0.0) > ($1.distance ?? 0.0)} )
+            self.tblVwRestaurants.reloadData()
+        }*/
+        
         let actionByAlphabetically = UIAlertAction(title: "Via Alphabetically", style: .default) { (action:UIAlertAction) in
+            self.sortingState = SortListVia.alphabeticOrder
+            self.restaurantsVM.aryRestaurantsModel = self.restaurantsVM.aryRestaurantsModel.sorted(by: { ($0.name ?? "") < ($1.name ?? "")} )
+            self.tblVwRestaurants.reloadData()
+        }
+        let actionReset = UIAlertAction(title: "Reset", style: .default) { (action:UIAlertAction) in
+            self.sortingState = SortListVia.reset
+            self.restaurantsVM.aryRestaurantsModel = self.restaurantsVM.aryStoredRestaurantsModel
+            self.tblVwRestaurants.reloadData()
         }
         let actionCancel = UIAlertAction(title: "Cancel", style: .cancel) { (action:UIAlertAction) in
             print("You've pressed cancel");
         }
-        alertController.addAction(actionByDistance)
+        
+        alertController.addAction(actionByDistanceLowtoHigh)
+     //   alertController.addAction(actionByDistanceHightoLow)
         alertController.addAction(actionByAlphabetically)
+        alertController.addAction(actionReset)
         alertController.addAction(actionCancel)
         self.present(alertController, animated: true, completion: nil)
     }
@@ -127,7 +153,8 @@ extension RestaurantsVC: UITableViewDelegate,UITableViewDataSource{
         
         let data = restaurantsVM.aryRestaurantsModel[indexPath.row]
         cell.lblName.text = data.name
-        cell.lblAddress.text = data.location?.display_address![0]
+        cell.lblAddress.text = "\((data.location?.display_address![0] ?? "")) " + "(\(String(format: "%.2f", data.distance ?? 0.0)) km)"
+      //  cell.lblAddress.text = String(data.distance ?? 0.0)
         
         if let url = data.image_url{
             cell.imgVwOuter.kf.indicatorType = .activity
