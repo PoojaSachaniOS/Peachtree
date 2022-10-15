@@ -153,7 +153,7 @@ extension RestaurantsVC: UITableViewDelegate,UITableViewDataSource{
         
         let data = restaurantsVM.aryRestaurantsModel[indexPath.row]
         cell.lblName.text = data.name
-        cell.lblAddress.text = "\((data.location?.display_address![0] ?? "")) " + "(\(String(format: "%.2f", data.distance ?? 0.0)) km)"
+        cell.lblAddress.text = "\((data.location?.display_address![0] ?? "")) " + "(\(String(format: "%.2f", data.distance ?? 0.0)) miles)"
       //  cell.lblAddress.text = String(data.distance ?? 0.0)
         
         if let url = data.image_url{

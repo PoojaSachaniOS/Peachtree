@@ -39,7 +39,7 @@ class ShoppingVM: NSObject {
             self.aryStoredShoppingModel = self.aryShoppingModel
             if self.offsetValue > 0 {
                 if !((self.vc?.searchBar.text ?? "").isEmpty) {
-                 //   self.vc?.filterData(self.vc?.searchBar.text ?? "")
+                    self.vc?.filterData(self.vc?.searchBar.text ?? "")
                 }
             }
             callBack("Successfully", true)
@@ -68,7 +68,7 @@ class ShoppingVM: NSObject {
         }
         if isLoadingMore {
             if offsetValue > 0 {
-               // self.vc?.loaderView.showMessage("Loading...", animateLoader: true)
+              //  self.vc?.loaderView.showMessage("Loading...", animateLoader: true)
             }
         } else {
           // self.vc?.loaderView.hide()
@@ -87,7 +87,7 @@ class ShoppingVM: NSObject {
                 if strongSelf.aryShoppingModel.count > 0 {
                     strongSelf.offsetValue += 50 //For pagination
                     strongSelf.isLoadingMore = false
-                  //  strongSelf.vc?.loaderView.hide()
+                //    strongSelf.vc?.loaderView.hide()
                     if let viewController = strongSelf.vc {
                         viewController.tblVwShopping.reloadData()
                     }
