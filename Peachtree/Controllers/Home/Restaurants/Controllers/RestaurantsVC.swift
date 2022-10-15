@@ -18,7 +18,7 @@ class RestaurantsVC: CustomBaseVC {
     private var barButtonMapView: UIBarButtonItem!
     private var barButtonListView: UIBarButtonItem!
     @IBOutlet weak var loaderView: LoadingView!
-        
+    
     var restaurantsVM: RestaurantsVM!
     fileprivate var offset:Int = 0
     
@@ -30,6 +30,7 @@ class RestaurantsVC: CustomBaseVC {
         self.setNeedsStatusBarAppearanceUpdate()
         self.restaurantsVM = RestaurantsVM()
         self.restaurantsVM.vc = self
+        self.searchBar.delegate = self
         super.configureLeftBarButtonItem()
         self.configSearchBar()
         self.registerNib()
@@ -107,8 +108,14 @@ class RestaurantsVC: CustomBaseVC {
 
 // MARK: - UITableViewDataSource & Delegate(S)
 extension RestaurantsVC: UITableViewDelegate,UITableViewDataSource{
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return restaurantsVM.aryRestaurantsModel.count
+        if self.restaurantsVM.aryRestaurantsModel.count == 0 && !((self.searchBar.text ?? "").isEmpty) {
+            self.tblVwRestaurants.setEmptyMessage("No search results found. Please try again with different one.")
+            return 0
+        }
+        self.tblVwRestaurants.restore()
+        return self.restaurantsVM.aryRestaurantsModel.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -124,8 +131,8 @@ extension RestaurantsVC: UITableViewDelegate,UITableViewDataSource{
         
         if let url = data.image_url{
             cell.imgVwOuter.kf.indicatorType = .activity
-          /*  cell.imgVwOuter.kf.setImage(with: url, placeholder: nil, options: nil, progressBlock: nil, completionHandler: { result in
-            })*/
+            /*  cell.imgVwOuter.kf.setImage(with: url, placeholder: nil, options: nil, progressBlock: nil, completionHandler: { result in
+             })*/
         } else {
             cell.imgVwOuter.image = #imageLiteral(resourceName: "placeholder")
         }
@@ -160,9 +167,43 @@ extension RestaurantsVC: UIScrollViewDelegate {
         if bottomEdge >= scrollView.contentSize.height {    //We reached bottom
             debugPrint("********** We reached bottom **********")
             if !self.restaurantsVM.isLoadingMore {
-                self.restaurantsVM.isLoadingMore = true
-                self.restaurantsVM.fetchRestaurants()
+                if self.restaurantsVM.totalItems > self.restaurantsVM.aryStoredRestaurantsModel.count {
+                    self.restaurantsVM.isLoadingMore = true
+                    self.restaurantsVM.fetchRestaurants()
+                }
             }
         }
+    }
+}
+
+extension RestaurantsVC: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        self.filterData(searchText)
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        //  self.filterData(self.searchBar.text ?? "")
+        searchBar.resignFirstResponder()
+    }
+    
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        print("filter data")
+        searchBar.resignFirstResponder()
+    }
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        
+    }
+    
+    func filterData(_ searchText:String="") {
+        self.restaurantsVM.aryRestaurantsModel.removeAll()
+        if searchText.isEmpty {
+            self.restaurantsVM.aryRestaurantsModel = self.restaurantsVM.aryStoredRestaurantsModel
+            self.tblVwRestaurants.reloadData()
+            return
+        }
+        let data = self.restaurantsVM.aryStoredRestaurantsModel.filter { ($0.name ?? "").localizedCaseInsensitiveContains(searchText)}
+        self.restaurantsVM.aryRestaurantsModel = data
+        self.tblVwRestaurants.reloadData()
     }
 }

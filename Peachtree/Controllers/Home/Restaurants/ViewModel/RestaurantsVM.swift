@@ -12,10 +12,12 @@ import CoreLocation
 class RestaurantsVM: NSObject {
     var vc: RestaurantsVC?
     var aryRestaurantsModel = [RestaurantsModel]()
+    var aryStoredRestaurantsModel = [RestaurantsModel]()
     var latitude : Double = 0.0
     var longitude : Double = 0.0
     var offsetValue : Int = 0
     var isLoadingMore : Bool = false
+    var totalItems : Int = 0
 
     override init() {
         super.init()
@@ -32,6 +34,13 @@ class RestaurantsVM: NSObject {
             if let data = response["businesses"] as? [[String:AnyObject]] {
                 let model : [RestaurantsModel] = Mapper<RestaurantsModel>().mapArray(JSONObject: data) ?? []
                 self.aryRestaurantsModel.append(contentsOf: model)
+            }
+            self.totalItems = (response["total"] as? Int) ?? 0
+            self.aryStoredRestaurantsModel = self.aryRestaurantsModel
+            if self.offsetValue > 0 {
+                if !((self.vc?.searchBar.text ?? "").isEmpty) {
+                    self.vc?.filterData(self.vc?.searchBar.text ?? "")
+                }
             }
             callBack("Successfully", true)
         } faliure: { errMsg, errCode in

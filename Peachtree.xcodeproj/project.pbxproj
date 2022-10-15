@@ -93,6 +93,7 @@
 		186EAB2828D886030026F45B /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186EAB2728D886030026F45B /* CustomNavigationBar.swift */; };
 		1872EF3228F11EEC003565B0 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872EF3128F11EEC003565B0 /* DateExtension.swift */; };
 		1872EF7128F4303F003565B0 /* LocationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872EF7028F4303F003565B0 /* LocationRequest.swift */; };
+		18844C0128FA7C3000C27411 /* TableVwExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18844C0028FA7C3000C27411 /* TableVwExtension.swift */; };
 		189D0A4228EF514000A70F55 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189D0A4128EF514000A70F55 /* Weather.swift */; };
 		18D6C82628F480600023E0D3 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6C82528F480600023E0D3 /* ActivityIndicator.swift */; };
 		18D6C82E28F487B10023E0D3 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D6C82C28F487B10023E0D3 /* LoadingView.xib */; };
@@ -251,6 +252,7 @@
 		186EAB2728D886030026F45B /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		1872EF3128F11EEC003565B0 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		1872EF7028F4303F003565B0 /* LocationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRequest.swift; sourceTree = "<group>"; };
+		18844C0028FA7C3000C27411 /* TableVwExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVwExtension.swift; sourceTree = "<group>"; };
 		189D0A4128EF514000A70F55 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		18D6C82528F480600023E0D3 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		18D6C82C28F487B10023E0D3 /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
@@ -466,6 +468,7 @@
 				172F20A628BFC052007096DB /* StoryboardUtils.swift */,
 				172F20CE28C0C0DA007096DB /* Constants.swift */,
 				C864E8AE28CE46AA00BA030D /* UICollectionView + ViewAnimator.swift */,
+				18844C0028FA7C3000C27411 /* TableVwExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1383,6 +1386,7 @@
 				C8A2DEEE28CBB7C4005578DE /* LBSatoshiMediumBlack22.swift in Sources */,
 				172BE98728E4AA2C00F9FE3A /* UserDefaultManager.swift in Sources */,
 				C8A2DEEA28CBABE0005578DE /* MoreListTableVWCell.swift in Sources */,
+				18844C0128FA7C3000C27411 /* TableVwExtension.swift in Sources */,
 				172F207028BFBD91007096DB /* SceneDelegate.swift in Sources */,
 				C8BB1C4A28CCF79F00A66FDF /* LBSatoshiMediumWhite14.swift in Sources */,
 				186EAB2828D886030026F45B /* CustomNavigationBar.swift in Sources */,
