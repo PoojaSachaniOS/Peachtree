@@ -94,6 +94,7 @@
 		1872EF3228F11EEC003565B0 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872EF3128F11EEC003565B0 /* DateExtension.swift */; };
 		1872EF7128F4303F003565B0 /* LocationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872EF7028F4303F003565B0 /* LocationRequest.swift */; };
 		18844C0128FA7C3000C27411 /* TableVwExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18844C0028FA7C3000C27411 /* TableVwExtension.swift */; };
+		18844C0428FA89BE00C27411 /* ShoppingVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18844C0328FA89BE00C27411 /* ShoppingVM.swift */; };
 		189D0A4228EF514000A70F55 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189D0A4128EF514000A70F55 /* Weather.swift */; };
 		18D6C82628F480600023E0D3 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6C82528F480600023E0D3 /* ActivityIndicator.swift */; };
 		18D6C82E28F487B10023E0D3 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D6C82C28F487B10023E0D3 /* LoadingView.xib */; };
@@ -253,6 +254,7 @@
 		1872EF3128F11EEC003565B0 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		1872EF7028F4303F003565B0 /* LocationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRequest.swift; sourceTree = "<group>"; };
 		18844C0028FA7C3000C27411 /* TableVwExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVwExtension.swift; sourceTree = "<group>"; };
+		18844C0328FA89BE00C27411 /* ShoppingVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingVM.swift; sourceTree = "<group>"; };
 		189D0A4128EF514000A70F55 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		18D6C82528F480600023E0D3 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		18D6C82C28F487B10023E0D3 /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
@@ -761,7 +763,7 @@
 		17F90B3C28D50C590078593D /* Shopping */ = {
 			isa = PBXGroup;
 			children = (
-				17F90B3E28D50C700078593D /* ViewModel */,
+				18844C0228FA89A100C27411 /* ViewModel */,
 				17F90B3D28D50C670078593D /* Controller */,
 			);
 			path = Shopping;
@@ -773,13 +775,6 @@
 				17D6D55F28CC9DF8007D677B /* ShoppingVC.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		17F90B3E28D50C700078593D /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		17F90B3F28D50D590078593D /* Categories */ = {
@@ -849,6 +844,14 @@
 				1872EF7028F4303F003565B0 /* LocationRequest.swift */,
 			);
 			path = "Helper Classes";
+			sourceTree = "<group>";
+		};
+		18844C0228FA89A100C27411 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				18844C0328FA89BE00C27411 /* ShoppingVM.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		18D6C82B28F487B10023E0D3 /* LoadingView */ = {
@@ -1411,6 +1414,7 @@
 				17D6D55028CC51E7007D677B /* Call911VC.swift in Sources */,
 				17D81D1028CE31E800C3C05F /* ShareMyLocationVC.swift in Sources */,
 				C864E8AA28CE469C00BA030D /* Animation.swift in Sources */,
+				18844C0428FA89BE00C27411 /* ShoppingVM.swift in Sources */,
 				C864E8AB28CE469C00BA030D /* ViewAnimatorConfig.swift in Sources */,
 				C89A792D28CA5F85006A06CC /* LBCalifornianBoldBlack24.swift in Sources */,
 				1738625B28D3B8EA00D518FE /* CustomBaseVC.swift in Sources */,

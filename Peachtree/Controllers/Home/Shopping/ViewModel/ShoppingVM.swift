@@ -1,27 +1,27 @@
 //
-//  RestaurantsVM.swift
+//  ShoppingVM.swift
 //  Peachtree
 //
-//  Created by Anand on 09/10/22.
+//  Created by Apple on 15/10/22.
 //
 
-import Foundation
+import UIKit
 import ObjectMapper
 import CoreLocation
 
-class RestaurantsVM: NSObject {
-    var vc: RestaurantsVC?
-    var aryRestaurantsModel = [RestaurantsModel]()
-    var aryStoredRestaurantsModel = [RestaurantsModel]()
+class ShoppingVM: NSObject {
+    var vc: ShoppingVC?
+    var aryShoppingModel = [RestaurantsModel]()
+    var aryStoredShoppingModel = [RestaurantsModel]()
     var latitude : Double = 0.0
     var longitude : Double = 0.0
     var offsetValue : Int = 0
     var isLoadingMore : Bool = false
     var totalItems : Int = 0
-
+    
     override init() {
         super.init()
-        vc = RestaurantsVC()
+        vc = ShoppingVC()
     }
     
     func fetchNearByRestaurants(searchText:String?,latitude:Double,longitude:Double,offset:Int,callBack: ((_ errMsg: String,_ success: Bool) -> Void)!) {
@@ -30,16 +30,16 @@ class RestaurantsVM: NSObject {
         
         ApiService.sendRequestForYelp(urlPath: urlPathNearByRestaurants, type: .get, parms: [:]) { response,suces in
             print("here is response", response)
-            self.aryRestaurantsModel = self.aryStoredRestaurantsModel
+            self.aryShoppingModel = self.aryStoredShoppingModel
             if let data = response["businesses"] as? [[String:AnyObject]] {
                 let model : [RestaurantsModel] = Mapper<RestaurantsModel>().mapArray(JSONObject: data) ?? []
-                self.aryRestaurantsModel.append(contentsOf: model)
+                self.aryShoppingModel.append(contentsOf: model)
             }
             self.totalItems = (response["total"] as? Int) ?? 0
-            self.aryStoredRestaurantsModel = self.aryRestaurantsModel
+            self.aryStoredShoppingModel = self.aryShoppingModel
             if self.offsetValue > 0 {
                 if !((self.vc?.searchBar.text ?? "").isEmpty) {
-                    self.vc?.filterData(self.vc?.searchBar.text ?? "")
+                 //   self.vc?.filterData(self.vc?.searchBar.text ?? "")
                 }
             }
             callBack("Successfully", true)
@@ -61,17 +61,17 @@ class RestaurantsVM: NSObject {
                 }
                 self.latitude = (location.coordinate.latitude)
                 self.longitude = (location.coordinate.longitude)
-                self.fetchRestaurants(searchText: "Restaurants", latitude: (location.coordinate.latitude), longitude: (location.coordinate.longitude))
+                self.fetchRestaurants(searchText: "shopping", latitude: (location.coordinate.latitude), longitude: (location.coordinate.longitude))
             }
         } else {
-            self.fetchRestaurants(searchText: "Restaurants", latitude: self.latitude, longitude: self.longitude)
+            self.fetchRestaurants(searchText: "shopping", latitude: self.latitude, longitude: self.longitude)
         }
         if isLoadingMore {
             if offsetValue > 0 {
-                self.vc?.loaderView.showMessage("Loading...", animateLoader: true)
+               // self.vc?.loaderView.showMessage("Loading...", animateLoader: true)
             }
         } else {
-            self.vc?.loaderView.hide()
+          // self.vc?.loaderView.hide()
         }
     }
     
@@ -84,12 +84,12 @@ class RestaurantsVM: NSObject {
             ProgressIndicator.shared().hide(at: self?.vc?.view ?? UIView())
             if success {
                 print("here is success")
-                if strongSelf.aryRestaurantsModel.count > 0 {
+                if strongSelf.aryShoppingModel.count > 0 {
                     strongSelf.offsetValue += 50 //For pagination
                     strongSelf.isLoadingMore = false
-                    strongSelf.vc?.loaderView.hide()
+                  //  strongSelf.vc?.loaderView.hide()
                     if let viewController = strongSelf.vc {
-                        viewController.tblVwRestaurants.reloadData()
+                        viewController.tblVwShopping.reloadData()
                     }
                 }
             }
@@ -107,4 +107,3 @@ class RestaurantsVM: NSObject {
         }
     }
 }
-
