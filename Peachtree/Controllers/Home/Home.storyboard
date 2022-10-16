@@ -687,36 +687,25 @@
                                 <rect key="frame" x="0.0" y="119" width="414" height="777"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" bouncesZoom="NO" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="oPZ-UI-jea">
-                                        <rect key="frame" x="0.0" y="10" width="414" height="767"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="777"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="dataSource" destination="0Rf-fA-tCT" id="1aw-CQ-Rei"/>
                                             <outlet property="delegate" destination="0Rf-fA-tCT" id="4Hl-Vs-xec"/>
                                         </connections>
                                     </tableView>
-                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xwI-f1-8Rp">
-                                        <rect key="frame" x="0.0" y="10" width="414" height="767"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgMapBg" translatesAutoresizingMaskIntoConstraints="NO" id="npK-EJ-bBj">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="767"/>
-                                            </imageView>
-                                        </subviews>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xwI-f1-8Rp" customClass="MapView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="777"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstItem="npK-EJ-bBj" firstAttribute="leading" secondItem="xwI-f1-8Rp" secondAttribute="leading" id="DEc-fG-QP1"/>
-                                            <constraint firstAttribute="trailing" secondItem="npK-EJ-bBj" secondAttribute="trailing" id="DJ8-LE-DY4"/>
-                                            <constraint firstItem="npK-EJ-bBj" firstAttribute="top" secondItem="xwI-f1-8Rp" secondAttribute="top" id="bzN-Uf-egf"/>
-                                            <constraint firstAttribute="bottom" secondItem="npK-EJ-bBj" secondAttribute="bottom" id="rPt-7q-ieI"/>
-                                        </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="oPZ-UI-jea" firstAttribute="top" secondItem="oQQ-Co-k65" secondAttribute="top" constant="10" id="IOd-Ee-Ihc"/>
+                                    <constraint firstItem="oPZ-UI-jea" firstAttribute="top" secondItem="oQQ-Co-k65" secondAttribute="top" id="IOd-Ee-Ihc"/>
                                     <constraint firstAttribute="trailing" secondItem="oPZ-UI-jea" secondAttribute="trailing" id="L5z-kq-rIX"/>
+                                    <constraint firstItem="xwI-f1-8Rp" firstAttribute="top" secondItem="oPZ-UI-jea" secondAttribute="top" id="PP4-7h-aS7"/>
                                     <constraint firstAttribute="bottom" secondItem="oPZ-UI-jea" secondAttribute="bottom" id="jim-aH-KvO"/>
                                     <constraint firstItem="oPZ-UI-jea" firstAttribute="leading" secondItem="oQQ-Co-k65" secondAttribute="leading" id="nqk-qE-0h3"/>
-                                    <constraint firstItem="xwI-f1-8Rp" firstAttribute="top" secondItem="oQQ-Co-k65" secondAttribute="top" constant="10" id="oqt-sH-ka4"/>
                                     <constraint firstAttribute="trailing" secondItem="xwI-f1-8Rp" secondAttribute="trailing" id="p1y-CC-W2b"/>
                                     <constraint firstItem="xwI-f1-8Rp" firstAttribute="leading" secondItem="oQQ-Co-k65" secondAttribute="leading" id="rVS-bN-UOW"/>
                                     <constraint firstAttribute="bottom" secondItem="xwI-f1-8Rp" secondAttribute="bottom" id="tvz-Je-XD5"/>
@@ -749,6 +738,8 @@
                         <outlet property="loaderView" destination="6b8-hZ-EMA" id="bnm-RU-KLI"/>
                         <outlet property="mapBackView" destination="xwI-f1-8Rp" id="TqJ-yl-ON5"/>
                         <outlet property="searchBar" destination="rRp-r4-zSa" id="G7o-SV-f6V"/>
+                        <outlet property="searchMainView" destination="YlP-ie-Qdy" id="vCk-gV-Mvf"/>
+                        <outlet property="searchMainViewHeightConst" destination="UZN-YD-ps5" id="K4a-lZ-cL5"/>
                         <outlet property="tblVwRestaurants" destination="oPZ-UI-jea" id="6yG-gd-ONS"/>
                     </connections>
                 </viewController>

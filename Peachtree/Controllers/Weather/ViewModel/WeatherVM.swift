@@ -6,11 +6,11 @@
 //
 
 import Foundation
-import OpenWeatherKit
+//import OpenWeatherKit
 
 class WeatherVM: NSObject {
-    var resultAppendData = [Forecast.List]()
-    var weatherData : Forecast!
+  //  var resultAppendData = [Forecast.List]()
+  //  var weatherData : Forecast!
     let baseUrl = "https://api.openweathermap.org/data/2.5"
     let session = URLSession(configuration: .default)
     

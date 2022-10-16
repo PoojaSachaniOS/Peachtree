@@ -33,6 +33,7 @@ class Constants {
     
     struct AppApiKeys {
         static let kOpenWeatherMapApiKey = "a7bbbd5e82c675f805e7ae084f742024"
+        static let mapboxKey = "pk.eyJ1IjoibWFwYm94cHRjIiwiYSI6ImNsODFvZHYzMjAxd3ozdnBoZ3ZoNzRiNWIifQ.cgBl4AmklfU2NkkAFhP5_w"
     }
     
     enum APIResponseCodes: Int {

@@ -8,10 +8,11 @@ pod 'FloatRatingView'
   # Pods for Peachtree
   pod "ViewAnimator"
   pod 'lottie-ios'
-  pod 'OpenWeatherKit'
+#  pod 'OpenWeatherKit'
   pod 'Alamofire', '~> 5.0.0'
   pod 'Kingfisher'
   pod 'ObjectMapper'
+  pod 'MapboxMaps', '10.8.1'
 
   target 'PeachtreeTests' do
     inherit! :search_paths

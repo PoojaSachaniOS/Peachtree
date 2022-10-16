@@ -8,6 +8,7 @@
 import UIKit
 import Kingfisher
 import CoreLocation
+import MapboxMaps
 
 enum SortListVia {
     case distance
@@ -21,13 +22,20 @@ class RestaurantsVC: CustomBaseVC {
     @IBOutlet weak var tblVwRestaurants: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
+    @IBOutlet weak var searchMainViewHeightConst: NSLayoutConstraint!
+    @IBOutlet weak var searchMainView: UIView!
+    
+    //Loading view
+    @IBOutlet weak var loaderView: LoadingView!
+    
+    //Mapbox mapview
+    fileprivate var mapView: MapView!
+    
     private var barButtonMapView: UIBarButtonItem!
     private var barButtonListView: UIBarButtonItem!
-    @IBOutlet weak var loaderView: LoadingView!
     
     var restaurantsVM: RestaurantsVM!
     fileprivate var sortingState = SortListVia.reset
-    
     
     // MARK: - View Loading -
     override func viewDidLoad() {
@@ -74,21 +82,33 @@ class RestaurantsVC: CustomBaseVC {
     private func configureListMapBarButtonItems(){
         barButtonListView = UIBarButtonItem(image: UIImage(named: "map_icon")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(barBtnListClicked))
         barButtonMapView = UIBarButtonItem(image: UIImage(named: "imgListVw")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(barBtnMapClicked))
+    //
+    }
+    
+    func setNavigationItemIcon() {
         self.navigationItem.rightBarButtonItems = [self.barButtonListView]
     }
     
     //  MARK: - BAR BUTTION ACTION(S)
     @objc private func barBtnMapClicked() {
         self.navigationItem.setRightBarButtonItems([self.barButtonListView], animated: false)
-        self.mapBackView.isHidden = true
-        tblVwRestaurants.isHidden = false
+        self.removeMapFromSuperVw()
+        self.listMapShowHiddenSetup(isListVw: true)
     }
     
     @objc private func barBtnListClicked() {
         self.navigationItem.setRightBarButtonItems([self.barButtonMapView], animated: false)
-        print("Show Maps")
-        tblVwRestaurants.isHidden = true
-        self.mapBackView.isHidden = false
+        self.mapboxMapVwSetup()
+        self.listMapShowHiddenSetup(isListVw: false)
+    }
+    
+    func listMapShowHiddenSetup(isListVw:Bool) {
+        self.tblVwRestaurants.isHidden = !isListVw
+        self.mapBackView.isHidden = isListVw
+        UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveEaseOut) {
+            self.searchMainViewHeightConst.constant = isListVw ? ((UIDevice.current.userInterfaceIdiom == .pad) ? 95 : 75) : 0
+            self.view.layoutIfNeeded()
+        } completion: { _ in  }
     }
     
     @IBAction func sortBytaped(_ sender: Any) {
@@ -103,11 +123,11 @@ class RestaurantsVC: CustomBaseVC {
             self.restaurantsVM.aryRestaurantsModel = self.restaurantsVM.aryRestaurantsModel.sorted(by: { ($0.distance ?? 0.0) < ($1.distance ?? 0.0)} )
             self.tblVwRestaurants.reloadData()
         }
-     /*   let actionByDistanceHightoLow = UIAlertAction(title: "Via Distance (High to Low)", style: .default) { (action:UIAlertAction) in
-            self.sortingState = SortListVia.distance
-            self.restaurantsVM.aryRestaurantsModel = self.restaurantsVM.aryRestaurantsModel.sorted(by: { ($0.distance ?? 0.0) > ($1.distance ?? 0.0)} )
-            self.tblVwRestaurants.reloadData()
-        }*/
+        /*   let actionByDistanceHightoLow = UIAlertAction(title: "Via Distance (High to Low)", style: .default) { (action:UIAlertAction) in
+         self.sortingState = SortListVia.distance
+         self.restaurantsVM.aryRestaurantsModel = self.restaurantsVM.aryRestaurantsModel.sorted(by: { ($0.distance ?? 0.0) > ($1.distance ?? 0.0)} )
+         self.tblVwRestaurants.reloadData()
+         }*/
         
         let actionByAlphabetically = UIAlertAction(title: "Via Alphabetically", style: .default) { (action:UIAlertAction) in
             self.sortingState = SortListVia.alphabeticOrder
@@ -124,7 +144,7 @@ class RestaurantsVC: CustomBaseVC {
         }
         
         alertController.addAction(actionByDistanceLowtoHigh)
-     //   alertController.addAction(actionByDistanceHightoLow)
+        //   alertController.addAction(actionByDistanceHightoLow)
         alertController.addAction(actionByAlphabetically)
         alertController.addAction(actionReset)
         alertController.addAction(actionCancel)
@@ -154,7 +174,7 @@ extension RestaurantsVC: UITableViewDelegate,UITableViewDataSource{
         let data = restaurantsVM.aryRestaurantsModel[indexPath.row]
         cell.lblName.text = data.name
         cell.lblAddress.text = "\((data.location?.display_address![0] ?? "")) " + "(\(String(format: "%.2f", data.distance ?? 0.0)) miles)"
-      //  cell.lblAddress.text = String(data.distance ?? 0.0)
+        //  cell.lblAddress.text = String(data.distance ?? 0.0)
         
         if let url = data.image_url{
             cell.imgVwOuter.kf.indicatorType = .activity
@@ -232,5 +252,51 @@ extension RestaurantsVC: UISearchBarDelegate {
         let data = self.restaurantsVM.aryStoredRestaurantsModel.filter { ($0.name ?? "").localizedCaseInsensitiveContains(searchText)}
         self.restaurantsVM.aryRestaurantsModel = data
         self.tblVwRestaurants.reloadData()
+    }
+}
+
+//Mapbox Setup
+extension RestaurantsVC {
+    
+    func mapboxMapVwSetup() {
+        self.removeMapFromSuperVw()
+        let myResourceOptions = ResourceOptions(accessToken: Constants.AppApiKeys.mapboxKey)
+        var myMapInitOptions = MapInitOptions()
+       /* LocationManager.shared.getLocation { (location:CLLocation?, error:NSError?) in
+            if error != nil || location == nil {
+                myMapInitOptions = MapInitOptions(resourceOptions: myResourceOptions)
+            }
+            else {
+//                let centerCoordinate = CLLocationCoordinate2D(latitude: location?.coordinate.latitude ?? 0.0, longitude: location?.coordinate.longitude ?? 0.0)
+                let centerCoordinate = CLLocationCoordinate2D(latitude: 31.147129 ?? 0.0, longitude: 75.341217 ?? 0.0)
+                myMapInitOptions = MapInitOptions(resourceOptions: myResourceOptions, cameraOptions: CameraOptions(center: centerCoordinate, zoom: 4.0))
+            }
+        }*/
+        
+        let latitude = self.restaurantsVM.aryRestaurantsModel.first?.coordinates?.latitude ?? 0.0
+        let longitude = self.restaurantsVM.aryRestaurantsModel.first?.coordinates?.longitude ?? 0.0
+        let centerCoordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        myMapInitOptions = MapInitOptions(resourceOptions: myResourceOptions, cameraOptions: CameraOptions(center: centerCoordinate, zoom: 14.0))
+        self.mapView = MapView(frame: self.mapBackView.bounds, mapInitOptions: myMapInitOptions)
+        self.mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        self.mapBackView.addSubview(self.mapView)
+        self.mapboxAnnotations()
+    }
+    
+    func removeMapFromSuperVw() {
+        if self.mapView != nil {
+            self.mapView.removeFromSuperview()
+            self.mapView = nil
+        }
+    }
+    
+    func mapboxAnnotations() {
+        for item in self.restaurantsVM.aryRestaurantsModel {
+            let centerCoordinate = CLLocationCoordinate2D(latitude: item.coordinates?.latitude ?? 0.0, longitude: item.coordinates?.longitude ?? 0.0)
+            let pointAnnotationManager = self.mapView.annotations.makePointAnnotationManager()
+            var customPointAnnotation = PointAnnotation(coordinate: centerCoordinate)
+            customPointAnnotation.image = .init(image: UIImage(named: "red_pin")!, name: "red_pin")
+            pointAnnotationManager.annotations = [customPointAnnotation]
+        }
     }
 }
