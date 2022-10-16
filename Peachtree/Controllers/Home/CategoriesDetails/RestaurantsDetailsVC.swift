@@ -94,6 +94,9 @@ class RestaurantsDetailsVC: CustomBaseVC {
     }
     func openDirectionVC() {
         if let controller = StoryboardUtils.getDirectionsVC() as? DirectionsVC {
+            if let title = lblTitle.text, !title.isEmpty {
+                controller.navigationItem.title = title
+            }
             self.navigationController?.pushViewController(controller, animated: true)
         }
     }

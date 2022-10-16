@@ -10,7 +10,7 @@ class DirectionsVC: CustomBaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "Norma Stitts "
+       // self.navigationItem.title = "Norma Stitts "
         super.configureLeftBarButtonItem()
         self.setNeedsStatusBarAppearanceUpdate()
      }
