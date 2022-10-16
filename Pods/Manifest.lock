@@ -5,8 +5,18 @@ PODS:
     - Kingfisher/Core (= 5.15.8)
   - Kingfisher/Core (5.15.8)
   - lottie-ios (3.4.1)
+  - MapboxCommon (23.0.0)
+  - MapboxCoreMaps (10.8.0):
+    - MapboxCommon (~> 23.0)
+  - MapboxMaps (10.8.1):
+    - MapboxCommon (= 23.0.0)
+    - MapboxCoreMaps (= 10.8.0)
+    - MapboxMobileEvents (= 1.0.8)
+    - Turf (~> 2.0)
+  - MapboxMobileEvents (1.0.8)
   - ObjectMapper (4.2.0)
   - OpenWeatherKit (2.2.0)
+  - Turf (2.5.0)
   - ViewAnimator (3.1.0)
 
 DEPENDENCIES:
@@ -14,6 +24,7 @@ DEPENDENCIES:
   - FloatRatingView
   - Kingfisher
   - lottie-ios
+  - MapboxMaps (= 10.8.1)
   - ObjectMapper
   - OpenWeatherKit
   - ViewAnimator
@@ -24,8 +35,13 @@ SPEC REPOS:
     - FloatRatingView
     - Kingfisher
     - lottie-ios
+    - MapboxCommon
+    - MapboxCoreMaps
+    - MapboxMaps
+    - MapboxMobileEvents
     - ObjectMapper
     - OpenWeatherKit
+    - Turf
     - ViewAnimator
 
 SPEC CHECKSUMS:
@@ -33,10 +49,15 @@ SPEC CHECKSUMS:
   FloatRatingView: bb6bdddfbeec51b1d387b4bd50abc27b4dfccd48
   Kingfisher: a3c03d702433fa6cfedabb2bddbe076fb8f2e902
   lottie-ios: 016449b5d8be0c3dcbcfa0a9988469999cd04c5d
+  MapboxCommon: 3c82587e77a92aa34a6166b164dadb856be6975f
+  MapboxCoreMaps: 1f45781e96f509d7f0d2134153725003ca84820c
+  MapboxMaps: 44e631a7725518487442933bb56e7c4e736b9f95
+  MapboxMobileEvents: febdd92835daa258ca1c1faad0821c0b3394ef40
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   OpenWeatherKit: 1e2891722f1a1afd13d72b60c98867d6204700fe
+  Turf: 8adf034c2963a0e587b979c51b5c12c396e29c44
   ViewAnimator: a9ceed80266e00fd435ec4fb99b2df64d580d0e4
 
-PODFILE CHECKSUM: 19dfc630b08747ff31922c812b6b4f9eea49977e
+PODFILE CHECKSUM: d99a2872516ae9afada52ec5289ef3c37c6341bc
 
 COCOAPODS: 1.11.3
