@@ -189,16 +189,15 @@ extension ShoppingVC: UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.openRestaurantsDetails()
-    }
-    
-    func openRestaurantsDetails() {
         if let controller = StoryboardUtils.getRestaurantsDetailsVC() as? RestaurantsDetailsVC {
             controller.hidesBottomBarWhenPushed = true
+            let data = shoppingVM.aryShoppingModel[indexPath.row]
+            controller.restaurantsDetails = data
+            controller.isFromTag = ScreenTags.isFromRestaurants.rawValue
             self.navigationController?.pushViewController(controller, animated: true)
         }
     }
-    
+        
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }

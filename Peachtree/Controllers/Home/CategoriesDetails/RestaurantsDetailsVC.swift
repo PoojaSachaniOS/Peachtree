@@ -7,9 +7,18 @@
 
 import UIKit
 
+enum ScreenTags: Int {
+    case isFromRestaurants = 101, isFromShopping, isFromOther
+}
+
 class RestaurantsDetailsVC: CustomBaseVC {
     @IBOutlet weak var stackVw: UIStackView!
     @IBOutlet weak var vwBgDirection: UIView!
+    @IBOutlet weak var lblTitle: LBLSatoshiBoldBlack20!
+    @IBOutlet weak var lblAddress: LBSatoshiLight16!
+    
+    var isFromTag:Int?
+    var restaurantsDetails:RestaurantsModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,10 +27,27 @@ class RestaurantsDetailsVC: CustomBaseVC {
         self.addTapGesture()
         self.navigationItem.title = "Restaurants  Details"
         self.setNeedsStatusBarAppearanceUpdate()
+        self.configData()
     }
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
+    
+    private func configData() {
+        if isFromTag == ScreenTags.isFromRestaurants.rawValue || isFromTag == ScreenTags.isFromShopping.rawValue {
+            
+            if let name = restaurantsDetails?.name, !name.isEmpty {
+                lblTitle.text = name
+            }
+            
+            if let address = ((restaurantsDetails?.location?.display_address![0])), !address.isEmpty {
+                lblAddress.text = address
+            }
+           
+        }
+    }
+    
     func addTapGesture() {
         let tapGesOnDirection = UITapGestureRecognizer(target: self, action: #selector(self.directionTapGestureTapped(_:)))
         tapGesOnDirection.numberOfTapsRequired = 1

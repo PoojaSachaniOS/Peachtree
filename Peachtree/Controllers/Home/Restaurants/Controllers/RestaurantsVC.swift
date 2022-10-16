@@ -123,6 +123,7 @@ class RestaurantsVC: CustomBaseVC {
             self.restaurantsVM.aryRestaurantsModel = self.restaurantsVM.aryRestaurantsModel.sorted(by: { ($0.distance ?? 0.0) < ($1.distance ?? 0.0)} )
             self.tblVwRestaurants.reloadData()
         }
+        
         /*   let actionByDistanceHightoLow = UIAlertAction(title: "Via Distance (High to Low)", style: .default) { (action:UIAlertAction) in
          self.sortingState = SortListVia.distance
          self.restaurantsVM.aryRestaurantsModel = self.restaurantsVM.aryRestaurantsModel.sorted(by: { ($0.distance ?? 0.0) > ($1.distance ?? 0.0)} )
@@ -187,17 +188,16 @@ extension RestaurantsVC: UITableViewDelegate,UITableViewDataSource{
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.openRestaurantsDetails()
-    }
-    
-    func openRestaurantsDetails() {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) { // By Pooja
         if let controller = StoryboardUtils.getRestaurantsDetailsVC() as? RestaurantsDetailsVC {
             controller.hidesBottomBarWhenPushed = true
+            let data = restaurantsVM.aryRestaurantsModel[indexPath.row]
+            controller.restaurantsDetails = data
+            controller.isFromTag = ScreenTags.isFromRestaurants.rawValue
             self.navigationController?.pushViewController(controller, animated: true)
         }
     }
-    
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
