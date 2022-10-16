@@ -191,6 +191,7 @@ extension RestaurantsVC: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) { // By Pooja
         if let controller = StoryboardUtils.getRestaurantsDetailsVC() as? RestaurantsDetailsVC {
             controller.hidesBottomBarWhenPushed = true
+            controller.navigationItem.title = "Restaurants Details"
             let data = restaurantsVM.aryRestaurantsModel[indexPath.row]
             controller.restaurantsDetails = data
             controller.isFromTag = ScreenTags.isFromRestaurants.rawValue

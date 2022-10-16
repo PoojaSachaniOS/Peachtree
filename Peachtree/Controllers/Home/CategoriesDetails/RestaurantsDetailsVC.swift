@@ -25,7 +25,9 @@ class RestaurantsDetailsVC: CustomBaseVC {
         super.configureLeftBarButtonItem()
         self.setUpUI()
         self.addTapGesture()
-        self.navigationItem.title = "Restaurants  Details"
+        if let navTitle = self.navigationItem.title, navTitle.isEmpty {
+             self.navigationItem.title = "Details"
+        }
         self.setNeedsStatusBarAppearanceUpdate()
         self.configData()
     }

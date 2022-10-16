@@ -191,6 +191,7 @@ extension ShoppingVC: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let controller = StoryboardUtils.getRestaurantsDetailsVC() as? RestaurantsDetailsVC {
             controller.hidesBottomBarWhenPushed = true
+            controller.navigationItem.title = "Shopping Details"
             let data = shoppingVM.aryShoppingModel[indexPath.row]
             controller.restaurantsDetails = data
             controller.isFromTag = ScreenTags.isFromRestaurants.rawValue
