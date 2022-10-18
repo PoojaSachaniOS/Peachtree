@@ -28,12 +28,12 @@
 		<key>MapboxCommon.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>10</integer>
+			<integer>11</integer>
 		</dict>
 		<key>MapboxCoreMaps.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>12</integer>
+			<integer>14</integer>
 		</dict>
 		<key>MapboxMaps.xcscheme_^#shared#^_</key>
 		<dict>
@@ -43,7 +43,7 @@
 		<key>MapboxMobileEvents.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>13</integer>
+			<integer>12</integer>
 		</dict>
 		<key>ObjectMapper.xcscheme</key>
 		<dict>
@@ -83,7 +83,7 @@
 		<key>Turf.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>14</integer>
+			<integer>13</integer>
 		</dict>
 		<key>ViewAnimator.xcscheme</key>
 		<dict>

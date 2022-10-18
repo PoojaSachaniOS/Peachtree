@@ -16,7 +16,8 @@ class RestaurantsDetailsVC: CustomBaseVC {
     @IBOutlet weak var vwBgDirection: UIView!
     @IBOutlet weak var lblTitle: LBLSatoshiBoldBlack20!
     @IBOutlet weak var lblAddress: LBSatoshiLight16!
-    
+    @IBOutlet weak var vwBgShare: UIView!
+
     var isFromTag:Int?
     var restaurantsDetails:RestaurantsModel?
     
@@ -93,6 +94,7 @@ class RestaurantsDetailsVC: CustomBaseVC {
         }
         
         vwBgDirection.addRoundedViewCorners(width: 10, colorBorder: Colors.color_AppThemeBlack!, BackgroundColor: .white)
+        self.configTapGestureForShare()
     }
     func openDirectionVC() {
         if let controller = StoryboardUtils.getDirectionsVC() as? DirectionsVC {

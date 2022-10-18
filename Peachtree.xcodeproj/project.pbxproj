@@ -52,6 +52,7 @@
 		178587FC28EF2D1C00D6B229 /* WeatherVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178587FB28EF2D1C00D6B229 /* WeatherVM.swift */; };
 		178587FE28EF353D00D6B229 /* TimeStamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178587FD28EF353D00D6B229 /* TimeStamp.swift */; };
 		17B3A70328E6160B0092E3B9 /* AthleticFacilitiesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B3A70228E6160B0092E3B9 /* AthleticFacilitiesVC.swift */; };
+		17D4611028FF30F300FAF4C7 /* RestaurantsDetails+Share.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D4610F28FF30F300FAF4C7 /* RestaurantsDetails+Share.swift */; };
 		17D6D55028CC51E7007D677B /* Call911VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6D54F28CC51E7007D677B /* Call911VC.swift */; };
 		17D6D55328CC53D9007D677B /* CallTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6D55128CC53D9007D677B /* CallTableCell.swift */; };
 		17D6D55428CC53D9007D677B /* CallTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17D6D55228CC53D9007D677B /* CallTableCell.xib */; };
@@ -212,6 +213,7 @@
 		178587FB28EF2D1C00D6B229 /* WeatherVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVM.swift; sourceTree = "<group>"; };
 		178587FD28EF353D00D6B229 /* TimeStamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeStamp.swift; sourceTree = "<group>"; };
 		17B3A70228E6160B0092E3B9 /* AthleticFacilitiesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleticFacilitiesVC.swift; sourceTree = "<group>"; };
+		17D4610F28FF30F300FAF4C7 /* RestaurantsDetails+Share.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RestaurantsDetails+Share.swift"; sourceTree = "<group>"; };
 		17D6D54F28CC51E7007D677B /* Call911VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Call911VC.swift; sourceTree = "<group>"; };
 		17D6D55128CC53D9007D677B /* CallTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallTableCell.swift; sourceTree = "<group>"; };
 		17D6D55228CC53D9007D677B /* CallTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CallTableCell.xib; sourceTree = "<group>"; };
@@ -609,6 +611,7 @@
 			isa = PBXGroup;
 			children = (
 				17D6D56128CC9F33007D677B /* RestaurantsDetailsVC.swift */,
+				17D4610F28FF30F300FAF4C7 /* RestaurantsDetails+Share.swift */,
 			);
 			path = CategoriesDetails;
 			sourceTree = "<group>";
@@ -1399,6 +1402,7 @@
 				C8BB1C4828CCF75600A66FDF /* LBSatoshiWhite60.swift in Sources */,
 				C8A1734928CC78F1002C52BE /* LBSatoshiRegularLightGrey12.swift in Sources */,
 				17285EFC28F2D1A0003B0674 /* APIManager.swift in Sources */,
+				17D4611028FF30F300FAF4C7 /* RestaurantsDetails+Share.swift in Sources */,
 				C8DAD8A828CFA4D800370ECF /* DirectionsVC.swift in Sources */,
 				189D0A4228EF514000A70F55 /* Weather.swift in Sources */,
 				17D6D56228CC9F33007D677B /* RestaurantsDetailsVC.swift in Sources */,
