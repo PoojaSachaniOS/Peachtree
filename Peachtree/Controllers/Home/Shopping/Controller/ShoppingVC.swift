@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import CoreLocation
+import MapboxMaps
 
 class ShoppingVC: CustomBaseVC {
     //  MARK: - IB-OUTLET(S)
@@ -16,9 +18,14 @@ class ShoppingVC: CustomBaseVC {
     private var barButtonMapView: UIBarButtonItem!
     private var barButtonListView: UIBarButtonItem!
     
+    @IBOutlet weak var searchMainViewHeightConst: NSLayoutConstraint!
+    @IBOutlet weak var searchMainView: UIView!
     
     var shoppingVM: ShoppingVM!
     fileprivate var sortingState = SortListVia.reset
+    
+    //Mapbox mapview
+    fileprivate var mapView: MapView!
     
     // MARK: - View Loading -
     override func viewDidLoad() {
@@ -54,6 +61,9 @@ class ShoppingVC: CustomBaseVC {
     private func configureListMapBarButtonItems(){
         barButtonListView = UIBarButtonItem(image: UIImage(named: "map_icon")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(barBtnListClicked))
         barButtonMapView = UIBarButtonItem(image: UIImage(named: "imgListVw")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(barBtnMapClicked))
+    }
+    
+    func setNavigationItemIcon() {
         self.navigationItem.rightBarButtonItems = [self.barButtonListView]
     }
     
@@ -70,15 +80,23 @@ class ShoppingVC: CustomBaseVC {
     //  MARK: - BAR BUTTION ACTION(S)
     @objc private func barBtnMapClicked() {
         self.navigationItem.setRightBarButtonItems([self.barButtonListView], animated: false)
-        self.mapBackView.isHidden = true
-        tblVwShopping.isHidden = false
+        self.removeMapFromSuperVw()
+        self.listMapShowHiddenSetup(isListVw: true)
     }
     
     @objc private func barBtnListClicked() {
         self.navigationItem.setRightBarButtonItems([self.barButtonMapView], animated: false)
-        print("Show Maps")
-        tblVwShopping.isHidden = true
-        self.mapBackView.isHidden = false
+        self.mapboxMapVwSetup()
+        self.listMapShowHiddenSetup(isListVw: false)
+    }
+    
+    func listMapShowHiddenSetup(isListVw:Bool) {
+        self.tblVwShopping.isHidden = !isListVw
+        self.mapBackView.isHidden = isListVw
+        UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveEaseOut) {
+            self.searchMainViewHeightConst.constant = isListVw ? ((UIDevice.current.userInterfaceIdiom == .pad) ? 95 : 75) : 0
+            self.view.layoutIfNeeded()
+        } completion: { _ in  }
     }
     
     @IBAction func sortBytaped(_ sender: Any) {
@@ -220,6 +238,41 @@ extension ShoppingVC: UIScrollViewDelegate {
                     self.shoppingVM.fetchRestaurants()
                 }
             }
+        }
+    }
+}
+
+//Mapbox Setup
+extension ShoppingVC {
+    
+    func mapboxMapVwSetup() {
+        self.removeMapFromSuperVw()
+        let myResourceOptions = ResourceOptions(accessToken: Constants.AppApiKeys.mapboxKey)
+        var myMapInitOptions = MapInitOptions()
+        let latitude = self.shoppingVM.aryShoppingModel.first?.coordinates?.latitude ?? 0.0
+        let longitude = self.shoppingVM.aryShoppingModel.first?.coordinates?.longitude ?? 0.0
+        let centerCoordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        myMapInitOptions = MapInitOptions(resourceOptions: myResourceOptions, cameraOptions: CameraOptions(center: centerCoordinate, zoom: 14.0))
+        self.mapView = MapView(frame: self.mapBackView.bounds, mapInitOptions: myMapInitOptions)
+        self.mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        self.mapBackView.addSubview(self.mapView)
+        self.mapboxAnnotations()
+    }
+    
+    func removeMapFromSuperVw() {
+        if self.mapView != nil {
+            self.mapView.removeFromSuperview()
+            self.mapView = nil
+        }
+    }
+    
+    func mapboxAnnotations() {
+        for item in self.shoppingVM.aryShoppingModel {
+            let centerCoordinate = CLLocationCoordinate2D(latitude: item.coordinates?.latitude ?? 0.0, longitude: item.coordinates?.longitude ?? 0.0)
+            let pointAnnotationManager = self.mapView.annotations.makePointAnnotationManager()
+            var customPointAnnotation = PointAnnotation(coordinate: centerCoordinate)
+            customPointAnnotation.image = .init(image: UIImage(named: "red_pin")!, name: "red_pin")
+            pointAnnotationManager.annotations = [customPointAnnotation]
         }
     }
 }

@@ -41,6 +41,8 @@ class ShoppingVM: NSObject {
                 if !((self.vc?.searchBar.text ?? "").isEmpty) {
                     self.vc?.filterData(self.vc?.searchBar.text ?? "")
                 }
+            } else {
+                self.vc?.setNavigationItemIcon()
             }
             callBack("Successfully", true)
         } faliure: { errMsg, errCode in
